@@ -1,0 +1,11 @@
+
+# CONTEXT
+
+The task of Critical Questions Generation consists of generating useful critical questions when given an argumentative text. For this purpose, you will be given an argument from a real debate, generate a set of critical Questions to reflect if it is acceptable or fallacious. 
+
+
+# INPUT
+
+{input_arg}
+
+Read the given argument and generate 3 *CRITICAL QUESTIONS* to unmask the assumptions held by the premises of the argument and attack its inference. Your goal ist tor unravel the acceptability level and fallacies in an argument.
