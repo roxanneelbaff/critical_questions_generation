@@ -3,3 +3,5 @@ env/
 my_folder/
 .history
 *.log
+.DS_Store
+*__pycache__*
