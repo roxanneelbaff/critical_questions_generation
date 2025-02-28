@@ -1,12 +1,11 @@
 from abc import abstractmethod
 from ollama import ChatResponse
-from LLM import LLM
+from agents.LLM import LLM
 
 
 class Agent(LLM):
     def __init__(
         self,
-        model_host: str,
         model_name: str,
         model_parameters: dict = {},
     ):
