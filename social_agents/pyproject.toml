@@ -1,0 +1,30 @@
+[project]
+name = "social_agents"
+version = "0.1.0"
+description = "A Python project for employing social LLM agents with collaboration."
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Roxanne El Baff", email = "roxanne.elbaff@dlr.de" }]
+dependencies = [
+  "langgraph",
+  "langgraph-sdk",
+  "langchain-community",
+  "langchain-core",
+  "langchain-openai",
+  "notebook",
+  "tavily-python",
+  "wikipedia",
+  "langgraph-cli",
+  "numpy==2.0.2",
+  "evaluate==0.4.3",
+  "sentence_transformers==3.3.1",
+  "bleurt @ https://github.com/google-research/bleurt/archive/b610120347ef22b494b6d69b4316e303f5932516.zip#egg=bleurt",
+  "accelerate>=0.26.0"
+]
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["social_agents", "social_agents.*"]
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

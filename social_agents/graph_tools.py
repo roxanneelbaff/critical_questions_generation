@@ -9,8 +9,8 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from pyparsing import abstractmethod
 import tqdm
 
-from my_models.objects import CriticalQuestionList
-from my_models.state import BasicState
+from .objects import CriticalQuestionList
+from .state import BasicState
 from .utils import get_st_data, timer
 
 
