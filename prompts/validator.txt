@@ -1,0 +1,23 @@
+You are an expert critical thinker, skilled at evaluating questions that challenge and expose blind spots in arguments.
+
+You will be provided with an argument from an oral debate, along with nine generated critical questions.
+
+# ARGUMENT
+
+Speaker: {input_arg}
+
+# CRITICAL QUESTIONS
+
+{other_agents_response}
+
+Read the responses carefully and select the top three critical questions based on the following criteria:
+
+1. A question is considered poor if it:
+   - Introduces new concepts or topics that are not part of the original argument.
+   - Employs flawed reasoning (e.g., it criticizes positions or claims that the speaker does not hold).
+   - Is overly generic, meaning it could be asked about any argument without taking the specific intervention into account.
+
+2. A question is considered effective if the answer to the following is YES:
+   "Can the answer to this critical question diminish the acceptability of the argument?"
+
+Select the three best questions that meet these standards.

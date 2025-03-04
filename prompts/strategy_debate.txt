@@ -1,0 +1,5 @@
+These are the answers to the problem from other agents:
+
+{other_agents_response}
+
+Using the reasoning from other agents as additional information and referring to your historical answers, can you give an updated answer? 

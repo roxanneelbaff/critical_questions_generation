@@ -1,0 +1,5 @@
+List the critical questions that should be asked regarding the arguments in the following paragraph:
+
+Speaker: {input_arg} 
+
+Please carefully consider it, and explain your reasoning.
