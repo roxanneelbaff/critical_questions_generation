@@ -12,12 +12,8 @@ Speaker: {input_arg}
 
 Read the responses carefully and select the top three critical questions based on the following criteria:
 
-1. A question is considered poor if it:
-   - Introduces new concepts or topics that are not part of the original argument.
-   - Employs flawed reasoning (e.g., it criticizes positions or claims that the speaker does not hold).
-   - Is overly generic, meaning it could be asked about any argument without taking the specific intervention into account.
-
-2. A question is considered effective if the answer to the following is YES:
-   "Can the answer to this critical question diminish the acceptability of the argument?"
+   - A question must not introduce a new concept or topic that are not part of the original argument.
+   - A question must not employ flawed reasoning (e.g., it criticizes positions or claims that the speaker does not hold).
+   - A question must not be generic, but rather specific to the argument.
 
 Select the three best questions that meet these standards.
