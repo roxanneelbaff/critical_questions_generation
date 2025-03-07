@@ -9,8 +9,8 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from pyparsing import abstractmethod
 import tqdm
 
-from my_models.objects import CriticalQuestionList
-from my_models.state import BasicState
+from .objects import CriticalQuestionList
+from .state import BasicState
 from .utils import get_st_data, timer
 
 
@@ -36,6 +36,13 @@ class CQSTAbstractAgent(ABC):
         print("run `display(Image(graph.get_graph(xray=1).draw_mermaid_png()))` to see your Agentic Graph")
         self.experiment_name = f"{self.llm_name}_temperature{self.temperature}_{self.__class__.__name__.lower()}"
         print("experiment name: ", self.experiment_name)
+
+    @staticmethod
+    def _init_llm(llm_name: str, temperature: int = 0):
+        if llm_name == "o3-mini-2025-01-31":
+            return ChatOpenAI(model=llm_name)
+        elif llm_name.startswith("gpt"):
+            return ChatOpenAI(model=llm_name, temperature=temperature)
 
     @abstractmethod
     def build_agent(self) -> StateGraph:
