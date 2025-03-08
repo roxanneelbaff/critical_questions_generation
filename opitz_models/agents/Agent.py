@@ -15,6 +15,7 @@ class Agent(LLM):
         self.model_name = model_name
         self.chat: list[dict[str, str]] = []
 
+
     @abstractmethod
     def _initialize(self) -> None:
         """Initializes the chat history for the agent by adding the system prompt."""

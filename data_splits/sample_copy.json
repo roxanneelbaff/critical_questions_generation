@@ -1,0 +1,176 @@
+{
+    "CLINTON_1_1": {
+        "intervention_id": "CLINTON_1_1",
+        "intervention": "CLINTON: \"The central question in this election is really what kind of country we want to be and what kind of future we 'll build together\nToday is my granddaughter 's second birthday\nI think about this a lot\nwe have to build an economy that works for everyone , not just those at the top\nwe need new jobs , good jobs , with rising incomes\nI want us to invest in you\nI want us to invest in your future\njobs in infrastructure , in advanced manufacturing , innovation and technology , clean , renewable energy , and small business\nmost of the new jobs will come from small business\nWe also have to make the economy fairer\nThat starts with raising the national minimum wage and also guarantee , finally , equal pay for women 's work\nI also want to see more companies do profit-sharing\"",
+        "dataset": "US2016",
+        "schemes": [
+            "PracticalReasoning",
+            "PracticalReasoning",
+            "PracticalReasoning",
+            "PopularPractice",
+            "PracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_1_1_LLM_US2016_D_meta-llama_Meta-Llama-3-70B-Instruct_9_S",
+                "cq": "How would you address potential criticisms and counterarguments to these policies, and what would be your response to opposing views and interests?",
+                "label": "Invalid"
+            },
+            {
+                "id": "CLINTON_1_1_T__7",
+                "cq": "Are there other relevant goals that conflict with investing in you?",
+                "label": "Unhelpful"
+            },
+            {
+                "id": "CLINTON_1_1_LLM_US2016_D_meta-llama_Meta-Llama-3-70B-Instruct_4_L",
+                "cq": "What is the proposed plan for making the economy fairer, beyond raising the national minimum wage and guaranteeing equal pay for women's work?",
+                "label": "Useful"
+            },
+            {
+                "id": "CLINTON_1_1_LLM_US2016_D_meta-llama_Meta-Llama-3-70B-Instruct_0_S",
+                "cq": "What specific policies would you implement to achieve an economy that works for everyone, and how would you ensure their effectiveness?",
+                "label": "Invalid"
+            },
+            {
+                "id": "CLINTON_1_1_T__1",
+                "cq": "Could Clinton investing in you have consequences that we should take into account? Is it practically possible?",
+                "label": "Useful"
+            },
+            {
+                "id": "CLINTON_1_1_T__4",
+                "cq": "Could creating jobs in infrastructure, in advanced manufacturing, innovation and technology, clean, renewable energy, and small businesses have consequences that we should take into account? Is it practically possible?",
+                "label": "Useful"
+            },
+            {
+                "id": "CLINTON_1_1_LLM_US2016_D_meta-llama_Meta-Llama-3-70B-Instruct_6_L",
+                "cq": "What is the evidence that profit-sharing would lead to a more equitable economy, and how would it benefit workers?",
+                "label": "Useful"
+            },
+            {
+                "id": "CLINTON_1_1_LLM_US2016_D_meta-llama_Meta-Llama-3-70B-Instruct_5_L",
+                "cq": "What mechanisms does Clinton propose to hold companies accountable for profit-sharing?",
+                "label": "Useful"
+            },
+            {
+                "id": "CLINTON_1_1_LLM_US2016_D_meta-llama_Meta-Llama-3-70B-Instruct_0_L",
+                "cq": "What specific policies would you implement to build an economy that works for everyone, and how would you ensure their effectiveness?",
+                "label": "Invalid"
+            },
+            {
+                "id": "CLINTON_1_1_LLM_US2016_D_meta-llama_Meta-Llama-3-70B-Instruct_2_S",
+                "cq": "What is the evidence that raising the national minimum wage and guaranteeing equal pay for women's work would lead to a fairer economy, and how would you address potential unintended consequences of these policies?",
+                "label": "Invalid"
+            },
+            {
+                "id": "CLINTON_1_1_LLM_US2016_D_meta-llama_Meta-Llama-3-70B-Instruct_1_L",
+                "cq": "How would you create new jobs, and what is the evidence that investing in infrastructure, advanced manufacturing, innovation, technology, clean energy, and small business would lead to rising incomes?",
+                "label": "Invalid"
+            },
+            {
+                "id": "CLINTON_1_1_T__8",
+                "cq": "Are there alternative actions to creating jobs in infrastructure, in advanced manufacturing, innovation and technology, clean, renewable energy, and small businesses to achieve investing in you? If so, which is the most efficient action?",
+                "label": "Useful"
+            },
+            {
+                "id": "CLINTON_1_1_LLM_US2016_D_meta-llama_Meta-Llama-3-70B-Instruct_5_S",
+                "cq": "How would you address the potential impact of automation and artificial intelligence on job creation and the economy, and what steps would you take to ensure that the benefits of technological progress are shared fairly?",
+                "label": "Invalid"
+            },
+            {
+                "id": "CLINTON_1_1_LLM_US2016_D_meta-llama_Meta-Llama-3-70B-Instruct_3_S",
+                "cq": "How would you define and measure \"good jobs\" with \"rising incomes\", and what would be the benchmarks for success in achieving these goals?",
+                "label": "Invalid"
+            },
+            {
+                "id": "CLINTON_1_1_LLM_US2016_D_meta-llama_Meta-Llama-3-70B-Instruct_8_L",
+                "cq": "What is the proposed plan for addressing income inequality, and how would you ensure that the benefits of economic growth are shared by all?",
+                "label": "Invalid"
+            },
+            {
+                "id": "CLINTON_1_1_T__2",
+                "cq": "Could creating new jobs, and good jobs, with rising incomes have consequences that we should take into account? Is it practically possible?",
+                "label": "Useful"
+            },
+            {
+                "id": "CLINTON_1_1_LLM_US2016_D_meta-llama_Meta-Llama-3-70B-Instruct_9_L",
+                "cq": "How would you measure the success of your economic policies, and what metrics would you use to evaluate their effectiveness?",
+                "label": "Invalid"
+            },
+            {
+                "id": "CLINTON_1_1_LLM_US2016_D_meta-llama_Meta-Llama-3-70B-Instruct_6_S",
+                "cq": "What would be the timeline for implementing these policies, and how would you prioritize and sequence them to achieve the desired outcomes?",
+                "label": "Invalid"
+            },
+            {
+                "id": "CLINTON_1_1_T__0",
+                "cq": "Are there other relevant goals that conflict with making the economy fairer?",
+                "label": "Unhelpful"
+            },
+            {
+                "id": "CLINTON_1_1_T__5",
+                "cq": "Are there other relevant goals that conflict with building an economy that works for everyone?",
+                "label": "Useful"
+            },
+            {
+                "id": "CLINTON_1_1_T__3",
+                "cq": "Are there alternative actions to Clinton investing in you to achieve new jobs, good jobs, with rising incomes? If so, which is the most efficient action?",
+                "label": "Useful"
+            },
+            {
+                "id": "CLINTON_1_1_LLM_US2016_D_meta-llama_Meta-Llama-3-70B-Instruct_4_S",
+                "cq": "What is the role of government in promoting profit-sharing in companies, and how would you balance the need for economic fairness with the need to encourage business growth and competitiveness?",
+                "label": "Invalid"
+            },
+            {
+                "id": "CLINTON_1_1_LLM_US2016_D_meta-llama_Meta-Llama-3-70B-Instruct_8_S",
+                "cq": "What would be the metrics for evaluating the success of these policies, and how would you hold yourself and your administration accountable for achieving the desired outcomes?",
+                "label": "Invalid"
+            },
+            {
+                "id": "CLINTON_1_1_T__11",
+                "cq": "Could raising the national minimum wage and guaranteeing equal pay for women's work have consequences that we should take into account? Is it practically possible?",
+                "label": "Useful"
+            },
+            {
+                "id": "CLINTON_1_1_T__10",
+                "cq": "Are there other relevant goals that conflict with new jobs, good jobs, and rising incomes?",
+                "label": "Unhelpful"
+            },
+            {
+                "id": "CLINTON_1_1_T__6",
+                "cq": "Are there alternative actions to creating new jobs, good jobs, with rising incomes to achieve building an economy that works for everyone? If so, which is the most efficient action?",
+                "label": "Useful"
+            },
+            {
+                "id": "CLINTON_1_1_LLM_US2016_D_meta-llama_Meta-Llama-3-70B-Instruct_3_L",
+                "cq": "How would you ensure that small businesses, which you claim will create most new jobs, have access to the necessary resources and support to thrive?",
+                "label": "Invalid"
+            },
+            {
+                "id": "CLINTON_1_1_LLM_US2016_D_meta-llama_Meta-Llama-3-70B-Instruct_1_S",
+                "cq": "How would you fund the investments in infrastructure, advanced manufacturing, innovation and technology, clean and renewable energy, and small business, and what would be the expected returns on these investments?",
+                "label": "Invalid"
+            },
+            {
+                "id": "CLINTON_1_1_LLM_US2016_D_meta-llama_Meta-Llama-3-70B-Instruct_2_L",
+                "cq": "What is the proposed plan for investing in individuals, and how would you measure the return on investment?",
+                "label": "Invalid"
+            },
+            {
+                "id": "CLINTON_1_1_LLM_US2016_D_meta-llama_Meta-Llama-3-70B-Instruct_7_L",
+                "cq": "How would you balance the need for economic growth with the need for environmental sustainability, particularly in industries like clean energy?",
+                "label": "Invalid"
+            },
+            {
+                "id": "CLINTON_1_1_LLM_US2016_D_meta-llama_Meta-Llama-3-70B-Instruct_7_S",
+                "cq": "How would you engage with and involve stakeholders, including businesses, workers, and communities, in the development and implementation of these policies?",
+                "label": "Invalid"
+            },
+            {
+                "id": "CLINTON_1_1_T__9",
+                "cq": "Are there alternative actions to raising the national minimum wage and guaranteeing equal pay for women's work to achieve making the economy fairer? If so, which is the most efficient action?",
+                "label": "Useful"
+            }
+        ]
+    }
+}

@@ -5,7 +5,7 @@ from collections import Counter
 import sys
 import argparse
 import logging
-from evaluate import load # if you don't want to use bleurt and you don't have it installed, you can comment this, gpu might be needed
+#from evaluate import load # if you don't want to use bleurt and you don't have it installed, you can comment this, gpu might be needed
 
 logger = logging.getLogger(__name__)
 
