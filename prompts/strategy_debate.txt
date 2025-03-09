@@ -1,8 +1,17 @@
-These are the critical questions from other agents:
+You were asked to generate critical questions for the following arguments:
+
+{input_arg}
+
+# Your Answer
+'''
+{own_answer}
+'''
+
+# Other Agents Answer:
 
 {other_agents_response}
 
-After considering your provided critical questions and the critical questions and reasoning from other agents, do the following:
+After considering your answer and the answers and reasoning of other agents, do the following:
 
 - update or maintain your three critical questions
 - Make sure to keep your questions specific to the original argument

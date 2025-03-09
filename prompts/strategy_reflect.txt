@@ -1,3 +1,12 @@
+You were asked to generate critical questions for the following arguments:
+
+{input_arg}
+
+# Your answer is below:
+'''
+{own_answer}
+'''
+
 Reflect on your three questions. After reflections, do the following:
 
 - update or maintain your three critical questions

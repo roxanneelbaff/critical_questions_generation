@@ -8,4 +8,4 @@ class BasicState(TypedDict):
     input_arg: str
 
     # OutPut
-    critical_question_list: CriticalQuestionList
+    final_cq: CriticalQuestionList

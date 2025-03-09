@@ -1,4 +1,3 @@
-You are an expert critical thinker, skilled at evaluating questions that challenge and expose blind spots in arguments.
 
 You will be provided with an argument from an oral debate, along with nine generated critical questions.
 
@@ -9,11 +8,10 @@ Speaker: {input_arg}
 # CRITICAL QUESTIONS
 
 {other_agents_response}
-
 Read the responses carefully and select the top three critical questions based on the following criteria:
 
    - A question must not introduce a new concept or topic that are not part of the original argument.
    - A question must not employ flawed reasoning (e.g., it criticizes positions or claims that the speaker does not hold).
    - A question must not be generic, but rather specific to the argument.
 
-Select the three best questions that meet these standards.
+Select the three best questions.
