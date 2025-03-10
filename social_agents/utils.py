@@ -1,9 +1,6 @@
 import json
-
-
 import time
 from contextlib import contextmanager
-
 
 @contextmanager
 def timer(label: str, time_in_seconds_arr: list):
@@ -23,7 +20,7 @@ def get_st_data(name: str = "validation"):
     return dataset
 
 
-def _add_to_dict(left: dict | None, right: dict | None) -> dict:
+def dict_reducer(left: dict | None, right: dict | None) -> dict:
     """
     Merge two dictionaries with list values.
 

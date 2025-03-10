@@ -1,7 +1,8 @@
 from abc import ABC
 import dataclasses
+import itertools
 import json
-from typing import Optional
+from typing import Optional, Union
 from langchain_openai import ChatOpenAI
 import pandas as pd
 from langgraph.graph import START, END, StateGraph
@@ -77,12 +78,11 @@ class CQSTAbstractAgent(ABC):
         return questions[0]
 
     def run_experiment(self, data_type: str = "validation", save: bool = True):
-
         out = {}
         time_in_seconds_arr = []
         for _, line in tqdm.tqdm(get_st_data(data_type).items()):
             with timer(f"Iteration {line['intervention_id']}", time_in_seconds_arr):
-                input_arg = line["intervention"]
+                input_arg = line["intervention"].encode("utf-8").decode("unicode-escape")
                 cqs = self._invoke_graph({"input_arg": input_arg}).model_dump()[
                     "critical_questions"
                 ]
@@ -97,13 +97,15 @@ class CQSTAbstractAgent(ABC):
             with open(f"output/output_{self.experiment_name}.json", "w") as o:
                 json.dump(out, o, indent=4)
         # Log TIME
-        time_log_df = pd.read_csv("output/time_log.csv")
-        time_log_df[f"time_{self.experiment_name}"] = time_in_seconds_arr
+        time_log_df = pd.read_csv("output/time_log/time_log.csv")
+        time_log_df[f"{self.experiment_name}"] = time_in_seconds_arr
         time_log_df.to_csv("output/time_log.csv", index=False)
         self.time_log = time_log_df
 
         self.out = out
         return out
+    
+    def evaluate()
 
 
 # ZERO SHOT MODEL
@@ -141,8 +143,8 @@ class BasicCQModel(CQSTAbstractAgent):
 
 
 class SocialAgentBuilder(CQSTAbstractAgent):
-    collaborative_strategy: Optional[list[str]] = []  # ["debate", "reflect"]
-    agent_trait_lst: list[str] = ["easy_going"]  # , "overconfident", "easy_going"]
+    collaborative_strategy: Optional[list[str]] = []
+    agent_trait_lst: list[str] = ["easy_going"]  
 
     def __init__(
         self,
@@ -151,9 +153,11 @@ class SocialAgentBuilder(CQSTAbstractAgent):
         experiment_name: Optional[str] = None,
         temperature: Optional[float] = None,
         collaborative_strategy: Optional[list[str]] = [],
-        agent_trait_lst: list[str] = ["easy_going"]
+        agent_trait_lst: list[str] = ["easy_going"],
     ):
-        self.collaborative_strategy = collaborative_strategy if collaborative_strategy is not None else []
+        self.collaborative_strategy = (
+            collaborative_strategy if collaborative_strategy is not None else []
+        )
         self.agent_trait_lst = agent_trait_lst if agent_trait_lst is not None else []
         super().__init__(
             llm_name=llm_name,
@@ -416,3 +420,38 @@ class SocialAgentBuilder(CQSTAbstractAgent):
         memory = MemorySaver()
         print("BUILDING DONE")
         return workflow.compile(checkpointer=memory)
+
+    # Static methods
+    @staticmethod
+    def _get_strategy_permutation(
+        n: Union[list[int], int], elements: Optional[list[str]] = ["debate", "reflect"]
+    ):
+        permutations = []
+
+        def _get_permutation(r: int):
+            for p in itertools.product(elements, repeat=r):
+                permutations.append(p)
+
+        if isinstance(n, int):
+            _get_permutation(n)
+        else:
+            for r in n:
+                _get_permutation(r)
+        return permutations
+
+    @staticmethod
+    def _get_traits_combos(
+        n: Union[list[int], int], elements: Optional[list[str]] = ["overconfident", "easy_going"]
+    ):
+        combos = []
+
+        def _get_combinations(r: int):
+            for p in itertools.combinations(elements, repeat=r):
+                combos.append(p)
+
+        if isinstance(n, int):
+            _get_combinations(n)
+        else:
+            for r in n:
+                _get_combinations(r)
+        return combos

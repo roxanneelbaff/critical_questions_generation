@@ -42,7 +42,8 @@ class SocialAgentState(TypedDict):
 
     # Runtime vars
     roles_confirmed: Annotated[list, operator.add]
-    round_answer_dict: Annotated[dict[str, list[SocialAgentAnswer]], utils._add_to_dict]
+    round_answer_dict: Annotated[dict[str, list[SocialAgentAnswer]],
+                                 utils.dict_reducer]
     current_round: int = -2
 
     # OUTPUT
