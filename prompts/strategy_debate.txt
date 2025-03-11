@@ -1,18 +1,17 @@
-You were asked to generate critical questions for the following arguments:
-
+# Context:
+You were previously asked to generate three critical questions for the following argument:
+'''
 {input_arg}
-
-# Your Answer
 '''
+
+## Your Answer:
 {own_answer}
-'''
 
-# Other Agents Answer:
-
+## Other Agents' Answer:
 {other_agents_response}
 
-After considering your answer and the answers and reasoning of other agents, do the following:
-
-- update or maintain your three critical questions
-- Make sure to keep your questions specific to the original argument
-- avoid generic questions that can be asked to any argument.
+# Instructions:
+After reviewing both your answer and the responses from other agents, please do the following:
+- Revise or confirm your three critical questions.
+- Ensure your questions are specific to the given argument.
+- Avoid generic questions that could be applied to any argument.

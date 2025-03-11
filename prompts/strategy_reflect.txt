@@ -1,14 +1,15 @@
-You were asked to generate critical questions for the following arguments:
-
+# Context:
+You were previously asked to generate three critical questions for the following argument:
+'''
 {input_arg}
-
-# Your answer is below:
 '''
+
+## Your Answer:
 {own_answer}
-'''
 
-Reflect on your three questions. After reflections, do the following:
+# Instructions:
+After reflecting on your answers, please do the following:
+- Revise or confirm your three critical questions.
+- Ensure your questions are specific to the given argument.
+- Avoid generic questions that could be applied to any argument.
 
-- update or maintain your three critical questions
-- Make sure to keep your questions specific to the original argument
-- avoid generic questions that can be asked to any argument.

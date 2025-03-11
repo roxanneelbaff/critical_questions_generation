@@ -1,17 +1,20 @@
+# Context:
+You are provided with an argument from an oral debate and nine generated critical questions.
 
-You will be provided with an argument from an oral debate, along with nine generated critical questions.
-
-# ARGUMENT
-
-Speaker: {input_arg}
-
-# CRITICAL QUESTIONS
-
+# Argument:
+'''
+{input_arg}
+'''
+# Critical Questions:
 {other_agents_response}
-Read the responses carefully and select the top three critical questions based on the following criteria:
 
-   - A question must not introduce a new concept or topic that are not part of the original argument.
-   - A question must not employ flawed reasoning (e.g., it criticizes positions or claims that the speaker does not hold).
-   - A question must not be generic, but rather specific to the argument.
+# Instructions:
+Review the critical questions and select the top 3 based on the following criteria:
+
+- Depth: The question must delve into the argument's core, challenging the speaker's reasoning or assumptions
+- Relevance: The question must not introduce new concepts or topics that are not part of the original argument.
+- Sound Reasoning: The question must avoid flawed reasoning (e.g., it should not criticize positions or claims that the speaker does not hold).
+- Specificity: The question must be specific to the argument and not generic.
+- Clarity: The question must be clear and easy to understand
 
 Select the three best questions.

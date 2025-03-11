@@ -38,8 +38,8 @@ def dict_reducer(left: dict | None, right: dict | None) -> dict:
               For example, merging {'key1': ['e1', 'e2']} with {'key1': ['e_new']}
               will yield {'key1': ['e1', 'e2', 'e_new']}.
     """
-    left = left or {}
-    right = right or {}
+    left = left if left is not None else {}
+    right = right if right is not None else {}
     merged = left.copy()  # Start with a copy of left
 
     for key, right_value in right.items():

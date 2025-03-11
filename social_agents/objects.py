@@ -12,7 +12,7 @@ class CriticalQuestion(BaseModel):
     critical_question: str = Field(
         description="A critical question that reflects if an argument or a statement is *acceptable* or *fallacious*. The question unmasks the assumptions held by the premises of the given argument and attacks its inference."
     )
-    reason: str = Field(description="The reason behind asking the critical question")
+    reason: str = Field(description="Very brief reasoning for the critical question")
 
 
 class CriticalQuestionList(BaseModel):
@@ -31,8 +31,8 @@ class SocialAgentAnswer(BaseModel):
     critical_question_list: CriticalQuestionList = Field(
         description="The list of all the critical questions and their ranks to criticize and reveal the weaknesses of an argument."
     )
-    question_type: Literal["debate", "reflect", "question"]
-    prompt: str
+    question_type: Literal["debate", "reflect", "question", "validate"]
+    prompt: dict
     trait: str
 
 
@@ -49,6 +49,7 @@ class SocialAgentState(TypedDict):
 
     # OUTPUT
     final_cq: CriticalQuestionList
+    validation_instruction: str
 
 
 def state_to_serializable(state: SocialAgentState) -> dict:

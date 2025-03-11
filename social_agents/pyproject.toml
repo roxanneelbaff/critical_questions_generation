@@ -1,6 +1,6 @@
 [project]
 name = "social_agents"
-version = "0.1.0"
+version = "0.2.0"
 description = "A Python project for employing social LLM agents with collaboration."
 requires-python = ">=3.10"
 license = { text = "MIT" }

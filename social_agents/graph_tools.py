@@ -21,6 +21,7 @@ from .objects import (
 )
 from .state import BasicState
 from .utils import get_st_data, timer
+from social_agents import objects
 
 
 # BUILDING GRAPH - 1 class per AGENTS #
@@ -34,13 +35,15 @@ class CQSTAbstractAgent(ABC):
     experiment_name: Optional[str] = None
     temperature: Optional[float] = None
 
+    serialize_func: callable = None
+
     # DO NOT SET
     out: json = None
     graph: StateGraph = None
     time_log: pd.DataFrame = None
     llm_lst: list = None
 
-    ROOT_FOLDER:  ClassVar[str] = "output/elbaff_experiment/"
+    ROOT_FOLDER: ClassVar[str] = "output/elbaff_experiment/"
 
     def __post_init__(self):
         print(f"Initializing LLM {self.llm_name}")
@@ -73,15 +76,26 @@ class CQSTAbstractAgent(ABC):
 
     def _invoke_graph(self, params, id_):
         questions = []
-        config = {"configurable": {"thread_id": self.model_thread_id + f"_{id_}"}}
+        config = {"configurable": {"thread_id": f"{self.model_thread_id}_{id_}"}}
         for event in self.graph.stream(params, config, stream_mode="values"):
             # Review
             _labels = event.get("final_cq", "")
             if _labels:
                 questions.append(_labels)
                 # Save the final state
-                with open(f"{CQSTAbstractAgent.ROOT_FOLDER}{self.experiment_name}_arg{id_}.json", "w") as f:
-                    json.dump(event, f, indent=2)
+                fname = f"{CQSTAbstractAgent.ROOT_FOLDER}final_states/{self.experiment_name}_arg{id_}.json"
+                with open(
+                    fname,
+                    "w",
+                ) as f:
+                    try:
+                        if self.serialize_func is None:
+                            json.dump(dict(event), f, indent=2)
+                        else:
+                            json.dump(self.serialize_func(event), f, indent=2)
+                    except Exception:
+                        print("error whiles saving file: ", fname)
+    
         assert len(questions) == 1
         return questions[0]
 
@@ -93,10 +107,9 @@ class CQSTAbstractAgent(ABC):
                 input_arg = (
                     line["intervention"].encode("utf-8").decode("unicode-escape")
                 )
-                cqs = self._invoke_graph({"input_arg": input_arg},
-                                         line["intervention_id"]).model_dump()[
-                    "critical_questions"
-                ]
+                cqs = self._invoke_graph(
+                    {"input_arg": input_arg}, line["intervention_id"]
+                ).model_dump()["critical_questions"]
 
                 # postprocessing data: replacing critical_question with cq to match the ST format
                 for e in cqs:
@@ -105,13 +118,12 @@ class CQSTAbstractAgent(ABC):
 
                 out[line["intervention_id"]] = line
         if save:
-            with open(f"output/output_{self.experiment_name}.json", "w") as o:
+            with open(f"{CQSTAbstractAgent.ROOT_FOLDER}output_{self.experiment_name}.json", "w") as o:
                 json.dump(out, o, indent=4)
         # Log TIME
-        time_log_df = pd.read_csv("output/time_log/time_log.csv")
+        time_log_df = pd.read_csv(f"{CQSTAbstractAgent.ROOT_FOLDER}time_log.csv")
         time_log_df[f"{self.experiment_name}"] = time_in_seconds_arr
-        time_log_df.to_csv(f"{CQSTAbstractAgent.ROOT_FOLDER}time_log.csv",
-                           index=False)
+        time_log_df.to_csv(f"{CQSTAbstractAgent.ROOT_FOLDER}time_log.csv", index=False)
         self.time_log = time_log_df
 
         self.out = out
@@ -153,7 +165,7 @@ class BasicCQModel(CQSTAbstractAgent):
 
 
 class SocialAgentBuilder(CQSTAbstractAgent):
-    
+
     collaborative_strategy: Optional[list[str]] = []
     agent_trait_lst: list[str] = ["easy_going"]
 
@@ -164,6 +176,7 @@ class SocialAgentBuilder(CQSTAbstractAgent):
         llm_num: int = 1,
         experiment_name: Optional[str] = None,
         temperature: Optional[float] = None,
+        serialize_func: callable = objects.state_to_serializable,
         collaborative_strategy: Optional[list[str]] = [],
         agent_trait_lst: list[str] = ["easy_going"],
     ):
@@ -179,11 +192,12 @@ class SocialAgentBuilder(CQSTAbstractAgent):
             llm_num=llm_num,
             experiment_name=experiment_name,
             temperature=temperature,
+            serialize_func=serialize_func,
         )
 
     def build_agent(self) -> StateGraph:
         # llm_num = len(self.agent_trait_lst)
-        print("BUILDING")
+        print("building workflow")
         validator_llm = CQSTAbstractAgent._init_llm(self.llm_name, self.temperature)
 
         def llm_role_node(state: SocialAgentState, node_id: int, trait: str):
@@ -194,14 +208,15 @@ class SocialAgentBuilder(CQSTAbstractAgent):
                 self.llm_lst[node_id]
                 .with_structured_output(Confirmation)
                 .invoke(
-                    [SystemMessage(trait_prompt),
-                     HumanMessage("If you understand your role, please say ok only.")],
+                    [
+                        SystemMessage(trait_prompt),
+                        HumanMessage(
+                            "If you understand your role, please say ok only."
+                        ),
+                    ],
                 )
             )
-            if response.confirmation.lower() == "ok":
-                print(f"role {trait} confirmed")
-
-                return {"roles_confirmed": [response.confirmation.lower() == "ok"]}
+            return {"roles_confirmed": [response.confirmation.lower() == "ok"]}
 
         def question_node(state: SocialAgentState, node_id: int, trait: str):
             round_answer_dict = {}
@@ -223,11 +238,11 @@ class SocialAgentBuilder(CQSTAbstractAgent):
             answer: SocialAgentAnswer = SocialAgentAnswer(
                 critical_question_list=response,
                 question_type="question",
-                prompt=instructions,
-                trait=trait
+                prompt={"system": system_prompt,
+                        "human": instructions},
+                trait=trait,
             )
             round_answer_dict[f"agent{node_id}"] = [answer]
-
             return {"round_answer_dict": round_answer_dict}
 
         def debate_node(state: SocialAgentState, node_id: int, trait: str):
@@ -242,57 +257,52 @@ class SocialAgentBuilder(CQSTAbstractAgent):
                 instructions = file.read()
 
             # Get others answer and own answer
-
             other_agents_response_str = ""
             own_answer_str = ""
             cq_str = "\n- critical question {id}: '{cq}', reasoning: '{reason}'.\n"
             for a_num, other_ in enumerate(last_answers):
                 if a_num != node_id:
-                    other_agents_response_str += f"## Agent{a_num+1}:"
-                    for cq in other_.critical_question_list.critical_questions:
-                        if a_num != node_id:
-                            other_agents_response_str = (
-                                other_agents_response_str
-                                + cq_str.format(
-                                    id=cq.id, cq=cq.critical_question, reason=cq.reason
-                                )
-                            )
-                        else:
-                            own_answer_str = own_answer_str + cq_str.format(
+                    other_agents_response_str += f"AGENT {a_num+1}:"
+                for cq in other_.critical_question_list.critical_questions:
+                    if a_num != node_id:
+                        other_agents_response_str = (
+                            other_agents_response_str
+                            + cq_str.format(
                                 id=cq.id, cq=cq.critical_question, reason=cq.reason
                             )
-                    if a_num != node_id:
-                        other_agents_response_str += "\n"
+                        )
+                    else:
+                        own_answer_str = own_answer_str + cq_str.format(
+                            id=cq.id, cq=cq.critical_question, reason=cq.reason
+                        )
 
-                instructions = instructions.format(
-                    input_arg=state["input_arg"],
-                    own_answer=own_answer_str,
-                    other_agents_response=other_agents_response_str,
-                )
+            instructions = instructions.format(
+                input_arg=state["input_arg"],
+                own_answer=own_answer_str,
+                other_agents_response=other_agents_response_str,
+            )
 
-                response = (
-                    self.llm_lst[node_id]
-                    .with_structured_output(CriticalQuestionList)
-                    .invoke(
-                        [SystemMessage(system_prompt)] + [HumanMessage(instructions)]
-                    )
+            response = (
+                self.llm_lst[node_id]
+                .with_structured_output(CriticalQuestionList)
+                .invoke(
+                    [SystemMessage(system_prompt)] + [HumanMessage(instructions)]
                 )
-                answer: SocialAgentAnswer = SocialAgentAnswer(
-                    critical_question_list=response,
-                    question_type="debate",
-                    prompt=instructions,
-                    trait=trait
-                )
-
-                answer_round[f"agent{node_id}"] = [answer]
+            )
+            answer: SocialAgentAnswer = SocialAgentAnswer(
+                critical_question_list=response,
+                question_type="debate",
+                prompt={"system": system_prompt,
+                        "human": instructions},
+                trait=trait,
+            )
+            answer_round[f"agent{node_id}"] = [answer]
             return {"round_answer_dict": answer_round}
 
         def moderator_node(state: SocialAgentState):
             if not all(state["roles_confirmed"]):
                 print("Role not confirmed")
                 return Command(goto=END)
-            else:
-                print("role confirmed")
 
             next_round = (
                 (state["current_round"] + 1) if "current_round" in state.keys() else -1
@@ -309,7 +319,7 @@ class SocialAgentBuilder(CQSTAbstractAgent):
             # Get others answer
             previous_answer = state["round_answer_dict"][f"agent{node_id}"][-1]
             own_answer_str = ""
-            cq_str = "\n- critical question {id}: '{cq}', reasoning: '{reason}'.\n"
+            cq_str = "\n- critical question {id}: '{cq}', reasoning: '{reason}'."
             for cq in previous_answer.critical_question_list.critical_questions:
                 own_answer_str = own_answer_str + cq_str.format(
                     id=cq.id, cq=cq.critical_question, reason=cq.reason
@@ -326,11 +336,12 @@ class SocialAgentBuilder(CQSTAbstractAgent):
             answer: SocialAgentAnswer = SocialAgentAnswer(
                 critical_question_list=response,
                 question_type="reflect",
-                prompt=instructions,
-                trait=trait
+                prompt={"system": system_prompt,
+                        "human": instructions},
+                trait=trait,
             )
 
-            round_answer_dict[f"agent{i}"] = [answer]
+            round_answer_dict[f"agent{node_id}"] = [answer]
             return {"round_answer_dict": round_answer_dict}
 
         def validate_node(state: SocialAgentState):
@@ -343,10 +354,9 @@ class SocialAgentBuilder(CQSTAbstractAgent):
             ]
             other_agents_response_str = ""
             other_cq_str = (
-                "\n- critical question {id}: '{cq}'.\n"  # reasoning: '{reason}'
+                "\n- critical question {id}: '{cq}'."  # reasoning: '{reason}'
             )
             for a_num, other_ in enumerate(others_answers):
-                other_agents_response_str += f"Agent{a_num+1}:"
                 for cq in other_.critical_question_list.critical_questions:
                     other_agents_response_str = (
                         other_agents_response_str
@@ -354,7 +364,6 @@ class SocialAgentBuilder(CQSTAbstractAgent):
                             id=cq.id, cq=cq.critical_question, reason=cq.reason
                         )
                     )
-                other_agents_response_str += "\n\n"
             instructions = instructions.format(
                 input_arg=state["input_arg"],
                 other_agents_response=other_agents_response_str,
@@ -362,38 +371,55 @@ class SocialAgentBuilder(CQSTAbstractAgent):
             response = validator_llm.with_structured_output(
                 CriticalQuestionList
             ).invoke([HumanMessage(instructions)])
-            print(instructions)
-            return {"final_cq": response}
 
+            answer: SocialAgentAnswer = SocialAgentAnswer(
+                critical_question_list=response,
+                question_type="validate",
+                prompt={"human": instructions},
+                trait=trait,
+            )
+
+            round_answer_dict["validator"] = [answer]
+
+            return {"final_cq": response,
+                    "round_answer_dict": round_answer_dict}
         workflow = StateGraph(SocialAgentState)
 
         for i, trait in enumerate(self.agent_trait_lst):
             workflow.add_node(
-                f"llm_role_node{i+1}",
+                f"llm_role_node{i}",
                 lambda state, node_id=i, trait=trait: llm_role_node(
                     state, node_id, trait
                 ),
             )
 
             workflow.add_node(
-                f"question_node{i+1}",
+                f"question_node{i}",
                 lambda state, node_id=i, trait=trait: question_node(
                     state, node_id, trait
                 ),
             )
 
             if "debate" in self.collaborative_strategy:
-                for r_ in [j for j, x in enumerate(self.collaborative_strategy) if x == "debate"]:
+                for r_ in [
+                    j
+                    for j, x in enumerate(self.collaborative_strategy)
+                    if x == "debate"
+                ]:
                     workflow.add_node(
-                        f"r{r_}_debate_node{i+1}",
+                        f"r{r_}_debate_node{i}",
                         lambda state, node_id=i, trait=trait: debate_node(
                             state, node_id, trait
                         ),
                     )
             if "reflect" in self.collaborative_strategy:
-                for r_ in [j for j, x in enumerate(self.collaborative_strategy) if x == "reflect"]:
+                for r_ in [
+                    j
+                    for j, x in enumerate(self.collaborative_strategy)
+                    if x == "reflect"
+                ]:
                     workflow.add_node(
-                        f"r{r_}_reflect_node{i+1}",
+                        f"r{r_}_reflect_node{i}",
                         lambda state, node_id=i, trait=trait: reflect_node(
                             state, node_id, trait
                         ),
@@ -403,54 +429,53 @@ class SocialAgentBuilder(CQSTAbstractAgent):
         workflow.add_node("moderator_role", moderator_node)
 
         for i in range(self.llm_num):
-            workflow.add_edge(START, f"llm_role_node{i+1}")
-            workflow.add_edge("moderator_role", f"question_node{i+1}")
+            workflow.add_edge(START, f"llm_role_node{i}")
+            workflow.add_edge("moderator_role", f"question_node{i}")
 
         workflow.add_edge(
-            [f"llm_role_node{i+1}" for i in range(self.llm_num)], "moderator_role"
+            [f"llm_role_node{i}" for i in range(self.llm_num)], "moderator_role"
         )
 
         prev_strategy = "question"
-        prev_round = 0
+        last_round = 0
         for round_, strategy in enumerate(self.collaborative_strategy):
-            print("round_", round_)
             str_nodes = [
-                f"r{round_}_{strategy}_node{i+1}" for i in range(self.llm_num)
+                f"r{round_}_{strategy}_node{i}" for i in range(self.llm_num)
             ]  # if i<(len(collaborative_strategy)-1) else ["validate_node"]
 
-            print("str_nodes", str_nodes)
-            curr_moderator = "moderator_question" if i == 0 else f"moderator_round{round_}"
-            print("curr_moderator", curr_moderator)
+            curr_moderator = (
+                "moderator_question" if i == 0 else f"moderator_round{round_}"
+            )
             workflow.add_node(curr_moderator, moderator_node)
             pre_pend = "" if prev_strategy == "question" else f"r{round_-1}_"
 
-            print("adding", f"{pre_pend}{prev_strategy}_node{i+1}")
             workflow.add_edge(
-                [f"{pre_pend}{prev_strategy}_node{i+1}" for i in range(self.llm_num)],
+                [f"{pre_pend}{prev_strategy}_node{i}" for i in range(self.llm_num)],
                 curr_moderator,
             )
 
-            print("adding", curr_moderator, "with str  odes")
             for e in str_nodes:
                 workflow.add_edge(curr_moderator, e)
-            print("added")
+
             prev_strategy = strategy
+            last_round = round_
 
-            if round_ == len(self.collaborative_strategy) - 1:  # last
-                curr_moderator = "moderator_final"
-                workflow.add_node(curr_moderator, moderator_node)
-                pre_pend = "" if prev_strategy == "question" else f"r{round_}_"
+        curr_moderator = "moderator_final"
+        workflow.add_node(curr_moderator, moderator_node)
+        pre_pend = "" if prev_strategy == "question" else f"r{last_round}_"
 
-                workflow.add_edge(
-                    [f"{pre_pend}{strategy}_node{i+1}" for i in range(self.llm_num)],
-                    curr_moderator,
-                )
-                workflow.add_edge(curr_moderator, "validate_node")
-
-        workflow.add_edge("validate_node", END)
+        workflow.add_edge(
+            [f"{pre_pend}{prev_strategy}_node{i}" for i in range(self.llm_num)],
+            curr_moderator,
+        )
+        if len(self.collaborative_strategy) > 0:
+            workflow.add_edge(curr_moderator, "validate_node")
+            workflow.add_edge("validate_node", END)
+        else:
+            workflow.add_edge(curr_moderator, END)
 
         memory = MemorySaver()
-        print("BUILDING DONE")
+        print("Building Completed!")
         return workflow.compile(checkpointer=memory)
 
     # Static methods
