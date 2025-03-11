@@ -2,6 +2,7 @@ import json
 import time
 from contextlib import contextmanager
 
+
 @contextmanager
 def timer(label: str, time_in_seconds_arr: list):
     start = time.perf_counter()

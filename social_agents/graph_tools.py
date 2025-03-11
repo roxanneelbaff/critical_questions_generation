@@ -2,7 +2,8 @@ from abc import ABC
 import dataclasses
 import itertools
 import json
-from typing import Optional, Union
+from typing import ClassVar, Counter, Optional, Union
+import uuid
 from langchain_openai import ChatOpenAI
 import pandas as pd
 from langgraph.graph import START, END, StateGraph
@@ -27,6 +28,7 @@ from .utils import get_st_data, timer
 
 @dataclasses.dataclass
 class CQSTAbstractAgent(ABC):
+    model_thread_id: str
     llm_name: str
     llm_num: int = 1
     experiment_name: Optional[str] = None
@@ -37,6 +39,8 @@ class CQSTAbstractAgent(ABC):
     graph: StateGraph = None
     time_log: pd.DataFrame = None
     llm_lst: list = None
+
+    ROOT_FOLDER:  ClassVar[str] = "output/elbaff_experiment/"
 
     def __post_init__(self):
         print(f"Initializing LLM {self.llm_name}")
@@ -67,13 +71,17 @@ class CQSTAbstractAgent(ABC):
     def build_agent(self) -> StateGraph:
         pass
 
-    def _invoke_graph(self, params, thread=None):
+    def _invoke_graph(self, params, id_):
         questions = []
-        for event in self.graph.stream(params, thread, stream_mode="values"):
+        config = {"configurable": {"thread_id": self.model_thread_id + f"_{id_}"}}
+        for event in self.graph.stream(params, config, stream_mode="values"):
             # Review
             _labels = event.get("final_cq", "")
             if _labels:
                 questions.append(_labels)
+                # Save the final state
+                with open(f"{CQSTAbstractAgent.ROOT_FOLDER}{self.experiment_name}_arg{id_}.json", "w") as f:
+                    json.dump(event, f, indent=2)
         assert len(questions) == 1
         return questions[0]
 
@@ -82,8 +90,11 @@ class CQSTAbstractAgent(ABC):
         time_in_seconds_arr = []
         for _, line in tqdm.tqdm(get_st_data(data_type).items()):
             with timer(f"Iteration {line['intervention_id']}", time_in_seconds_arr):
-                input_arg = line["intervention"].encode("utf-8").decode("unicode-escape")
-                cqs = self._invoke_graph({"input_arg": input_arg}).model_dump()[
+                input_arg = (
+                    line["intervention"].encode("utf-8").decode("unicode-escape")
+                )
+                cqs = self._invoke_graph({"input_arg": input_arg},
+                                         line["intervention_id"]).model_dump()[
                     "critical_questions"
                 ]
 
@@ -99,13 +110,12 @@ class CQSTAbstractAgent(ABC):
         # Log TIME
         time_log_df = pd.read_csv("output/time_log/time_log.csv")
         time_log_df[f"{self.experiment_name}"] = time_in_seconds_arr
-        time_log_df.to_csv("output/time_log.csv", index=False)
+        time_log_df.to_csv(f"{CQSTAbstractAgent.ROOT_FOLDER}time_log.csv",
+                           index=False)
         self.time_log = time_log_df
 
         self.out = out
         return out
-    
-    def evaluate()
 
 
 # ZERO SHOT MODEL
@@ -143,11 +153,13 @@ class BasicCQModel(CQSTAbstractAgent):
 
 
 class SocialAgentBuilder(CQSTAbstractAgent):
+    
     collaborative_strategy: Optional[list[str]] = []
-    agent_trait_lst: list[str] = ["easy_going"]  
+    agent_trait_lst: list[str] = ["easy_going"]
 
     def __init__(
         self,
+        model_thread_id: str,
         llm_name: str,
         llm_num: int = 1,
         experiment_name: Optional[str] = None,
@@ -159,7 +171,10 @@ class SocialAgentBuilder(CQSTAbstractAgent):
             collaborative_strategy if collaborative_strategy is not None else []
         )
         self.agent_trait_lst = agent_trait_lst if agent_trait_lst is not None else []
+        assert len(agent_trait_lst) > 0
+
         super().__init__(
+            model_thread_id=model_thread_id,
             llm_name=llm_name,
             llm_num=llm_num,
             experiment_name=experiment_name,
@@ -179,8 +194,8 @@ class SocialAgentBuilder(CQSTAbstractAgent):
                 self.llm_lst[node_id]
                 .with_structured_output(Confirmation)
                 .invoke(
-                    [SystemMessage(trait_prompt)],
-                    [HumanMessage("If you understand your role, please say ok only.")],
+                    [SystemMessage(trait_prompt),
+                     HumanMessage("If you understand your role, please say ok only.")],
                 )
             )
             if response.confirmation.lower() == "ok":
@@ -209,6 +224,7 @@ class SocialAgentBuilder(CQSTAbstractAgent):
                 critical_question_list=response,
                 question_type="question",
                 prompt=instructions,
+                trait=trait
             )
             round_answer_dict[f"agent{node_id}"] = [answer]
 
@@ -265,6 +281,7 @@ class SocialAgentBuilder(CQSTAbstractAgent):
                     critical_question_list=response,
                     question_type="debate",
                     prompt=instructions,
+                    trait=trait
                 )
 
                 answer_round[f"agent{node_id}"] = [answer]
@@ -310,6 +327,7 @@ class SocialAgentBuilder(CQSTAbstractAgent):
                 critical_question_list=response,
                 question_type="reflect",
                 prompt=instructions,
+                trait=trait
             )
 
             round_answer_dict[f"agent{i}"] = [answer]
@@ -363,20 +381,23 @@ class SocialAgentBuilder(CQSTAbstractAgent):
                     state, node_id, trait
                 ),
             )
+
             if "debate" in self.collaborative_strategy:
-                workflow.add_node(
-                    f"debate_node{i+1}",
-                    lambda state, node_id=i, trait=trait: debate_node(
-                        state, node_id, trait
-                    ),
-                )
+                for r_ in [j for j, x in enumerate(self.collaborative_strategy) if x == "debate"]:
+                    workflow.add_node(
+                        f"r{r_}_debate_node{i+1}",
+                        lambda state, node_id=i, trait=trait: debate_node(
+                            state, node_id, trait
+                        ),
+                    )
             if "reflect" in self.collaborative_strategy:
-                workflow.add_node(
-                    f"reflect_node{i+1}",
-                    lambda state, node_id=i, trait=trait: reflect_node(
-                        state, node_id, trait
-                    ),
-                )
+                for r_ in [j for j, x in enumerate(self.collaborative_strategy) if x == "reflect"]:
+                    workflow.add_node(
+                        f"r{r_}_reflect_node{i+1}",
+                        lambda state, node_id=i, trait=trait: reflect_node(
+                            state, node_id, trait
+                        ),
+                    )
 
         workflow.add_node(validate_node)
         workflow.add_node("moderator_role", moderator_node)
@@ -390,27 +411,38 @@ class SocialAgentBuilder(CQSTAbstractAgent):
         )
 
         prev_strategy = "question"
-        for i, strategy in enumerate(self.collaborative_strategy):
+        prev_round = 0
+        for round_, strategy in enumerate(self.collaborative_strategy):
+            print("round_", round_)
             str_nodes = [
-                f"{strategy}_node{i+1}" for i in range(self.llm_num)
+                f"r{round_}_{strategy}_node{i+1}" for i in range(self.llm_num)
             ]  # if i<(len(collaborative_strategy)-1) else ["validate_node"]
-            curr_moderator = "moderator_question" if i == 0 else f"moderator_round{i}"
 
+            print("str_nodes", str_nodes)
+            curr_moderator = "moderator_question" if i == 0 else f"moderator_round{round_}"
+            print("curr_moderator", curr_moderator)
             workflow.add_node(curr_moderator, moderator_node)
+            pre_pend = "" if prev_strategy == "question" else f"r{round_-1}_"
+
+            print("adding", f"{pre_pend}{prev_strategy}_node{i+1}")
             workflow.add_edge(
-                [f"{prev_strategy}_node{i+1}" for i in range(self.llm_num)],
+                [f"{pre_pend}{prev_strategy}_node{i+1}" for i in range(self.llm_num)],
                 curr_moderator,
             )
+
+            print("adding", curr_moderator, "with str  odes")
             for e in str_nodes:
                 workflow.add_edge(curr_moderator, e)
-
+            print("added")
             prev_strategy = strategy
 
-            if i == len(self.collaborative_strategy) - 1:  # last
+            if round_ == len(self.collaborative_strategy) - 1:  # last
                 curr_moderator = "moderator_final"
                 workflow.add_node(curr_moderator, moderator_node)
+                pre_pend = "" if prev_strategy == "question" else f"r{round_}_"
+
                 workflow.add_edge(
-                    [f"{strategy}_node{i+1}" for i in range(self.llm_num)],
+                    [f"{pre_pend}{strategy}_node{i+1}" for i in range(self.llm_num)],
                     curr_moderator,
                 )
                 workflow.add_edge(curr_moderator, "validate_node")
@@ -441,12 +473,13 @@ class SocialAgentBuilder(CQSTAbstractAgent):
 
     @staticmethod
     def _get_traits_combos(
-        n: Union[list[int], int], elements: Optional[list[str]] = ["overconfident", "easy_going"]
+        n: Union[list[int], int],
+        elements: Optional[list[str]] = ["overconfident", "easy_going"],
     ):
         combos = []
 
         def _get_combinations(r: int):
-            for p in itertools.combinations(elements, repeat=r):
+            for p in itertools.combinations_with_replacement(elements, r):
                 combos.append(p)
 
         if isinstance(n, int):
@@ -455,3 +488,58 @@ class SocialAgentBuilder(CQSTAbstractAgent):
             for r in n:
                 _get_combinations(r)
         return combos
+
+    @staticmethod
+    def _generate_experiment_settings(
+        rounds: int = 3,
+        number_of_agents: int = 3,
+        traits: list = ["overconfident", "easy_going"],
+        strategies_: list = ["debate", "reflect"],
+    ):
+        all_expr = []
+        all_traits_combos = SocialAgentBuilder._get_traits_combos(
+            range(1, number_of_agents + 1), elements=traits
+        )
+        all_strategy_permutations = SocialAgentBuilder._get_strategy_permutation(
+            range(1, rounds + 1), elements=strategies_
+        )
+        pairs = list(itertools.product(all_traits_combos, all_strategy_permutations))
+        for pair in pairs:
+            if len(pair[0]) == 1 and "debate" in pair[1]:
+                continue
+
+            trait_str = "".join(sorted([x[0] for x in pair[0]]))
+            strategy_str = "".join([x[0] for x in pair[1]])
+            all_expr.append(
+                {
+                    "traits": pair[0],
+                    "strategies": pair[1],
+                    "rounds": len(pair[1]),
+                    "number_of_agents": len(pair[0]),
+                    "has_debate": "debate" in pair[1],
+                    "thread_id": uuid.uuid4(),
+                    "experiment_name": "{llm_name}"
+                    + f"social_n{len(traits)}_T{trait_str}_S{strategy_str}",
+                }
+            )
+        for traits in all_traits_combos:
+            trait_str = "".join(sorted([x[0] for x in traits]))
+            all_expr.append(
+                {
+                    "traits": traits,
+                    "strategies": tuple(),
+                    "rounds": 0,
+                    "number_of_agents": len(traits),
+                    "has_debate": False,
+                    "thread_id": uuid.uuid4(),
+                    "experiment_name": "{llm_name}"
+                    + f"social_n{len(traits)}_T{trait_str}_S",
+                }
+            )
+
+        all_exp_settings_df = pd.DataFrame(all_expr)
+
+        all_exp_settings_df.sort_values(
+            by=["rounds", "number_of_agents"], ascending=True
+        )
+        return pd.DataFrame(all_expr)

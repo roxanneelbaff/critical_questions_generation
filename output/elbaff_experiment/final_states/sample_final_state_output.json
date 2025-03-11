@@ -1,0 +1,177 @@
+{
+  "input_arg": "To be or not to be this is the question. Is it?",
+  "roles_confirmed": [
+    true,
+    true
+  ],
+  "round_answer_dict": {
+    "agent0": [
+      {
+        "critical_question_list": {
+          "critical_questions": [
+            {
+              "id": 0,
+              "critical_question": "What does 'to be or not to be' actually refer to in this context, and how does it relate to the question posed?",
+              "reason": "This question seeks to clarify the meaning of the phrase, challenging the assumption that the existential dilemma is clearly understood and relevant to the question."
+            },
+            {
+              "id": 1,
+              "critical_question": "Is questioning the state of being ('to be') inherently linked to the question of existence, or could it also imply indecision or alternative interpretations?",
+              "reason": "This question digs into the assumption that the question is purely existential, allowing for the possibility of other interpretations that may weaken the argument."
+            },
+            {
+              "id": 2,
+              "critical_question": "What criteria are being used to determine whether the answer to the question is definitively 'yes' or 'no'?",
+              "reason": "This question addresses the assumption that there is a clear, binary answer to the question, which may oversimplify a complex philosophical issue."
+            }
+          ]
+        },
+        "question_type": "question",
+        "prompt": "\n# CONTEXT\n\nThe task of Critical Questions Generation consists of generating useful critical questions when given an argumentative text. For this purpose, you will be given an argument from a real debate, generate a set of critical Questions to reflect if it is acceptable or fallacious. \n\n\n# INPUT\n\nTo be or not to be this is the question. Is it?\n\nRead the given argument and do the following:\n\n- Generate 3 *CRITICAL QUESTIONS* to unmask the assumptions held by the premises of the argument and attack its inference. Your goal is to unravel the acceptability level and fallacies in an argument.\n- Make sure to keep your questions specific to the original argument\n- avoid generic questions that can be asked to any argument.\n",
+        "trait": "overconfident"
+      },
+      {
+        "critical_question_list": {
+          "critical_questions": [
+            {
+              "id": 0,
+              "critical_question": "What does 'to be or not to be' specifically refer to in this context, and how does its interpretation affect the validity of the question?",
+              "reason": "This question challenges the clarity and specificity of the phrase, which is crucial for understanding the argument's foundation."
+            },
+            {
+              "id": 1,
+              "critical_question": "Is the question posed a genuine inquiry about existence, or is it rhetorical, and what implications does that have for the overall argument?",
+              "reason": "This question probes the nature of the question itself, examining whether it is meant to elicit thought or if it serves a different purpose, which affects its philosophical weight."
+            },
+            {
+              "id": 2,
+              "critical_question": "What assumptions are being made about the nature of existence in the question, and are these assumptions universally accepted?",
+              "reason": "By identifying and scrutinizing the assumptions, we can reveal potential weaknesses or biases in the argument, questioning its universality and relevance."
+            }
+          ]
+        },
+        "question_type": "debate",
+        "prompt": "You were asked to generate critical questions for the following arguments:\n\nTo be or not to be this is the question. Is it?\n\n# Your Answer\n'''\n\n'''\n\n# Other Agents Answer:\n\n\n\nAfter considering your answer and the answers and reasoning of other agents, do the following:\n\n- update or maintain your three critical questions\n- Make sure to keep your questions specific to the original argument\n- avoid generic questions that can be asked to any argument.",
+        "trait": "overconfident"
+      }
+    ],
+    "agent1": [
+      {
+        "critical_question_list": {
+          "critical_questions": [
+            {
+              "id": 0,
+              "critical_question": "What are the implications of choosing 'to be' versus 'not to be' in terms of existence and meaning?",
+              "reason": "This question challenges the foundational assumptions about existence and the significance of the decision presented in the argument."
+            },
+            {
+              "id": 1,
+              "critical_question": "Does the phrasing 'this is the question' imply that there are no other questions worth considering in relation to existence?",
+              "reason": "This question critiques the exclusivity of the argument, suggesting that it may overlook other important philosophical inquiries."
+            },
+            {
+              "id": 2,
+              "critical_question": "How does the context of the phrase 'to be or not to be' influence its interpretation in this argument?",
+              "reason": "This question examines the situational factors that may affect the understanding of the argument, potentially revealing biases or misinterpretations."
+            }
+          ]
+        },
+        "question_type": "question",
+        "prompt": "\n# CONTEXT\n\nThe task of Critical Questions Generation consists of generating useful critical questions when given an argumentative text. For this purpose, you will be given an argument from a real debate, generate a set of critical Questions to reflect if it is acceptable or fallacious. \n\n\n# INPUT\n\nTo be or not to be this is the question. Is it?\n\nRead the given argument and do the following:\n\n- Generate 3 *CRITICAL QUESTIONS* to unmask the assumptions held by the premises of the argument and attack its inference. Your goal is to unravel the acceptability level and fallacies in an argument.\n- Make sure to keep your questions specific to the original argument\n- avoid generic questions that can be asked to any argument.\n",
+        "trait": "overconfident"
+      },
+      {
+        "critical_question_list": {
+          "critical_questions": [
+            {
+              "id": 0,
+              "critical_question": "What does 'to be or not to be' actually refer to in this context, and how does it relate to the question posed?",
+              "reason": "This question seeks to clarify the meaning of the phrase, challenging the assumption that the existential dilemma is clearly understood and relevant to the question."
+            },
+            {
+              "id": 1,
+              "critical_question": "Is questioning the state of being ('to be') inherently linked to the question of existence, or could it also imply indecision or alternative interpretations?",
+              "reason": "This question digs into the assumption that the question is purely existential, allowing for the possibility of other interpretations that may weaken the argument."
+            },
+            {
+              "id": 2,
+              "critical_question": "What specific circumstances or experiences lead to the consideration of 'to be or not to be' as a valid question in this scenario?",
+              "reason": "This question challenges the context in which the existential question is posed, prompting examination of the underlying experiences or situations that might legitimise the inquiry."
+            }
+          ]
+        },
+        "question_type": "debate",
+        "prompt": "You were asked to generate critical questions for the following arguments:\n\nTo be or not to be this is the question. Is it?\n\n# Your Answer\n'''\n\n'''\n\n# Other Agents Answer:\n\n## Agent1:\n- critical question 0: 'What does 'to be or not to be' actually refer to in this context, and how does it relate to the question posed?', reasoning: 'This question seeks to clarify the meaning of the phrase, challenging the assumption that the existential dilemma is clearly understood and relevant to the question.'.\n\n- critical question 1: 'Is questioning the state of being ('to be') inherently linked to the question of existence, or could it also imply indecision or alternative interpretations?', reasoning: 'This question digs into the assumption that the question is purely existential, allowing for the possibility of other interpretations that may weaken the argument.'.\n\n- critical question 2: 'What criteria are being used to determine whether the answer to the question is definitively 'yes' or 'no'?', reasoning: 'This question addresses the assumption that there is a clear, binary answer to the question, which may oversimplify a complex philosophical issue.'.\n\n\n\nAfter considering your answer and the answers and reasoning of other agents, do the following:\n\n- update or maintain your three critical questions\n- Make sure to keep your questions specific to the original argument\n- avoid generic questions that can be asked to any argument.",
+        "trait": "overconfident"
+      },
+      {
+        "critical_question_list": {
+          "critical_questions": [
+            {
+              "id": 0,
+              "critical_question": "What does 'to be or not to be' specifically refer to in this context, and how does its interpretation affect the validity of the question?",
+              "reason": "This question challenges the clarity and specificity of the phrase, which is crucial for understanding the argument's foundation."
+            },
+            {
+              "id": 1,
+              "critical_question": "Is the question posed a genuine inquiry about existence, or is it rhetorical, and what implications does that have for the overall argument?",
+              "reason": "This question probes the nature of the question itself, examining whether it is meant to elicit thought or if it serves a different purpose, which affects its philosophical weight."
+            },
+            {
+              "id": 2,
+              "critical_question": "What existential assumptions are embedded in the phrase 'to be or not to be,' and how might differing interpretations of existence influence the validity of this question?",
+              "reason": "By identifying and scrutinizing the existential assumptions, we can reveal potential weaknesses or biases in the argument, questioning its universality and relevance."
+            }
+          ]
+        },
+        "question_type": "reflect",
+        "prompt": "You were asked to generate critical questions for the following arguments:\n\nTo be or not to be this is the question. Is it?\n\n# Your answer is below:\n'''\n\n- critical question 0: 'What does 'to be or not to be' specifically refer to in this context, and how does its interpretation affect the validity of the question?', reasoning: 'This question challenges the clarity and specificity of the phrase, which is crucial for understanding the argument's foundation.'.\n\n- critical question 1: 'Is the question posed a genuine inquiry about existence, or is it rhetorical, and what implications does that have for the overall argument?', reasoning: 'This question probes the nature of the question itself, examining whether it is meant to elicit thought or if it serves a different purpose, which affects its philosophical weight.'.\n\n- critical question 2: 'What assumptions are being made about the nature of existence in the question, and are these assumptions universally accepted?', reasoning: 'By identifying and scrutinizing the assumptions, we can reveal potential weaknesses or biases in the argument, questioning its universality and relevance.'.\n\n'''\n\nReflect on your three questions. After reflections, do the following:\n\n- update or maintain your three critical questions\n- Make sure to keep your questions specific to the original argument\n- avoid generic questions that can be asked to any argument.",
+        "trait": "overconfident"
+      },
+      {
+        "critical_question_list": {
+          "critical_questions": [
+            {
+              "id": 0,
+              "critical_question": "What does 'to be or not to be' actually refer to in this context, and how does it relate to the question posed?",
+              "reason": "This question seeks to clarify the meaning of the phrase, challenging the assumption that the existential dilemma is clearly understood and relevant to the question."
+            },
+            {
+              "id": 1,
+              "critical_question": "Is questioning the state of being ('to be') in this specific context an indication of a deeper philosophical inquiry, or does it reflect a moment of personal indecision or crisis?",
+              "reason": "This question digs into the assumption that the question is purely existential, allowing for the possibility of personal circumstances that may alter its significance."
+            },
+            {
+              "id": 2,
+              "critical_question": "What specific personal experiences or societal influences are prompting the individual to consider 'to be or not to be' as a pressing question at this moment?",
+              "reason": "This question challenges the context in which the existential question is posed, prompting examination of the underlying experiences or societal factors that might legitimize the inquiry."
+            }
+          ]
+        },
+        "question_type": "reflect",
+        "prompt": "You were asked to generate critical questions for the following arguments:\n\nTo be or not to be this is the question. Is it?\n\n# Your answer is below:\n'''\n\n- critical question 0: 'What does 'to be or not to be' actually refer to in this context, and how does it relate to the question posed?', reasoning: 'This question seeks to clarify the meaning of the phrase, challenging the assumption that the existential dilemma is clearly understood and relevant to the question.'.\n\n- critical question 1: 'Is questioning the state of being ('to be') inherently linked to the question of existence, or could it also imply indecision or alternative interpretations?', reasoning: 'This question digs into the assumption that the question is purely existential, allowing for the possibility of other interpretations that may weaken the argument.'.\n\n- critical question 2: 'What specific circumstances or experiences lead to the consideration of 'to be or not to be' as a valid question in this scenario?', reasoning: 'This question challenges the context in which the existential question is posed, prompting examination of the underlying experiences or situations that might legitimise the inquiry.'.\n\n'''\n\nReflect on your three questions. After reflections, do the following:\n\n- update or maintain your three critical questions\n- Make sure to keep your questions specific to the original argument\n- avoid generic questions that can be asked to any argument.",
+        "trait": "overconfident"
+      }
+    ]
+  },
+  "current_round": 2,
+  "final_cq": {
+    "critical_questions": [
+      {
+        "id": 0,
+        "critical_question": "What does 'to be or not to be' specifically refer to in this context, and how does its interpretation affect the validity of the question?",
+        "reason": "This question directly addresses the ambiguity of the phrase 'to be or not to be' within the argument, which is crucial for understanding its implications."
+      },
+      {
+        "id": 1,
+        "critical_question": "Is the question posed a genuine inquiry about existence, or is it rhetorical, and what implications does that have for the overall argument?",
+        "reason": "This question explores the nature of the inquiry itself, which is essential to evaluating the argument's depth and purpose."
+      },
+      {
+        "id": 2,
+        "critical_question": "What assumptions are being made about the nature of existence in the question, and are these assumptions universally accepted?",
+        "reason": "This question probes the underlying assumptions of the argument, which can reveal potential weaknesses in its reasoning."
+      }
+    ]
+  }
+}

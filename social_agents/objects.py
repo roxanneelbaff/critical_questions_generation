@@ -33,6 +33,7 @@ class SocialAgentAnswer(BaseModel):
     )
     question_type: Literal["debate", "reflect", "question"]
     prompt: str
+    trait: str
 
 
 class SocialAgentState(TypedDict):
@@ -48,3 +49,23 @@ class SocialAgentState(TypedDict):
 
     # OUTPUT
     final_cq: CriticalQuestionList
+
+
+def state_to_serializable(state: SocialAgentState) -> dict:
+    serializable_state = {}
+    for key, value in state.items():
+        if key == "round_answer_dict":
+            # Convert each SocialAgentAnswer in the dictionary to a dict
+            new_dict = {}
+            for k, answer_list in value.items():
+                new_dict[k] = [answer.model_dump() for answer in answer_list]
+            serializable_state[key] = new_dict
+        elif key == "final_cq":
+            # Convert final_cq if it's a Pydantic model
+            if hasattr(value, "model_dump"):
+                serializable_state[key] = value.model_dump()
+            else:
+                serializable_state[key] = value
+        else:
+            serializable_state[key] = value
+    return serializable_state
