@@ -17,11 +17,14 @@ class bcolors:
     BOLD = "\033[1m"
     CYAN = "\033[96m"
     ORANGE = "\033[38;2;255;165;0m"
+    PINK = "\033[38;2;255;105;180m"
     ENDC = "\033[0m"
 
 def print_text_orange(text):
     print(bcolors.ORANGE + str(text) + bcolors.ENDC)
 def print_text_cyan(text):
     print(bcolors.CYAN + str(text) + bcolors.ENDC)
+def print_text_pink(text):
+    print(bcolors.PINK + str(text) + bcolors.ENDC)
 def print_text_bold(text):
     print(bcolors.BOLD + str(text) + bcolors.ENDC)

@@ -5,6 +5,7 @@ import json
 # Validation Set & Generated Questions
 evaluation_file_path = '/localdata1/opit_do/critical_question_generation/st_critical_questions/data_splits/sample_copy.json'
 generated_questions_path = '/localdata1/opit_do/critical_question_generation/st_critical_questions/output/67450_output.json'
+#generated_questions_path = evaluation_file_path
 
 
 ### Run evaluation script
@@ -15,7 +16,7 @@ args = [
     '--metric', 'similarity',
     '--input_path', evaluation_file_path, # Path of the test set.
     '--submission_path', generated_questions_path, # Path where the generated questions have been saved.
-    '--threshold', '0.6'
+    '--threshold', '0.7'
 ]
 
 # Run the script

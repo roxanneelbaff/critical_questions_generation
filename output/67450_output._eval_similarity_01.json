@@ -12,16 +12,19 @@
         ],
         "cqs": [
             {
-                "id": "CLINTON_1_1_63754",
-                "cq": "How can we be certain that investing in small businesses and increasing the minimum wage won't lead to higher costs for consumers and stifle entrepreneurship?"
+                "id": "CLINTON_1_1_<built-in function id>",
+                "cq": "How will increasing the national minimum wage and implementing equal pay for women's work actually lead to 'good jobs' with rising incomes, as you claim they will?",
+                "label": "Invalid"
             },
             {
-                "id": "CLINTON_1_1_30539",
-                "cq": "How can investing in infrastructure, advanced manufacturing, and innovation truly create jobs for everyone, not just those in these fields?"
+                "id": "CLINTON_1_1_<built-in function id>",
+                "cq": "How does increasing taxes on the wealthy to fund investments in infrastructure and social programs align with the candidate's promise of investing in their own granddaughter's future?",
+                "label": "Invalid"
             },
             {
-                "id": "CLINTON_1_1_76148",
-                "cq": "How does increasing national minimum wage and ensuring equal pay for women's work, while promoting profit-sharing among companies, not inadvertently lead to increased costs that businesses may pass on to consumers?"
+                "id": "CLINTON_1_1_<built-in function id>",
+                "cq": "How can you reconcile investing in and empowering small businesses with addressing income inequality, given that many of these new jobs are expected to be created by large corporations?",
+                "label": "Invalid"
             }
         ]
     }

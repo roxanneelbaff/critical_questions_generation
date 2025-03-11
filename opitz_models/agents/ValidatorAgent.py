@@ -24,8 +24,8 @@ End your response with a brief sentence about the questions validity.
 
 ASSESSMENT_PROMPT = """
 Return your final answer as a JSON.
-If you evaluated the questions validity to remain intact based on your evaluation, return True.
-If you evaluated the questions validity to break based on your evaluation, return False.
+If you evaluated the questions to be valid, return True.
+If you evaluated the questions to be invalid, return False.
 
 Here is the JSON structure for you to return.
 
@@ -50,19 +50,11 @@ class ValidatorAgent(Agent):
         self.subrole = subrole
         self.model_name = model_name
 
-        self._initialize()
+        super()._initialize(SYSTEM_PROMPT.format(subrole=self.subrole))
 
-    def _initialize(self):
-        self.chat.clear()
-        
-        # Initialize system prompt
-        message = SYSTEM_PROMPT.format(subrole=self.subrole)
-        self._add_to_chat(role="system", message=message)
-
-    def _clear_chat(self):
-        self.chat = []
-
-    def evaluate_critical_question(self, critical_question: str, argument: str) -> Optional[dict[str, str]]:
+    def evaluate_critical_question(
+        self, critical_question: str, argument: str
+    ) -> Optional[dict[str, str]]:
         """Evaluates the provided critical question and assesses whether it is qualitative enough.
 
         Args:
@@ -72,15 +64,17 @@ class ValidatorAgent(Agent):
         Returns:
             dict[str, str]: The evaluation result. Dictionary that contains the key 'is_useful' and 'feedback'.
         """
-        self._initialize()
-        
+        self._initialize(SYSTEM_PROMPT.format(subrole=self.subrole))
+
         is_response_valid = False
         retry = 0
         max_retries = 3
         while not is_response_valid:
             # Step 1: Evaluation: LLM evaluates quality of the question
             evaluation_prompt = EVALUATION_PROMPT.format(
-                argument=argument, critical_question=critical_question, subrole=self.subrole
+                argument=argument,
+                critical_question=critical_question,
+                subrole=self.subrole,
             )
             self._add_to_chat(role="user", message=evaluation_prompt)
             feedback = self.single_response(messages=self.chat)

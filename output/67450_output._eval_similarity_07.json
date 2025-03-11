@@ -13,15 +13,18 @@
         "cqs": [
             {
                 "id": "CLINTON_1_1_63754",
-                "cq": "How can we be certain that investing in small businesses and increasing the minimum wage won't lead to higher costs for consumers and stifle entrepreneurship?"
+                "cq": "How can we be certain that investing in small businesses and increasing the minimum wage won't lead to higher costs for consumers and stifle entrepreneurship?",
+                "label": "not_able_to_evaluate"
             },
             {
                 "id": "CLINTON_1_1_30539",
-                "cq": "How can investing in infrastructure, advanced manufacturing, and innovation truly create jobs for everyone, not just those in these fields?"
+                "cq": "How can investing in infrastructure, advanced manufacturing, and innovation truly create jobs for everyone, not just those in these fields?",
+                "label": "Invalid"
             },
             {
                 "id": "CLINTON_1_1_76148",
-                "cq": "How does increasing national minimum wage and ensuring equal pay for women's work, while promoting profit-sharing among companies, not inadvertently lead to increased costs that businesses may pass on to consumers?"
+                "cq": "How does increasing national minimum wage and ensuring equal pay for women's work, while promoting profit-sharing among companies, not inadvertently lead to increased costs that businesses may pass on to consumers?",
+                "label": "Invalid"
             }
         ]
     }
