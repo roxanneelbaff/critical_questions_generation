@@ -28,3 +28,19 @@ def print_text_pink(text):
     print(bcolors.PINK + str(text) + bcolors.ENDC)
 def print_text_bold(text):
     print(bcolors.BOLD + str(text) + bcolors.ENDC)
+
+llm_calls = 0
+def increment_llm_count():
+    global llm_calls
+    llm_calls += 1
+
+def get_llm_calls():
+    global llm_calls
+    return llm_calls
+
+def format_duration(start_time, end_time):
+    duration = end_time - start_time
+    hours = int(duration // 3600)
+    minutes = int((duration % 3600) // 60)
+    seconds = int(duration % 60)
+    return f"{hours:02}h {minutes:02}m {seconds:02}s"

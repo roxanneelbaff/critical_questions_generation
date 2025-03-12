@@ -14,13 +14,16 @@ This is the generated critical question: ```{critical_question}```
 """
 
 PROMPT_1 = """
-Summarize the following {number_of_feedbacks} given by the Validator Agents:
+Provide a concise summary the following {number_of_feedbacks} feedbacks given by the Validator Agents:
 
 {concatenated_feedback}
 """
 
 PROMPT_2 = """
-Based on your summary, assess the validit of the critical question.
+Based on your summary, assess the validity of the critical question.
+Do this in two steps:
+1. First, based on your summary, concisely reason about the feedback in your own words.
+2. Second, make your decision about the validity of the critical question.
 """
 
 PROMPT_3 = """
@@ -63,7 +66,7 @@ class AggregatorAgent(Agent):
         system_prompt = SYSTEM_PROMPT.format(
             argument=argument, critical_question=critical_question
         )
-        self._add_to_chat(role="system", message=system_prompt)
+        self._initialize(system_prompt)
 
         ### Step 1: Let Agent summarize the feedback
         concatenated_feedback = self._concatenate_feedbacks(feedbacks)

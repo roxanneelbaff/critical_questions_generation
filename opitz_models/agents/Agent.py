@@ -1,6 +1,6 @@
-from abc import abstractmethod
 from ollama import ChatResponse
 from agents.LLM import LLM
+from utils import increment_llm_count
 
 
 class Agent(LLM):
@@ -45,5 +45,6 @@ class Agent(LLM):
             stream=False,
             options=self.model_parameters,
         )
+        increment_llm_count()
         response = response["message"]["content"]
         return response
