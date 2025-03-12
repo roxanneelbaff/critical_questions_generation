@@ -444,7 +444,7 @@ class SocialAgentBuilder(CQSTAbstractAgent):
             ]  # if i<(len(collaborative_strategy)-1) else ["validate_node"]
 
             curr_moderator = (
-                "moderator_question" if i == 0 else f"moderator_round{round_}"
+                "moderator_question" if round_ == 0 else f"moderator_round{round_}"
             )
             workflow.add_node(curr_moderator, moderator_node)
             pre_pend = "" if prev_strategy == "question" else f"r{round_-1}_"
@@ -544,7 +544,7 @@ class SocialAgentBuilder(CQSTAbstractAgent):
                     "has_debate": "debate" in pair[1],
                     "thread_id": uuid.uuid4(),
                     "experiment_name": "{llm_name}"
-                    + f"social_n{len(traits)}_T{trait_str}_S{strategy_str}",
+                    + f"social_n{len(pair[0])}_T{trait_str}_S{strategy_str}",
                 }
             )
         for traits in all_traits_combos:

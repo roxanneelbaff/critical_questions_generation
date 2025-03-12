@@ -1,0 +1,192 @@
+{
+  "input_arg": "CLINTON: \"nine million people lost their jobs\nFive million people lost their homes\n$ 13 trillion in family wealth was wiped out\nNow , we have come back from that abyss\nit has not been easy\nwe 're now on the precipice of having a potentially much better economy\nthe last thing we need to do is to go back to the policies that failed us in the first place\nIndependent experts have looked at what I 've proposed\nlooked at what Donald 's proposed\nI intend to get it done\nTake clean energy\nSome country is going to be the clean- energy superpower of the 21st century\nDonald thinks that climate change is a hoax perpetrated by the Chinese\nI think it 's real\"",
+  "roles_confirmed": [
+    true
+  ],
+  "round_answer_dict": {
+    "agent0": [
+      {
+        "critical_question_list": {
+          "critical_questions": [
+            {
+              "id": 0,
+              "critical_question": "What evidence supports the claim that the policies being proposed by Donald Trump were the sole cause of the economic issues mentioned, as opposed to other external factors?",
+              "reason": "This question challenges the assumption that specific policies are directly responsible for the economic downturn, urging scrutiny of causation."
+            },
+            {
+              "id": 1,
+              "critical_question": "How do we define the term 'clean energy superpower,' and what specific policies or actions would lead to achieving this status compared to Donald Trump's proposals?",
+              "reason": "This question seeks clarity on what is meant by 'clean energy superpower' and tests the argument's reliance on vague definitions."
+            },
+            {
+              "id": 2,
+              "critical_question": "What independent experts are being referenced, and how do their evaluations differ from those that might support Donald Trump's perspective on climate change?",
+              "reason": "This question highlights the assumption that all independent experts agree with Clinton's stance, prompting a need for evidence of consensus and alternative views."
+            }
+          ]
+        },
+        "question_type": "question",
+        "prompt": {
+          "system": "You are now an expert critical thinker with an easygoing attitude. While you're open-minded and willing to consider well-reasoned perspectives from others, always remain objective and unbiased. Please keep this in mind.",
+          "human": "# Context:\nYou are tasked with generating critical questions that examine the underlying assumptions and logic of an argumentative text. Given a real debate argument, your goal is to assess its acceptability and potential fallacies.\n\n# Argument:\n'''\nCLINTON: \"nine million people lost their jobs\nFive million people lost their homes\n$ 13 trillion in family wealth was wiped out\nNow , we have come back from that abyss\nit has not been easy\nwe 're now on the precipice of having a potentially much better economy\nthe last thing we need to do is to go back to the policies that failed us in the first place\nIndependent experts have looked at what I 've proposed\nlooked at what Donald 's proposed\nI intend to get it done\nTake clean energy\nSome country is going to be the clean- energy superpower of the 21st century\nDonald thinks that climate change is a hoax perpetrated by the Chinese\nI think it 's real\"\n'''\n\n# Instructions:\n- Read the argument carefully.\n- Generate three critical questions that:\n    - Uncover the assumptions behind the argument's premises.\n    - Challenge the strength of its inferences.\n- Ensure your questions are specific to the given argument and not generic."
+        },
+        "trait": "easy_going"
+      },
+      {
+        "critical_question_list": {
+          "critical_questions": [
+            {
+              "id": 0,
+              "critical_question": "What evidence supports the claim that the policies being proposed by Donald Trump were the sole cause of the economic issues mentioned, as opposed to other external factors?",
+              "reason": "This question challenges the assumption that specific policies are directly responsible for the economic downturn, urging scrutiny of causation."
+            },
+            {
+              "id": 1,
+              "critical_question": "How do we define the term 'clean energy superpower,' and what specific policies or actions would lead to achieving this status when comparing Clinton's proposals to those of Donald Trump?",
+              "reason": "This question seeks clarity on what is meant by 'clean energy superpower' and tests the argument's reliance on vague definitions."
+            },
+            {
+              "id": 2,
+              "critical_question": "Which independent experts have evaluated Clinton's proposals, and what specific credentials or evidence do they provide that distinguishes their evaluations from those who might support Donald Trump's perspective on climate change?",
+              "reason": "This question highlights the assumption that all independent experts agree with Clinton's stance, prompting a need for evidence of consensus and alternative views."
+            }
+          ]
+        },
+        "question_type": "reflect",
+        "prompt": {
+          "system": "You are now an expert critical thinker with an easygoing attitude. While you're open-minded and willing to consider well-reasoned perspectives from others, always remain objective and unbiased. Please keep this in mind.",
+          "human": "# Context:\nYou were previously asked to generate three critical questions for the following argument:\n'''\nCLINTON: \"nine million people lost their jobs\nFive million people lost their homes\n$ 13 trillion in family wealth was wiped out\nNow , we have come back from that abyss\nit has not been easy\nwe 're now on the precipice of having a potentially much better economy\nthe last thing we need to do is to go back to the policies that failed us in the first place\nIndependent experts have looked at what I 've proposed\nlooked at what Donald 's proposed\nI intend to get it done\nTake clean energy\nSome country is going to be the clean- energy superpower of the 21st century\nDonald thinks that climate change is a hoax perpetrated by the Chinese\nI think it 's real\"\n'''\n\n## Your Answer:\n\n- critical question 0: 'What evidence supports the claim that the policies being proposed by Donald Trump were the sole cause of the economic issues mentioned, as opposed to other external factors?', reasoning: 'This question challenges the assumption that specific policies are directly responsible for the economic downturn, urging scrutiny of causation.'.\n- critical question 1: 'How do we define the term 'clean energy superpower,' and what specific policies or actions would lead to achieving this status compared to Donald Trump's proposals?', reasoning: 'This question seeks clarity on what is meant by 'clean energy superpower' and tests the argument's reliance on vague definitions.'.\n- critical question 2: 'What independent experts are being referenced, and how do their evaluations differ from those that might support Donald Trump's perspective on climate change?', reasoning: 'This question highlights the assumption that all independent experts agree with Clinton's stance, prompting a need for evidence of consensus and alternative views.'.\n\n# Instructions:\nAfter reflecting on your answers, please do the following:\n- Revise or confirm your three critical questions.\n- Ensure your questions are specific to the given argument.\n- Avoid generic questions that could be applied to any argument.\n\n"
+        },
+        "trait": "easy_going"
+      },
+      {
+        "critical_question_list": {
+          "critical_questions": [
+            {
+              "id": 0,
+              "critical_question": "What evidence supports the claim that the policies being proposed by Donald Trump were the sole cause of the economic issues mentioned, as opposed to other external factors?",
+              "reason": "This question challenges the assumption that specific policies are directly responsible for the economic downturn, urging scrutiny of causation."
+            },
+            {
+              "id": 1,
+              "critical_question": "How do we define the term 'clean energy superpower,' and what specific policies or actions would lead to achieving this status compared to Donald Trump's proposals?",
+              "reason": "This question seeks clarity on what is meant by 'clean energy superpower' and tests the argument's reliance on vague definitions."
+            },
+            {
+              "id": 2,
+              "critical_question": "What independent experts are being referenced, and how do their evaluations differ from those that might support Donald Trump's perspective on climate change?",
+              "reason": "This question highlights the assumption that all independent experts agree with Clinton's stance, prompting a need for evidence of consensus and alternative views."
+            }
+          ]
+        },
+        "question_type": "question",
+        "prompt": {
+          "system": "You are now an expert critical thinker with an easygoing attitude. While you're open-minded and willing to consider well-reasoned perspectives from others, always remain objective and unbiased. Please keep this in mind.",
+          "human": "# Context:\nYou are tasked with generating critical questions that examine the underlying assumptions and logic of an argumentative text. Given a real debate argument, your goal is to assess its acceptability and potential fallacies.\n\n# Argument:\n'''\nCLINTON: \"nine million people lost their jobs\nFive million people lost their homes\n$ 13 trillion in family wealth was wiped out\nNow , we have come back from that abyss\nit has not been easy\nwe 're now on the precipice of having a potentially much better economy\nthe last thing we need to do is to go back to the policies that failed us in the first place\nIndependent experts have looked at what I 've proposed\nlooked at what Donald 's proposed\nI intend to get it done\nTake clean energy\nSome country is going to be the clean- energy superpower of the 21st century\nDonald thinks that climate change is a hoax perpetrated by the Chinese\nI think it 's real\"\n'''\n\n# Instructions:\n- Read the argument carefully.\n- Generate three critical questions that:\n    - Uncover the assumptions behind the argument's premises.\n    - Challenge the strength of its inferences.\n- Ensure your questions are specific to the given argument and not generic."
+        },
+        "trait": "easy_going"
+      },
+      {
+        "critical_question_list": {
+          "critical_questions": [
+            {
+              "id": 0,
+              "critical_question": "What evidence supports the claim that the policies being proposed by Donald Trump were the sole cause of the economic issues mentioned, as opposed to other external factors?",
+              "reason": "This question challenges the assumption that specific policies are directly responsible for the economic downturn, urging scrutiny of causation."
+            },
+            {
+              "id": 1,
+              "critical_question": "How do we define the term 'clean energy superpower,' and what specific policies or actions would lead to achieving this status when comparing Clinton's proposals to those of Donald Trump?",
+              "reason": "This question seeks clarity on what is meant by 'clean energy superpower' and tests the argument's reliance on vague definitions."
+            },
+            {
+              "id": 2,
+              "critical_question": "Which independent experts have evaluated Clinton's proposals, and what specific credentials or evidence do they provide that distinguishes their evaluations from those who might support Donald Trump's perspective on climate change?",
+              "reason": "This question highlights the assumption that all independent experts agree with Clinton's stance, prompting a need for evidence of consensus and alternative views."
+            }
+          ]
+        },
+        "question_type": "reflect",
+        "prompt": {
+          "system": "You are now an expert critical thinker with an easygoing attitude. While you're open-minded and willing to consider well-reasoned perspectives from others, always remain objective and unbiased. Please keep this in mind.",
+          "human": "# Context:\nYou were previously asked to generate three critical questions for the following argument:\n'''\nCLINTON: \"nine million people lost their jobs\nFive million people lost their homes\n$ 13 trillion in family wealth was wiped out\nNow , we have come back from that abyss\nit has not been easy\nwe 're now on the precipice of having a potentially much better economy\nthe last thing we need to do is to go back to the policies that failed us in the first place\nIndependent experts have looked at what I 've proposed\nlooked at what Donald 's proposed\nI intend to get it done\nTake clean energy\nSome country is going to be the clean- energy superpower of the 21st century\nDonald thinks that climate change is a hoax perpetrated by the Chinese\nI think it 's real\"\n'''\n\n## Your Answer:\n\n- critical question 0: 'What evidence supports the claim that the policies being proposed by Donald Trump were the sole cause of the economic issues mentioned, as opposed to other external factors?', reasoning: 'This question challenges the assumption that specific policies are directly responsible for the economic downturn, urging scrutiny of causation.'.\n- critical question 1: 'How do we define the term 'clean energy superpower,' and what specific policies or actions would lead to achieving this status compared to Donald Trump's proposals?', reasoning: 'This question seeks clarity on what is meant by 'clean energy superpower' and tests the argument's reliance on vague definitions.'.\n- critical question 2: 'What independent experts are being referenced, and how do their evaluations differ from those that might support Donald Trump's perspective on climate change?', reasoning: 'This question highlights the assumption that all independent experts agree with Clinton's stance, prompting a need for evidence of consensus and alternative views.'.\n\n# Instructions:\nAfter reflecting on your answers, please do the following:\n- Revise or confirm your three critical questions.\n- Ensure your questions are specific to the given argument.\n- Avoid generic questions that could be applied to any argument.\n\n"
+        },
+        "trait": "easy_going"
+      }
+    ],
+    "validator": [
+      {
+        "critical_question_list": {
+          "critical_questions": [
+            {
+              "id": 0,
+              "critical_question": "What evidence supports the claim that the policies being proposed by Donald Trump were the sole cause of the economic issues mentioned, as opposed to other external factors?",
+              "reason": "This question challenges the assumption that Trump's policies directly caused the economic downturn, prompting a deeper examination of causality."
+            },
+            {
+              "id": 1,
+              "critical_question": "How do we define the term 'clean energy superpower,' and what specific policies or actions would lead to achieving this status when comparing Clinton's proposals to those of Donald Trump?",
+              "reason": "This question seeks clarity on what constitutes 'clean energy superpower' and directly relates to Clinton's argument about clean energy initiatives."
+            },
+            {
+              "id": 2,
+              "critical_question": "Which independent experts have evaluated Clinton's proposals, and what specific credentials or evidence do they provide that distinguishes their evaluations from those who might support Donald Trump's perspective on climate change?",
+              "reason": "This question probes the credibility of the independent experts mentioned, questioning the basis of Clinton's claims and the validity of their evaluations."
+            }
+          ]
+        },
+        "question_type": "validate",
+        "prompt": {
+          "human": "# Context:\nYou are provided with an argument from an oral debate and nine generated critical questions.\n\n# Argument:\n'''\nCLINTON: \"nine million people lost their jobs\nFive million people lost their homes\n$ 13 trillion in family wealth was wiped out\nNow , we have come back from that abyss\nit has not been easy\nwe 're now on the precipice of having a potentially much better economy\nthe last thing we need to do is to go back to the policies that failed us in the first place\nIndependent experts have looked at what I 've proposed\nlooked at what Donald 's proposed\nI intend to get it done\nTake clean energy\nSome country is going to be the clean- energy superpower of the 21st century\nDonald thinks that climate change is a hoax perpetrated by the Chinese\nI think it 's real\"\n'''\n# Critical Questions:\n\n- critical question 0: 'What evidence supports the claim that the policies being proposed by Donald Trump were the sole cause of the economic issues mentioned, as opposed to other external factors?'.\n- critical question 1: 'How do we define the term 'clean energy superpower,' and what specific policies or actions would lead to achieving this status when comparing Clinton's proposals to those of Donald Trump?'.\n- critical question 2: 'Which independent experts have evaluated Clinton's proposals, and what specific credentials or evidence do they provide that distinguishes their evaluations from those who might support Donald Trump's perspective on climate change?'.\n\n# Instructions:\nReview the critical questions and select the top 3 based on the following criteria:\n\n- Depth: The question must delve into the argument's core, challenging the speaker's reasoning or assumptions\n- Relevance: The question must not introduce new concepts or topics that are not part of the original argument.\n- Sound Reasoning: The question must avoid flawed reasoning (e.g., it should not criticize positions or claims that the speaker does not hold).\n- Specificity: The question must be specific to the argument and not generic.\n- Clarity: The question must be clear and easy to understand\n\nSelect the three best questions.\n"
+        },
+        "trait": "easy_going"
+      },
+      {
+        "critical_question_list": {
+          "critical_questions": [
+            {
+              "id": 0,
+              "critical_question": "What evidence supports the claim that the policies being proposed by Donald Trump were the sole cause of the economic issues mentioned, as opposed to other external factors?",
+              "reason": "This question challenges the assumption that Trump's policies directly caused the economic downturn, prompting a deeper examination of causality."
+            },
+            {
+              "id": 1,
+              "critical_question": "How do we define the term 'clean energy superpower,' and what specific policies or actions would lead to achieving this status when comparing Clinton's proposals to those of Donald Trump?",
+              "reason": "This question seeks clarity on what constitutes 'clean energy superpower' and directly relates to Clinton's argument about clean energy initiatives."
+            },
+            {
+              "id": 2,
+              "critical_question": "Which independent experts have evaluated Clinton's proposals, and what specific credentials or evidence do they provide that distinguishes their evaluations from those who might support Donald Trump's perspective on climate change?",
+              "reason": "This question probes the credibility of the independent experts mentioned, questioning the basis of Clinton's claims and the validity of their evaluations."
+            }
+          ]
+        },
+        "question_type": "validate",
+        "prompt": {
+          "human": "# Context:\nYou are provided with an argument from an oral debate and nine generated critical questions.\n\n# Argument:\n'''\nCLINTON: \"nine million people lost their jobs\nFive million people lost their homes\n$ 13 trillion in family wealth was wiped out\nNow , we have come back from that abyss\nit has not been easy\nwe 're now on the precipice of having a potentially much better economy\nthe last thing we need to do is to go back to the policies that failed us in the first place\nIndependent experts have looked at what I 've proposed\nlooked at what Donald 's proposed\nI intend to get it done\nTake clean energy\nSome country is going to be the clean- energy superpower of the 21st century\nDonald thinks that climate change is a hoax perpetrated by the Chinese\nI think it 's real\"\n'''\n# Critical Questions:\n\n- critical question 0: 'What evidence supports the claim that the policies being proposed by Donald Trump were the sole cause of the economic issues mentioned, as opposed to other external factors?'.\n- critical question 1: 'How do we define the term 'clean energy superpower,' and what specific policies or actions would lead to achieving this status when comparing Clinton's proposals to those of Donald Trump?'.\n- critical question 2: 'Which independent experts have evaluated Clinton's proposals, and what specific credentials or evidence do they provide that distinguishes their evaluations from those who might support Donald Trump's perspective on climate change?'.\n\n# Instructions:\nReview the critical questions and select the top 3 based on the following criteria:\n\n- Depth: The question must delve into the argument's core, challenging the speaker's reasoning or assumptions\n- Relevance: The question must not introduce new concepts or topics that are not part of the original argument.\n- Sound Reasoning: The question must avoid flawed reasoning (e.g., it should not criticize positions or claims that the speaker does not hold).\n- Specificity: The question must be specific to the argument and not generic.\n- Clarity: The question must be clear and easy to understand\n\nSelect the three best questions.\n"
+        },
+        "trait": "easy_going"
+      }
+    ]
+  },
+  "current_round": 1,
+  "final_cq": {
+    "critical_questions": [
+      {
+        "id": 0,
+        "critical_question": "What evidence supports the claim that the policies being proposed by Donald Trump were the sole cause of the economic issues mentioned, as opposed to other external factors?",
+        "reason": "This question challenges the assumption that Trump's policies directly caused the economic downturn, prompting a deeper examination of causality."
+      },
+      {
+        "id": 1,
+        "critical_question": "How do we define the term 'clean energy superpower,' and what specific policies or actions would lead to achieving this status when comparing Clinton's proposals to those of Donald Trump?",
+        "reason": "This question seeks clarity on what constitutes 'clean energy superpower' and directly relates to Clinton's argument about clean energy initiatives."
+      },
+      {
+        "id": 2,
+        "critical_question": "Which independent experts have evaluated Clinton's proposals, and what specific credentials or evidence do they provide that distinguishes their evaluations from those who might support Donald Trump's perspective on climate change?",
+        "reason": "This question probes the credibility of the independent experts mentioned, questioning the basis of Clinton's claims and the validity of their evaluations."
+      }
+    ]
+  }
+}
