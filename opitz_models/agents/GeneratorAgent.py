@@ -3,7 +3,12 @@ from agents.Agent import Agent
 from utils import extract_json_from_string
 
 SYSTEM_PROMPT = """
-Your task is to generate critical questions. The user will provide you with an argument, and you solely reply with a single critical question.
+You are an expert in critical reasoning and logic.
+The user will provide you with an argument. Your task is to solely provide a corresponding critical question. A critical question is an inquiry that should be asked in order to judge if an argument is acceptable or fallacious.
+
+Strictly return your critical question only.
+
+Critical Question:
 """
 
 GENERATION_PROMPT = """
@@ -17,7 +22,19 @@ Strictly return your critical question in the following JSON format:
   'critial_question': <your generated critical question>,
 }}
 ```
+"""
 
+REFINE_PROMPT = """
+Your question was evaluated as invalid. Please look at the feedback below and refine your critical question.
+
+{feedback}
+
+Strictly return your refined critical question in the following JSON format:  
+```json
+{{
+  'critial_question': <your generated critical question>,
+}}
+```
 """
 
 
@@ -60,4 +77,23 @@ class GeneratorAgent(Agent):
                 "Error: LLM returned an invalid response. Expected JSON with key 'critical_question', but no JSON with that key was found."
             )
             # TODO Implement some retries here.
+        return critical_question
+
+    def refine_critical_question(self, feedback_summary:str):
+        prompt = REFINE_PROMPT.format(feedback=feedback_summary)
+        self._add_to_chat(role="user", message=prompt)
+
+        # Prompt LLM and add to chat
+        response = self.single_response(messages=self.chat)
+        self._add_to_chat(role="assistant", message=response)
+
+        # Process response and return
+        response_dict: dict = extract_json_from_string(response)
+        critical_question = response_dict.get("critical_question", None)
+        if not critical_question:
+            print(
+                "Error: LLM returned an invalid response. Expected JSON with key 'critical_question', but no JSON with that key was found."
+            )
+            # TODO Implement some retries here.
+
         return critical_question

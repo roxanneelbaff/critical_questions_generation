@@ -1,3 +1,5 @@
+import os
+from datetime import datetime
 from json_repair import repair_json
 
 def extract_json_from_string(json_string: str, allow_lists: bool = False) -> dict:
@@ -44,3 +46,14 @@ def format_duration(start_time, end_time):
     minutes = int((duration % 3600) // 60)
     seconds = int(duration % 60)
     return f"{hours:02}h {minutes:02}m {seconds:02}s"
+
+def log_message(file_path, message):
+    # Get the current date and time in the desired format
+    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    
+    # Format the log entry with date, time, and message
+    log_entry = f"{current_time} - {message}\n"
+    
+    # Open the existing log file in append mode and write the log entry
+    with open(file_path, "a") as log_file:
+        log_file.write(log_entry)

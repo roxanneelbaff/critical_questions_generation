@@ -7,7 +7,7 @@ from collections import Counter
 ### Loading data
 # Validation Set & Generated Questions
 evaluation_file_path = '/localdata1/opit_do/critical_question_generation/st_critical_questions/data_splits/validation.json'
-generated_questions_path = '/localdata1/opit_do/critical_question_generation/st_critical_questions/output/41027_output.json'
+generated_questions_path = '/localdata1/opit_do/critical_question_generation/st_critical_questions/output/81577_output.json'
 #generated_questions_path = evaluation_file_path
 
 

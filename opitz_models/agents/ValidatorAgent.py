@@ -3,23 +3,28 @@ from agents.Agent import Agent
 from utils import extract_json_from_string
 
 SYSTEM_PROMPT = """
-You are a professor for critical reasoning and logic.
-Given a critical question along with a corresponding argument, your task is to judge the critical question for its validity. As part of a larger validator system, you have the following sub-role in this task: {subrole}
+You are an expert in critical reasoning and logic.
+The user will provide you with two things:
+A) An argument, which is taken from a larger piece of a debate
+B) A corresponding critical question. A critical question is an inquiry that should be asked in order to judge if an argument is acceptable or fallacious.
+
+Your task is to assess the usefulness of the critical question. As part of a larger validator system, you have the following sub-task:
+
+{subtask}
 """
 
 EVALUATION_PROMPT = """
-The argument is this:
+Argument:
 ```
 {argument}
 ```
 
-The corresponding critical question for you to evaluate is this:
+Corresponding critical question to evaluate:
 ```
 {critical_question}
 ```
 
-Your subrole for this task is: {subrole}.
-End your response with a brief sentence about the questions validity.
+Your specific subtask is: {subtask}.
 """
 
 ASSESSMENT_PROMPT = """
@@ -40,17 +45,17 @@ Here is the JSON structure for you to return.
 class ValidatorAgent(Agent):
     def __init__(
         self,
-        subrole: str,
+        subtask: str,
         model_name: str,
         model_parameters: dict = {},
     ):
         super().__init__(model_name, model_parameters)
 
         # Agent specific parameters
-        self.subrole = subrole
+        self.subtask = subtask
         self.model_name = model_name
 
-        super()._initialize(SYSTEM_PROMPT.format(subrole=self.subrole))
+        super()._initialize(SYSTEM_PROMPT.format(subtask=self.subtask))
 
     def evaluate_critical_question(
         self, critical_question: str, argument: str
@@ -64,7 +69,7 @@ class ValidatorAgent(Agent):
         Returns:
             dict[str, str]: The evaluation result. Dictionary that contains the key 'is_useful' and 'feedback'.
         """
-        self._initialize(SYSTEM_PROMPT.format(subrole=self.subrole))
+        self._initialize(SYSTEM_PROMPT.format(subtask=self.subtask))
 
         is_response_valid = False
         retry = 0
@@ -74,7 +79,7 @@ class ValidatorAgent(Agent):
             evaluation_prompt = EVALUATION_PROMPT.format(
                 argument=argument,
                 critical_question=critical_question,
-                subrole=self.subrole,
+                subtask=self.subtask,
             )
             self._add_to_chat(role="user", message=evaluation_prompt)
             feedback = self.single_response(messages=self.chat)
@@ -95,7 +100,6 @@ class ValidatorAgent(Agent):
                     evaluation = None
                     print("LLM did not output a valid response. Discarding result.")
                     break
-                self._clear_chat()
                 self._initialize()
                 continue
             is_response_valid = True

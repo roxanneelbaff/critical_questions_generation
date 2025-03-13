@@ -3,26 +3,28 @@ from agents.Agent import Agent
 from utils import extract_json_from_string
 
 SYSTEM_PROMPT = """
-You are a Summarizer Agent that excells at validating critical questions to an argument. For a given argument, multiple Validator Agents have already provided an assessment on the validity of the critical question.
+You are an expert in critical reasoning and logic that excells at validating critical questions to an argument. For a given argument, multiple Validator Agents have already provided an assessment on the validity of the critical question. Your role will be to provide a final decision on the validity of the generated question. Definition: A critical question is an inquiry that should be asked in order to judge if an argument is acceptable or fallacious.
 
-This is the original argument:
+Original argument:
 ```
 {argument}
 ```
 
-This is the generated critical question: ```{critical_question}```
+Generated critical question: ```{critical_question}```
+
+The user will guide you through this process step by step, so please follow their instructions precisely.
 """
 
 PROMPT_1 = """
-Provide a concise summary the following {number_of_feedbacks} feedbacks given by the Validator Agents:
+First, provide a concise summary the following {number_of_feedbacks} feedbacks given by the Validator Agents:
 
 {concatenated_feedback}
 """
 
 PROMPT_2 = """
-Based on your summary, assess the validity of the critical question.
+Very good. Next, based on your summary, decide on the validity of the critical question.
 Do this in two steps:
-1. First, based on your summary, concisely reason about the feedback in your own words.
+1. First, based on your summary, concisely reason about the feedback in your own words. Weigh each feedback according to their significance.
 2. Second, make your decision about the validity of the critical question.
 """
 
