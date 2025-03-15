@@ -139,17 +139,16 @@ def eval_experiment(
     punctuation_counter = dict(eval_res["punctuation_counter"])
 
     rename_mapping = {"1.0": "3/3", "0.6": "2/3", "0.3": "1/3", "0": "0/3"}
-    print(1, punctuation_counter)
+
     punctuation_counter_proc = {
         rename_mapping[str(k)[: min(3, len(str(k)))]]: v
         for k, v in punctuation_counter.items()
     }
-    print(punctuation_counter_proc)
+
     for _, v in rename_mapping.items():
         if v not in punctuation_counter_proc.keys():
             punctuation_counter_proc[v] = 0.0
-    
-    print(punctuation_counter_proc)
+
     punctuation_counter_ratio = {
         f"{k}_ratio": round(v / sum(punctuation_counter.values()), 2)
         for k, v in punctuation_counter_proc.items()
