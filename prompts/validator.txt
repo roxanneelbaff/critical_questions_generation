@@ -17,4 +17,4 @@ Review the critical questions and select the top 3 based on the following criter
 - Specificity: The question must be specific to the argument and not generic.
 - Clarity: The question must be clear and easy to understand
 
-Select the three best questions.
+Return a list of the BEST THREE questions.

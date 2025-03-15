@@ -1,9 +1,8 @@
 from abc import ABC
 import dataclasses
-import itertools
 import json
-from typing import ClassVar, Counter, Optional, Union
-import uuid
+import os
+from typing import ClassVar, Optional
 from langchain_openai import ChatOpenAI
 import pandas as pd
 from langgraph.graph import START, END, StateGraph
@@ -12,19 +11,24 @@ from langgraph.types import Command
 from langgraph.checkpoint.memory import MemorySaver
 from pyparsing import abstractmethod
 import tqdm
+from langchain.chat_models import init_chat_model
 
-from .objects import (
+from social_agents import helper
+
+from .data_model import (
     Confirmation,
     CriticalQuestionList,
+)
+
+from .state import (
+    BasicState,
     SocialAgentAnswer,
     SocialAgentState,
 )
-from .state import BasicState
 from .utils import get_st_data, timer
-from social_agents import objects
 
 
-# BUILDING GRAPH - 1 class per AGENTS #
+# BUILDING GRAPH - 1 class per WORKFLOW #
 
 
 @dataclasses.dataclass
@@ -67,8 +71,16 @@ class CQSTAbstractAgent(ABC):
     def _init_llm(llm_name: str, temperature: int = 0):
         if llm_name == "o3-mini-2025-01-31":
             return ChatOpenAI(model=llm_name)
-        elif llm_name.startswith("gpt"):
+        elif llm_name.startswith("gpt") or llm_name.startswith("openai"):
             return ChatOpenAI(model=llm_name, temperature=temperature)
+        elif llm_name.lower().startswith("meta-llama".lower()) or llm_name.lower().startswith("mistralai".lower()):
+            return init_chat_model(
+                llm_name,
+                model_provider="together",
+                temperature=temperature,
+            )
+       
+       
 
     @abstractmethod
     def build_agent(self) -> StateGraph:
@@ -77,25 +89,31 @@ class CQSTAbstractAgent(ABC):
     def _invoke_graph(self, params, id_):
         questions = []
         config = {"configurable": {"thread_id": f"{self.model_thread_id}_{id_}"}}
-        for event in self.graph.stream(params, config, stream_mode="values"):
-            # Review
-            _labels = event.get("final_cq", "")
-            if _labels:
-                questions.append(_labels)
-                # Save the final state
-                fname = f"{CQSTAbstractAgent.ROOT_FOLDER}final_states/{self.experiment_name}_arg{id_}.json"
-                with open(
-                    fname,
-                    "w",
-                ) as f:
-                    try:
-                        if self.serialize_func is None:
-                            json.dump(dict(event), f, indent=2)
-                        else:
-                            json.dump(self.serialize_func(event), f, indent=2)
-                    except Exception:
-                        print("error whiles saving file: ", fname)
-    
+        fname = f"{CQSTAbstractAgent.ROOT_FOLDER}final_states/{self.experiment_name}_arg{id_}.json"
+        if os.path.exists(fname):
+            print("arg already exist and cq generated, loading file")
+            with open(fname, "r") as f:
+                questions.append(CriticalQuestionList.model_validate(json.load(f)["final_cq"]))
+        else:
+            for event in self.graph.stream(params, config, stream_mode="values"):
+                # Review
+                _labels = event.get("final_cq", "")
+                if _labels:
+                    questions.append(_labels)
+                    # Save the final state
+
+                    with open(
+                        fname,
+                        "w",
+                    ) as f:
+                        try:
+                            if self.serialize_func is None:
+                                json.dump(dict(event), f, indent=2)
+                            else:
+                                json.dump(self.serialize_func(event), f, indent=2)
+                        except Exception:
+                            print("error whiles saving file: ", fname)
+
         assert len(questions) == 1
         return questions[0]
 
@@ -118,7 +136,10 @@ class CQSTAbstractAgent(ABC):
 
                 out[line["intervention_id"]] = line
         if save:
-            with open(f"{CQSTAbstractAgent.ROOT_FOLDER}output_{self.experiment_name}.json", "w") as o:
+            with open(
+                f"{CQSTAbstractAgent.ROOT_FOLDER}output_{self.experiment_name}.json",
+                "w",
+            ) as o:
                 json.dump(out, o, indent=4)
         # Log TIME
         time_log_df = pd.read_csv(f"{CQSTAbstractAgent.ROOT_FOLDER}time_log.csv")
@@ -164,10 +185,13 @@ class BasicCQModel(CQSTAbstractAgent):
         return graph
 
 
+# @dataclasses.dataclass
 class SocialAgentBuilder(CQSTAbstractAgent):
 
     collaborative_strategy: Optional[list[str]] = []
     agent_trait_lst: list[str] = ["easy_going"]
+
+    _REPEAT_ON_FAIL_: ClassVar = 10
 
     def __init__(
         self,
@@ -176,7 +200,7 @@ class SocialAgentBuilder(CQSTAbstractAgent):
         llm_num: int = 1,
         experiment_name: Optional[str] = None,
         temperature: Optional[float] = None,
-        serialize_func: callable = objects.state_to_serializable,
+        serialize_func: callable = helper._state_to_serializable,
         collaborative_strategy: Optional[list[str]] = [],
         agent_trait_lst: list[str] = ["easy_going"],
     ):
@@ -211,7 +235,7 @@ class SocialAgentBuilder(CQSTAbstractAgent):
                     [
                         SystemMessage(trait_prompt),
                         HumanMessage(
-                            "If you understand your role, please say ok only."
+                            "If you understand your role, please reply with OK only."
                         ),
                     ],
                 )
@@ -225,21 +249,26 @@ class SocialAgentBuilder(CQSTAbstractAgent):
                 system_prompt = f.read()
             with open("prompts/question.txt", "r") as file:
                 instructions = file.read()
-
+            
             instructions = instructions.format(
                 input_arg=state["input_arg"],
             )
-            response = (
-                self.llm_lst[node_id]
-                .with_structured_output(CriticalQuestionList)
-                .invoke([SystemMessage(system_prompt)] + [HumanMessage(instructions)])
-            )
+            exception_repeat = SocialAgentBuilder._REPEAT_ON_FAIL_
+            response = None
+            while exception_repeat > 0 and response is None:
+                if exception_repeat < SocialAgentBuilder._REPEAT_ON_FAIL_:
+                    print(f"Q - Exception repeat {SocialAgentBuilder._REPEAT_ON_FAIL_-exception_repeat}")
+                response = (
+                    self.llm_lst[node_id]
+                    .with_structured_output(CriticalQuestionList)
+                    .invoke([SystemMessage(system_prompt)] + [HumanMessage(instructions)])
+                )
+                exception_repeat = exception_repeat -1
 
             answer: SocialAgentAnswer = SocialAgentAnswer(
                 critical_question_list=response,
                 question_type="question",
-                prompt={"system": system_prompt,
-                        "human": instructions},
+                prompt={"system": system_prompt, "human": instructions},
                 trait=trait,
             )
             round_answer_dict[f"agent{node_id}"] = [answer]
@@ -282,18 +311,21 @@ class SocialAgentBuilder(CQSTAbstractAgent):
                 other_agents_response=other_agents_response_str,
             )
 
-            response = (
-                self.llm_lst[node_id]
-                .with_structured_output(CriticalQuestionList)
-                .invoke(
-                    [SystemMessage(system_prompt)] + [HumanMessage(instructions)]
+            exception_repeat = SocialAgentBuilder._REPEAT_ON_FAIL_
+            response = None
+            while exception_repeat > 0 and response is None:
+                if exception_repeat < SocialAgentBuilder._REPEAT_ON_FAIL_:
+                    print(f"Debate - Exception repeat {SocialAgentBuilder._REPEAT_ON_FAIL_-exception_repeat}")
+                response = (
+                    self.llm_lst[node_id]
+                    .with_structured_output(CriticalQuestionList)
+                    .invoke([SystemMessage(system_prompt)] + [HumanMessage(instructions)])
                 )
-            )
+                exception_repeat = exception_repeat-1
             answer: SocialAgentAnswer = SocialAgentAnswer(
                 critical_question_list=response,
                 question_type="debate",
-                prompt={"system": system_prompt,
-                        "human": instructions},
+                prompt={"system": system_prompt, "human": instructions},
                 trait=trait,
             )
             answer_round[f"agent{node_id}"] = [answer]
@@ -327,17 +359,21 @@ class SocialAgentBuilder(CQSTAbstractAgent):
             instructions = instructions.format(
                 input_arg=state["input_arg"], own_answer=own_answer_str
             )
-
-            response = (
-                self.llm_lst[node_id]
-                .with_structured_output(CriticalQuestionList)
-                .invoke([SystemMessage(system_prompt)] + [HumanMessage(instructions)])
-            )
+            exception_repeat = SocialAgentBuilder._REPEAT_ON_FAIL_
+            response = None
+            while exception_repeat > 0 and response is None:
+                if exception_repeat < SocialAgentBuilder._REPEAT_ON_FAIL_:
+                    print(f"Reflect - Exception repeat {SocialAgentBuilder._REPEAT_ON_FAIL_-exception_repeat}")
+                response = (
+                    self.llm_lst[node_id]
+                    .with_structured_output(CriticalQuestionList)
+                    .invoke([SystemMessage(system_prompt)] + [HumanMessage(instructions)])
+                )
+                exception_repeat = exception_repeat-1
             answer: SocialAgentAnswer = SocialAgentAnswer(
                 critical_question_list=response,
                 question_type="reflect",
-                prompt={"system": system_prompt,
-                        "human": instructions},
+                prompt={"system": system_prompt, "human": instructions},
                 trait=trait,
             )
 
@@ -345,32 +381,48 @@ class SocialAgentBuilder(CQSTAbstractAgent):
             return {"round_answer_dict": round_answer_dict}
 
         def validate_node(state: SocialAgentState):
-            with open("prompts/validator.txt", "r") as file:
-                instructions = file.read()
-            # Get others answer
             round_answer_dict = state["round_answer_dict"]
-            others_answers = [
-                round_answer_dict[f"agent{x}"][-1] for x in range(self.llm_num)
-            ]
-            other_agents_response_str = ""
-            other_cq_str = (
-                "\n- critical question {id}: '{cq}'."  # reasoning: '{reason}'
-            )
-            for a_num, other_ in enumerate(others_answers):
-                for cq in other_.critical_question_list.critical_questions:
-                    other_agents_response_str = (
-                        other_agents_response_str
-                        + other_cq_str.format(
-                            id=cq.id, cq=cq.critical_question, reason=cq.reason
+
+            instructions = ""
+            if self.llm_num == 1:
+                response = round_answer_dict["agent0"][-1].critical_question_list
+            else:
+                with open("prompts/validator.txt", "r") as file:
+                    instructions = file.read()
+                # Get others answer
+
+                others_answers = [
+                    round_answer_dict[f"agent{x}"][-1] for x in range(self.llm_num)
+                ]
+                other_agents_response_str = ""
+                other_cq_str = (
+                    "\n- critical question {id}: '{cq}'."  # reasoning: '{reason}'
+                )
+                for a_num, other_ in enumerate(others_answers):
+                    for cq in other_.critical_question_list.critical_questions:
+                        other_agents_response_str = (
+                            other_agents_response_str
+                            + other_cq_str.format(
+                                id=cq.id, cq=cq.critical_question, reason=cq.reason
+                            )
                         )
-                    )
-            instructions = instructions.format(
-                input_arg=state["input_arg"],
-                other_agents_response=other_agents_response_str,
-            )
-            response = validator_llm.with_structured_output(
-                CriticalQuestionList
-            ).invoke([HumanMessage(instructions)])
+                instructions = instructions.format(
+                    input_arg=state["input_arg"],
+                    other_agents_response=other_agents_response_str,
+                )
+                exception_repeat = SocialAgentBuilder._REPEAT_ON_FAIL_
+                response = None
+                while exception_repeat > 0 and response is None:
+                    if exception_repeat < SocialAgentBuilder._REPEAT_ON_FAIL_:
+                        print(f"Validate - Exception repeat {SocialAgentBuilder._REPEAT_ON_FAIL_-exception_repeat}")
+                    response = validator_llm.with_structured_output(
+                        CriticalQuestionList
+                    ).invoke([HumanMessage(instructions)])
+                    exception_repeat = exception_repeat - 1
+
+            if len(response.critical_questions) > 3:
+                print("limiting it to 3")
+                response.critical_questions = response.critical_questions[:3]
 
             answer: SocialAgentAnswer = SocialAgentAnswer(
                 critical_question_list=response,
@@ -381,8 +433,8 @@ class SocialAgentBuilder(CQSTAbstractAgent):
 
             round_answer_dict["validator"] = [answer]
 
-            return {"final_cq": response,
-                    "round_answer_dict": round_answer_dict}
+            return {"final_cq": response, "round_answer_dict": round_answer_dict}
+
         workflow = StateGraph(SocialAgentState)
 
         for i, trait in enumerate(self.agent_trait_lst):
@@ -425,7 +477,6 @@ class SocialAgentBuilder(CQSTAbstractAgent):
                         ),
                     )
 
-        workflow.add_node(validate_node)
         workflow.add_node("moderator_role", moderator_node)
 
         for i in range(self.llm_num):
@@ -468,103 +519,13 @@ class SocialAgentBuilder(CQSTAbstractAgent):
             [f"{pre_pend}{prev_strategy}_node{i}" for i in range(self.llm_num)],
             curr_moderator,
         )
-        if len(self.collaborative_strategy) > 0:
-            workflow.add_edge(curr_moderator, "validate_node")
-            workflow.add_edge("validate_node", END)
-        else:
-            workflow.add_edge(curr_moderator, END)
+        # if len(self.collaborative_strategy) > 0:
+        workflow.add_node(validate_node)
+        workflow.add_edge(curr_moderator, "validate_node")
+        workflow.add_edge("validate_node", END)
+        # else:
+        # workflow.add_edge(curr_moderator, END)
 
         memory = MemorySaver()
         print("Building Completed!")
         return workflow.compile(checkpointer=memory)
-
-    # Static methods
-    @staticmethod
-    def _get_strategy_permutation(
-        n: Union[list[int], int], elements: Optional[list[str]] = ["debate", "reflect"]
-    ):
-        permutations = []
-
-        def _get_permutation(r: int):
-            for p in itertools.product(elements, repeat=r):
-                permutations.append(p)
-
-        if isinstance(n, int):
-            _get_permutation(n)
-        else:
-            for r in n:
-                _get_permutation(r)
-        return permutations
-
-    @staticmethod
-    def _get_traits_combos(
-        n: Union[list[int], int],
-        elements: Optional[list[str]] = ["overconfident", "easy_going"],
-    ):
-        combos = []
-
-        def _get_combinations(r: int):
-            for p in itertools.combinations_with_replacement(elements, r):
-                combos.append(p)
-
-        if isinstance(n, int):
-            _get_combinations(n)
-        else:
-            for r in n:
-                _get_combinations(r)
-        return combos
-
-    @staticmethod
-    def _generate_experiment_settings(
-        rounds: int = 3,
-        number_of_agents: int = 3,
-        traits: list = ["overconfident", "easy_going"],
-        strategies_: list = ["debate", "reflect"],
-    ):
-        all_expr = []
-        all_traits_combos = SocialAgentBuilder._get_traits_combos(
-            range(1, number_of_agents + 1), elements=traits
-        )
-        all_strategy_permutations = SocialAgentBuilder._get_strategy_permutation(
-            range(1, rounds + 1), elements=strategies_
-        )
-        pairs = list(itertools.product(all_traits_combos, all_strategy_permutations))
-        for pair in pairs:
-            if len(pair[0]) == 1 and "debate" in pair[1]:
-                continue
-
-            trait_str = "".join(sorted([x[0] for x in pair[0]]))
-            strategy_str = "".join([x[0] for x in pair[1]])
-            all_expr.append(
-                {
-                    "traits": pair[0],
-                    "strategies": pair[1],
-                    "rounds": len(pair[1]),
-                    "number_of_agents": len(pair[0]),
-                    "has_debate": "debate" in pair[1],
-                    "thread_id": uuid.uuid4(),
-                    "experiment_name": "{llm_name}"
-                    + f"social_n{len(pair[0])}_T{trait_str}_S{strategy_str}",
-                }
-            )
-        for traits in all_traits_combos:
-            trait_str = "".join(sorted([x[0] for x in traits]))
-            all_expr.append(
-                {
-                    "traits": traits,
-                    "strategies": tuple(),
-                    "rounds": 0,
-                    "number_of_agents": len(traits),
-                    "has_debate": False,
-                    "thread_id": uuid.uuid4(),
-                    "experiment_name": "{llm_name}"
-                    + f"social_n{len(traits)}_T{trait_str}_S",
-                }
-            )
-
-        all_exp_settings_df = pd.DataFrame(all_expr)
-
-        all_exp_settings_df.sort_values(
-            by=["rounds", "number_of_agents"], ascending=True
-        )
-        return pd.DataFrame(all_expr)
