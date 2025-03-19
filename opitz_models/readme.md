@@ -25,7 +25,8 @@ validator_1 = ValidatorAgent(subrole, DEFAULT_LLM)
 
 
 # Validator 2: Relevance
-subrole = """Specifically assess whether the critical question does not contain any bad reasoning, namely, questions critical positions or claims **that the speaker does not hold**. If the question contains such bad reasoning, it would render the question invalid.
+subrole = """
+Specifically assess whether the critical question does not contain any bad reasoning, namely, questions critical positions or claims **that the speaker does not hold**. If the question contains such bad reasoning, it would render the question invalid.
 
 Do this in three steps:
 1. First, identify the speakers overall position on the topic and the claims they make.
@@ -55,7 +56,8 @@ aggregator = AggregatorAgent(DEFAULT_LLM)
 ```
 
 #### Validating a Generated Question
-The value for `is_valid` will hold the decision on whether or not the critical question is considered valid.
+The value of `is_valid` will hold the decision on whether or not the critical question is considered valid.
+The value of `reasoning` can be used to feedback to the generating LLM, if desired.
 ```python
 argument = "<some argument>"
 critical_question = "<some generated question>"
