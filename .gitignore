@@ -8,3 +8,4 @@ my_folder/
 *egg*
 build
 .vscode
+output/elbaff_experiment/final_states/*

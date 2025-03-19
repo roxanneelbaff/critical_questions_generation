@@ -59,13 +59,12 @@ def dict_reducer(left: dict | None, right: dict | None) -> dict:
     return merged
 
 
-## EVALUATION Utils
-
-
+# EVALUATION Utils
 def _extract_eval_from_str(stdout_text: str):
     """
-    From o3-mini
+    Turns the eval script str output into a dictionary
     """
+    print(stdout_text)
     # --- Extract the labels counter ---
     label_dstr = r"Distribution of the labels:\s*Counter\((\{.*?\})\)"
     punc_dstr = r"Distribution of the intervention punctuation:\s*Counter\((\{.*?\})\)"
@@ -108,6 +107,9 @@ def eval_experiment(
     threshold: float = 0.6,
     metric: str = "similarity",
 ):
+    """
+    Takes as input the path of the generated answers wit other attributes and returns a dict
+    """
     # Build the command as a list of strings
     command = [
         "python",
@@ -142,6 +144,11 @@ def eval_experiment(
         rename_mapping[str(k)[: min(3, len(str(k)))]]: v
         for k, v in punctuation_counter.items()
     }
+
+    for _, v in rename_mapping.items():
+        if v not in punctuation_counter_proc.keys():
+            punctuation_counter_proc[v] = 0.0
+
     punctuation_counter_ratio = {
         f"{k}_ratio": round(v / sum(punctuation_counter.values()), 2)
         for k, v in punctuation_counter_proc.items()

@@ -2,6 +2,7 @@
 You are tasked with generating critical questions that examine the underlying assumptions and logic of an argumentative text. Given a real debate argument, your goal is to assess its acceptability and potential fallacies.
 
 # Argument:
+
 '''
 {input_arg}
 '''

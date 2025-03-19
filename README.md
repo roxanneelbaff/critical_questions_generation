@@ -4,19 +4,21 @@ The folders
 - `trial_submission`
 
 are copied from the original github repo.
-Link to the call: https://hitz-zentroa.github.io/shared-task-critical-questions-generation/
 
-call: https://hitz-zentroa.github.io/shared-task-critical-questions-generation/
-
-
-- [main shared task page](https://hitz-zentroa.github.io/shared-task-critical-questions-generation/)
-- [Git-Repo](https://github.com/hitz-zentroa/shared-task-critical-questions-generation)
+- Shared task [link](https://hitz-zentroa.github.io/shared-task-critical-questions-generation/)
+- [GitHub-Repo](https://github.com/hitz-zentroa/shared-task-critical-questions-generation)
 - [Examples](https://github.com/hitz-zentroa/shared-task-critical-questions-generation/blob/main/shared_task/utils/guidelines.pdf)
 
 
+# Approach
+
+Our solution employs multi-agents, creating a workflow with three different parts:
+
+![alt text](architecture_overview.png)
+
 # Notes from the paper
 
-[`Critical Questions Generation: Motivation and Challenges`](https://aclanthology.org/2024.conll-1.9.pdf)
+[`Critical Questions Generation: Motivation and Challenges` [link]](https://aclanthology.org/2024.conll-1.9.pdf)
 
 
     > Yet, instead of requiring the LLMs to output factual knowledge, could we use them to point at the missing or potentially uninformed claims? In other words, could we use LLMs to uncover the blind spots in the argumentation? To open this line of research, we ground our work on argumentation theory, which has for centuries been studying dia- logical exchanges of information. Specifically, we look into argumentation schemes, a set of abstract structures developed by systematically identifying common patterns of argumentation and outlining the defeasibility of these patterns. In these structures, the devices designed to find the blind spots in the arguments are called critical questions
