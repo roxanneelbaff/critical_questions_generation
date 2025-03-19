@@ -1,0 +1,50 @@
+{
+    "CLINTON_1_1": {
+        "intervention_id": "CLINTON_1_1",
+        "intervention": "CLINTON: \"The central question in this election is really what kind of country we want to be and what kind of future we 'll build together\nToday is my granddaughter 's second birthday\nI think about this a lot\nwe have to build an economy that works for everyone , not just those at the top\nwe need new jobs , good jobs , with rising incomes\nI want us to invest in you\nI want us to invest in your future\njobs in infrastructure , in advanced manufacturing , innovation and technology , clean , renewable energy , and small business\nmost of the new jobs will come from small business\nWe also have to make the economy fairer\nThat starts with raising the national minimum wage and also guarantee , finally , equal pay for women 's work\nI also want to see more companies do profit-sharing\"",
+        "dataset": "US2016",
+        "schemes": [
+            "PracticalReasoning",
+            "PracticalReasoning",
+            "PracticalReasoning",
+            "PopularPractice",
+            "PracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_1_1_23680",
+                "cq": "How does Clinton's emphasis on investing in her own granddaughter's future relate to her policy proposals for the country as a whole?"
+            },
+            {
+                "id": "CLINTON_1_1_10427",
+                "cq": "How can we be certain that investing in infrastructure, advanced manufacturing, innovation, and technology will lead to jobs with rising incomes for everyone, rather than just benefiting specific industries or groups?"
+            },
+            {
+                "id": "CLINTON_1_1_75924",
+                "cq": "Is Clinton's claim that investing in infrastructure and small businesses will lead to 'new jobs, good jobs, with rising incomes' for everyone, not just those at the top, supported by empirical evidence?"
+            }
+        ]
+    },
+    "Javier_84": {
+        "intervention_id": "Javier_84",
+        "intervention": "Javier: \"I have no problem requiring the airlines to give notification of any \"known\" delays within 30 minutes of when they become aware of it.\nBUT, being a frequent traveler, I see all sorts of problems which are unavoidable and for which the airlines will be blamed by giving such notice with the intend that some flyers may be able to delay thier trip to the airport or even the departure gate.\nI know that many times the airlines can't also know exactly when a weather hold or a maintenance issue will be rectified and that the flight is then ready to go.\nMany time it can be surprisingly faster than expected.\nThe problem is that some flyers may then  wait before going to the airport,\nbut then find that the problem was rectified sooner than expected and the flight departed.\nOf course the flyer and the flyers rights organization will then crucify the airlines for such poor planning.\nFlyers need to grow up and quit pouting and blaming everthing on the airlines.\nThey can't have it both ways.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "Javier_84_45471",
+                "cq": "How does Javier know that the airlines' intention to provide advance notice is actually to provoke some flyers to delay their travel, rather than a genuine effort to manage delays?"
+            },
+            {
+                "id": "Javier_84_74092",
+                "cq": "Does requiring notification of potential delays within 30 minutes truly mitigate the potential for unfair blame and false claims against airlines, or would it simply create an opportunity for overzealous flyers to fabricate grievances?"
+            },
+            {
+                "id": "Javier_84_11846",
+                "cq": "Is requiring notification of potential delays within a certain timeframe not a reasonable expectation for travelers given that airlines can't always predict when unforeseen issues will be resolved?"
+            }
+        ]
+    }
+}

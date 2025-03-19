@@ -1,3 +1,4 @@
+import concurrent.futures
 import random
 import time
 import json
@@ -6,7 +7,8 @@ from agents.ValidatorAgent import ValidatorAgent
 from agents.AggregatorAgent import AggregatorAgent
 from utils import print_text_bold, print_text_cyan, print_text_orange, print_text_pink,  format_duration, get_llm_calls, log_message
 
-DEFAULT_LLM = "llama3.2:latest" # llama3.2:latest, llama3.2:3b-instruct-q5_K_M
+DEFAULT_LLM = "llama3.2:3b-instruct-q8_0" # llama3.2:latest, llama3.2:3b-instruct-q5_K_M, llama3.2:3b-instruct-q8_0, mistral:latest
+
 
 # Logs
 prefix = random.randint(10000, 99999)
@@ -16,6 +18,7 @@ print(log_file_path)
 # Create an empty log file
 with open(log_file_path, "w"):
     log_message(log_file_path, f"Run Id: {prefix}")
+    log_message(log_file_path, "Running without Validators and Aggregator")
 
 ### Validation Set ###
 arguments_path = '/localdata1/opit_do/critical_question_generation/st_critical_questions/data_splits/validation.json'
@@ -32,14 +35,22 @@ log_message(log_file_path, f"Generator Agent: {model_name}")
 ### Validator Agents ###
 # Validator 1
 model_name = DEFAULT_LLM  # llama3.2:1b, llama3:latest
-subrole = """Specifically assess whether the critical question does not introduce any new concepts or topics, that were not covered in the argument. The introduction of an unmentioned topic or concept would render the question invalid.
+# subrole = """Specifically assess whether the critical question does not introduce any new concepts or topics, that were not covered in the argument. The introduction of an unmentioned topic or concept would render the question invalid.
 
-Do this in three steps:
-1. First, identify the (one or multiple) broad topic(s) of the argument.
-2. Second, identify the (one or multiple) core topic(s) of the critical question.
-3. Finally, assess whether or not the core topic of the critical question is part of the topics of the argument. If it is, the question can remain valid. If the core topic is different to the topics mentioned and implied in the argument, then the question should be invalid.
+# Do this in three steps:
+# 1. First, identify the (one or multiple) broad topic(s) of the argument.
+# 2. Second, identify the (one or multiple) core topic(s) of the critical question.
+# 3. Finally, assess whether or not the core topic of the critical question is part of the topics of the argument. If it is, the question can remain valid. If the core topic is different to the topics mentioned and implied in the argument, then the question should be invalid.
 
-Keep your answer concise overall. Don't be too strict in your assessment.
+# Keep your answer concise overall. Don't be too strict in your assessment.
+# """
+subrole = """
+Specifically assess whether the question delves into the argument's core, challenging the speaker's reasoning or assumptions.
+
+Do this in two steps:
+1. First, identify the speaker's corepoints, claims, arguments and assumptions.
+2. Second, assess whether the question challenges any of those.
+3. Finally, give a suggestion on the validity of the question. If it adresses any of the arguments core topics, it should be valid. If it adresses none of the core topics, it should be invalid.
 """
 validator_1 = ValidatorAgent(subrole, model_name)
 log_message(log_file_path, f"Validator Agent: {model_name}, Subtask: {subrole}")
@@ -60,14 +71,17 @@ log_message(log_file_path, f"Validator Agent: {model_name}, Subtask: {subrole}")
 
 # Validator 3
 model_name = DEFAULT_LLM  # llama3.2:1b, llama3:latest
-subrole = """Specifically assess whether the critical question adresses the argument. Evaluate whether the question picks up on parts of the argument at all. If the question is specific to the argument, it can be considered as valid.
+# subrole = """Specifically assess whether the critical question adresses the argument. Evaluate whether the question picks up on parts of the argument at all. If the question is specific to the argument, it can be considered as valid.
 
-Do this in two steps:
-1. First, identify the core topic(s) of the argument.
-2. Second, assess whether the question adressess any of the core topic(s) of the argument.
-3. Finally, give a suggestion on the validity of the question. If it adresses any of the arguments core topics, it should be valid. If it adresses none of the core topics, it should be invalid.
+# Do this in two steps:
+# 1. First, identify the core topic(s) of the argument.
+# 2. Second, assess whether the question adressess any of the core topic(s) of the argument.
+# 3. Finally, give a suggestion on the validity of the question. If it adresses any of the arguments core topics, it should be valid. If it adresses none of the core topics, it should be invalid.
 
-Keep your answer concise overall. Don't be too strict in your assessment.
+# Keep your answer concise overall. Don't be too strict in your assessment.
+# """
+subrole = """
+Specifically assess whether the critical question is specific to the argument and not generic. Give a suggestion on the validity of the question based on this. if the question is generic, then it should be invalid. If it is (broadly) adressing the topic of the argument, then it should be valid.
 """
 validator_3 = ValidatorAgent(subrole, model_name)
 log_message(log_file_path, f"Validator Agent: {model_name}, Subtask: {subrole}")
@@ -81,10 +95,14 @@ aggregator = AggregatorAgent(model_name)
 
 
 ### Generation ###
+start_index = 84
 number_of_arguments = 200
 a_count = 0
 start_time = time.time()
 for key, value in arguments_data.items():
+    if a_count < start_index:
+        a_count += 1
+        continue
     # Extract argument and list of critical questions, which will be overwritten by the generated ones downstream
     intervention_id = value["intervention_id"]
     argument = value["intervention"]
@@ -105,21 +123,28 @@ for key, value in arguments_data.items():
         q_start_time = time.time()
         question_valid = True
         feedback = []
-        #if not feedback_summary:
         critical_question = generator.generate_critical_question(argument)
-        #else:
-        #    critical_question = generator.refine_critical_question(feedback_summary)
         log_message(log_file_path, f"   -> '{critical_question}'")
         print_text_cyan(f"Generator Agent:\n{critical_question}")
 
-        # Evaluate question
-        evaluations = []
-        for validator in validators:
-            evaluation = validator.evaluate_critical_question(critical_question, argument)
-            evaluations.append(evaluation)
+        # Evaluate question (in parallel)
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            futures = [executor.submit(validator.evaluate_critical_question, critical_question, argument) 
+               for validator in validators]
+            evaluations = [future.result() for future in futures]
+        for e in evaluations:
             print_text_orange(
-                f"\n\n##########\nValidator Agent: Decision: {'valid' if evaluation['is_valid'] else 'invalid'}\n{evaluation['feedback']}\n"
+                f"\n\n##########\nValidator Agent: Decision: {'valid' if e['is_valid'] else 'invalid'}\n{e['feedback']}\n"
             )
+
+        # FOR SEQUENTIAL EXECUTION OF VALIDATORS: COMMENT ABOVE LOOP AND REPLACE WITH THE ONE BELOW
+        # evaluations = []
+        # for validator in validators:
+        #     evaluation = validator.evaluate_critical_question(critical_question, argument)
+        #     evaluations.append(evaluation)
+        #     print_text_orange(
+        #         f"\n\n##########\nValidator Agent: Decision: {'valid' if evaluation['is_valid'] else 'invalid'}\n{evaluation['feedback']}\n"
+        #     )
 
         # Ask Aggregator Agent to provide final feedback
         reasoning, is_valid = aggregator.aggregate_feedback(argument, critical_question, evaluations)

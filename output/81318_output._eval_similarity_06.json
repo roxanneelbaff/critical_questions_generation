@@ -1,0 +1,413 @@
+{
+    "Frequent-Flyer_157": {
+        "intervention_id": "Frequent-Flyer_157",
+        "intervention": "Frequent-Flyer: \"I have sympathy for those with peanut allergies,\nbut banning peanuts from flights via a DOT regulation seems to go too far.\nPerhaps advocacy groups for those who are peanutallergic will approach the major carriers to voluntarily set aside seating blocks that are reserved for allergy sufferers, and nonsufferers who are willing to agree not to eat peanuts while sitting in that particular block.\nAs someone who suffers from a medical condition which requires me to carry my \"rescue\" medication with me everywhere I go,\nI think that if the risk to an allergy sufferer is deemed to be significant, then they should\nconsider alternate travel methods other than flying,\nensure they have sufficient \"rescue\" medication to last the entire time they might be stuck in an aircraft,\nthey should wear appropriate clothing / face masks to minimize exposed skin and inhalation risk.\nRequiring other passengers to forgo their \"right\" to eat peanuts so as to accommodate the \"right\" of allergy sufferers to fly seems a bit much,\nparticularly if the allergy sufferers don't fly often, anyway.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "Frequent-Flyer_157_99556",
+                "cq": "Does the speaker's personal experience with their medical condition and travel needs justify generalizing the accommodations required for peanut allergy sufferers to all airline passengers?",
+                "label": "Useful"
+            },
+            {
+                "id": "Frequent-Flyer_157_64904",
+                "cq": "Does the speaker's suggestion that those with peanut allergies should take on the responsibility of finding and paying for alternative travel arrangements, as well as securing their own emergency medication, while also being exempt from restrictions on eating peanuts during flights, not unfairly shift the burden of accommodations to the 'normal' passengers?",
+                "label": "Invalid"
+            },
+            {
+                "id": "Frequent-Flyer_157_65871",
+                "cq": "Does the argument's suggestion that individuals with peanut allergies should consider alternative travel methods solely due to their allergy status justify dismissing the potential risks and hazards posed by peanuts in a confined, airborne environment?",
+                "label": "Invalid"
+            }
+        ]
+    },
+    "Glblwrmingisfak__552": {
+        "intervention_id": "Glblwrmingisfak__552",
+        "intervention": "Glblwrmingisfak: \"What argument?\nNobody proposes common sense gun solutions\nThe DOJ over a decade ago already determined that an assault weapons ban won't do shit for addressing homicide rates in the US\nIt is not a solution for any of our problems\nBernie should know\nhe clearly isn't stupid\"",
+        "dataset": "us2016reddit",
+        "schemes": [
+            "ArgumentFromAuthority"
+        ],
+        "cqs": [
+            {
+                "id": "Glblwrmingisfak__552_50708",
+                "cq": "Does the conclusion that no common sense gun solution is viable necessarily follow from the fact that an assault weapons ban was deemed ineffective by the DOJ over a decade ago?",
+                "label": "Useful"
+            },
+            {
+                "id": "Glblwrmingisfak__552_18162",
+                "cq": "Does Glblwerminisfak provide any evidence to support the claim that an assault weapons ban would not address homicide rates in the US, as determined by the DOJ over a decade ago?",
+                "label": "Useful"
+            },
+            {
+                "id": "Glblwrmingisfak__552_68340",
+                "cq": "Is it possible that Bernie's assertion about an assault weapons ban being a non-solution to addressing homicide rates is based on a flawed understanding of the DOJ's findings, or could his dismissiveness be due to ignorance rather than insight?",
+                "label": "Unhelpful"
+            }
+        ]
+    },
+    "HOLT_126": {
+        "intervention_id": "HOLT_126",
+        "intervention": "HOLT: \"Stop-and-frisk was ruled unconstitutional in New York\nit largely singled out black and Hispanic young men\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Consequences"
+        ],
+        "cqs": [
+            {
+                "id": "HOLT_126_22885",
+                "cq": "What is the basis for Holt's claim that stop-and-frisk was ruled unconstitutional, and what evidence does he have to support this assertion?",
+                "label": "Useful"
+            },
+            {
+                "id": "HOLT_126_43068",
+                "cq": "Did the decision to rule stop-and-frisk unconstitutional solely based on its disproportionate impact on black and Hispanic young men, or were other factors also considered?",
+                "label": "Useful"
+            },
+            {
+                "id": "HOLT_126_25201",
+                "cq": "Was the conclusion that stop-and-frisk singularly targeting black and Hispanic young men based on sufficient evidence?",
+                "label": "Useful"
+            }
+        ]
+    },
+    "HOLT_239": {
+        "intervention_id": "HOLT_239",
+        "intervention": "HOLT: \"Which leads to my next question\nwe enter our last segment here on the , still on the subject of securing America\nOn nuclear weapons , President Obama reportedly considered changing the nation 's longstanding policy on first use\nDo you support the current policy ?\nMr. Trump , you have two minutes on that\"",
+        "dataset": "US2016",
+        "schemes": [
+            "CauseToEffect"
+        ],
+        "cqs": [
+            {
+                "id": "HOLT_239_61992",
+                "cq": "What evidence does Mr. Holt have about President Obama's reported consideration of changing the nation's policy on first use that he can rely upon?",
+                "label": "not_able_to_evaluate"
+            },
+            {
+                "id": "HOLT_239_24703",
+                "cq": "Does Mr. Holt's acknowledgment of President Obama's reported consideration of changing the nation's policy on first use imply that the current policy is already in question?",
+                "label": "not_able_to_evaluate"
+            },
+            {
+                "id": "HOLT_239_77151",
+                "cq": "Does Holt's consideration of President Obama's reported policy change on first use constitute sufficient reason to warrant a change in the nation's longstanding policy on nuclear weapons?",
+                "label": "Useful"
+            }
+        ]
+    },
+    "HOLT_94": {
+        "intervention_id": "HOLT_94",
+        "intervention": "HOLT: \"we 're talking about the burden that Americans have to pay , yet you have not released your tax returns\nthe reason nominees have released their returns for decades is so that voters will know if their potential president owes money to\u2014who he owes it to and any business conflicts\nDo n't Americans have a right to know if there are any conflicts of interest\"",
+        "dataset": "US2016",
+        "schemes": [
+            "PopularPractice"
+        ],
+        "cqs": [
+            {
+                "id": "HOLT_94_97574",
+                "cq": "Is it morally justifiable to tie a person's eligibility for public office to their personal financial information, rather than their qualifications and policies?",
+                "label": "Useful"
+            },
+            {
+                "id": "HOLT_94_60197",
+                "cq": "Does the burden that Americans have to pay for their elected officials' tax returns justify restricting access to those returns?",
+                "label": "Unhelpful"
+            },
+            {
+                "id": "HOLT_94_78708",
+                "cq": "Does the obligation for nominees to release their tax returns necessarily imply that the same level of transparency is required from public figures who do not hold elected office?",
+                "label": "Unhelpful"
+            }
+        ]
+    },
+    "Helen__66": {
+        "intervention_id": "Helen__66",
+        "intervention": "Helen: \"they\u2019re not able to impose the right sort of levels\nand within that bracket I would certainly put families who are living with very high levels of aggression and violence, who are terrorising communities\nSo, yes I\u2019d agree with that\nBut I would also say that there are other families, where actually they do need a great deal of help\nit\u2019s right to intervene\nand actually you can help them get back on their feet and able to parent their children effectively\"",
+        "dataset": "moral_maze_schemes",
+        "schemes": [
+            "PositiveConsequences",
+            "Example"
+        ],
+        "cqs": [
+            {
+                "id": "Helen__66_87572",
+                "cq": "Is it possible for a family to be 'helped' back on their feet and still pose a threat of terrorizing communities, or is that not a contradictory goal?",
+                "label": "Useful"
+            },
+            {
+                "id": "Helen__66_93088",
+                "cq": "How can Helen justify helping families who need support without imposing levels that might enable violent or aggressive behavior?",
+                "label": "Useful"
+            },
+            {
+                "id": "Helen__66_88714",
+                "cq": "Does Helen's assertion that some families require significant help but do not pose a threat to their communities align with her endorsement of intervening in all families who need help, regardless of the level of aggression and violence?",
+                "label": "Unhelpful"
+            }
+        ]
+    },
+    "17th_knight__247": {
+        "intervention_id": "17th_knight__247",
+        "intervention": "17th: \"They should get the coverage\nThey are here\nthey work\nthey are a part of this society\nFuck off with your xenophobia\"\n < this message is answering to > \nreaper527: \"now you have a field of democrat presidential candidates supporting it\nrepublicans used to get mocked and laughed at when they said that illegal immigrants would be getting obamacare coverage\"",
+        "dataset": "us2016reddit",
+        "schemes": [
+            "Ad hominem"
+        ],
+        "cqs": [
+            {
+                "id": "17th_knight__247_36483",
+                "cq": "Does the fact that some Democrats are now supporting a policy that was previously mocked by Republicans necessarily imply that this new support is motivated by anything other than changing political winds, rather than a genuine shift in values or principles?",
+                "label": "not_able_to_evaluate"
+            },
+            {
+                "id": "17th_knight__247_71195",
+                "cq": "Is it sufficient to establish a historical precedent for a conservative stance being mocked by both parties, without considering any potential changes in party ideologies or public opinion since then?",
+                "label": "not_able_to_evaluate"
+            },
+            {
+                "id": "17th_knight__247_66556",
+                "cq": "Is the value of 'being a part of this society' sufficient to justify universal healthcare coverage for all individuals, regardless of their immigration status?",
+                "label": "Useful"
+            }
+        ]
+    },
+    "AFCHF_154": {
+        "intervention_id": "AFCHF_154",
+        "intervention": "AFCHF: \"DOT should set maximum tarmac delay trigger.\nIt then should apply to ALL AIRLINES and ALL CLASSES of AIRCRAFT.\nThe airlines need to make a legal committment (contract of carriage).\nDeplaneing without CBP screening IS a viable option.\nAs a military member, I have done this many times during overseas contract flights.\nI realize this is customs rather than airport security, but the concept is the same.\nAllow passengers to deplane during gate holds,\nbut require them to remain in the immediate area.\nThis is no different than an openended delay prior to boarding.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "AFCHF_154_60600",
+                "cq": "Can deplaning during gate holds without CBP screening be considered a viable option for all airlines and passengers, regardless of class or destination?",
+                "label": "Useful"
+            },
+            {
+                "id": "AFCHF_154_60450",
+                "cq": "Does the requirement for CBP screening to be conducted before passengers are allowed to deplane during gate holds not create a safety risk that would be exacerbated by delays, potentially undermining the effectiveness of this proposal?",
+                "label": "Useful"
+            },
+            {
+                "id": "AFCHF_154_11069",
+                "cq": "Does the argument's assumption that deplaning without CBP screening is a viable option for all passengers, regardless of their military status or any other factors, not undermine its claim that this approach is equivalent to an open-ended delay prior to boarding?",
+                "label": "Useful"
+            }
+        ]
+    },
+    "AK-traveler_186": {
+        "intervention_id": "AK-traveler_186",
+        "intervention": "AK-traveler: \"Airlines should not be allowed to charge for items necessary because of factors out of the passengers control.\nSeat size and configuration (arm and leg room) should be addressed as a health issue.\nThe inflight magazines show exercises passengers should do at their seats to prevent deep vein thrombosis\nbut there isn't enough room to do them.\nAnd finally, I think it is unfair if not criminal and discriminatory to charge exorbinant fees for carrying your pet onboard with you.\nThe carrier is handled as a carry on bag solely by me,\nthe airline doesn't do anything\nyet they carage $100 or more each way.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "AK-traveler_186_51224",
+                "cq": "Is it reasonable to assume that airlines are responsible for ensuring passengers' basic health and comfort needs, even when those needs exceed the physical space available on a flight?",
+                "label": "not_able_to_evaluate"
+            },
+            {
+                "id": "AK-traveler_186_57429",
+                "cq": "Does the argument's suggestion that airlines should not charge for items necessary due to factors outside of passengers' control imply a similar exemption for services provided by airlines, such as food and beverages?",
+                "label": "not_able_to_evaluate"
+            },
+            {
+                "id": "AK-traveler_186_65113",
+                "cq": "Is it logically consistent to claim that airlines should not charge for items necessary due to factors out of passengers' control, while still charging exorbitant fees for carrying pets, which are often subject to the same uncontrollable circumstances?",
+                "label": "Useful"
+            }
+        ]
+    },
+    "AllergyDad_200": {
+        "intervention_id": "AllergyDad_200",
+        "intervention": "AllergyDad: \"As a parent of a child with severe lifethreatening allergies to peanuts and treenuts, the thought of getting on an airplane today is frightening.\nSo much so, that it is strictly avoided.\nIt is not worth risking my child's life to fly on an airplane.\nA recent study reveals that 1 in 3 airplane reactions was anaphylaxis\n(Allergic Living Magazine).\nI don't like those odds.\nThe substitution of cashews, walnuts, or other tree nuts is not a viable option,\nas they pose the same risks as peanuts.\nA large number of people who are allergic to peanuts are also allergic to tree nuts,\nplus they are typically processed in a plant that also processes peanuts.\nIf there were a ban on peanut and tree nut products on flights, it would open the world to my son.\nHe didn't choose to be allergic,\nbut he is.\nSo true.\nWe are not talking about sensitivity, being offended, not liking the smell, etc.;\nwe are talking about life.\nThere are a lot of things that are banned from airplanes that can cause death to someone.\nIn the case of my son, a peanut can have the same result.\nI urge the DOT to issue the ban,\nand make traveling safe for everyone.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample",
+            "ERExample",
+            "ERExample"
+        ],
+        "cqs": [
+            {
+                "id": "AllergyDad_200_62047",
+                "cq": "Does the potential benefit of a blanket ban on peanut and tree nut products on flights outweigh the potential inconvenience and economic impact on the airline industry?",
+                "label": "Unhelpful"
+            },
+            {
+                "id": "AllergyDad_200_83379",
+                "cq": "Is it truly possible to ensure a complete removal of all peanuts and tree nuts from flight products, given their widespread presence in food processing facilities, without leaving room for even a tiny chance of cross-contamination?",
+                "label": "Invalid"
+            },
+            {
+                "id": "AllergyDad_200_38414",
+                "cq": "Does the severity of anaphylaxis caused by peanuts and tree nuts, while rare, outweigh the potential risks and consequences of a blanket airline ban that could significantly restrict travel options for millions of people?",
+                "label": "Unhelpful"
+            }
+        ]
+    },
+    "AngelComa__638": {
+        "intervention_id": "AngelComa__638",
+        "intervention": "AngelComa: \"Funny, I thought he did good\nThey get timed responses\nhis plan is all there\nHe can't talk about everything in the plan\nMust be how used you are to politicians saying things and not having a plan\"\n < this message is answering to > \nPunchee: \"That was a weird moment in American debate history. \"Yo check my website. Shit's on there.\"\"",
+        "dataset": "us2016reddit",
+        "schemes": [
+            "Ad hominem"
+        ],
+        "cqs": [
+            {
+                "id": "AngelComa__638_70080",
+                "cq": "Is it possible that Punchee's response is being used to illustrate the lack of preparedness, rather than as evidence for AngelComa's point about politicians' plans?",
+                "label": "Useful"
+            },
+            {
+                "id": "AngelComa__638_42349",
+                "cq": "Is it possible that AngelComma is assuming Punchee is an expert on American debate history without sufficient evidence?",
+                "label": "not_able_to_evaluate"
+            },
+            {
+                "id": "AngelComa__638_30033",
+                "cq": "Does AngelComa have sufficient evidence from Punchee's website to support her claim that his plan is all there?",
+                "label": "Unhelpful"
+            }
+        ]
+    },
+    "Antanagoge_104": {
+        "intervention_id": "Antanagoge_104",
+        "intervention": "Antanagoge: \"The airline industry can not be left to selfmonitor this.\nStudies have shown that the quality of information from airline customer service department is highly variable and, in some cases, incomplete or inaccurate.\nThe psychological effects of this, combined with the risk of death, are significant.\nStories told by families of vacations never taken, of midair retraction of the promise by the airline that peanuts would not be served, of public humiliation of peanutallergic individuals and their family by airline staff, and of serious reactions in flight, abound.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample"
+        ],
+        "cqs": [
+            {
+                "id": "Antanagoge_104_72375",
+                "cq": "Does Antanagoge's conclusion that the airline industry cannot be left to self-monitor solely rely on anecdotes rather than empirical evidence?",
+                "label": "Useful"
+            },
+            {
+                "id": "Antanagoge_104_57569",
+                "cq": "Is it reasonable to assume that the airline industry's self-monitoring of customer service is inadequate solely on the basis of anecdotal accounts and individual studies, rather than considering a broader dataset or empirical evidence?",
+                "label": "Useful"
+            },
+            {
+                "id": "Antanagoge_104_17563",
+                "cq": "Does Antanagoge have sufficient evidence that the airline industry's self-monitoring is ineffective and cannot be improved through regulation or oversight?",
+                "label": "Useful"
+            }
+        ]
+    },
+    "Antanagoge_111": {
+        "intervention_id": "Antanagoge_111",
+        "intervention": "Antanagoge: \"The opponents of accommodations are well aware that studies have been published in the journals of the American Academy of Allergy Asthma and Immunology, the American Medical Association, and the American College of Allergy, Asthma and Immunology, not to mention medical associations in other countries.\nThey can purchase full text access for themselves,\nbut they already have a prejudgment against the researchers and their conclusions,\nso why bother?\nThere was a moment on the board when the moderators asked for a discussion of a hypothetical compromise position.\nBut those demanding funerals before entertaining even a compromise position muted that.\nThat is sad.\nThere are several others on the board with some good reasonable ideas.\nIt's fairly clear that meanspiritedness abounds, here\nprobably as a result of emphasis in current American politics on the potential for influence of minority interests and needs.\nBut some of the people on this board  calling for funerals before advancing the discussion  give new meaning to the Founders' fears of the tyranny of the majority.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExpertOpinion"
+        ],
+        "cqs": [
+            {
+                "id": "Antanagoge_111_43116",
+                "cq": "Does the author's assumption that those opposed to accommodations have a prejudgment against researchers and their conclusions, given access to full text of studies, not necessarily invalidate their concerns about accommodations?",
+                "label": "Useful"
+            },
+            {
+                "id": "Antanagoge_111_26615",
+                "cq": "Is Antanagoge's assumption that all opponents of accommodations have a prejudgment against researchers and their conclusions based solely on their opposition to accommodations, rather than any other reason?",
+                "label": "Useful"
+            },
+            {
+                "id": "Antanagoge_111_81171",
+                "cq": "Does Antanagoge's assertion that the opponents' refusal to consider alternative perspectives is solely due to a prejudged stance against the researchers and their conclusions, rather than other possible factors such as genuine disagreement or a desire to control the narrative, accurately capture the complexity of the issue?",
+                "label": "not_able_to_evaluate"
+            }
+        ]
+    },
+    "Antanagoge_227": {
+        "intervention_id": "Antanagoge_227",
+        "intervention": "Antanagoge: \"Peanut allergens are indeed present in the recirculated air in the aircraft cabin.\nThis study, \"Recovery of peanut allergens from ventilation filters of commercial airliners,\" ? conducted \"to help address whether peanutsensitive travelers are exposed to peanut aeroallergans during airline flights on which peanuts are served\" ? resulted in the conclusion that \"that peanut allergens can be eluted from ventilation system filters in commercial airliners. The most likely source of these allergens are the peanuts served during flights.\" ?\nhttp://download.journals.elsevierhealth.com/pdfs/journals/00916749/PIIS0091674996811791.pdf\"\n < this message is answering to > \nMulder: \"Apparently Samsmom is the ignorant one.\nShe attacks what she clearly does not understand.\nIf her child has a true peanut allergy that is so severe, he shouldn't be flying,\nsince her argument is that any contact with peanut dust or oil would cause anaphylactic shock.\nSince that possibility is very real even outside an airline cabin,\nshe's making her own argument for living in a bubble.\nFacts are stubborn things,\nand one of those facts is that the air onboard an airliner is cleaner than in most public buildings,\nso there's very little, if any, real risk involved in flying on a jet where peanuts have been consumed before or are even being served now.\nAnother stubborn fact is that you can be desensitized to peanut allergies,\nbut if you're unwilling to do it, don't blame others for not bending to your petty fears.\nNobody has studied this subject,\nso there's no hard data.\nBut we do know that the air onboard an airliner is much cleaner than people think.\nOnly one confirmed death onboard an airliner has been reported,\nbut it may have been as far back as 1998,\nand it was an Eastern European airline.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERAdHominem",
+            "ERExpertOpinion"
+        ],
+        "cqs": [
+            {
+                "id": "Antanagoge_227_16821",
+                "cq": "Does Samsmom's assertion that any contact with peanut dust or oil could cause anaphylactic shock accurately represent her child's specific and severe peanut allergy?",
+                "label": "Useful"
+            },
+            {
+                "id": "Antanagoge_227_94537",
+                "cq": "Does Antanagoge's conclusion that peanuts served on flights are the most likely source of peanut allergens, given the lack of specific data and the fact that the air onboard an airliner is cleaner than in most public buildings, follow logically from the study's findings?",
+                "label": "Useful"
+            },
+            {
+                "id": "Antanagoge_227_12251",
+                "cq": "Does Samsmom's argument that a peanut-allergic child should not fly due to the risk of anaphylactic shock assume that there is no other way to safely mitigate this risk, or does she rely on unproven claims about desensitization?",
+                "label": "Unhelpful"
+            }
+        ]
+    },
+    "Antanagoge_239": {
+        "intervention_id": "Antanagoge_239",
+        "intervention": "Antanagoge: \"Is it really possible that all blindly partisan advocates of the peanut in this context eat peanuts and only peanuts?\nThat they are overtaken by such a compulsion to consume peanut while flying that they lose sight of all other priorities?\nThat they are unable to stop using their peanut  the one dragon they can't put to sleep  to create a sense of pleasure and comfort?\nThese sound like essential symptoms of disordered eating and addiction, which, in all likelihood, derive from some longstanding issues.\nThe remedy is to avoid the substance in question.... \"just say 'no'\" ? to your peanuts.\nServing/eating peanuts on airplanes has risen to the level of a public health menace, as had tobacco smoking.\nAgain, the only prudent course of action is to require that distribution of peanut on airplanes be discontinued.\"\n < this message is answering to > \nhowie: \"Mulder is right on point.\nMost food allergies are completely imagined.\nAn overly anxious parent gets it in her head that little jimmy might have had a hive after someone had peanuts in his vicinity,\nand now he's \"deathly allergic\".\nHas ANYONE ever actually died on a plane from peanuts (other than by choking on them)?\nI sincerely doubt it.\nPeanuts are incredibly nutritious,\nalmost universally enjoyed,\nand quite filling in a small serving.\nSimply put, pound for pound there is no better food on the planet.\nThis whole antipeanut hysteria is ridiculous!\nLeave my peanuts alone!\nIf you are one of the incredibly rare people that have an actual medically diagnosed severe allergy to this wonderful food, then you better never leave the house because peanuts are everywhere.\nYou certainly should not be flying.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERAdHominem"
+        ],
+        "cqs": [
+            {
+                "id": "Antanagoge_239_18076",
+                "cq": "Does the argument's assumption that most people are not actually dying from peanut allergies on planes due to a genuine food allergy, rather than some other reason (e.g. choking), provide sufficient evidence to dismiss the public health concerns surrounding in-flight peanut distribution?",
+                "label": "Unhelpful"
+            },
+            {
+                "id": "Antanagoge_239_50150",
+                "cq": "Does Antanagoge's argument about peanuts on airplanes being a public health menace rely solely on anecdotal evidence and unsubstantiated claims, rather than credible data or empirical research?",
+                "label": "Useful"
+            },
+            {
+                "id": "Antanagoge_239_43491",
+                "cq": "Can we assume that the absence of documented fatalities from peanut-related allergic reactions on planes is sufficient evidence to refute the claim that peanuts pose a public health menace?",
+                "label": "Useful"
+            }
+        ]
+    },
+    "Bill_106": {
+        "intervention_id": "Bill_106",
+        "intervention": "Bill: \"I run a retail business.\nIf I changed my prices every few minutes or hours like the airline does or charge my customers different prices on the same day.\nThey would probably never come back and call the better business bureau.\nAnd they wonder why so much distrust and angry customers.\nRecently I wrote to one airline that had a ticket price of around $198. but then listed the taxes at something like $400.00 extra.\nI told them it was Bait and Add on.\nSimilar to some retail stores that Bait customers with low price and then Switch to higher priced goods.\nIt is illegal and called Bait and Switch.\nThe airlines or some ticket sellers are guilty of lies.\nTaxes are never higher than the price of the ticket.\nI spend hours trying to buy a ticket without getting ripped off.\nIt should not be this difficult.\nAnd one way fare should be half of a RT not higher than RT.\nhey force us to buy RT and then use only the one way portion.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample",
+            "ERExample",
+            "ERExample",
+            "ERExample",
+            "ERExample"
+        ],
+        "cqs": [
+            {
+                "id": "Bill_106_54574",
+                "cq": "Is it possible that the frustration of buying a ticket is caused by the complexity of the pricing model, rather than an intentional attempt to deceive or scam customers?",
+                "label": "Useful"
+            },
+            {
+                "id": "Bill_106_90234",
+                "cq": "Does Bill's experience of being charged excessive taxes on an airline ticket constitute sufficient evidence to support the claim that airlines are engaging in 'Bait and Switch' practices, when the industry standard for taxes is unclear and airlines may have varying pricing structures?",
+                "label": "Useful"
+            },
+            {
+                "id": "Bill_106_25742",
+                "cq": "Does Bill's experience with buying airline tickets accurately represent the experiences of all customers, or is it based on his own unusual circumstances?",
+                "label": "Useful"
+            }
+        ]
+    }
+}

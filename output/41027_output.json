@@ -1,0 +1,862 @@
+{
+    "CLINTON_199_2": {
+        "intervention_id": "CLINTON_199_2",
+        "intervention": "CLINTON: \"which may prove to be an intelligence benefit\nwe've got to do everything we can to vacuum up intelligence from Europe, from the Middle East\nThat means we've got to work more closely with our allies, and that's something that Donald has been very dismissive of\nWe're working with NATO, the longest military alliance in the history of the world, to really turn our attention to terrorism\nWe're working with our friends in the Middle East, many of which, as you know, are Muslim majority nations\nDonald has consistently insulted Muslims abroad, Muslims at home, when we need to be cooperating with Muslim nations and with the American Muslim community\nThey're on the front lines\nThey can provide information to us that we might not get anywhere else\nThey need to have close working cooperation with law enforcement in these communities, not be alienated and pushed away as some of Donald's rhetoric, unfortunately, has led to\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Example",
+            "CauseToEffect",
+            "PracticalReasoning",
+            "Consequences",
+            "Example",
+            "Consequences"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_199_2_44627",
+                "cq": "How can cooperation with Muslim-majority nations and the American Muslim community be effective in combating terrorism if it is undermined by rhetoric that alienates these communities?"
+            },
+            {
+                "id": "CLINTON_199_2_31122",
+                "cq": "How can cooperation with Muslim-majority nations and the American Muslim community be considered a national security threat when many of these communities are already providing crucial intelligence to the US?"
+            },
+            {
+                "id": "CLINTON_199_2_58613",
+                "cq": "How can we trust that cooperation with Muslim nations and communities will be effective if their own governments are being alienated by Trump's rhetoric?"
+            }
+        ]
+    },
+    "CLINTON_1_2": {
+        "intervention_id": "CLINTON_1_2",
+        "intervention": "CLINTON: \"If you help create the profits , you should be able to share in them , not just the executives at the top\nI want us to do more to support people who are struggling to balance family and work\nI 've heard from so many of you about the difficult choices you face and the stresses that you 're under\nlet 's have paid family leave , earned sick days\nLet 's be sure we have affordable child care and debt-free college\nHow are we going to do it\nWe 're going to do it by having the wealthy pay their fair share and close the corporate loopholes\nwe tonight are on the stage together , Donald Trump and I\nit 's good to be with you\nWe 're going to have a debate where we are talking about the important issues facing our country\nYou have to judge us , who can shoulder the immense , awesome responsibilities of the presidency , who can put into action the plans that will make your life better\nI hope that I will be able to earn your vote on November 8th\"",
+        "dataset": "US2016",
+        "schemes": [
+            "PopularOpinion",
+            "Values",
+            "PracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_1_2_84779",
+                "cq": "How can a candidate who has built their wealth and career largely on exploiting loopholes and paying low taxes be trusted to close those same loopholes and implement policies that benefit the middle class?"
+            },
+            {
+                "id": "CLINTON_1_2_34208",
+                "cq": "How do you plan to ensure that corporations with significant profits will actually be required to share those profits with workers, rather than simply increasing executive pay?"
+            },
+            {
+                "id": "CLINTON_1_2_49717",
+                "cq": "How can Clinton's plan to redistribute wealth and close corporate loopholes not create a disincentive for businesses to innovate and invest, potentially harming the very people she claims to be trying to help?"
+            }
+        ]
+    },
+    "CLINTON_21": {
+        "intervention_id": "CLINTON_21",
+        "intervention": "CLINTON: \"nine million people lost their jobs\nFive million people lost their homes\n$ 13 trillion in family wealth was wiped out\nNow , we have come back from that abyss\nit has not been easy\nwe 're now on the precipice of having a potentially much better economy\nthe last thing we need to do is to go back to the policies that failed us in the first place\nIndependent experts have looked at what I 've proposed\nlooked at what Donald 's proposed\nI intend to get it done\nTake clean energy\nSome country is going to be the clean- energy superpower of the 21st century\nDonald thinks that climate change is a hoax perpetrated by the Chinese\nI think it 's real\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Analogy"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_21_26268",
+                "cq": "How can Clinton reconcile his assertion that climate change is 'real' with the claim that some country (likely China) is perpetrating a hoax on this issue?"
+            },
+            {
+                "id": "CLINTON_21_68785",
+                "cq": "How can Clinton's proposed policies on clean energy and climate change be assured to succeed where previous efforts under his administration failed?"
+            },
+            {
+                "id": "CLINTON_21_58471",
+                "cq": "How can we be certain that your proposed policies will not simply shift the burden of environmental degradation to other countries, thereby undermining global cooperation on clean energy?"
+            }
+        ]
+    },
+    "CLINTON_223_1": {
+        "intervention_id": "CLINTON_223_1",
+        "intervention": "CLINTON: \"Let 's talk about two important issues that were briefly mentioned by Donald\nfirst , NATO\nNATO as a military alliance has something called Article 5\nyou know the only time it 's ever been invoked ?\nAfter 9/11 , when the 28 nations of NATO said that they would go to Afghanistan with us to fight terrorism\nsomething that they still are doing by our side\nWith respect to Iran , when I became secretary of state , Iran was weeks away from having enough nuclear material to form a bomb\nThey had mastered the nuclear fuel cycle under the Bush administration\nThey had built covert facilities\nThey had stocked them with centrifuges that were whirling away\nwe had sanctioned them\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Sign",
+            "Sign",
+            "PracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_223_1_68482",
+                "cq": "How do you explain the lack of military intervention from NATO members in the Kosovo conflict in 1999, despite Clinton's claims that Article 5 was invoked?"
+            },
+            {
+                "id": "CLINTON_223_1_95656",
+                "cq": "Isn't it true that Clinton's claim that he was the one who escalated NATO's involvement in Afghanistan, and imposed sanctions on Iran, oversimplifies the complex diplomatic efforts of his predecessors, particularly Bush?"
+            },
+            {
+                "id": "CLINTON_223_1_89751",
+                "cq": "Is it not misleading to imply that Clinton's actions as Secretary of State prevented Iran from obtaining nuclear material, when the Bush administration's actions led to Iran acquiring the necessary knowledge and facilities?"
+            }
+        ]
+    },
+    "CLINTON_223_2": {
+        "intervention_id": "CLINTON_223_2",
+        "intervention": "CLINTON: \"I voted for every sanction against Iran when I was in the Senate\nit was n't enough\nI spent a year-and-a-half putting together a coalition that included Russia and China to impose the toughest sanctions on Iran\n we did drive them to the negotiating table\nmy successor , John Kerry , and President Obama got a deal that put a lid on Iran 's nuclear program without firing a single shot\nThat 's diplomacy\nThat 's coalition-building\nThat 's working with other nations\nThat 's not good judgment\"",
+        "dataset": "US2016",
+        "schemes": [
+            "CauseToEffect",
+            "Consequences"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_223_2_94744",
+                "cq": "If Iran's nuclear program was successfully put on hold through diplomatic efforts, why did a subsequent administration feel it necessary to withdraw from the Joint Comprehensive Plan of Action (JCPOA) just three years later?"
+            },
+            {
+                "id": "CLINTON_223_2_58009",
+                "cq": "Was Clinton's reliance on international cooperation to pressure Iran a pragmatic approach, or did it simply allow Iran to maintain its nuclear program indefinitely?"
+            },
+            {
+                "id": "CLINTON_223_2_14267",
+                "cq": "If the sanctions were insufficient and did drive Iran to the negotiating table, why wasn't it sufficient to simply continue those existing sanctions rather than spending a year-and-a-half assembling a new coalition?"
+            }
+        ]
+    },
+    "CLINTON_225": {
+        "intervention_id": "CLINTON_225",
+        "intervention": "CLINTON: \"That is not the right temperament to be commander-in- chief , to be taunted\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Sign"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_225_37530",
+                "cq": "Does the speaker's characterization of the president's temperament as being open to being 'taunted' imply that this is a desirable quality for a commander-in-chief?"
+            },
+            {
+                "id": "CLINTON_225_39432",
+                "cq": "Is being 'taunted' as a desirable trait for a commander-in-chief, and does it imply that Clinton is suggesting someone who can withstand criticism is not fit for the job?"
+            },
+            {
+                "id": "CLINTON_225_49624",
+                "cq": "Is being 'taunted' as a qualification for the commander-in-chief role actually a reference to something specific or just a vague attack?"
+            }
+        ]
+    },
+    "CLINTON_231": {
+        "intervention_id": "CLINTON_231",
+        "intervention": "CLINTON: \"in fact , his cavalier attitude about nuclear weapons is so deeply troubling\nThat is the number-one threat we face in the world\nit becomes particularly threatening if terrorists ever get their hands on any nuclear material\"",
+        "dataset": "US2016",
+        "schemes": [
+            "FearAppeal",
+            "DangerAppeal"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_231_53325",
+                "cq": "How does Clinton's assertion that the primary threat to the world comes from a cavalier attitude towards nuclear weapons align with his administration's actual actions and policies regarding nuclear disarmament?"
+            },
+            {
+                "id": "CLINTON_231_51931",
+                "cq": "How can a president's concern about terrorism acquiring nuclear material be reconciled with their cavalier attitude towards existing nuclear threats?"
+            },
+            {
+                "id": "CLINTON_231_80713",
+                "cq": "How can a cavalier attitude towards nuclear weapons be considered a credible response to the threat of terrorists obtaining nuclear material?"
+            }
+        ]
+    },
+    "CLINTON_235": {
+        "intervention_id": "CLINTON_235",
+        "intervention": "CLINTON: \"It 's a good one , though\nIt well describes the problem\"",
+        "dataset": "US2016",
+        "schemes": [
+            "VerbalClassification"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_235_67720",
+                "cq": "Is the proposed solution actually addressing the root cause of the problem, rather than just describing it?"
+            },
+            {
+                "id": "CLINTON_235_41883",
+                "cq": "Does describing the problem as 'good' convey an unbiased assessment of its significance?"
+            },
+            {
+                "id": "CLINTON_235_60054",
+                "cq": "Is describing a problem without offering a solution sufficient to address it?"
+            }
+        ]
+    },
+    "CLINTON_244_2": {
+        "intervention_id": "CLINTON_244_2",
+        "intervention": "CLINTON: \"If he 's going to criticize a deal that has been very successful in giving us access to Iranian facilities that we never had before , then he should tell us what his alternative would be\nit 's like his plan to defeat ISIS\nthe only secret is that he has no plan\nHe says it 's a secret plan\nwe need to be more precise in how we talk about these issues\nPeople around the word follow our presidential campaigns so closely , trying to get hints about what we will do\nCan they rely on us ?\nAre we going to lead the world with strength and in accordance with our values ?\nThat 's what I intend to do\nI intend to be a leader of our country that people can count on , both here at home and around the world\nto make decisions that will further peace and prosperity\nalso stand up to bullies , whether they 're abroad or at home\nWe can not let those who would try to destabilize the world to interfere with American interests and security\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Consequences"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_244_2_75774",
+                "cq": "How can we trust Clinton's leadership on international issues when his administration has been criticized for its handling of similar situations, such as the Libya intervention?"
+            },
+            {
+                "id": "CLINTON_244_2_25989",
+                "cq": "How can we be certain that his alternative plan to defeat ISIS is not equally based on guesswork and lack of clear strategy?"
+            },
+            {
+                "id": "CLINTON_244_2_36679",
+                "cq": "How can Clinton reconcile his promise of a 'secret plan' to defeat ISIS with the need for transparency and accountability in foreign policy decision-making?"
+            }
+        ]
+    },
+    "CLINTON_25": {
+        "intervention_id": "CLINTON_25",
+        "intervention": "CLINTON: \"it 's important that we grip this and deal with it , both at home and abroad\nhere 's what we can do\nWe can deploy a half a billion more solar panels\nWe can have enough clean energy to power every home\nWe can build a new modern electric grid\nThat 's a lot of jobs\nthat 's a lot of new economic activity\n I 've tried to be very specific about what we can and should do\nI am determined that we 're going to get the economy really moving again , building on the progress we 've made over the last eight years , but never going back to what got us in trouble in the first place\"",
+        "dataset": "US2016",
+        "schemes": [
+            "CauseToEffect",
+            "Consequences",
+            "Consequences",
+            "CauseToEffect"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_25_81447",
+                "cq": "How can deploying a half billion more solar panels, combined with building a new modern electric grid, be economically viable and job-generating without raising energy costs for average Americans?"
+            },
+            {
+                "id": "CLINTON_25_74253",
+                "cq": "How will deploying a half billion more solar panels and building a new modern electric grid actually create jobs and stimulate economic activity, given concerns about the high upfront costs of these projects?"
+            },
+            {
+                "id": "CLINTON_25_69950",
+                "cq": "How can deploying half a billion more solar panels and building a new modern electric grid generate enough clean energy to power every home, considering the existing infrastructure's capacity and potential technological limitations?"
+            }
+        ]
+    },
+    "CLINTON_37": {
+        "intervention_id": "CLINTON_37",
+        "intervention": "CLINTON: \" Some of them I voted for\nThe biggest one, a multinational one known as CAFTA, I voted against\nI hold the same standards as I look at all of these trade deals\nlet's not assume that trade is the only challenge we have in the economy\nit is a part of it\nI'm going to have a special prosecutor\nWe're going to enforce the trade deals we have, and we're going to hold people accountable\nWhen I was secretary of state, we actually increased American exports globally 30 percent\nWe increased them to China 50 percent\n know how to really work to get new jobs and to get exports that helped to create more new jobs\"",
+        "dataset": "US2016",
+        "schemes": [
+            "PracticalReasoning",
+            "Example",
+            "Example"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_37_36330",
+                "cq": "How can a president who voted against some trade deals claim to be committed to enforcing and holding people accountable for existing trade agreements?"
+            },
+            {
+                "id": "CLINTON_37_10040",
+                "cq": "How can we trust that enforcing existing trade deals will lead to a 'special prosecutor' who is not beholden to corporate interests and can effectively hold people accountable?"
+            },
+            {
+                "id": "CLINTON_37_34465",
+                "cq": "How do you reconcile your previous opposition to CAFTA with your current decision to enforce and potentially prosecute trade deals, particularly if they may have benefits for American exports and job creation?"
+            }
+        ]
+    },
+    "CLINTON_39": {
+        "intervention_id": "CLINTON_39",
+        "intervention": "CLINTON: \"I've been a senator, Donald\n...\nYou haven't done it.\n I have been a secretary of state\nAnd I have done a lot\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Example",
+            "Example"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_39_31534",
+                "cq": "How can experience as a senator and Secretary of State be directly comparable to being President, given the vastly different scope and scale of responsibilities involved?"
+            },
+            {
+                "id": "CLINTON_39_58068",
+                "cq": "How do you reconcile the significant policy disagreements and controversies that arose during your tenure as secretary of state with your characterization of it as having been a period of 'doing a lot'?"
+            },
+            {
+                "id": "CLINTON_39_71825",
+                "cq": "What makes you believe that being a senator and Secretary of State are directly comparable to the duties and challenges of the presidency?"
+            }
+        ]
+    },
+    "CLINTON_55": {
+        "intervention_id": "CLINTON_55",
+        "intervention": "CLINTON: \"There are different views about what's good for our country, our economy, and our leadership in the world\nit's important to look at what we need to do to get the economy going again\nnew jobs with rising incomes, investments, not in more tax cuts that would add $5 trillion to the debt\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Values",
+            "Values"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_55_98623",
+                "cq": "How can President Clinton's plan for boosting the economy be reconciled with his promise to increase investments, if not through further tax cuts, which would likely worsen the existing debt?"
+            },
+            {
+                "id": "CLINTON_55_95153",
+                "cq": "How can increasing taxes from an additional $5 trillion be justified when the candidate claims to prioritize economic growth and rising incomes?"
+            },
+            {
+                "id": "CLINTON_55_74135",
+                "cq": "How do you reconcile the promise of new jobs and rising incomes with the potential economic disruption caused by investments, particularly in an industry as capital-intensive as energy?"
+            }
+        ]
+    },
+    "CLINTON_57": {
+        "intervention_id": "CLINTON_57",
+        "intervention": "CLINTON: \"you have no plan\nI have written a book about it. It's called \"Stronger Together.\"\nYou can pick it up tomorrow at a bookstore\nwe need to have strong growth , fair growth , sustained growth\nWe also have to look at how we help families balance the responsibilities at home and the responsibilities at business\nwe have a very robust set of plans\npeople have looked at both of our plans , have concluded that mine would create 10 million jobs and yours would lose us 3.5 million jobs , and explode the debt which would have a recession\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Example",
+            "Example",
+            "ExpertOpinion"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_57_78943",
+                "cq": "How can a plan that promises to create 10 million jobs without any details on how it will be implemented, funded, or sustainably maintained actually lead to economic growth?"
+            },
+            {
+                "id": "CLINTON_57_44779",
+                "cq": "How can you be so confident that your plan will create 10 million jobs without providing any concrete details or evidence to support this claim?"
+            },
+            {
+                "id": "CLINTON_57_56896",
+                "cq": "How can you be confident that your plan, which is based on projections and not actual policies or implementations, will result in 10 million new jobs when others have deemed it unrealistic?"
+            }
+        ]
+    },
+    "CLINTON_66": {
+        "intervention_id": "CLINTON_66",
+        "intervention": "CLINTON: \"what I have proposed would not add a penny to the debt\n your plans would add $ 5 trillion to the debt\nWhat I have proposed would cut regulations and streamline them for small businesses\nWhat I have proposed would be paid for by raising taxes on the wealthy\nthey have made all the gains in the economy\nit 's time that the wealthy and corporations paid their fair share to support this country\"",
+        "dataset": "US2016",
+        "schemes": [
+            "PracticalReasoning",
+            "PracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_66_53150",
+                "cq": "How do you plan to ensure that raising taxes on the wealthy actually leads to them paying their fair share, rather than simply passing on the increased costs to consumers or companies?"
+            },
+            {
+                "id": "CLINTON_66_23334",
+                "cq": "How do you reconcile raising taxes on the wealthy with the argument that they have already made all the gains in the economy?"
+            },
+            {
+                "id": "CLINTON_66_97089",
+                "cq": "If raising taxes on the wealthy by any amount would prevent the $5 trillion in additional debt, wouldn't that same tax increase be sufficient to pay for your proposed regulation cuts?"
+            }
+        ]
+    },
+    "CLINTON_6_1": {
+        "intervention_id": "CLINTON_6_1",
+        "intervention": "CLINTON: \"we are 5 percent of the world 's population ; we have to trade with the other 95 percent\nwe need to have smart , fair trade deals\nWe also , though , need to have a tax system that rewards work and not just financial transactions\nthe kind of plan that Donald has put forth would be trickle-down economics all over again\nit would be the most extreme version , the biggest tax cuts for the top percent of the people in this country than we 've ever had\ntrumped-up trickle-down , because that 's exactly what it would be\nThat is not how we grow the economy\nWe just have a different view about what 's best for growing the economy , how we make investments that will actually produce jobs and rising incomes\nwe come at it from somewhat different perspectives\nDonald was very fortunate in his life , and that 's all to his benefit\"",
+        "dataset": "US2016",
+        "schemes": [
+            "VerbalClassification",
+            "Bias",
+            "PracticalReasoning",
+            "Consequences"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_6_1_56836",
+                "cq": "How can a tax system designed primarily for the top percent of earners be considered fair and equitable?"
+            },
+            {
+                "id": "CLINTON_6_1_28937",
+                "cq": "How can a tax system that rewards work over financial transactions, as described by Clinton, effectively address income inequality when the top percent of earners in the US already hold an disproportionate amount of wealth and influence?"
+            },
+            {
+                "id": "CLINTON_6_1_28205",
+                "cq": "How can a tax system that rewards work rather than financial transactions be both fair and effective enough to compete with the benefits of trickle-down economics in driving economic growth?"
+            }
+        ]
+    },
+    "CLINTON_6_2": {
+        "intervention_id": "CLINTON_6_2",
+        "intervention": "CLINTON: \"He started his business with $ 14 million , borrowed from his father\nhe really believes that the more you help wealthy people , the better off we 'll be and that everything will work out from there\nI do n't buy that\nI have a different experience\nMy father was a small-businessman\nHe worked really hard\nHe printed drapery fabrics on long tables, where he pulled out those fabrics and he went down with a silkscreen and dumped the paint in and took the squeegee and kept going\nwhat I believe is the more we can do for the middle class, the more we can invest in you, your education, your skills, your future\nthe better we will be off and the better we'll grow\nThat's the kind of economy I want us to see again\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Example",
+            "Bias",
+            "Bias",
+            "VerbalClassification",
+            "PracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_6_2_88903",
+                "cq": "How can the candidate reconcile his desire for helping wealthy business owners with the limited financial resources available to help small businesses and middle-class individuals, as exemplified by his father's experience?"
+            },
+            {
+                "id": "CLINTON_6_2_81845",
+                "cq": "How does Clinton's economic plan address the issue of wealth inequality, given that his own business start-up was facilitated by a significant amount of inherited capital?"
+            },
+            {
+                "id": "CLINTON_6_2_89522",
+                "cq": "How can Clinton reconcile his experience as a self-made entrepreneur with his policy proposal that prioritizes investment in the middle class, which seems to contradict his business model's reliance on help from wealthy individuals?"
+            }
+        ]
+    },
+    "CLINTON_85": {
+        "intervention_id": "CLINTON_85",
+        "intervention": "CLINTON: \"let 's start the clock again , Lester\nWe 've looked at your tax proposals\nI do n't see changes in the corporate tax rates or the kinds of proposals you 're referring to that would cause the repatriation , bringing back of money that 's stranded overseas\nI happen to support that\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Alternatives"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_85_44644",
+                "cq": "How can Clinton reconcile his stated support for repatriation of offshore money with his expressed skepticism about the impact of corporate tax rate changes on this process?"
+            },
+            {
+                "id": "CLINTON_85_51859",
+                "cq": "How do you reconcile Clinton's skepticism about repatriation of overseas funds with his stated support for it?"
+            },
+            {
+                "id": "CLINTON_85_66481",
+                "cq": "If the speaker doesn't see changes in corporate tax rates as a trigger for repatriation, what exactly would be required to make him support this proposal?"
+            }
+        ]
+    },
+    "CLINTON_87": {
+        "intervention_id": "CLINTON_87",
+        "intervention": "CLINTON: \"I happen to support that in a way that will actually work to our benefit\nwhen I look at what you have proposed , you have what is called now the Trump loophole\nit would so advantage you and the business you do\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Bias"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_87_42003",
+                "cq": "Does the speaker's support for the proposed policy seem motivated more by a desire to help the other party and their business interests, rather than a genuine commitment to helping the country?"
+            },
+            {
+                "id": "CLINTON_87_71240",
+                "cq": "How does supporting a policy that benefits you personally, by exploiting a loophole named after your predecessor, align with the notion of serving the public interest?"
+            },
+            {
+                "id": "CLINTON_87_59911",
+                "cq": "Does Clinton's proposed solution truly benefit the public, or is it designed to further his own business interests?"
+            }
+        ]
+    },
+    "CLINTON_92": {
+        "intervention_id": "CLINTON_92",
+        "intervention": "CLINTON: \"it is\ntrumped-up trickle-down\nTrickle-down did not work\nIt got us into the mess we were in , in 2008 and 2009\nSlashing taxes on the wealthy has n't worked\na lot of really smart , wealthy people know that\nthey are saying , hey , we need to do more to make the contributions we should be making to rebuild the middle class\nI do n't think top-down works in America\nbuilding the middle class , investing in the middle class , making college debt-free so more young people can get their education , helping people refinance their\u2014their debt from college at a lower rate\nThose are the kinds of things that will really boost the economy\nBroad-based , inclusive growth is what we need in America , not more advantages for people at the very top\"",
+        "dataset": "US2016",
+        "schemes": [
+            "PopularOpinion",
+            "PopularOpinion",
+            "PracticalReasoning",
+            "Example"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_92_59507",
+                "cq": "Doesn't the argument that trickle-down economics hasn't worked since 2008 and 2009 imply that simply reducing taxes on the wealthy is not enough to stimulate economic growth, but rather a broader range of policies aimed at boosting the middle class?"
+            },
+            {
+                "id": "CLINTON_92_50297",
+                "cq": "If a policy of boosting economic growth through investments in the middle class is to succeed, how would you address the concerns that it may be more expensive and thus fiscally irresponsible than relying on trickle-down economics?"
+            },
+            {
+                "id": "CLINTON_92_16339",
+                "cq": "How can reducing the tax burden on the wealthy, which has been a hallmark of trickle-down economics, not be part of a solution to rebuilding the middle class if it is acknowledged that smart, wealthy people know it's necessary?"
+            }
+        ]
+    },
+    "CL_57": {
+        "intervention_id": "CL_57",
+        "intervention": "CL: \"Well, both sides of the transaction suffer as a result of ignoring moral hazard\nbecause moral hazard is a natural part of the process of lending and borrowing\nAnd if you suppress it, then in fact you're in a situation where the wealth that you look like you're generating is fool\u2019s gold, not real wealth at all.\"",
+        "dataset": "moral_maze_schemes",
+        "schemes": [
+            "CauseToEffect",
+            "CauseToEffect"
+        ],
+        "cqs": [
+            {
+                "id": "CL_57_17725",
+                "cq": "Does the argument that moral hazard is a natural part of lending and borrowing imply that suppressing it would necessarily lead to more efficient allocation of wealth, or could it potentially lead to other unforeseen consequences?"
+            },
+            {
+                "id": "CL_57_70530",
+                "cq": "If moral hazard is an inevitable and natural part of lending and borrowing, why then do lenders and borrowers still attempt to mitigate it through regulatory measures?"
+            },
+            {
+                "id": "CL_57_39924",
+                "cq": "Doesn't suppressing moral hazard necessarily lead to better economic outcomes, rather than just altering its expression?"
+            }
+        ]
+    },
+    "Doctor-Mom_205": {
+        "intervention_id": "Doctor-Mom_205",
+        "intervention": "Doctor-Mom: \"I would support a full ban of peanut products on any airline.\nPeanut reactions can be life threatening.\nAn individual doesn't have to consume the product to have a life threatening reaction.\nThey can have contact or inhalation reactions.\nRestricting to certain flights is not enough,\nas residue can be rampant.\nProviding buffer zones is a thoughtful gesture,\nbut from a practical point of view does not work.\nWith so many food choices available, why are peanuts a necessary choice?\nI am a physician , and author on the subject.\nI have free food allergy online support forums with 3000 members.\nhttp://www.drmomsallergyrx.com/\nI would be more than willing to work with you in any way on this decision making process.\nThe allergic community is so grateful that you are allowing our voices to be heard.\nThe decision you are considering could save many lives.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExpertOpinion",
+            "ERPracticalReasoning",
+            "ERPracticalReasoning",
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "Doctor-Mom_205_96374",
+                "cq": "How do you account for the economic and social implications of a full ban on peanut products on airlines, which could disproportionately affect low-income families, individuals with limited travel options, and small businesses that rely on peanuts as an ingredient?"
+            },
+            {
+                "id": "Doctor-Mom_205_41699",
+                "cq": "Is the blanket ban of peanut products on all airlines justified, given that the risk of a life-threatening reaction is relatively low compared to other common food allergens?"
+            },
+            {
+                "id": "Doctor-Mom_205_95598",
+                "cq": "Does the proposed ban on peanut products on airlines not infringe upon the personal freedoms of non-allergic individuals, such as those with a history of addiction to peanuts for other reasons?"
+            }
+        ]
+    },
+    "Elmattador__92": {
+        "intervention_id": "Elmattador__92",
+        "intervention": "Elmattador: \"you must have missed the GOP debates\"\n < this message is answering to > \nBigtwinkie: \"This debate has honestly been making me uncomfortable\nits been way too hostile\nIts like listening to mom and dad fight in the kitchen while your hide under the covers in your room\n all they succeed at is making the entire panel seem unlikable\nthe democratic nominee will be bleeding votes no matter who wins\"",
+        "dataset": "us2016reddit",
+        "schemes": [
+            "Ad hominem"
+        ],
+        "cqs": [
+            {
+                "id": "Elmattador__92_44003",
+                "cq": "Don't you think that the Democratic nominee's hypothetical loss would be a result of their own campaign strategy rather than the Republican candidate's aggressive style?"
+            },
+            {
+                "id": "Elmattador__92_49931",
+                "cq": "How can you conclude that the Democratic nominee will lose votes based solely on the perceived unlikability of the Republican panel, without considering other factors such as policy positions and voter sentiment?"
+            },
+            {
+                "id": "Elmattador__92_77219",
+                "cq": "How can you be so sure that the Democratic nominee's campaign will still suffer from the negative perception of their opponent, when the opponent is not even in the debates?"
+            }
+        ]
+    },
+    "FoodAllergyMom_199_1": {
+        "intervention_id": "FoodAllergyMom_199_1",
+        "intervention": "FoodAllergyMom: \"My child is 2 years old and he is severely allergic to peanuts, tree nuts, egg and milk.\nMy son has reacted to airborne particles from someone opening a bag of nuts near him.\nMy husband and I used to be world traveler's and dreamed of traveling with our son.\nIt is heartbreaking to think that our child will not get to experience the world, or if he does it may cost him his life.\nWhat about when he gets older and his job requires him to fly across the country in a weekend?\nShould he have to risk his life so he can work in his possible future dream job?\nThis is a disability, no question about it.\nWe are talking about being in the air with peanut particles being circulated through the cabin and possible no place to land for hours.\nAn EpiPen only last 15 minutes.\nPeanut allergy is unpredictable.\nThe first reaction could be mild\nand the second could cause your blood pressure to drop like a rocket, your throat to close up and your heart to stop beating.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample",
+            "ERExample",
+            "ERExample",
+            "ERExample",
+            "ERExample"
+        ],
+        "cqs": [
+            {
+                "id": "FoodAllergyMom_199_1_39958",
+                "cq": "Is it morally justifiable to sacrifice an individual's autonomy and potentially limited options for a job in their desired field, simply because of the existence of a relatively rare food allergy that can be mitigated with proper precautions?"
+            },
+            {
+                "id": "FoodAllergyMom_199_1_14067",
+                "cq": "How does requiring an EpiPen on every flight, potentially leading to repeated administrations and long-term effects of multiple doses, balance with the potential risks of not taking that risk in pursuit of a job opportunity?"
+            },
+            {
+                "id": "FoodAllergyMom_199_1_40998",
+                "cq": "If we allow children with severe food allergies, such as peanut allergy, to fly despite having a 15-minute EpiPen protection window and unpredictable reactions, do we inadvertently create a false sense of security among parents, potentially putting the child's life at risk?"
+            }
+        ]
+    },
+    "Frequent-Flyer_157": {
+        "intervention_id": "Frequent-Flyer_157",
+        "intervention": "Frequent-Flyer: \"I have sympathy for those with peanut allergies,\nbut banning peanuts from flights via a DOT regulation seems to go too far.\nPerhaps advocacy groups for those who are peanutallergic will approach the major carriers to voluntarily set aside seating blocks that are reserved for allergy sufferers, and nonsufferers who are willing to agree not to eat peanuts while sitting in that particular block.\nAs someone who suffers from a medical condition which requires me to carry my \"rescue\" medication with me everywhere I go,\nI think that if the risk to an allergy sufferer is deemed to be significant, then they should\nconsider alternate travel methods other than flying,\nensure they have sufficient \"rescue\" medication to last the entire time they might be stuck in an aircraft,\nthey should wear appropriate clothing / face masks to minimize exposed skin and inhalation risk.\nRequiring other passengers to forgo their \"right\" to eat peanuts so as to accommodate the \"right\" of allergy sufferers to fly seems a bit much,\nparticularly if the allergy sufferers don't fly often, anyway.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "Frequent-Flyer_157_74712",
+                "cq": "Does the proposed voluntary seating arrangement solution effectively mitigate the risk of peanut exposure for allergy sufferers, or would it still pose an unacceptable risk to their health?"
+            },
+            {
+                "id": "Frequent-Flyer_157_36374",
+                "cq": "Does the argument's suggestion that those with peanut allergies consider alternate travel methods if flying is deemed too risky equitably account for the fact that many peanut allergy sufferers may not have access to reliable transportation options?"
+            },
+            {
+                "id": "Frequent-Flyer_157_31851",
+                "cq": "Does the proposed voluntary seating arrangement compromise the safety and comfort of non-allergy sufferers who may be seated near designated peanut-free blocks?"
+            }
+        ]
+    },
+    "Glblwrmingisfak__552": {
+        "intervention_id": "Glblwrmingisfak__552",
+        "intervention": "Glblwrmingisfak: \"What argument?\nNobody proposes common sense gun solutions\nThe DOJ over a decade ago already determined that an assault weapons ban won't do shit for addressing homicide rates in the US\nIt is not a solution for any of our problems\nBernie should know\nhe clearly isn't stupid\"",
+        "dataset": "us2016reddit",
+        "schemes": [
+            "ArgumentFromAuthority"
+        ],
+        "cqs": [
+            {
+                "id": "Glblwrmingisfak__552_33332",
+                "cq": "Does the speaker's dismissal of common sense gun solutions, such as banning high-capacity magazines or implementing universal background checks, ignore potential trade-offs with other policy priorities?"
+            },
+            {
+                "id": "Glblwrmingisfak__552_49761",
+                "cq": "Is the assumption that all proposed gun control solutions are based on common sense equally applicable to those who claim assault weapons bans won't address homicide rates?"
+            },
+            {
+                "id": "Glblwrmingisfak__552_90843",
+                "cq": "Does dismissing a potential policy solution as 'common sense' necessarily disqualify it from being considered worth exploring, especially given the lack of alternative proposals?"
+            }
+        ]
+    },
+    "HOLT_126": {
+        "intervention_id": "HOLT_126",
+        "intervention": "HOLT: \"Stop-and-frisk was ruled unconstitutional in New York\nit largely singled out black and Hispanic young men\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Consequences"
+        ],
+        "cqs": [
+            {
+                "id": "HOLT_126_30952",
+                "cq": "Does the author's assertion that stop-and-frisk was ruled unconstitutional solely due to its disproportionate impact on black and Hispanic young men accurately capture the full scope of the relevant legal decision?"
+            },
+            {
+                "id": "HOLT_126_84267",
+                "cq": "Does the argument that stop-and-frisk was unconstitutional solely because it disproportionately affected black and Hispanic young men accurately capture its broader impact on community trust and police-community relations?"
+            },
+            {
+                "id": "HOLT_126_38987",
+                "cq": "Does the author's assertion that 'stop-and-frisk was ruled unconstitutional' imply a causal relationship between the policy and its impact on racial demographics?"
+            }
+        ]
+    },
+    "HOLT_239": {
+        "intervention_id": "HOLT_239",
+        "intervention": "HOLT: \"Which leads to my next question\nwe enter our last segment here on the , still on the subject of securing America\nOn nuclear weapons , President Obama reportedly considered changing the nation 's longstanding policy on first use\nDo you support the current policy ?\nMr. Trump , you have two minutes on that\"",
+        "dataset": "US2016",
+        "schemes": [
+            "CauseToEffect"
+        ],
+        "cqs": [
+            {
+                "id": "HOLT_239_62675",
+                "cq": "What implications would a change to the nation's policy on first use of nuclear weapons have for global security and international relations?"
+            },
+            {
+                "id": "HOLT_239_62275",
+                "cq": "Is it reasonable to assume that changing the nation's policy on first use of nuclear weapons would have significant implications for global security, and if so, how does this relate to securing America?"
+            },
+            {
+                "id": "HOLT_239_12771",
+                "cq": "How can we reconcile the desire to maintain flexibility in nuclear policy with the potential risks and consequences of abandoning the long-standing first-use rule?"
+            }
+        ]
+    },
+    "HOLT_94": {
+        "intervention_id": "HOLT_94",
+        "intervention": "HOLT: \"we 're talking about the burden that Americans have to pay , yet you have not released your tax returns\nthe reason nominees have released their returns for decades is so that voters will know if their potential president owes money to\u2014who he owes it to and any business conflicts\nDo n't Americans have a right to know if there are any conflicts of interest\"",
+        "dataset": "US2016",
+        "schemes": [
+            "PopularPractice"
+        ],
+        "cqs": [
+            {
+                "id": "HOLT_94_10920",
+                "cq": "Does the requirement for presidential candidates to release their tax returns necessarily imply that this transparency is equally important for ordinary citizens who do not hold public office?"
+            },
+            {
+                "id": "HOLT_94_39048",
+                "cq": "Is it reasonable to equate the transparency of presidential tax returns with the level of disclosure expected from other public figures?"
+            },
+            {
+                "id": "HOLT_94_99264",
+                "cq": "Does releasing one's tax returns necessarily provide meaningful information about potential business conflicts, or is it a symbolic gesture that doesn't necessarily address the root concerns of transparency?"
+            }
+        ]
+    },
+    "Helen__66": {
+        "intervention_id": "Helen__66",
+        "intervention": "Helen: \"they\u2019re not able to impose the right sort of levels\nand within that bracket I would certainly put families who are living with very high levels of aggression and violence, who are terrorising communities\nSo, yes I\u2019d agree with that\nBut I would also say that there are other families, where actually they do need a great deal of help\nit\u2019s right to intervene\nand actually you can help them get back on their feet and able to parent their children effectively\"",
+        "dataset": "moral_maze_schemes",
+        "schemes": [
+            "PositiveConsequences",
+            "Example"
+        ],
+        "cqs": [
+            {
+                "id": "Helen__66_98728",
+                "cq": "How would Helen define what constitutes 'the right sort of levels' of aggression and violence, and how would she differentiate between families that are 'terrorising communities' and those that simply need help?"
+            },
+            {
+                "id": "Helen__66_30840",
+                "cq": "How do you distinguish between families who are 'terrorising communities' and those who simply need support to parent their children effectively?"
+            },
+            {
+                "id": "Helen__66_13779",
+                "cq": "How do you distinguish between families that are 'terrorising communities' and those that merely need support to parent their children effectively?"
+            }
+        ]
+    },
+    "17th_knight__247": {
+        "intervention_id": "17th_knight__247",
+        "intervention": "17th: \"They should get the coverage\nThey are here\nthey work\nthey are a part of this society\nFuck off with your xenophobia\"\n < this message is answering to > \nreaper527: \"now you have a field of democrat presidential candidates supporting it\nrepublicans used to get mocked and laughed at when they said that illegal immigrants would be getting obamacare coverage\"",
+        "dataset": "us2016reddit",
+        "schemes": [
+            "Ad hominem"
+        ],
+        "cqs": [
+            {
+                "id": "17th_knight__247_14197",
+                "cq": "Does acknowledging that some undocumented immigrants may benefit from certain social safety nets necessarily imply a blanket endorsement of their presence in the country?"
+            },
+            {
+                "id": "17th_knight__247_67925",
+                "cq": "Does the fact that some Republican presidential candidates are now supporting universal health care for undocumented immigrants imply that their previous stance was driven by xenophobia rather than a desire to address a legitimate healthcare issue?"
+            },
+            {
+                "id": "17th_knight__247_22152",
+                "cq": "Does the fact that some Democrats are now supporting this policy change necessarily mean it is a more reasonable or justified position than the Republican views it is now mocking?"
+            }
+        ]
+    },
+    "AFCHF_154": {
+        "intervention_id": "AFCHF_154",
+        "intervention": "AFCHF: \"DOT should set maximum tarmac delay trigger.\nIt then should apply to ALL AIRLINES and ALL CLASSES of AIRCRAFT.\nThe airlines need to make a legal committment (contract of carriage).\nDeplaneing without CBP screening IS a viable option.\nAs a military member, I have done this many times during overseas contract flights.\nI realize this is customs rather than airport security, but the concept is the same.\nAllow passengers to deplane during gate holds,\nbut require them to remain in the immediate area.\nThis is no different than an openended delay prior to boarding.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "AFCHF_154_24791",
+                "cq": "How would a maximum tarmac delay trigger ensure the safety of all passengers, including vulnerable groups such as young children and elderly individuals who may have difficulty disembarking quickly?"
+            },
+            {
+                "id": "AFCHF_154_93136",
+                "cq": "How would DOT's proposed maximum tarmac delay trigger account for scenarios where CBP screening is not feasible due to circumstances beyond the airline's control?"
+            },
+            {
+                "id": "AFCHF_154_26198",
+                "cq": "How would requiring airlines to screen passengers before deplaning during gate holds, without additional security personnel or equipment, ensure safety and comply with federal regulations?"
+            }
+        ]
+    },
+    "AK-traveler_186": {
+        "intervention_id": "AK-traveler_186",
+        "intervention": "AK-traveler: \"Airlines should not be allowed to charge for items necessary because of factors out of the passengers control.\nSeat size and configuration (arm and leg room) should be addressed as a health issue.\nThe inflight magazines show exercises passengers should do at their seats to prevent deep vein thrombosis\nbut there isn't enough room to do them.\nAnd finally, I think it is unfair if not criminal and discriminatory to charge exorbinant fees for carrying your pet onboard with you.\nThe carrier is handled as a carry on bag solely by me,\nthe airline doesn't do anything\nyet they carage $100 or more each way.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "AK-traveler_186_17534",
+                "cq": "If airlines are not compensating passengers for lack of space to perform prescribed exercises to prevent deep vein thrombosis, should they also be allowed to charge pet fees?"
+            },
+            {
+                "id": "AK-traveler_186_50186",
+                "cq": "If airlines are concerned about passenger health due to seating and lack of exercise space, why not prioritize these concerns by redesigning their seats and in-flight amenities instead of charging extra for necessities like pet carriers?"
+            },
+            {
+                "id": "AK-traveler_186_28703",
+                "cq": "If airlines are truly concerned about passenger health and welfare, as evidenced by their inclusion of exercises to prevent deep vein thrombosis in their magazines, why do they not invest sufficient resources into redesigning seats and configurations that accommodate these safety measures?"
+            }
+        ]
+    },
+    "AllergyDad_200": {
+        "intervention_id": "AllergyDad_200",
+        "intervention": "AllergyDad: \"As a parent of a child with severe lifethreatening allergies to peanuts and treenuts, the thought of getting on an airplane today is frightening.\nSo much so, that it is strictly avoided.\nIt is not worth risking my child's life to fly on an airplane.\nA recent study reveals that 1 in 3 airplane reactions was anaphylaxis\n(Allergic Living Magazine).\nI don't like those odds.\nThe substitution of cashews, walnuts, or other tree nuts is not a viable option,\nas they pose the same risks as peanuts.\nA large number of people who are allergic to peanuts are also allergic to tree nuts,\nplus they are typically processed in a plant that also processes peanuts.\nIf there were a ban on peanut and tree nut products on flights, it would open the world to my son.\nHe didn't choose to be allergic,\nbut he is.\nSo true.\nWe are not talking about sensitivity, being offended, not liking the smell, etc.;\nwe are talking about life.\nThere are a lot of things that are banned from airplanes that can cause death to someone.\nIn the case of my son, a peanut can have the same result.\nI urge the DOT to issue the ban,\nand make traveling safe for everyone.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample",
+            "ERExample",
+            "ERExample"
+        ],
+        "cqs": [
+            {
+                "id": "AllergyDad_200_12082",
+                "cq": "Does a blanket ban on all peanuts and tree nuts, regardless of their specific allergenic potential, truly address the unique risks faced by children with severe peanut allergies?"
+            },
+            {
+                "id": "AllergyDad_200_23026",
+                "cq": "Does a blanket airline ban on peanuts and tree nuts, which would require explicit labeling of all affected products, address the risk of anaphylaxis more effectively than targeted education and awareness for flight attendants?"
+            },
+            {
+                "id": "AllergyDad_200_30638",
+                "cq": "Does the potential risk of anaphylaxis from peanuts or tree nuts on a plane outweigh the benefits of allowing peanut-free flights for children with life-threatening allergies?"
+            }
+        ]
+    },
+    "AngelComa__638": {
+        "intervention_id": "AngelComa__638",
+        "intervention": "AngelComa: \"Funny, I thought he did good\nThey get timed responses\nhis plan is all there\nHe can't talk about everything in the plan\nMust be how used you are to politicians saying things and not having a plan\"\n < this message is answering to > \nPunchee: \"That was a weird moment in American debate history. \"Yo check my website. Shit's on there.\"\"",
+        "dataset": "us2016reddit",
+        "schemes": [
+            "Ad hominem"
+        ],
+        "cqs": [
+            {
+                "id": "AngelComa__638_37436",
+                "cq": "Does Punchee's response suggest that his plan is actually available for public viewing, rather than a genuine attempt to address concerns?"
+            },
+            {
+                "id": "AngelComa__638_12911",
+                "cq": "Does AngelComa genuinely expect that politicians are always transparent about their plans, or is this a strawman argument?"
+            },
+            {
+                "id": "AngelComa__638_71246",
+                "cq": "Does Punchee's response, which appears to be a clever joke about citing his own website, actually distract from addressing the substance of AngelComa's criticism?"
+            }
+        ]
+    },
+    "Antanagoge_104": {
+        "intervention_id": "Antanagoge_104",
+        "intervention": "Antanagoge: \"The airline industry can not be left to selfmonitor this.\nStudies have shown that the quality of information from airline customer service department is highly variable and, in some cases, incomplete or inaccurate.\nThe psychological effects of this, combined with the risk of death, are significant.\nStories told by families of vacations never taken, of midair retraction of the promise by the airline that peanuts would not be served, of public humiliation of peanutallergic individuals and their family by airline staff, and of serious reactions in flight, abound.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample"
+        ],
+        "cqs": [
+            {
+                "id": "Antanagoge_104_69190",
+                "cq": "Does the assumption that self-monitoring by airlines is acceptable solely because it has been done before, overlook the complexities and consequences of human error?"
+            },
+            {
+                "id": "Antanagoge_104_72777",
+                "cq": "Does the current regulatory framework adequately address the specific risks and consequences associated with inconsistent customer service information, particularly for vulnerable populations such as peanut-allergic individuals?"
+            },
+            {
+                "id": "Antanagoge_104_60727",
+                "cq": "Does Antanagoge's emphasis on anecdotal evidence and personal stories of harm sufficiently establish a causal link between airline customer service variability and actual physical risks to passengers?"
+            }
+        ]
+    },
+    "Antanagoge_111": {
+        "intervention_id": "Antanagoge_111",
+        "intervention": "Antanagoge: \"The opponents of accommodations are well aware that studies have been published in the journals of the American Academy of Allergy Asthma and Immunology, the American Medical Association, and the American College of Allergy, Asthma and Immunology, not to mention medical associations in other countries.\nThey can purchase full text access for themselves,\nbut they already have a prejudgment against the researchers and their conclusions,\nso why bother?\nThere was a moment on the board when the moderators asked for a discussion of a hypothetical compromise position.\nBut those demanding funerals before entertaining even a compromise position muted that.\nThat is sad.\nThere are several others on the board with some good reasonable ideas.\nIt's fairly clear that meanspiritedness abounds, here\nprobably as a result of emphasis in current American politics on the potential for influence of minority interests and needs.\nBut some of the people on this board  calling for funerals before advancing the discussion  give new meaning to the Founders' fears of the tyranny of the majority.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExpertOpinion"
+        ],
+        "cqs": [
+            {
+                "id": "Antanagoge_111_31589",
+                "cq": "Does Antanagoge's assertion that opponents of accommodations are motivated by 'meanspiritedness' rather than a genuine concern for the well-being of individuals with allergies actually sidesteps the issue at hand and avoids a more nuanced discussion?"
+            },
+            {
+                "id": "Antanagoge_111_44811",
+                "cq": "Does Antanagoge's assumption that those opposed to accommodations have a prejudgment against researchers and their conclusions, rather than simply not finding the evidence convincing, reflect an unfair bias?"
+            },
+            {
+                "id": "Antanagoge_111_21757",
+                "cq": "How can the opponents of accommodations be certain that their prejudices against researchers and conclusions are not being mitigated by reading those same studies, rather than dismissing them out of hand?"
+            }
+        ]
+    }
+}

@@ -78,22 +78,3 @@ class GeneratorAgent(Agent):
             )
             # TODO Implement some retries here.
         return critical_question
-
-    def refine_critical_question(self, feedback_summary:str):
-        prompt = REFINE_PROMPT.format(feedback=feedback_summary)
-        self._add_to_chat(role="user", message=prompt)
-
-        # Prompt LLM and add to chat
-        response = self.single_response(messages=self.chat)
-        self._add_to_chat(role="assistant", message=response)
-
-        # Process response and return
-        response_dict: dict = extract_json_from_string(response)
-        critical_question = response_dict.get("critical_question", None)
-        if not critical_question:
-            print(
-                "Error: LLM returned an invalid response. Expected JSON with key 'critical_question', but no JSON with that key was found."
-            )
-            # TODO Implement some retries here.
-
-        return critical_question

@@ -1,0 +1,1559 @@
+2025-03-12 21:07:32 - Run Id: 81577
+2025-03-12 21:07:32 - Generator Agent: llama3.2:latest
+2025-03-12 21:07:32 - Validator Agent: llama3.2:latest, Subtask: Specifically assess whether the critical question does not introduce any new concepts or topics, that were not covered in the argument. The introduction of an unmentioned topic or concept would render the question invalid.
+
+Do this in three steps:
+1. First, identify the (one or multiple) broad topic(s) of the argument.
+2. Second, identify the (one or multiple) core topic(s) of the critical question.
+3. Finally, assess whether or not the core topic of the critical question is part of the topics of the argument. If it is, the question can remain valid. If the core topic is different to the topics mentioned and implied in the argument, then the question should be invalid.
+
+Keep your answer concise overall. Don't be too strict in your assessment.
+
+2025-03-12 21:07:32 - Validator Agent: llama3.2:latest, Subtask: Specifically assess whether the critical question does not contain any bad reasoning, namely, questions critical positions or claims **that the speaker does not hold**. If the question contains such bad reasoning, it would render the question invalid.
+
+Do this in three steps:
+1. First, identify the speakers overall position on the topic and the claims they make.
+2. Second, determine the position and claims that the question suggests the speaker holds.
+3. Finally, evaluate whether there is any significant mismatch between the speaker's actual position and claims and those implied by the question. If such a mismatch exists, assess whether its significance remains acceptable, considering that this is a critical question for that argument. If the mismatch is too inacceptable, the question is invalid. If the mismatch is not too impactfull, the question can remain valid. Give a final suggestion on the validity of the question.
+
+Keep your answer concise overall. Don't be too strict in your assessment.
+
+2025-03-12 21:07:32 - Validator Agent: llama3.2:latest, Subtask: Specifically assess whether the critical question adresses the argument. Evaluate whether the question picks up on parts of the argument at all. If the question is specific to the argument, it can be considered as valid.
+
+Do this in two steps:
+1. First, identify the core topic(s) of the argument.
+2. Second, assess whether the question adressess any of the core topic(s) of the argument.
+3. Finally, give a suggestion on the validity of the question. If it adresses any of the arguments core topics, it should be valid. If it adresses none of the core topics, it should be invalid.
+
+Keep your answer concise overall. Don't be too strict in your assessment.
+
+2025-03-12 21:07:32 - This run uses (!) 3 (!) validator agents.
+2025-03-12 21:07:32 - 
+
+
+2025-03-12 21:07:32 - 0. Argument (id: CLINTON_199_2)
+2025-03-12 21:07:32 -  > Generating question no. 0
+2025-03-12 21:07:36 -    -> 'Does Clinton's emphasis on cooperation with Muslim-majority nations and the American Muslim community not undermine her claim that Donald has been dismissive of working with allies, particularly in light of NATO's enduring role in global security?'
+2025-03-12 21:07:51 -    -> Question valid
+2025-03-12 21:07:51 -  > Generating question no. 1
+2025-03-12 21:07:54 -    -> 'Does working closely with Muslim-majority nations necessarily require cooperation with Donald's policies towards Muslims, or is there an alternative approach that could achieve similar intelligence benefits?'
+2025-03-12 21:08:57 -    -> Question valid
+2025-03-12 21:08:57 -  > Generating question no. 2
+2025-03-12 21:09:01 -    -> 'Does Clinton's argument that the US needs to work more closely with Muslim-majority nations and American Muslims to counter terrorism not rely on a dubious assumption about Donald Trump's intentions, specifically that his rhetoric is intentionally alienating?'
+2025-03-12 21:10:14 -    -> Question invalid
+2025-03-12 21:10:14 -  > Generating question no. 3
+2025-03-12 21:10:14 -    -> 'How can we be certain that Clinton's characterization of Trump's rhetoric is accurate and not just a selective interpretation of his words?'
+2025-03-12 21:10:52 -    -> Question valid
+2025-03-12 21:10:52 - Saved batch of questions to 81577_output.json
+2025-03-12 21:10:52 - 
+
+
+2025-03-12 21:10:52 - 1. Argument (id: CLINTON_1_2)
+2025-03-12 21:10:52 -  > Generating question no. 0
+2025-03-12 21:10:55 -    -> 'Does Clinton's plan for increasing taxes on the wealthy to fund social programs actually address the root causes of the struggles many working-class Americans face?'
+2025-03-12 21:11:23 -    -> Question valid
+2025-03-12 21:11:23 -  > Generating question no. 1
+2025-03-12 21:11:23 -    -> 'How can Clinton's plan to have the wealthy pay their fair share and close corporate loopholes specifically address the struggles of individuals who do not work for corporations?'
+2025-03-12 21:11:54 -    -> Question valid
+2025-03-12 21:11:54 -  > Generating question no. 2
+2025-03-12 21:11:54 -    -> 'How does paying higher taxes on the wealthy necessarily lead to policies that benefit working-class families, such as paid family leave and affordable child care?'
+2025-03-12 21:12:15 -    -> Question valid
+2025-03-12 21:12:15 - Saved batch of questions to 81577_output.json
+2025-03-12 21:12:15 - 
+
+
+2025-03-12 21:12:15 - 2. Argument (id: CLINTON_21)
+2025-03-12 21:12:15 -  > Generating question no. 0
+2025-03-12 21:12:18 -    -> 'What makes you confident that transitioning to clean energy will not create economic instability or lead to a loss of jobs and homes comparable to those experienced during the Great Recession?'
+2025-03-12 21:13:14 -    -> Question invalid
+2025-03-12 21:13:14 -  > Generating question no. 1
+2025-03-12 21:13:18 -    -> 'Does Clinton's assertion that his clean energy proposals are based on independent expert reviews, when paired with his acknowledgement of Donald's climate change stance, create a coherent and trustworthy argument about the validity of his own policy?'
+2025-03-12 21:13:51 -    -> Question invalid
+2025-03-12 21:13:51 -  > Generating question no. 2
+2025-03-12 21:13:52 -    -> 'How can Clinton's assertion that the proposed policies are a cause of economic recovery be reconciled with his characterization of those same policies as having failed in the first place?'
+2025-03-12 21:14:17 -    -> Question valid
+2025-03-12 21:14:17 -  > Generating question no. 3
+2025-03-12 21:14:18 -    -> 'How do you know that the economic policies proposed by Clinton are the correct ones to lead to a potentially better economy, given the lack of independent verification of his claims?'
+2025-03-12 21:15:01 -    -> Question invalid
+2025-03-12 21:15:01 -  > Generating question no. 4
+2025-03-12 21:15:03 -    -> 'What evidence does Clinton have that his clean energy proposals, which are being touted as a solution to the economic crises he describes, will not lead to job losses and home foreclosures comparable to those caused by his own policies?'
+2025-03-12 21:15:17 -    -> Question invalid
+2025-03-12 21:15:17 -  > Generating question no. 5
+2025-03-12 21:15:18 -    -> 'How can Clinton be certain that the policies he proposes for a clean energy superpower will not also lead to job losses, home foreclosures, and loss of family wealth?'
+2025-03-12 21:15:46 -    -> Question valid
+2025-03-12 21:15:46 -  > Generating question no. 6
+2025-03-12 21:15:47 -    -> 'How can Clinton's assertion that his proposed policies will lead to a potentially better economy be supported by evidence that directly compares the economic outcomes of his policies with those of Donald's proposals?'
+2025-03-12 21:16:16 -    -> Question valid
+2025-03-12 21:16:16 - Saved batch of questions to 81577_output.json
+2025-03-12 21:16:16 - 
+
+
+2025-03-12 21:16:16 - 3. Argument (id: CLINTON_223_1)
+2025-03-12 21:16:16 -  > Generating question no. 0
+2025-03-12 21:16:17 -    -> 'Does the historical context of Article 5 being invoked only once, after 9/11, suggest that NATO's military commitment to a country is contingent upon external events rather than a collective security pact?'
+2025-03-12 21:16:46 -    -> Question invalid
+2025-03-12 21:16:46 -  > Generating question no. 1
+2025-03-12 21:16:48 -    -> 'Is it possible that Clinton's assessment of when Iran was capable of developing a bomb is based on the information available to the Bush administration, rather than any actual intelligence Clinton had access to as Secretary of State?'
+2025-03-12 21:17:03 -    -> Question invalid
+2025-03-12 21:17:03 -  > Generating question no. 2
+2025-03-12 21:17:04 -    -> 'At what point, if ever, did the invocation of Article 5 by NATO imply a guarantee that all member nations would participate in military action alongside the United States?'
+2025-03-12 21:17:17 -    -> Question invalid
+2025-03-12 21:17:17 -  > Generating question no. 3
+2025-03-12 21:17:19 -    -> 'Is it sufficient to establish a historical precedent of NATO invoking Article 5 for military intervention as evidence of its reliability and commitment to collective defense, given the absence of any current or recent instances of invocation?'
+2025-03-12 21:17:47 -    -> Question valid
+2025-03-12 21:17:47 -  > Generating question no. 4
+2025-03-12 21:17:49 -    -> 'Did the Clinton administration actually have access to and utilize this information about Iran's nuclear program, or is this claim based on post-hoc rationalization?'
+2025-03-12 21:18:21 -    -> Question valid
+2025-03-12 21:18:21 -  > Generating question no. 5
+2025-03-12 21:18:22 -    -> 'Does invoking Article 5 only be a case of emergency, and can it also be invoked at any time by the collective decision of all member states?'
+2025-03-12 21:18:51 -    -> Question invalid
+2025-03-12 21:18:51 -  > Generating question no. 6
+2025-03-12 21:18:53 -    -> 'Does invoking Article 5 and mentioning past actions taken by previous administrations necessarily imply that the current NATO member's involvement is justified or even necessary in the present situation?'
+2025-03-12 21:19:21 -    -> Question invalid
+2025-03-12 21:19:21 -  > Generating question no. 7
+2025-03-12 21:19:21 -    -> 'Is it logically possible for a military alliance like NATO to invoke its collective defense commitment (Article 5) only after a significant external threat has materialized, and does this pattern of behavior demonstrate Clinton's ability to prevent crises through diplomatic means?'
+2025-03-12 21:19:58 -    -> Question invalid
+2025-03-12 21:19:58 -  > Generating question no. 8
+2025-03-12 21:19:59 -    -> 'Is Clinton's claim about Article 5 being invoked only after 9/11 supported by evidence that it was not invoked previously, or is this claim based on a selective reading of history?'
+2025-03-12 21:20:31 -    -> Question valid
+2025-03-12 21:20:31 - Saved batch of questions to 81577_output.json
+2025-03-12 21:20:31 - 
+
+
+2025-03-12 21:20:31 - 4. Argument (id: CLINTON_223_2)
+2025-03-12 21:20:31 -  > Generating question no. 0
+2025-03-12 21:20:31 -    -> 'Does Clinton's claim that his sanctions policy was ineffective because it did not lead to a military confrontation with Iran actually demonstrate a lack of good judgment, or does it simply reflect a flawed understanding of the goals and outcomes of his diplomatic efforts?'
+2025-03-12 21:21:00 -    -> Question invalid
+2025-03-12 21:21:00 -  > Generating question no. 1
+2025-03-12 21:21:02 -    -> 'Does Clinton's evaluation of her own policy choices as 'good judgment' not belie a criticism of her successor, Obama, for achieving the same diplomatic goals through different means?'
+2025-03-12 21:21:20 -    -> Question valid
+2025-03-12 21:21:20 -  > Generating question no. 2
+2025-03-12 21:21:21 -    -> 'How does Clinton's claim that his actions were ineffective and therefore bad judgment align with his statement that he 'drove them to the negotiating table', which implies a level of success?'
+2025-03-12 21:21:45 -    -> Question valid
+2025-03-12 21:21:45 -  > Generating question no. 3
+2025-03-12 21:21:47 -    -> 'Does Clinton's claim that her successor and President Obama's agreement with Iran, which allowed it to retain a significant nuclear program, constitute 'putting a lid on' Iran's nuclear program rather than achieving the toughest sanctions?'
+2025-03-12 21:22:13 -    -> Question valid
+2025-03-12 21:22:13 - Saved batch of questions to 81577_output.json
+2025-03-12 21:22:13 - 
+
+
+2025-03-12 21:22:13 - 5. Argument (id: CLINTON_225)
+2025-03-12 21:22:13 -  > Generating question no. 0
+2025-03-12 21:22:13 -    -> 'What makes being 'taunted' relevant or important when evaluating a candidate's temperament for the role of commander-in-chief?'
+2025-03-12 21:22:40 -    -> Question invalid
+2025-03-12 21:22:40 -  > Generating question no. 1
+2025-03-12 21:22:41 -    -> 'Is the assertion that being 'taunted' is an incompatible qualification for commander-in-chief based on a reasonable understanding of the term 'temperament'?'
+2025-03-12 21:22:56 -    -> Question valid
+2025-03-12 21:22:56 -  > Generating question no. 2
+2025-03-12 21:22:57 -    -> 'Is the assessment of someone's temperament relevant to their qualification as commander-in-chief?'
+2025-03-12 21:23:28 -    -> Question valid
+2025-03-12 21:23:28 -  > Generating question no. 3
+2025-03-12 21:23:29 -    -> 'What specific behaviors or incidents is Clinton referring to as 'taunting' that would disqualify someone from being Commander-in-Chief?'
+2025-03-12 21:23:51 -    -> Question valid
+2025-03-12 21:23:51 - Saved batch of questions to 81577_output.json
+2025-03-12 21:23:51 - 
+
+
+2025-03-12 21:23:51 - 6. Argument (id: CLINTON_231)
+2025-03-12 21:23:51 -  > Generating question no. 0
+2025-03-12 21:23:53 -    -> 'Does Clinton's assertion that a nuclear threat is the 'number-one threat' we face in the world, given his own party's long history of nuclear disarmament efforts and international agreements limiting nuclear proliferation, remain plausible?'
+2025-03-12 21:24:20 -    -> Question invalid
+2025-03-12 21:24:20 -  > Generating question no. 1
+2025-03-12 21:24:22 -    -> 'Does Clinton's assertion that the number-one threat we face in the world is 'his cavalier attitude' about nuclear weapons qualify as a legitimate definition of the primary threat, rather than an expression of personal opinion or criticism?'
+2025-03-12 21:24:39 -    -> Question invalid
+2025-03-12 21:24:39 -  > Generating question no. 2
+2025-03-12 21:24:39 -    -> 'How can it be concluded that a cavalier attitude about nuclear weapons is, in fact, the number-one threat we face in the world?'
+2025-03-12 21:25:13 -    -> Question invalid
+2025-03-12 21:25:13 -  > Generating question no. 3
+2025-03-12 21:25:14 -    -> 'Does Clinton's characterization of a potential terrorist threat as the 'number-one threat' we face in the world adequately address the broader context and complexities surrounding global security?'
+2025-03-12 21:25:41 -    -> Question invalid
+2025-03-12 21:25:41 -  > Generating question no. 4
+2025-03-12 21:25:41 -    -> 'How can we be certain that allowing Clinton's proposed policy will actually prevent terrorists from getting their hands on nuclear material?'
+2025-03-12 21:26:09 -    -> Question valid
+2025-03-12 21:26:09 -  > Generating question no. 5
+2025-03-12 21:26:10 -    -> 'Does Clinton's description of the number-one threat we face in the world necessarily imply that terrorists with nuclear material pose a greater or unique threat compared to other groups or scenarios?'
+2025-03-12 21:26:42 -    -> Question invalid
+2025-03-12 21:26:42 -  > Generating question no. 6
+2025-03-12 21:26:42 -    -> 'How does Clinton's assertion that a particular threat is the number-one threat we face in the world solely, and without empirical evidence or credible sources to support it?'
+2025-03-12 21:27:04 -    -> Question invalid
+2025-03-12 21:27:04 -  > Generating question no. 7
+2025-03-12 21:27:05 -    -> 'Can it be reasonably inferred that a threat is the same regardless of who possesses nuclear material?'
+2025-03-12 21:27:19 -    -> Question invalid
+2025-03-12 21:27:19 -  > Generating question no. 8
+2025-03-12 21:27:19 -    -> 'How can we be certain that the speaker's assessment of the threat posed by nuclear weapons is not being influenced by their own partisan interests or biases?'
+2025-03-12 21:27:36 -    -> Question invalid
+2025-03-12 21:27:36 -  > Generating question no. 9
+2025-03-12 21:27:36 -    -> 'Does Clinton's assertion that a terrorist possessing nuclear material constitutes the number-one threat facing the world qualify as a plausible and credible assessment based on verifiable evidence?'
+2025-03-12 21:27:57 -    -> Question invalid
+2025-03-12 21:27:57 -  > Generating question no. 10
+2025-03-12 21:27:57 -    -> 'Is Clinton's characterization of a potential terrorist threat as the number-one threat we face in the world based on credible evidence or his own personal assessment?'
+2025-03-12 21:28:30 -    -> Question invalid
+2025-03-12 21:28:30 -  > Generating question no. 11
+2025-03-12 21:28:30 -    -> 'How does Clinton's claim that a particular individual's cavalier attitude about nuclear weapons constitutes a credible threat assessment?'
+2025-03-12 21:28:45 -    -> Question invalid
+2025-03-12 21:28:45 -  > Generating question no. 12
+2025-03-12 21:28:46 -    -> 'Does Clinton's claim that a terrorist acquiring nuclear material is the number-one threat they face constitute an objective assessment, or is it a value-laden statement?'
+2025-03-12 21:29:24 -    -> Question invalid
+2025-03-12 21:29:24 -  > Generating question no. 13
+2025-03-12 21:29:25 -    -> 'Is it possible that Clinton's concern about nuclear weapons is being conflated with the risk posed by terrorists acquiring conventional nuclear materials, rather than the highly classified and potentially catastrophic scenario of actual nuclear devices falling into terrorist hands?'
+2025-03-12 21:29:41 -    -> Question valid
+2025-03-12 21:29:41 -  > Generating question no. 14
+2025-03-12 21:29:43 -    -> 'Does Mr. Clinton's assessment of the number-one threat we face in the world solely based on a single, unspecified characteristic (his cavalier attitude) constitute a valid and comprehensive evaluation of global security threats?'
+2025-03-12 21:30:09 -    -> Question valid
+2025-03-12 21:30:09 - Saved batch of questions to 81577_output.json
+2025-03-12 21:30:09 - 
+
+
+2025-03-12 21:30:09 - 7. Argument (id: CLINTON_235)
+2025-03-12 21:30:09 -  > Generating question no. 0
+2025-03-12 21:30:11 -    -> 'What makes it a good description of the problem, and how does this adequacy ensure it is a valid solution?'
+2025-03-12 21:30:28 -    -> Question valid
+2025-03-12 21:30:28 -  > Generating question no. 1
+2025-03-12 21:30:29 -    -> 'Does saying something is a 'good' description of a problem automatically imply that the speaker actually supports or endorses the underlying issue?'
+2025-03-12 21:30:47 -    -> Question valid
+2025-03-12 21:30:47 -  > Generating question no. 2
+2025-03-12 21:30:47 -    -> 'Is the term 'good' being used to describe the quality of the description, or the adequacy of addressing the problem?'
+2025-03-12 21:31:09 -    -> Question valid
+2025-03-12 21:31:09 - Saved batch of questions to 81577_output.json
+2025-03-12 21:31:09 - 
+
+
+2025-03-12 21:31:09 - 8. Argument (id: CLINTON_244_2)
+2025-03-12 21:31:09 -  > Generating question no. 0
+2025-03-12 21:31:10 -    -> 'Can Clinton's assertion that he has a secret plan to defeat ISIS be justified without him providing concrete details or evidence, and if not, what implications does this have for his credibility on foreign policy?'
+2025-03-12 21:31:27 -    -> Question valid
+2025-03-12 21:31:27 -  > Generating question no. 1
+2025-03-12 21:31:27 -    -> 'Is Clinton's assertion that his lack of a detailed plan on defeating ISIS is a reasonable justification for failing to provide one?'
+2025-03-12 21:31:56 -    -> Question valid
+2025-03-12 21:31:56 -  > Generating question no. 2
+2025-03-12 21:31:56 -    -> 'Does Mr. Clinton's criticism of his opponent's plan for defeating ISIS rely on the opponent having presented a specific, detailed alternative, or is it based solely on the fact that the opponent has not explicitly revealed their plan?'
+2025-03-12 21:32:14 -    -> Question valid
+2025-03-12 21:32:14 - Saved batch of questions to 81577_output.json
+2025-03-12 21:32:14 - 
+
+
+2025-03-12 21:32:14 - 9. Argument (id: CLINTON_25)
+2025-03-12 21:32:14 -  > Generating question no. 0
+2025-03-12 21:32:14 -    -> 'How does deploying a half billion more solar panels and building a new modern electric grid address the underlying causes of economic stagnation, rather than just treating its symptoms?'
+2025-03-12 21:32:41 -    -> Question valid
+2025-03-12 21:32:41 -  > Generating question no. 1
+2025-03-12 21:32:43 -    -> 'How can deploying a half billion more solar panels and building a new electric grid be sufficient to 'get the economy really moving again' without addressing the underlying structural issues that led to economic trouble in the first place?'
+2025-03-12 21:33:12 -    -> Question valid
+2025-03-12 21:33:12 -  > Generating question no. 2
+2025-03-12 21:33:14 -    -> 'How can deploying a half billion more solar panels and building a new electric grid create jobs without also increasing costs for consumers and potentially leading to inflation?'
+2025-03-12 21:33:37 -    -> Question valid
+2025-03-12 21:33:37 - Saved batch of questions to 81577_output.json
+2025-03-12 21:33:37 - 
+
+
+2025-03-12 21:33:37 - 10. Argument (id: CLINTON_37)
+2025-03-12 21:33:37 -  > Generating question no. 0
+2025-03-12 21:33:37 -    -> 'Does holding a special prosecutor accountable for enforcing trade deals necessarily imply that Clinton is committed to investigating and prosecuting corruption in all economic contexts, not just trade?'
+2025-03-12 21:33:49 -    -> Question valid
+2025-03-12 21:33:49 -  > Generating question no. 1
+2025-03-12 21:33:50 -    -> 'Is it possible for someone to claim they hold the same standards for all trade deals, yet specifically vote against one (CAFTA) and then use that as a basis to justify enforcing and holding accountable another deal?'
+2025-03-12 21:34:10 -    -> Question invalid
+2025-03-12 21:34:10 -  > Generating question no. 2
+2025-03-12 21:34:12 -    -> 'How can Clinton reconcile the fact that he voted against CAFTA with his claim to hold the same standards for all trade deals?'
+2025-03-12 21:34:36 -    -> Question valid
+2025-03-12 21:34:36 -  > Generating question no. 3
+2025-03-12 21:34:37 -    -> 'How can Clinton's experience as Secretary of State directly translate to her ability to enforce trade deals as President?'
+2025-03-12 21:35:00 -    -> Question valid
+2025-03-12 21:35:00 - Saved batch of questions to 81577_output.json
+2025-03-12 21:35:00 - 
+
+
+2025-03-12 21:35:00 - 11. Argument (id: CLINTON_39)
+2025-03-12 21:35:00 -  > Generating question no. 0
+2025-03-12 21:35:00 -    -> 'What is the relevance and basis for comparing Clinton's roles as senator, Secretary of State to the alleged accusation made against Donald Trump?'
+2025-03-12 21:35:34 -    -> Question valid
+2025-03-12 21:35:34 -  > Generating question no. 1
+2025-03-12 21:35:35 -    -> 'Is it reasonable to assume that being a senator and Secretary of State are comparable roles, and therefore relevant to a personal character trait like honesty?'
+2025-03-12 21:36:11 -    -> Question invalid
+2025-03-12 21:36:11 -  > Generating question no. 2
+2025-03-12 21:36:12 -    -> 'Is Clinton's comparison of his roles as senator and secretary of state sufficient to establish a meaningful basis for contrasting his qualifications with those of Donald Trump?'
+2025-03-12 21:36:29 -    -> Question valid
+2025-03-12 21:36:29 -  > Generating question no. 3
+2025-03-12 21:36:31 -    -> 'Is it sufficient to conclude that Clinton has been more successful in his public offices solely because he has occupied different positions, rather than making a claim about the relative effectiveness of those positions?'
+2025-03-12 21:36:58 -    -> Question invalid
+2025-03-12 21:36:58 -  > Generating question no. 4
+2025-03-12 21:36:59 -    -> 'Is Clinton's claim that being a secretary of state is equivalent to accomplishing all the tasks that he himself lists as accomplishments?'
+2025-03-12 21:37:19 -    -> Question valid
+2025-03-12 21:37:19 - Saved batch of questions to 81577_output.json
+2025-03-12 21:37:19 - 
+
+
+2025-03-12 21:37:19 - 12. Argument (id: CLINTON_55)
+2025-03-12 21:37:19 -  > Generating question no. 0
+2025-03-12 21:37:21 -    -> 'What makes Clinton's proposed solution for creating new jobs and investments with rising incomes a superior alternative to other possible solutions, such as further tax cuts?'
+2025-03-12 21:37:55 -    -> Question valid
+2025-03-12 21:37:55 -  > Generating question no. 1
+2025-03-12 21:37:56 -    -> 'Is it morally justifiable to prioritize economic growth and job creation over other potential benefits of tax cuts, such as increased economic freedom or reduced government spending?'
+2025-03-12 21:38:25 -    -> Question invalid
+2025-03-12 21:38:25 -  > Generating question no. 2
+2025-03-12 21:38:26 -    -> 'Is the proposed solution of increasing investments and raising incomes sufficient to address the issue of rising national debt?'
+2025-03-12 21:38:54 -    -> Question invalid
+2025-03-12 21:38:54 -  > Generating question no. 3
+2025-03-12 21:38:55 -    -> 'Does Clinton's proposed policy of increased investments and lower tax cuts on wealthy individuals directly address and alleviate the economic issues that are causing $5 trillion in debt?'
+2025-03-12 21:39:21 -    -> Question valid
+2025-03-12 21:39:21 -  > Generating question no. 4
+2025-03-12 21:39:22 -    -> 'How can Clinton's proposed solution (new jobs with rising incomes, investments) actually get the economy going again without addressing the potential unintended consequences of increasing government spending?'
+2025-03-12 21:39:46 -    -> Question valid
+2025-03-12 21:39:46 - Saved batch of questions to 81577_output.json
+2025-03-12 21:39:46 - 
+
+
+2025-03-12 21:39:46 - 13. Argument (id: CLINTON_57)
+2025-03-12 21:39:46 -  > Generating question no. 0
+2025-03-12 21:39:47 -    -> 'Does having written a book about economic policy constitute sufficient evidence to support a claim about its effectiveness?'
+2025-03-12 21:40:07 -    -> Question valid
+2025-03-12 21:40:07 -  > Generating question no. 1
+2025-03-12 21:40:09 -    -> 'How can Clinton's assertion that his plan will create 10 million jobs while his opponent's plan would lose 3.5 million jobs be reconciled with the fact that it is based on a flawed analysis of their respective plans?'
+2025-03-12 21:40:33 -    -> Question invalid
+2025-03-12 21:40:33 -  > Generating question no. 2
+2025-03-12 21:40:33 -    -> 'How can Clinton's assertion that his plan will create 10 million jobs and hers will lose 3.5 million jobs be reconciled with the fact that experts have concluded that her plan would create a more sustainable growth rate, which would ultimately lead to an economic boom?'
+2025-03-12 21:41:06 -    -> Question invalid
+2025-03-12 21:41:06 -  > Generating question no. 3
+2025-03-12 21:41:08 -    -> 'Does Clinton's assertion that his book provides an alternative plan that has been thoroughly vetted by experts and concluded to be superior to his opponent's plan, in fact reflect a genuine attempt at constructive criticism or simply a partisan marketing ploy?'
+2025-03-12 21:41:40 -    -> Question valid
+2025-03-12 21:41:40 -  > Generating question no. 4
+2025-03-12 21:41:41 -    -> 'How does Clinton's plan to create 10 million jobs and prevent a recession account for the potential costs and unintended consequences of implementing such large-scale economic changes?'
+2025-03-12 21:42:01 -    -> Question valid
+2025-03-12 21:42:01 - Saved batch of questions to 81577_output.json
+2025-03-12 21:42:01 - 
+
+
+2025-03-12 21:42:01 - 14. Argument (id: CLINTON_66)
+2025-03-12 21:42:01 -  > Generating question no. 0
+2025-03-12 21:42:03 -    -> 'How does raising taxes on the wealthy ensure that they will actually pay their fair share, and what evidence is there to suggest that corporations have not already paid a substantial portion of their profits in taxes?'
+2025-03-12 21:42:26 -    -> Question valid
+2025-03-12 21:42:26 -  > Generating question no. 1
+2025-03-12 21:42:27 -    -> 'How does raising taxes on the wealthy necessarily follow from Clinton's proposal to cut regulations and streamline them for small businesses?'
+2025-03-12 21:42:45 -    -> Question valid
+2025-03-12 21:42:45 -  > Generating question no. 2
+2025-03-12 21:42:47 -    -> 'How does Clinton's proposal to raise taxes on the wealthy specifically target those who have made all the gains in the economy, rather than just increasing overall tax revenue?'
+2025-03-12 21:43:02 -    -> Question invalid
+2025-03-12 21:43:02 -  > Generating question no. 3
+2025-03-12 21:43:02 -    -> 'How can raising taxes on the wealthy be considered a means of cutting regulations and streamlining them for small businesses?'
+2025-03-12 21:43:39 -    -> Question valid
+2025-03-12 21:43:39 - Saved batch of questions to 81577_output.json
+2025-03-12 21:43:39 - 
+
+
+2025-03-12 21:43:39 - 15. Argument (id: CLINTON_6_1)
+2025-03-12 21:43:39 -  > Generating question no. 0
+2025-03-12 21:43:40 -    -> 'How can a candidate's personal fortune be considered relevant to their ability to create policies that benefit the broader population?'
+2025-03-12 21:44:13 -    -> Question invalid
+2025-03-12 21:44:13 -  > Generating question no. 1
+2025-03-12 21:44:15 -    -> 'How can we be certain that Clinton's proposed tax system, which aims to reward work over financial transactions, won't inadvertently benefit the wealthy at the expense of job creation and rising incomes?'
+2025-03-12 21:44:46 -    -> Question invalid
+2025-03-12 21:44:46 -  > Generating question no. 2
+2025-03-12 21:44:46 -    -> 'Does Clinton's argument about Donald Trump's economic plan being 'trump-up' trickle-down economics rely on a logical assumption that the only way to grow the economy is through government intervention, rather than exploring alternative explanations for Trump's proposed tax cuts?'
+2025-03-12 21:45:20 -    -> Question invalid
+2025-03-12 21:45:20 -  > Generating question no. 3
+2025-03-12 21:45:21 -    -> 'Does Clinton's assertion that Donald Trump's economic plan would be the most extreme version of trickle-down economics be justified by evidence from Trump's own policies and business history?'
+2025-03-12 21:45:44 -    -> Question valid
+2025-03-12 21:45:44 -  > Generating question no. 4
+2025-03-12 21:45:44 -    -> 'Does the argument that a particular economic policy would be 'trickle-down economics all over again' necessarily imply that the alternative proposed by Clinton is also effective in growing the economy?'
+2025-03-12 21:46:10 -    -> Question invalid
+2025-03-12 21:46:10 -  > Generating question no. 5
+2025-03-12 21:46:11 -    -> 'How can a tax system be both fair and reward work, while also avoiding what Clinton describes as 'trickle-down economics'?'
+2025-03-12 21:46:25 -    -> Question invalid
+2025-03-12 21:46:25 -  > Generating question no. 6
+2025-03-12 21:46:26 -    -> 'Does Clinton's claim that Donald Trump's tax plan would be an 'extreme version' of trickle-down economics, and thus inherently flawed, account for the differing views on economic growth among experts?'
+2025-03-12 21:46:57 -    -> Question invalid
+2025-03-12 21:46:57 -  > Generating question no. 7
+2025-03-12 21:46:59 -    -> 'Does the notion of a politician's personal fortune being an indicator of their ability to make informed decisions about economic policy constitute a valid basis for criticizing their proposed economic plan?'
+2025-03-12 21:47:32 -    -> Question invalid
+2025-03-12 21:47:32 -  > Generating question no. 8
+2025-03-12 21:47:33 -    -> 'How can Clinton's argument about Donald Trump's tax plan being 'trickle-down economics all over again' be substantiated with evidence of the actual economic effects of previous versions of such policies?'
+2025-03-12 21:48:01 -    -> Question invalid
+2025-03-12 21:48:01 -  > Generating question no. 9
+2025-03-12 21:48:02 -    -> 'Does Clinton's view on trickle-down economics as an extreme version of it being beneficial for growing the economy hold up to scrutiny and what evidence or logical argumentation supports this claim?'
+2025-03-12 21:48:32 -    -> Question valid
+2025-03-12 21:48:32 -  > Generating question no. 10
+2025-03-12 21:48:33 -    -> 'How can a president's personal financial history be considered relevant to their economic policy proposals?'
+2025-03-12 21:49:10 -    -> Question invalid
+2025-03-12 21:49:10 -  > Generating question no. 11
+2025-03-12 21:49:11 -    -> 'How does Clinton's characterization of Donald Trump's economic plan as simply being an extreme version of trickle-down economics, rather than a distinct alternative view, relate to the underlying assumptions and evidence supporting their respective economic policies?'
+2025-03-12 21:49:42 -    -> Question invalid
+2025-03-12 21:49:42 -  > Generating question no. 12
+2025-03-12 21:49:44 -    -> 'How can Clinton's assertion that Trump's tax plan would be an 'extreme version' of trickle-down economics, given his own statement that he comes from a perspective that views 'trickle-down' as the most effective way to grow the economy?'
+2025-03-12 21:50:04 -    -> Question valid
+2025-03-12 21:50:04 - Saved batch of questions to 81577_output.json
+2025-03-12 21:50:04 - 
+
+
+2025-03-12 21:50:04 - 16. Argument (id: CLINTON_6_2)
+2025-03-12 21:50:04 -  > Generating question no. 0
+2025-03-12 21:50:05 -    -> 'Is Clinton's experience as a small-business owner sufficient to inform his policy prescriptions for the broader economy?'
+2025-03-12 21:50:33 -    -> Question invalid
+2025-03-12 21:50:33 -  > Generating question no. 1
+2025-03-12 21:50:35 -    -> 'Does Mr. Clinton's personal experience as a small-businessman guarantee that his economic policies will be successful for all Americans, regardless of their socio-economic backgrounds?'
+2025-03-12 21:51:03 -    -> Question invalid
+2025-03-12 21:51:03 -  > Generating question no. 2
+2025-03-12 21:51:03 -    -> 'Does Clinton's personal experience necessarily imply that investing in education and skills for the middle class is a guaranteed path to economic success?'
+2025-03-12 21:51:28 -    -> Question invalid
+2025-03-12 21:51:28 -  > Generating question no. 3
+2025-03-12 21:51:28 -    -> 'Does Clinton's experience as a small-business owner with his father translate to the broader economic situation and the policies he proposes?'
+2025-03-12 21:52:04 -    -> Question valid
+2025-03-12 21:52:04 -  > Generating question no. 4
+2025-03-12 21:52:05 -    -> 'Does his personal anecdote about printing drapery fabrics and investing in education for the middle class constitute sufficient evidence to challenge his assertion that helping wealthy people benefits the broader economy?'
+2025-03-12 21:52:20 -    -> Question valid
+2025-03-12 21:52:20 -  > Generating question no. 5
+2025-03-12 21:52:22 -    -> 'Is it logically possible that a business founded with $14 million borrowed from a wealthy family member could be seen as a representative example of the economic benefits of helping wealthy individuals?'
+2025-03-12 21:52:44 -    -> Question valid
+2025-03-12 21:52:44 - Saved batch of questions to 81577_output.json
+2025-03-12 21:52:44 - 
+
+
+2025-03-12 21:52:44 - 17. Argument (id: CLINTON_85)
+2025-03-12 21:52:44 -  > Generating question no. 0
+2025-03-12 21:52:46 -    -> 'Does Clinton's assertion that he supports the repatriation of money stranded overseas, as stated in his tax proposals, actually imply a commitment to lowering corporate tax rates?'
+2025-03-12 21:53:12 -    -> Question valid
+2025-03-12 21:53:12 -  > Generating question no. 1
+2025-03-12 21:53:14 -    -> 'Does Clinton's claim about not seeing changes in corporate tax rates accurately reflect his own proposed policy?'
+2025-03-12 21:53:43 -    -> Question valid
+2025-03-12 21:53:43 -  > Generating question no. 2
+2025-03-12 21:53:43 -    -> 'Does Clinton's statement about not seeing changes in corporate tax rates actually assume that his own proposed policies would be different from Lester's, or does he simply lack information about Lester's plans?'
+2025-03-12 21:54:05 -    -> Question valid
+2025-03-12 21:54:05 - Saved batch of questions to 81577_output.json
+2025-03-12 21:54:05 - 
+
+
+2025-03-12 21:54:05 - 18. Argument (id: CLINTON_87)
+2025-03-12 21:54:05 -  > Generating question no. 0
+2025-03-12 21:54:06 -    -> 'Is the term 'Trump loophole' a legitimate, objective description of the proposed idea or is it a subjective, value-laden label used to undermine its validity?'
+2025-03-12 21:54:35 -    -> Question invalid
+2025-03-12 21:54:35 -  > Generating question no. 1
+2025-03-12 21:54:37 -    -> 'Is it valid to imply that a specific policy or loophole is in favor of someone's benefit because it would be advantageous to them and their business?'
+2025-03-12 21:55:08 -    -> Question invalid
+2025-03-12 21:55:08 -  > Generating question no. 2
+2025-03-12 21:55:08 -    -> 'Does Clinton's characterization of the Trump loophole accurately reflect its actual nature and implications?'
+2025-03-12 21:55:24 -    -> Question valid
+2025-03-12 21:55:24 -  > Generating question no. 3
+2025-03-12 21:55:26 -    -> 'Is Clinton's claim that the proposed measure would work to the public's benefit solely because it doesn't have a specific name like 'the Trump loophole' a valid justification for its adoption?'
+2025-03-12 21:55:53 -    -> Question invalid
+2025-03-12 21:55:53 -  > Generating question no. 4
+2025-03-12 21:55:54 -    -> 'Is it reasonable to assume that a potential benefit of a policy or idea is being advocated for solely because it is seen as advantageous to the person proposing it, rather than because of its inherent value?'
+2025-03-12 21:56:13 -    -> Question invalid
+2025-03-12 21:56:13 -  > Generating question no. 5
+2025-03-12 21:56:14 -    -> 'How does Clinton's characterization of 'the Trump loophole' as an advantage to the proposed policy align with his claimed support for a similar approach that would benefit everyone?'
+2025-03-12 21:56:31 -    -> Question valid
+2025-03-12 21:56:31 -  > Generating question no. 6
+2025-03-12 21:56:33 -    -> 'How can Clinton's characterization of the proposal as a 'Trump loophole' be taken at face value, given his apparent attempt to undermine its legitimacy?'
+2025-03-12 21:56:53 -    -> Question valid
+2025-03-12 21:56:53 - Saved batch of questions to 81577_output.json
+2025-03-12 21:56:53 - 
+
+
+2025-03-12 21:56:53 - 19. Argument (id: CLINTON_92)
+2025-03-12 21:56:53 -  > Generating question no. 0
+2025-03-12 21:56:55 -    -> 'Does the idea that trickle-down economics is inherently flawed simply because it did not produce the desired results during a specific time period ('2008 and 2009') provide sufficient evidence to reject all forms of trickle-down economics?'
+2025-03-12 21:57:21 -    -> Question invalid
+2025-03-12 21:57:21 -  > Generating question no. 1
+2025-03-12 21:57:23 -    -> 'Is it possible that the idea of trickle-down economics is being misapplied or misunderstood, and are the benefits of reducing taxes on the wealthy actually trickling down to the broader economy?'
+2025-03-12 21:57:51 -    -> Question invalid
+2025-03-12 21:57:51 -  > Generating question no. 2
+2025-03-12 21:57:52 -    -> 'Does the fact that some wealthy individuals agree with Clinton's economic policy necessarily imply that it is a good or effective solution for the economy?'
+2025-03-12 21:58:47 -    -> Question invalid
+2025-03-12 21:58:47 -  > Generating question no. 3
+2025-03-12 21:58:48 -    -> 'Does the argument that trickle-down economics is ineffective solely because it was associated with the 2008 financial crisis provide a sufficient basis for dismissing its potential to stimulate economic growth in other contexts?'
+2025-03-12 21:59:04 -    -> Question valid
+2025-03-12 21:59:04 -  > Generating question no. 4
+2025-03-12 21:59:05 -    -> 'Does the historical evidence of trickle-down economics being ineffective since 2008 and 2009, as cited by Clinton, provide a sufficient basis to dismiss its potential benefits altogether?'
+2025-03-12 21:59:29 -    -> Question valid
+2025-03-12 21:59:29 -  > Generating question no. 5
+2025-03-12 21:59:30 -    -> 'Does Clinton's characterization of trickle-down economics as a proven failure accurately account for its proponents' alternative explanations for its perceived failures?'
+2025-03-12 21:59:58 -    -> Question valid
+2025-03-12 21:59:58 - Saved batch of questions to 81577_output.json
+2025-03-12 21:59:58 - 
+
+
+2025-03-12 21:59:58 - 20. Argument (id: CL_57)
+2025-03-12 21:59:58 -  > Generating question no. 0
+2025-03-12 21:59:58 -    -> 'Does the argument assume that moral hazard is always unavoidable and unmitigable in all cases of lending and borrowing?'
+2025-03-12 22:00:17 -    -> Question invalid
+2025-03-12 22:00:17 -  > Generating question no. 1
+2025-03-12 22:00:18 -    -> 'Does the argument that moral hazard is a natural part of lending and borrowing imply that suppressing it would necessarily lead to the absence of any benefits from lending?'
+2025-03-12 22:00:52 -    -> Question valid
+2025-03-12 22:00:52 -  > Generating question no. 2
+2025-03-12 22:00:53 -    -> 'Is suppressing moral hazard necessarily a necessary condition for generating genuine wealth?'
+2025-03-12 22:01:09 -    -> Question valid
+2025-03-12 22:01:09 -  > Generating question no. 3
+2025-03-12 22:01:09 -    -> 'Is it possible that CL's claim that moral hazard is a natural part of lending and borrowing inherently invalidates any attempt to suppress or regulate it?'
+2025-03-12 22:01:41 -    -> Question invalid
+2025-03-12 22:01:41 -  > Generating question no. 4
+2025-03-12 22:01:41 -    -> 'Does CL acknowledge any potential benefits of mitigating moral hazard, or are they assuming that all outcomes without suppression of moral hazard will be uniformly negative?'
+2025-03-12 22:01:56 -    -> Question invalid
+2025-03-12 22:01:56 -  > Generating question no. 5
+2025-03-12 22:01:57 -    -> 'Is it possible that CL's claim about moral hazard being a natural part of lending and borrowing is not supported by empirical evidence or theoretical frameworks in economics?'
+2025-03-12 22:02:23 -    -> Question valid
+2025-03-12 22:02:23 - Saved batch of questions to 81577_output.json
+2025-03-12 22:02:23 - 
+
+
+2025-03-12 22:02:23 - 21. Argument (id: Doctor-Mom_205)
+2025-03-12 22:02:23 -  > Generating question no. 0
+2025-03-12 22:02:26 -    -> 'Is the argument that a full ban on peanut products is necessary to prevent life-threatening reactions based solely on anecdotal evidence and self-reported cases from online forums, rather than rigorous scientific research or empirical data?'
+2025-03-12 22:02:40 -    -> Question invalid
+2025-03-12 22:02:40 -  > Generating question no. 1
+2025-03-12 22:02:40 -    -> 'Does Doctor-Mom's claim that peanuts pose an imminent risk to air travel, given the availability of alternative food options and the effectiveness of existing regulations, justify a blanket ban on all peanut products?'
+2025-03-12 22:03:07 -    -> Question invalid
+2025-03-12 22:03:07 -  > Generating question no. 2
+2025-03-12 22:03:07 -    -> 'Is the conclusion that a full ban on peanut products is necessary to prevent life-threatening reactions based solely on the experiences of individuals with food allergies, or have these individuals' perspectives been supplemented by any empirical data or research on the prevalence and severity of peanut-related reactions in general populations?'
+2025-03-12 22:03:40 -    -> Question valid
+2025-03-12 22:03:40 -  > Generating question no. 3
+2025-03-12 22:03:42 -    -> 'Can the doctor's assertion that individuals with peanut allergies are unable to control their environment and thus must have a complete ban on peanuts, be supported by empirical evidence demonstrating that other countries or regions without such bans do not experience significantly higher rates of severe allergic reactions?'
+2025-03-12 22:04:24 -    -> Question invalid
+2025-03-12 22:04:24 -  > Generating question no. 4
+2025-03-12 22:04:25 -    -> 'Is it logically necessary to assume that complete elimination of peanuts from the air, rather than just comprehensive precautions and strict regulations, is a necessary step to ensure safety for individuals with peanut allergies?'
+2025-03-12 22:04:36 -    -> Question valid
+2025-03-12 22:04:36 -  > Generating question no. 5
+2025-03-12 22:04:37 -    -> 'Does the Doctor's assertion that a full ban on peanut products is necessary to prevent life-threatening reactions assume that the benefits of such a ban outweigh the potential harm and disruption it could cause to air travel, including the impact on people who are not allergic to peanuts but may be inconvenienced by the ban?'
+2025-03-12 22:04:56 -    -> Question valid
+2025-03-12 22:04:56 - Saved batch of questions to 81577_output.json
+2025-03-12 22:04:56 - 
+
+
+2025-03-12 22:04:56 - 22. Argument (id: Elmattador__92)
+2025-03-12 22:04:56 -  > Generating question no. 0
+2025-03-12 22:04:58 -    -> 'Does Bigtwinkie's conclusion that the Democratic nominee will inevitably lose votes regardless of who wins necessarily follow from the claim that the debate has been making them uncomfortable and seems to make its participants unlikable?'
+2025-03-12 22:05:29 -    -> Question invalid
+2025-03-12 22:05:29 -  > Generating question no. 1
+2025-03-12 22:05:31 -    -> 'Does Bigtwinkie's assessment of the GOP debates being hostile and unpleasantly similar to a domestic argument necessarily imply that the debates are inherently unrepresentative of the broader Republican Party's values?'
+2025-03-12 22:06:07 -    -> Question valid
+2025-03-12 22:06:07 -  > Generating question no. 2
+2025-03-12 22:06:09 -    -> 'Is the speaker's assertion that the Democratic nominee will inevitably lose votes based on their assessment of the debate's hostility and likability actually an opinion or a prediction grounded in facts?'
+2025-03-12 22:06:37 -    -> Question valid
+2025-03-12 22:06:37 -  > Generating question no. 3
+2025-03-12 22:06:38 -    -> 'Is it possible that Bigtwinkie's discomfort with the debate stems from their own biases, rather than an objective assessment of its content?'
+2025-03-12 22:06:56 -    -> Question invalid
+2025-03-12 22:06:56 -  > Generating question no. 4
+2025-03-12 22:06:57 -    -> 'Does Elmattador's statement that the democratic nominee will be 'bleeding votes' regardless of who wins assume more than is supported by evidence from the debates?'
+2025-03-12 22:07:27 -    -> Question invalid
+2025-03-12 22:07:27 -  > Generating question no. 5
+2025-03-12 22:07:27 -    -> 'Does Bigtwinkie's assertion that the debate will result in the democratic nominee bleeding votes regardless of who wins logically follow from their complaint about the hostilities and unlikability of the panel?'
+2025-03-12 22:07:56 -    -> Question valid
+2025-03-12 22:07:56 - Saved batch of questions to 81577_output.json
+2025-03-12 22:07:56 - 
+
+
+2025-03-12 22:07:56 - 23. Argument (id: FoodAllergyMom_199_1)
+2025-03-12 22:07:56 -  > Generating question no. 0
+2025-03-12 22:07:56 -    -> 'Does the potential risk of anaphylactic shock from airborne peanut particles while flying warrant a blanket ban on individuals with peanut allergies from air travel, regardless of their ability to carry an EpiPen or take preventative measures?'
+2025-03-12 22:08:23 -    -> Question valid
+2025-03-12 22:08:23 -  > Generating question no. 1
+2025-03-12 22:08:24 -    -> 'Is being forced to carry an EpiPen with them at all times on a commercial flight, potentially subject to the whims of airline crew and passenger behavior, enough to outweigh the risk of death from an allergic reaction?'
+2025-03-12 22:08:48 -    -> Question invalid
+2025-03-12 22:08:48 -  > Generating question no. 2
+2025-03-12 22:08:49 -    -> 'Does the potential risk of a peanut allergy reaction while flying pose a sufficient threat to justify strict travel restrictions, potentially impacting the child's future career and life opportunities?'
+2025-03-12 22:09:14 -    -> Question invalid
+2025-03-12 22:09:14 -  > Generating question no. 3
+2025-03-12 22:09:16 -    -> 'At what point does the risk of death from a peanut allergy become unacceptable enough to justify restricting someone's right to fly, and how would such a decision be made in terms of applying to others with similar allergies?'
+2025-03-12 22:09:48 -    -> Question invalid
+2025-03-12 22:09:48 -  > Generating question no. 4
+2025-03-12 22:09:50 -    -> 'Does the severity of a peanut allergy justify restricting an individual's life choices and freedoms, such as flying across the country for work, based solely on hypothetical risks that may or may not materialize?'
+2025-03-12 22:10:19 -    -> Question invalid
+2025-03-12 22:10:19 -  > Generating question no. 5
+2025-03-12 22:10:19 -    -> 'Does assuming that a peanut allergy will react similarly regardless of air circulation and EpiPen availability when an adult is exposed to peanuts in a different context justify the potential career-limiting consequences?'
+2025-03-12 22:10:36 -    -> Question invalid
+2025-03-12 22:10:36 -  > Generating question no. 6
+2025-03-12 22:10:38 -    -> 'Can it be reasonably inferred that an individual's severe peanut allergy would necessarily render them unable to safely work with peanuts or in environments where peanut particles may be present, without considering alternative measures or accommodations?'
+2025-03-12 22:11:07 -    -> Question valid
+2025-03-12 22:11:07 -  > Generating question no. 7
+2025-03-12 22:11:08 -    -> 'Is the hypothetical scenario of a child being exposed to peanut particles on a plane justified by the need for travel across the country in a weekend, given that an EpiPen can be administered at most once every 15 minutes?'
+2025-03-12 22:11:37 -    -> Question valid
+2025-03-12 22:11:37 - Saved batch of questions to 81577_output.json
+2025-03-12 22:11:37 - 
+
+
+2025-03-12 22:11:37 - 24. Argument (id: Frequent-Flyer_157)
+2025-03-12 22:11:37 -  > Generating question no. 0
+2025-03-12 22:11:39 -    -> 'Is the proposed accommodation of setting aside seating blocks for allergy sufferers sufficient to mitigate the risks associated with flying, or would a blanket ban on peanuts still pose an undue burden on those who cannot easily find alternative travel options?'
+2025-03-12 22:12:24 -    -> Question invalid
+2025-03-12 22:12:24 -  > Generating question no. 1
+2025-03-12 22:12:26 -    -> 'Does requiring all passengers to abstain from eating peanuts solely because of the risk to allergy sufferers not disproportionately penalize those who are most severely impacted by peanut allergies?'
+2025-03-12 22:13:11 -    -> Question valid
+2025-03-12 22:13:11 -  > Generating question no. 2
+2025-03-12 22:13:13 -    -> 'Does the proposed solution of requiring passengers to give up their right to eat peanuts on flights if it might minimize the risk of an allergic reaction only consider the perspectives of those who do fly frequently, and neglect the potential impact on those who fly less often?'
+2025-03-12 22:13:40 -    -> Question valid
+2025-03-12 22:13:40 -  > Generating question no. 3
+2025-03-12 22:13:41 -    -> 'Does requiring one group to make significant lifestyle adjustments (e.g. alternate travel methods, special clothing) solely to accommodate another group's needs necessarily justify imposing those same requirements on the larger group of travelers?'
+2025-03-12 22:14:06 -    -> Question invalid
+2025-03-12 22:14:06 -  > Generating question no. 4
+2025-03-12 22:14:07 -    -> 'Does requiring passengers to give up their right to eat peanuts on a flight not justify the potential risk to peanut-allergic individuals, especially if alternative measures such as seating block accommodations and medication preparations are in place?'
+2025-03-12 22:14:32 -    -> Question invalid
+2025-03-12 22:14:32 -  > Generating question no. 5
+2025-03-12 22:14:34 -    -> 'Does the speaker's claim that requiring passengers to give up their right to eat peanuts is a disproportionate burden, given the relatively low risk of peanut allergy-related incidents during flights?'
+2025-03-12 22:15:06 -    -> Question valid
+2025-03-12 22:15:06 - Saved batch of questions to 81577_output.json
+2025-03-12 22:15:06 - 
+
+
+2025-03-12 22:15:06 - 25. Argument (id: Glblwrmingisfak__552)
+2025-03-12 22:15:06 -  > Generating question no. 0
+2025-03-12 22:15:08 -    -> 'Does Glblwrmingisfak's assertion that an assault weapons ban is not a solution for addressing homicide rates in the US solely rely on the DOJ's previous determination, or does it consider alternative evidence or perspectives?'
+2025-03-12 22:15:38 -    -> Question invalid
+2025-03-12 22:15:38 -  > Generating question no. 1
+2025-03-12 22:15:39 -    -> 'Does the argument that an assault weapons ban won't address homicide rates in the US necessarily imply that common sense gun solutions are not worth considering?'
+2025-03-12 22:15:56 -    -> Question valid
+2025-03-12 22:15:56 -  > Generating question no. 2
+2025-03-12 22:15:58 -    -> 'Does Glblwrmingisfak's claim that a common sense gun solution is not viable because the DOJ previously ruled out an assault weapons ban actually account for the possibility of other, unproposed common sense solutions?'
+2025-03-12 22:16:29 -    -> Question invalid
+2025-03-12 22:16:29 -  > Generating question no. 3
+2025-03-12 22:16:29 -    -> 'Does Glblwrmingisfak's claim that there is no common sense gun solution because of the DOJ's previous assessment not being based on a consideration of all possible solutions, including those that might have been proposed by others besides Bernie?'
+2025-03-12 22:16:52 -    -> Question valid
+2025-03-12 22:16:52 -  > Generating question no. 4
+2025-03-12 22:16:53 -    -> 'Does the speaker's dismissal of common sense gun solutions rely on a reliable source (e.g. the DOJ study) to support their claim that an assault weapons ban is ineffective in addressing homicide rates?'
+2025-03-12 22:17:20 -    -> Question valid
+2025-03-12 22:17:20 - Saved batch of questions to 81577_output.json
+2025-03-12 22:17:20 - 
+
+
+2025-03-12 22:17:20 - 26. Argument (id: HOLT_126)
+2025-03-12 22:17:20 -  > Generating question no. 0
+2025-03-12 22:17:21 -    -> 'Did the constitutionality of stop-and-frisk in New York solely depend on its racial demographic impact, or were other factors also taken into account?'
+2025-03-12 22:17:50 -    -> Question invalid
+2025-03-12 22:17:50 -  > Generating question no. 1
+2025-03-12 22:17:52 -    -> 'How can we be certain that the ruling was based on a broader critique of stop-and-frisk policies rather than solely targeting black and Hispanic young men?'
+2025-03-12 22:18:18 -    -> Question valid
+2025-03-12 22:18:18 -  > Generating question no. 2
+2025-03-12 22:18:19 -    -> 'Does Holt have a plausible reason for his assertion that 'stop-and-frisk was ruled unconstitutional' beyond stating a general fact about its impact on minority groups?'
+2025-03-12 22:18:43 -    -> Question valid
+2025-03-12 22:18:43 -  > Generating question no. 3
+2025-03-12 22:18:44 -    -> 'Does Holt's assertion that stop-and-frisk was ruled unconstitutional solely because it targeted black and Hispanic young men provide sufficient evidence to support his conclusion?'
+2025-03-12 22:19:02 -    -> Question valid
+2025-03-12 22:19:02 - Saved batch of questions to 81577_output.json
+2025-03-12 22:19:02 - 
+
+
+2025-03-12 22:19:02 - 27. Argument (id: HOLT_239)
+2025-03-12 22:19:02 -  > Generating question no. 0
+2025-03-12 22:19:02 -    -> 'How does Holt's consideration of changing President Obama's policy on nuclear weapons relate to his questioning of the current policy?'
+2025-03-12 22:19:40 -    -> Question valid
+2025-03-12 22:19:40 -  > Generating question no. 1
+2025-03-12 22:19:40 -    -> 'Does the speaker's endorsement of changing the policy imply a shift from supporting to opposing the current policy?'
+2025-03-12 22:20:04 -    -> Question invalid
+2025-03-12 22:20:04 -  > Generating question no. 2
+2025-03-12 22:20:04 -    -> 'What makes Mr. Trump's opinion on the nation's policy on first use of nuclear weapons relevant to a discussion about securing America?'
+2025-03-12 22:20:22 -    -> Question valid
+2025-03-12 22:20:22 -  > Generating question no. 3
+2025-03-12 22:20:22 -    -> 'What evidence does Holt have to suggest that President Obama's consideration of changing the nation's policy on first use is relevant to the current policy?'
+2025-03-12 22:20:40 -    -> Question valid
+2025-03-12 22:20:40 - Saved batch of questions to 81577_output.json
+2025-03-12 22:20:40 - 
+
+
+2025-03-12 22:20:40 - 28. Argument (id: HOLT_94)
+2025-03-12 22:20:40 -  > Generating question no. 0
+2025-03-12 22:20:40 -    -> 'Does the nominee's obligation to disclose tax returns necessarily imply that their financial information is relevant to evaluating their fitness for office?'
+2025-03-12 22:21:01 -    -> Question valid
+2025-03-12 22:21:01 -  > Generating question no. 1
+2025-03-12 22:21:01 -    -> 'Does the fact that nominees have released their tax returns for decades necessarily imply a corresponding level of transparency and accountability in their financial dealings?'
+2025-03-12 22:21:34 -    -> Question valid
+2025-03-12 22:21:34 -  > Generating question no. 2
+2025-03-12 22:21:36 -    -> 'Does knowing about potential conflicts of interest from a nominee's tax returns necessarily imply knowledge about their actual financial obligations or business relationships?'
+2025-03-12 22:21:45 -    -> Question invalid
+2025-03-12 22:21:45 -  > Generating question no. 3
+2025-03-12 22:21:47 -    -> 'Does the nominee's decision not to release their tax returns create a situation where Americans are being forced to rely on unverified assumptions about potential conflicts of interest, rather than having direct access to the information?'
+2025-03-12 22:22:14 -    -> Question valid
+2025-03-12 22:22:14 - Saved batch of questions to 81577_output.json
+2025-03-12 22:22:14 - 
+
+
+2025-03-12 22:22:14 - 29. Argument (id: Helen__66)
+2025-03-12 22:22:14 -  > Generating question no. 0
+2025-03-12 22:22:15 -    -> 'Does Helen's suggestion that families with high levels of aggression and violence are not in need of help, while simultaneously stating that other families do require assistance, provide a clear justification for why she believes the scope of intervention should be limited to only those families?'
+2025-03-12 22:22:49 -    -> Question valid
+2025-03-12 22:22:49 -  > Generating question no. 1
+2025-03-12 22:22:50 -    -> 'Is it clear that families experiencing high levels of aggression and violence are inherently unable to receive the necessary support, rather than simply needing targeted intervention?'
+2025-03-12 22:23:08 -    -> Question valid
+2025-03-12 22:23:08 -  > Generating question no. 2
+2025-03-12 22:23:10 -    -> 'How does Helen define a 'family' and what criteria does she use to determine when intervention is necessary versus when it's not?'
+2025-03-12 22:23:24 -    -> Question valid
+2025-03-12 22:23:24 - Saved batch of questions to 81577_output.json
+2025-03-12 22:23:24 - 
+
+
+2025-03-12 22:23:24 - 30. Argument (id: 17th_knight__247)
+2025-03-12 22:23:24 -  > Generating question no. 0
+2025-03-12 22:23:25 -    -> 'Does the fact that some Republican candidates used to advocate for immigration-friendly policies imply that they now support universal healthcare coverage for undocumented immigrants?'
+2025-03-12 22:23:48 -    -> Question valid
+2025-03-12 22:23:48 -  > Generating question no. 1
+2025-03-12 22:23:50 -    -> 'Can the fact that some Democrat presidential candidates support this issue be considered evidence that it is a reasonable and just policy, regardless of the historical context in which Republicans expressed similar views?'
+2025-03-12 22:24:21 -    -> Question invalid
+2025-03-12 22:24:21 -  > Generating question no. 2
+2025-03-12 22:24:22 -    -> 'Is the conclusion that Democrats are better on immigration policy because Republicans used to be mocked for similar views a logical consequence of the premise that Republican opposition to giving coverage to undocumented immigrants is xenophobic?'
+2025-03-12 22:25:06 -    -> Question invalid
+2025-03-12 22:25:06 -  > Generating question no. 3
+2025-03-12 22:25:08 -    -> 'Does the fact that some Democratic presidential candidates are now supporting this policy necessarily make it a more acceptable or desirable policy than it was when Republicans held similar views?'
+2025-03-12 22:25:31 -    -> Question invalid
+2025-03-12 22:25:31 -  > Generating question no. 4
+2025-03-12 22:25:33 -    -> 'Is it logically consistent to argue that Republican politicians who previously supported providing health care coverage to undocumented immigrants are now hypocrites simply because some Democratic presidential candidates support the policy?'
+2025-03-12 22:25:49 -    -> Question invalid
+2025-03-12 22:25:49 -  > Generating question no. 5
+2025-03-12 22:25:50 -    -> 'Is it reasonable to assume that because Republicans used to express support for providing health care coverage to undocumented immigrants, they would now suddenly and uniformly oppose such a policy?'
+2025-03-12 22:26:13 -    -> Question invalid
+2025-03-12 22:26:13 -  > Generating question no. 6
+2025-03-12 22:26:15 -    -> 'Is the fact that some Democrats support a particular policy sufficient to justify the assertion that all Republicans who have previously expressed similar views are automatically wrong about their stance on immigration?'
+2025-03-12 22:26:33 -    -> Question invalid
+2025-03-12 22:26:33 -  > Generating question no. 7
+2025-03-12 22:26:33 -    -> 'Does the fact that some Democrats support a particular policy necessarily imply its legitimacy or moral justifiability?'
+2025-03-12 22:26:54 -    -> Question valid
+2025-03-12 22:26:54 -  > Generating question no. 8
+2025-03-12 22:26:56 -    -> 'Does the fact that some Democrats and Republicans have expressed support for providing health care coverage to undocumented immigrants in the past necessarily mean that it is a good policy idea in general?'
+2025-03-12 22:27:25 -    -> Question valid
+2025-03-12 22:27:25 - Saved batch of questions to 81577_output.json
+2025-03-12 22:27:25 - 
+
+
+2025-03-12 22:27:25 - 31. Argument (id: AFCHF_154)
+2025-03-12 22:27:25 -  > Generating question no. 0
+2025-03-12 22:27:26 -    -> 'Does the proposed solution of allowing passengers to deplane during gate holds and remain in the immediate area address the unique challenges and risks associated with transporting military personnel or other sensitive cargo?'
+2025-03-12 22:28:05 -    -> Question invalid
+2025-03-12 22:28:05 -  > Generating question no. 1
+2025-03-12 22:28:07 -    -> 'Does requiring airlines to deplane passengers for CBP screening at gates, instead of the tarmac, align with the principles of airline safety and security protocols already in place?'
+2025-03-12 22:28:31 -    -> Question valid
+2025-03-12 22:28:31 -  > Generating question no. 2
+2025-03-12 22:28:33 -    -> 'Does requiring airlines to obtain a contract of carriage before implementing a maximum tarmac delay trigger ensure that all passengers, regardless of their military status or other factors, can be safely and humanely deplaned during gate holds?'
+2025-03-12 22:29:05 -    -> Question invalid
+2025-03-12 22:29:05 -  > Generating question no. 3
+2025-03-12 22:29:05 -    -> 'Does deplaning without CBP screening, even if done during a gate hold and with certain restrictions, constitute a viable alternative to the proposed maximum tarmac delay trigger?'
+2025-03-12 22:29:23 -    -> Question valid
+2025-03-12 22:29:23 -  > Generating question no. 4
+2025-03-12 22:29:24 -    -> 'How can requiring airlines to screen departing passengers during gate holds be equivalent to allowing them to deplane without any screening?'
+2025-03-12 22:29:59 -    -> Question valid
+2025-03-12 22:29:59 - Saved batch of questions to 81577_output.json
+2025-03-12 22:29:59 - 
+
+
+2025-03-12 22:29:59 - 32. Argument (id: AK-traveler_186)
+2025-03-12 22:29:59 -  > Generating question no. 0
+2025-03-12 22:29:59 -    -> 'Does the airline's ability to decide on seat configurations and item storage not being a matter of airline policies rather than health or control issues justify charging extra fees for carrying pets?'
+2025-03-12 22:30:23 -    -> Question invalid
+2025-03-12 22:30:23 -  > Generating question no. 1
+2025-03-12 22:30:25 -    -> 'How does the airline determine what expenses are 'necessary' versus those that are discretionary, and how do they justify charging passengers for items that can be deemed a health issue?'
+2025-03-12 22:30:44 -    -> Question valid
+2025-03-12 22:30:44 -  > Generating question no. 2
+2025-03-12 22:30:46 -    -> 'Does the argument's claim that airline fees for items necessary for passengers' health and comfort are unfair and discriminatory not rely on an unstated assumption that airlines should be responsible for ensuring all passengers have equal access to exercise facilities during flight?'
+2025-03-12 22:31:20 -    -> Question invalid
+2025-03-12 22:31:20 -  > Generating question no. 3
+2025-03-12 22:31:21 -    -> 'Does not allowing airlines to charge for essential items necessary for passengers' health and safety justify charging exorbitant fees for services, such as carrying pets onboard that the airline could easily accommodate?'
+2025-03-12 22:31:43 -    -> Question invalid
+2025-03-12 22:31:43 -  > Generating question no. 4
+2025-03-12 22:31:44 -    -> 'Does the airline's policy of charging for these items not being out of their control imply that they are allowed to charge for essential items that are within their control?'
+2025-03-12 22:32:08 -    -> Question valid
+2025-03-12 22:32:08 -  > Generating question no. 5
+2025-03-12 22:32:08 -    -> 'Does charging extra for pet travel fees not be discriminatory against people who cannot afford to fly with a service animal or carrier?'
+2025-03-12 22:32:35 -    -> Question invalid
+2025-03-12 22:32:35 -  > Generating question no. 6
+2025-03-12 22:32:36 -    -> 'Is it reasonable to assume that airlines have no control over factors such as seat size and configuration, yet they still manage to accommodate carry-on pets with a significant fee?'
+2025-03-12 22:33:01 -    -> Question invalid
+2025-03-12 22:33:01 -  > Generating question no. 7
+2025-03-12 22:33:02 -    -> 'Is it reasonable to assume that an airline's ability to accommodate passengers' basic needs for health and comfort is directly tied to their willingness to provide complimentary amenities like inflight magazines?'
+2025-03-12 22:33:25 -    -> Question invalid
+2025-03-12 22:33:25 -  > Generating question no. 8
+2025-03-12 22:33:27 -    -> 'Does not charging for carry-on pet fees not disproportionately harm economically disadvantaged travelers, who may be less able to afford the additional expense?'
+2025-03-12 22:33:50 -    -> Question valid
+2025-03-12 22:33:50 - Saved batch of questions to 81577_output.json
+2025-03-12 22:33:50 - 
+
+
+2025-03-12 22:33:50 - 33. Argument (id: AllergyDad_200)
+2025-03-12 22:33:50 -  > Generating question no. 0
+2025-03-12 22:33:50 -    -> 'Does the argument assume that the risk of anaphylaxis from a peanut or tree nut on an airplane is comparable to other known airborne hazards?'
+2025-03-12 22:34:27 -    -> Question valid
+2025-03-12 22:34:27 -  > Generating question no. 1
+2025-03-12 22:34:28 -    -> 'Is it reasonable to conclude that a blanket ban on all peanut and tree nut products on flights is necessary based solely on the risk of anaphylaxis associated with peanuts, or are there other factors at play that would be mitigated by such a ban?'
+2025-03-12 22:35:12 -    -> Question valid
+2025-03-12 22:35:12 -  > Generating question no. 2
+2025-03-12 22:35:14 -    -> 'Does the proposed ban on peanut and tree nut products on flights necessarily follow from the fact that there is a risk of anaphylaxis associated with these allergens?'
+2025-03-12 22:35:34 -    -> Question valid
+2025-03-12 22:35:34 - Saved batch of questions to 81577_output.json
+2025-03-12 22:35:34 - 
+
+
+2025-03-12 22:35:34 - 34. Argument (id: AngelComa__638)
+2025-03-12 22:35:34 -  > Generating question no. 0
+2025-03-12 22:35:35 -    -> 'Is AngelComma's assessment of Punchee's website response based solely on its content, or is it also influenced by AngelComma's pre-existing opinion about politicians' plans?'
+2025-03-12 22:36:07 -    -> Question invalid
+2025-03-12 22:36:07 -  > Generating question no. 1
+2025-03-12 22:36:07 -    -> 'Is Punchee's admission that his website contains evidence of a politician's lack of preparedness sufficient to support AngelComa's claim about the politician?'
+2025-03-12 22:36:33 -    -> Question invalid
+2025-03-12 22:36:33 -  > Generating question no. 2
+2025-03-12 22:36:34 -    -> 'Does Punchee's response demonstrate an understanding of the limitations of politicians' statements versus their actual plans?'
+2025-03-12 22:36:56 -    -> Question valid
+2025-03-12 22:36:56 -  > Generating question no. 3
+2025-03-12 22:36:58 -    -> 'Is AngelComa's assertion that Punchee is only responding to the lack of specifics because they are used to politicians saying things and not having a plan an ad hominem attack, rather than a valid critique of Punchee's argument?'
+2025-03-12 22:37:25 -    -> Question invalid
+2025-03-12 22:37:25 -  > Generating question no. 4
+2025-03-12 22:37:25 -    -> 'Does AngelComa's criticism of Punchee's response demonstrate an understanding of the distinction between a lack of specificity and a lack of substance?'
+2025-03-12 22:37:53 -    -> Question invalid
+2025-03-12 22:37:53 -  > Generating question no. 5
+2025-03-12 22:37:54 -    -> 'Does AngelComa's dismissal of Punchee's reference to a website as evidence that he had a plan actually depend on Punchee being aware of the details of his own policy?'
+2025-03-12 22:38:27 -    -> Question invalid
+2025-03-12 22:38:27 -  > Generating question no. 6
+2025-03-12 22:38:28 -    -> 'Is Punchee's response to AngelComa's comment about a specific, publicly available resource (his website) sufficient to justify dismissing the validity of his criticism based solely on the politician's verbal communication style?'
+2025-03-12 22:38:55 -    -> Question invalid
+2025-03-12 22:38:55 -  > Generating question no. 7
+2025-03-12 22:38:57 -    -> 'Is Punchee's claim that AngelComa is overly familiar with politicians' lack of preparedness justified or based on a misleading generalization?'
+2025-03-12 22:39:30 -    -> Question valid
+2025-03-12 22:39:30 -  > Generating question no. 8
+2025-03-12 22:39:30 -    -> 'Is AngelComa's dismissal of Punchee's website evidence sufficient to establish that the politician is unprepared?'
+2025-03-12 22:39:52 -    -> Question invalid
+2025-03-12 22:39:52 -  > Generating question no. 9
+2025-03-12 22:39:54 -    -> 'Is it reasonable to assume that Punchee is being truthful about having evidence on his website to support his claim, or could he be being sarcastic?'
+2025-03-12 22:40:12 -    -> Question valid
+2025-03-12 22:40:12 - Saved batch of questions to 81577_output.json
+2025-03-12 22:40:12 - 
+
+
+2025-03-12 22:40:12 - 35. Argument (id: Antanagoge_104)
+2025-03-12 22:40:12 -  > Generating question no. 0
+2025-03-12 22:40:13 -    -> 'Is the claim that the airline industry cannot be left to self-monitor solely based on anecdotal evidence?'
+2025-03-12 22:40:33 -    -> Question invalid
+2025-03-12 22:40:33 -  > Generating question no. 1
+2025-03-12 22:40:35 -    -> 'Can we be certain that the absence of self-monitoring in the airline industry is the sole cause of these reported problems?'
+2025-03-12 22:40:49 -    -> Question invalid
+2025-03-12 22:40:49 -  > Generating question no. 2
+2025-03-12 22:40:49 -    -> 'Can we be certain that the anecdotal evidence provided by the author of these stories is representative of the entire airline industry, rather than a skewed subset?'
+2025-03-12 22:41:10 -    -> Question invalid
+2025-03-12 22:41:10 -  > Generating question no. 3
+2025-03-12 22:41:10 -    -> 'Does the argument's conclusion about the necessity for external oversight imply that airlines are incapable of making sound judgments or decisions on their own?'
+2025-03-12 22:41:35 -    -> Question invalid
+2025-03-12 22:41:35 -  > Generating question no. 4
+2025-03-12 22:41:36 -    -> 'Can we be certain that self-monitoring by the airline industry is not already implemented, possibly under a different name or guise?'
+2025-03-12 22:42:17 -    -> Question invalid
+2025-03-12 22:42:17 -  > Generating question no. 5
+2025-03-12 22:42:19 -    -> 'Does Antanagoge's conclusion that the airline industry should not be left to self-monitor follow necessarily and logically from the studies on the quality of information from airline customer service departments?'
+2025-03-12 22:42:36 -    -> Question invalid
+2025-03-12 22:42:36 -  > Generating question no. 6
+2025-03-12 22:42:36 -    -> 'Does Antanagoge's conclusion that the airline industry cannot be left to self-monitor follow necessarily and logically from the presented evidence about the variability and potential inaccuracies of customer service information?'
+2025-03-12 22:43:01 -    -> Question valid
+2025-03-12 22:43:01 -  > Generating question no. 7
+2025-03-12 22:43:03 -    -> 'Does Antanagoge's conclusion that the airline industry cannot be left to self-monitor necessarily follow from the variability and potential inaccuracies of customer service information?'
+2025-03-12 22:43:27 -    -> Question valid
+2025-03-12 22:43:27 -  > Generating question no. 8
+2025-03-12 22:43:29 -    -> 'Does Antanagoge's conclusion that the airline industry cannot self-monitor solely based on anecdotal evidence from family stories and personal accounts, which may be unreliable or biased, adequately account for alternative explanations of the problems described?'
+2025-03-12 22:43:58 -    -> Question invalid
+2025-03-12 22:43:58 -  > Generating question no. 9
+2025-03-12 22:43:59 -    -> 'Does Antanagoge have sufficient evidence to conclude that the airline industry is incapable of self-monitoring, rather than simply demonstrating a few isolated incidents or anecdotal stories?'
+2025-03-12 22:44:28 -    -> Question valid
+2025-03-12 22:44:28 - Saved batch of questions to 81577_output.json
+2025-03-12 22:44:28 - 
+
+
+2025-03-12 22:44:28 - 36. Argument (id: Antanagoge_111)
+2025-03-12 22:44:28 -  > Generating question no. 0
+2025-03-12 22:44:29 -    -> 'Does Antanagoge's assumption that those opposed to accommodations have a prejudged position against researchers and their conclusions, despite having access to the same studies, not violate Occam's Razor by overcomplicating a more likely explanation of their opposition?'
+2025-03-12 22:45:06 -    -> Question valid
+2025-03-12 22:45:06 -  > Generating question no. 1
+2025-03-12 22:45:07 -    -> 'Does Antanagoge's assumption that those who oppose accommodations are motivated by a prejudgment against researchers and their conclusions, rather than by the need for accommodations based on individual health needs, warrant scrutiny?'
+2025-03-12 22:45:32 -    -> Question valid
+2025-03-12 22:45:32 -  > Generating question no. 2
+2025-03-12 22:45:34 -    -> 'Does Antanagoge's argument that opponents of accommodations are dismissive solely because they have a prejudgment against researchers and conclusions, rather than considering the merits of those arguments?'
+2025-03-12 22:46:00 -    -> Question valid
+2025-03-12 22:46:00 - Saved batch of questions to 81577_output.json
+2025-03-12 22:46:00 - 
+
+
+2025-03-12 22:46:00 - 37. Argument (id: Antanagoge_227)
+2025-03-12 22:46:00 -  > Generating question no. 0
+2025-03-12 22:46:01 -    -> 'Does Mulder's argument that since peanutsensitive travelers can be desensitized to peanut allergies, they should not restrict themselves to flying only in 'clean' environments, assume that the risks of anaphylactic shock from airborne peanut allergens are solely dependent on the level of exposure to such allergens?'
+2025-03-12 22:46:27 -    -> Question valid
+2025-03-12 22:46:27 -  > Generating question no. 1
+2025-03-12 22:46:28 -    -> 'Is the conclusion that peanuts served on flights are the primary source of peanut allergens in recirculated air, based solely on the study's findings, or is it also influenced by the assumption that airline cabins are 'clean' and thus eliminating other possible sources of allergens?'
+2025-03-12 22:47:11 -    -> Question valid
+2025-03-12 22:47:11 -  > Generating question no. 2
+2025-03-12 22:47:14 -    -> 'Is it reasonable to assume that the study's conclusions about the presence of peanut allergens in recirculated air on commercial airliners are not influenced by the fact that the study's authors may have had a vested interest in showing that peanutsensitive travelers are not disproportionately exposed to peanut aeroallergans?'
+2025-03-12 22:47:35 -    -> Question valid
+2025-03-12 22:47:35 - Saved batch of questions to 81577_output.json
+2025-03-12 22:47:35 - 
+
+
+2025-03-12 22:47:35 - 38. Argument (id: Antanagoge_239)
+2025-03-12 22:47:35 -  > Generating question no. 0
+2025-03-12 22:47:35 -    -> 'Is it possible that dismissing people's legitimate peanut allergies and experiences as 'imagined' or exaggerated by overly anxious parents is a more serious public health concern than the potential risks associated with peanuts on airplanes?'
+2025-03-12 22:48:02 -    -> Question invalid
+2025-03-12 22:48:02 -  > Generating question no. 1
+2025-03-12 22:48:04 -    -> 'Does Antanagoge's argument that peanuts pose a public health menace on airplanes not rely too heavily on anecdotal evidence and dismissive statements about the prevalence of food allergies?'
+2025-03-12 22:48:48 -    -> Question invalid
+2025-03-12 22:48:48 -  > Generating question no. 2
+2025-03-12 22:48:50 -    -> 'Is the conclusion that serving peanuts on airplanes is a public health menace based solely on anecdotal evidence of rare, medically diagnosed allergies?'
+2025-03-12 22:49:29 -    -> Question invalid
+2025-03-12 22:49:29 -  > Generating question no. 3
+2025-03-12 22:49:29 -    -> 'Does Mulder's argument that most food allergies are 'completely imagined' and therefore peanuts pose no significant risk on airplanes align with the medical evidence on food allergies and their severity?'
+2025-03-12 22:50:05 -    -> Question invalid
+2025-03-12 22:50:05 -  > Generating question no. 4
+2025-03-12 22:50:07 -    -> 'Does Antanagoge's conclusion that serving peanuts on airplanes constitutes a public health menace solely based on his observation of the symptoms described, actually follow from his premises about peanut consumption and addiction?'
+2025-03-12 22:50:46 -    -> Question valid
+2025-03-12 22:50:46 -  > Generating question no. 5
+2025-03-12 22:50:48 -    -> 'Is it a valid conclusion that prohibiting peanuts on airplanes is necessary solely because there may be cases of individuals with severe peanut allergies, when the benefits of allowing peanuts for most people outweigh these risks?'
+2025-03-12 22:51:21 -    -> Question valid
+2025-03-12 22:51:21 -  > Generating question no. 6
+2025-03-12 22:51:23 -    -> 'Is Antanagoge's argument that a public health menace requires distribution of peanuts on airplanes to be discontinued based solely on the potential for peanut allergies, or does it account for other possible risks associated with in-flight peanut consumption?'
+2025-03-12 22:51:47 -    -> Question valid
+2025-03-12 22:51:47 - Saved batch of questions to 81577_output.json
+2025-03-12 22:51:47 - 
+
+
+2025-03-12 22:51:47 - 39. Argument (id: Bill_106)
+2025-03-12 22:51:47 -  > Generating question no. 0
+2025-03-12 22:51:48 -    -> 'Does Bill's observation that an airline's practice of adding high taxes to a ticket price constitutes 'Bait and Switch' necessarily imply that the airline is intentionally trying to deceive customers, or could there be a legitimate explanation for the tax structure?'
+2025-03-12 22:52:22 -    -> Question valid
+2025-03-12 22:52:22 -  > Generating question no. 1
+2025-03-12 22:52:23 -    -> 'Does Bill's experience with airline ticket pricing accurately represent the typical experience of a customer purchasing airfare?'
+2025-03-12 22:52:49 -    -> Question invalid
+2025-03-12 22:52:49 -  > Generating question no. 2
+2025-03-12 22:52:50 -    -> 'Is it possible that Bill is not accusing airlines of Bait and Switch tactics when they list separate taxes for ticket prices, rather than suggesting that airlines are intentionally adding on extra fees?'
+2025-03-12 22:53:24 -    -> Question valid
+2025-03-12 22:53:24 -  > Generating question no. 3
+2025-03-12 22:53:25 -    -> 'Is it reasonable to assume that changing prices frequently and charging different prices for similar items would necessarily lead to customers never returning or filing complaints, simply because a retail business uses the same tactic?'
+2025-03-12 22:53:53 -    -> Question invalid
+2025-03-12 22:53:53 -  > Generating question no. 4
+2025-03-12 22:53:55 -    -> 'Is it true that applying dynamic pricing to airline tickets would necessarily lead to a complete loss of customer trust and necessitate more regulation than the current system already imposes?'
+2025-03-12 22:54:17 -    -> Question invalid
+2025-03-12 22:54:17 -  > Generating question no. 5
+2025-03-12 22:54:19 -    -> 'Does changing price structures as dynamically as an airline does not actually provide customers with a better overall value compared to traditional pricing models, which may also include additional fees?'
+2025-03-12 22:54:54 -    -> Question invalid
+2025-03-12 22:54:54 -  > Generating question no. 6
+2025-03-12 22:54:55 -    -> 'Does Bill's personal experience with an airline justify his blanket statement that all airlines engage in bait and switch tactics?'
+2025-03-12 22:55:18 -    -> Question invalid
+2025-03-12 22:55:18 -  > Generating question no. 7
+2025-03-12 22:55:20 -    -> 'Does Bill's assertion that he would never call the Better Business Bureau if his retail business engaged in such pricing practices, which he himself admits are illegal (Bait and Switch), make him a reliable authority on the issue?'
+2025-03-12 22:55:47 -    -> Question invalid
+2025-03-12 22:55:47 -  > Generating question no. 8
+2025-03-12 22:55:48 -    -> 'Does the retailer have a vested interest in portraying themselves as victims of these alleged deceitful practices, rather than simply adjusting prices to increase profits?'
+2025-03-12 22:56:15 -    -> Question invalid
+2025-03-12 22:56:15 -  > Generating question no. 9
+2025-03-12 22:56:15 -    -> 'Is Bill's experience with airline ticket pricing representative of the experiences of all customers who have bought tickets online?'
+2025-03-12 22:56:41 -    -> Question invalid
+2025-03-12 22:56:41 -  > Generating question no. 10
+2025-03-12 22:56:43 -    -> 'Does Bill have any evidence that airlines are engaging in the bait and switch tactic, rather than simply adding taxes to the ticket price?'
+2025-03-12 22:57:19 -    -> Question invalid
+2025-03-12 22:57:19 -  > Generating question no. 11
+2025-03-12 22:57:19 -    -> 'Does the fact that the airline is charging separate taxes on top of a listed ticket price imply that they are not providing accurate information about the total cost of the ticket, which would be a breach of transparency rather than 'Bait and Switch'?'
+2025-03-12 22:57:45 -    -> Question invalid
+2025-03-12 22:57:45 -  > Generating question no. 12
+2025-03-12 22:57:46 -    -> 'Does Bill's experience of difficulty buying a ticket and his conclusion that airlines are engaging in bait and switch tactics directly apply to the airline he contacted, or does it generalize to all airlines?'
+2025-03-12 22:58:12 -    -> Question invalid
+2025-03-12 22:58:12 -  > Generating question no. 13
+2025-03-12 22:58:13 -    -> 'Does Bill have sufficient knowledge of airline ticket pricing laws and regulations to claim that airlines are engaging in 'Bait and Switch' tactics?'
+2025-03-12 22:58:30 -    -> Question invalid
+2025-03-12 22:58:30 -  > Generating question no. 14
+2025-03-12 22:58:31 -    -> 'Does Bill's assertion that bait-and-switch tactics are illegal only apply to retail businesses and not also to the airline industry, which he seems to be applying its practices to?'
+2025-03-12 22:59:01 -    -> Question invalid
+2025-03-12 22:59:01 -  > Generating question no. 15
+2025-03-12 22:59:03 -    -> 'Does Bill's observation that airlines or some ticket sellers are guilty of lies and 'Bait and Switch' tactics necessarily imply that his own retail business practices are also deceptive?'
+2025-03-12 22:59:26 -    -> Question invalid
+2025-03-12 22:59:26 -  > Generating question no. 16
+2025-03-12 22:59:27 -    -> 'Does Bill's claim that airlines or ticket sellers are engaging in bait and switch tactics by adding excessive taxes to already high prices constitute a legitimate criticism, given his own experience with retail businesses employing similar pricing strategies?'
+2025-03-12 22:59:57 -    -> Question valid
+2025-03-12 22:59:57 - Saved batch of questions to 81577_output.json
+2025-03-12 22:59:57 - 
+
+
+2025-03-12 22:59:57 - 40. Argument (id: CF_29)
+2025-03-12 22:59:57 -  > Generating question no. 0
+2025-03-12 22:59:59 -    -> 'Does the argument's emphasis on the banks' responsibility to take greater risks and invest more assume that their current consumer credit activities are entirely benign?'
+2025-03-12 23:00:21 -    -> Question valid
+2025-03-12 23:00:21 -  > Generating question no. 1
+2025-03-12 23:00:22 -    -> 'Doesn't the critic's claim that banks are not taking sufficient risks and lending enough money assume that the primary problem with consumer credit is its availability, rather than its accessibility or affordability?'
+2025-03-12 23:00:50 -    -> Question invalid
+2025-03-12 23:00:50 -  > Generating question no. 2
+2025-03-12 23:00:52 -    -> 'Doesn't the speaker's criticism of banks for not loaning enough money to underprivileged groups assume that these groups are capable of making smart investment decisions, when there is no evidence provided to support this claim?'
+2025-03-12 23:01:19 -    -> Question valid
+2025-03-12 23:01:19 -  > Generating question no. 3
+2025-03-12 23:01:19 -    -> 'Does the argument's reliance on anecdotal examples of wealthy individuals' positive contributions to social progress sufficiently address the concerns about systemic inequality and structural issues in the banking system?'
+2025-03-12 23:01:55 -    -> Question invalid
+2025-03-12 23:01:55 -  > Generating question no. 4
+2025-03-12 23:01:56 -    -> 'But isn't the implication that if banks were doing enough to invest, they would be alleviating poverty, rather than, say, fueling consumption?'
+2025-03-12 23:02:05 -    -> Question invalid
+2025-03-12 23:02:05 -  > Generating question no. 5
+2025-03-12 23:02:06 -    -> 'Does CF's argument that banks should be doing more to lend money to address poverty somehow justify or downplay the role of wealthy individuals and institutions in perpetuating systemic inequalities?'
+2025-03-12 23:02:30 -    -> Question invalid
+2025-03-12 23:02:30 -  > Generating question no. 6
+2025-03-12 23:02:32 -    -> 'Doesn't the argument that wealthy individuals and institutions are necessary for social progress imply a moral hierarchy where the ends justify the means, even if that means ignoring or downplaying the harm caused by their consumer credit practices?'
+2025-03-12 23:03:16 -    -> Question invalid
+2025-03-12 23:03:16 -  > Generating question no. 7
+2025-03-12 23:03:18 -    -> 'Is it possible to distinguish between the banks' lack of risk-taking and their actual motivations, such as maximizing profits for shareholders?'
+2025-03-12 23:03:51 -    -> Question valid
+2025-03-12 23:03:51 - Saved batch of questions to 81577_output.json
+2025-03-12 23:03:51 - 
+
+
+2025-03-12 23:03:51 - 41. Argument (id: CF_46)
+2025-03-12 23:03:51 -  > Generating question no. 0
+2025-03-12 23:03:51 -    -> 'Is the speaker's assertion that they were being unfairly accused of advocating for austerity measures justified by their own role in promoting a consumerist credit-based economy?'
+2025-03-12 23:04:07 -    -> Question invalid
+2025-03-12 23:04:07 -  > Generating question no. 1
+2025-03-12 23:04:08 -    -> 'Does the speaker's criticism of others' assumption about economic policies imply that they themselves support more severe cuts?'
+2025-03-12 23:04:26 -    -> Question invalid
+2025-03-12 23:04:26 -  > Generating question no. 2
+2025-03-12 23:04:26 -    -> 'Does the speaker's argument that a particular policy was intended to cover up wrongdoing imply that they are absolved of responsibility for any harm caused by that policy?'
+2025-03-12 23:04:59 -    -> Question invalid
+2025-03-12 23:04:59 -  > Generating question no. 3
+2025-03-12 23:04:59 -    -> 'Is the speaker's assertion that they were trying to criticize the economic system, rather than advocate for austerity measures, actually a justification or an evasion of their own role in promoting such policies?'
+2025-03-12 23:05:33 -    -> Question valid
+2025-03-12 23:05:33 -  > Generating question no. 4
+2025-03-12 23:05:35 -    -> 'Does the speaker's claim that they were criticizing a credit-based consumer model for perpetuating an unsustainable economic system, when in fact their own proposals for cuts and policy changes have created similar problems?'
+2025-03-12 23:06:00 -    -> Question invalid
+2025-03-12 23:06:00 -  > Generating question no. 5
+2025-03-12 23:06:00 -    -> 'Does the argument's focus on the supposed beneficiaries of the sub-prime mortgages being the ones who suffer from the economic consequences actually obscure or justify the harm caused to other groups, such as those who lost their homes or jobs?'
+2025-03-12 23:06:36 -    -> Question invalid
+2025-03-12 23:06:36 -  > Generating question no. 6
+2025-03-12 23:06:37 -    -> 'Is the implication that those who benefited from sub-prime mortgages are now suffering as a result of their own actions a logical consequence, rather than an unintended political strategy?'
+2025-03-12 23:07:07 -    -> Question valid
+2025-03-12 23:07:07 -  > Generating question no. 7
+2025-03-12 23:07:08 -    -> 'Does the speaker's criticism of others for oversimplifying economic issues imply that their own views on financial policy are not subject to similar simplification?'
+2025-03-12 23:07:38 -    -> Question invalid
+2025-03-12 23:07:38 -  > Generating question no. 8
+2025-03-12 23:07:40 -    -> 'Is the argument that the economist was trying to convey a critique of the consequences of economic policies rather than an endorsement of those policies?'
+2025-03-12 23:08:00 -    -> Question valid
+2025-03-12 23:08:00 - Saved batch of questions to 81577_output.json
+2025-03-12 23:08:00 - 
+
+
+2025-03-12 23:08:00 - 42. Argument (id: CLINTON_103)
+2025-03-12 23:08:00 -  > Generating question no. 0
+2025-03-12 23:08:02 -    -> 'Does the fact that Bill Clinton had to turn over his state tax returns during a casino license process imply anything about his federal income taxes?'
+2025-03-12 23:08:31 -    -> Question invalid
+2025-03-12 23:08:31 -  > Generating question no. 1
+2025-03-12 23:08:31 -    -> 'Does the argument that Clinton's refusal to release his tax returns necessarily imply dishonesty or financial issues about him, given the fact that he has released nearly 40 years of state tax returns?'
+2025-03-12 23:09:08 -    -> Question valid
+2025-03-12 23:09:08 -  > Generating question no. 2
+2025-03-12 23:09:09 -    -> 'Does Clinton's assumption that Donald Trump is unique in not releasing his tax returns account for the fact that nearly 40 years of presidential candidates' tax returns are available, while Clinton has only released a handful?'
+2025-03-12 23:09:40 -    -> Question valid
+2025-03-12 23:09:40 -  > Generating question no. 3
+2025-03-12 23:09:40 -    -> 'If Clinton's tax returns are indeed under audit, why does he claim that releasing them would be impossible according to the IRS's own guidelines?'
+2025-03-12 23:09:57 -    -> Question valid
+2025-03-12 23:09:57 - Saved batch of questions to 81577_output.json
+2025-03-12 23:09:57 - 
+
+
+2025-03-12 23:09:57 - 43. Argument (id: CLINTON_123_1)
+2025-03-12 23:09:57 -  > Generating question no. 0
+2025-03-12 23:09:57 -    -> 'Does Clinton's assertion that addressing systemic racism requires simultaneously restoring trust between communities and the police, as well as implementing criminal justice reform, not be an overly simplistic or overly broad solution to a complex problem?'
+2025-03-12 23:10:18 -    -> Question valid
+2025-03-12 23:10:18 -  > Generating question no. 1
+2025-03-12 23:10:20 -    -> 'Does Clinton's assertion that racial disparities in education and treatment by law enforcement are a result of 'race still determin[ing] too much' rather than other factors, such as socioeconomic status or systemic inequality, accurately reflect the complexity of these issues?'
+2025-03-12 23:10:54 -    -> Question invalid
+2025-03-12 23:10:54 -  > Generating question no. 2
+2025-03-12 23:10:55 -    -> 'Is the association between racial disparities in education and treatment by law enforcement being taken into account when arguing that addressing one issue will automatically solve the problem of racism?'
+2025-03-12 23:11:22 -    -> Question valid
+2025-03-12 23:11:22 -  > Generating question no. 3
+2025-03-12 23:11:23 -    -> 'Does Mr. Clinton's claim that racial disparities in education, housing, and the criminal justice system are not addressed by simply restoring trust between communities and the police constitute a sufficient justification for his proposed policy of criminal justice reform?'
+2025-03-12 23:11:56 -    -> Question invalid
+2025-03-12 23:11:56 -  > Generating question no. 4
+2025-03-12 23:11:56 -    -> 'Is it possible that the problems faced by certain communities are due to factors other than racism?'
+2025-03-12 23:12:17 -    -> Question invalid
+2025-03-12 23:12:17 -  > Generating question no. 5
+2025-03-12 23:12:18 -    -> 'Does Clinton's claim that 'race determines where people live' and 'determines what kind of education in their public schools they can get' are being overstated or misrepresented, and if so, by how much?'
+2025-03-12 23:12:46 -    -> Question valid
+2025-03-12 23:12:46 - Saved batch of questions to 81577_output.json
+2025-03-12 23:12:46 - 
+
+
+2025-03-12 23:12:46 - 44. Argument (id: CLINTON_123_2)
+2025-03-12 23:12:46 -  > Generating question no. 0
+2025-03-12 23:12:47 -    -> 'How can Clinton's assertion that the gun epidemic is the leading cause of death of young African-American men be supported by empirical evidence?'
+2025-03-12 23:13:30 -    -> Question valid
+2025-03-12 23:13:30 -  > Generating question no. 1
+2025-03-12 23:13:32 -    -> 'How can Clinton's assertion that the gun epidemic is the leading cause of death of young African-American men be supported by empirical evidence, given that available data suggests the opposite?'
+2025-03-12 23:13:52 -    -> Question invalid
+2025-03-12 23:13:52 -  > Generating question no. 2
+2025-03-12 23:13:52 -    -> 'Does Clinton's assertion that the gun epidemic is the leading cause of death of young African-American men, more than the next nine causes combined, have sufficient evidence to support it?'
+2025-03-12 23:14:07 -    -> Question invalid
+2025-03-12 23:14:07 -  > Generating question no. 3
+2025-03-12 23:14:07 -    -> 'How can Clinton's proposed platform to remedy problems in the criminal justice system account for the fact that many of its core solutions (e.g. gun control, police reform) are being advocated for by individuals and groups who have been disproportionately harmed by the very systems they seek to reform?'
+2025-03-12 23:14:24 -    -> Question invalid
+2025-03-12 23:14:24 -  > Generating question no. 4
+2025-03-12 23:14:26 -    -> 'How can Clinton's proposed solution to gun violence, which is supposedly leading cause of death for young African American men, actually address the deeper social and economic factors contributing to this issue?'
+2025-03-12 23:14:47 -    -> Question valid
+2025-03-12 23:14:47 -  > Generating question no. 5
+2025-03-12 23:14:48 -    -> 'Does acknowledging the significant impact of guns on the death rate among young African-American men necessarily lead to a conclusion that stricter gun control measures are required?'
+2025-03-12 23:15:13 -    -> Question valid
+2025-03-12 23:15:13 - Saved batch of questions to 81577_output.json
+2025-03-12 23:15:13 - 
+
+
+2025-03-12 23:15:13 - 45. Argument (id: CLINTON_130_1)
+2025-03-12 23:15:13 -  > Generating question no. 0
+2025-03-12 23:15:14 -    -> 'Does Clinton's criticism of stop-and-frisk accurately account for the broader context and systemic issues contributing to mass incarceration among young African-American and Latino men?'
+2025-03-12 23:15:40 -    -> Question valid
+2025-03-12 23:15:40 -  > Generating question no. 1
+2025-03-12 23:15:40 -    -> 'Does the Clinton argument's claim that stop-and-frisk was ineffective solely because it did not reduce violent crime effectively, given its constitutional ruling, accurately capture the primary reason for its abolition?'
+2025-03-12 23:16:15 -    -> Question invalid
+2025-03-12 23:16:15 -  > Generating question no. 2
+2025-03-12 23:16:17 -    -> 'Is it reasonable to assume that because a policy has been deemed unconstitutional, its ineffectiveness is the sole reason for its rejection?'
+2025-03-12 23:16:43 -    -> Question valid
+2025-03-12 23:16:43 -  > Generating question no. 3
+2025-03-12 23:16:43 -    -> 'Is Clinton's assertion that Donald Trump's portrayal of black communities is solely based on ineffective policies, such as stop-and-frisk, a fair and objective assessment given the complexity of the issue?'
+2025-03-12 23:17:04 -    -> Question invalid
+2025-03-12 23:17:04 -  > Generating question no. 4
+2025-03-12 23:17:04 -    -> 'Does Clinton's characterization of Stop-and-frisk as ineffective solely based on its constitutionality, rather than any empirical evidence of its effectiveness in reducing crime rates?'
+2025-03-12 23:17:25 -    -> Question invalid
+2025-03-12 23:17:25 -  > Generating question no. 5
+2025-03-12 23:17:27 -    -> 'Does Clinton's endorsement of community policing as a panacea for addressing crime in black communities adequately account for the disproportionate number of African Americans arrested and incarcerated for nonviolent offenses?'
+2025-03-12 23:17:48 -    -> Question invalid
+2025-03-12 23:17:48 -  > Generating question no. 6
+2025-03-12 23:17:48 -    -> 'Is it reasonable to conclude that supporting community policing solely because of its effectiveness, particularly when considering alternative methods like stop-and-frisk, is a morally justifiable reason to disagree with and criticize policies implemented by Donald Trump?'
+2025-03-12 23:18:11 -    -> Question valid
+2025-03-12 23:18:12 - Saved batch of questions to 81577_output.json
+2025-03-12 23:18:12 - 
+
+
+2025-03-12 23:18:12 - 46. Argument (id: CLINTON_130_2)
+2025-03-12 23:18:12 -  > Generating question no. 0
+2025-03-12 23:18:12 -    -> 'Is it possible that addressing systemic racism in the criminal justice system is the sole cause of the disproportionate representation of young African-American men in prisons, and does Mr. Clinton's proposal not assume a causal link between racism and crime rates?'
+2025-03-12 23:18:45 -    -> Question invalid
+2025-03-12 23:18:45 -  > Generating question no. 1
+2025-03-12 23:18:47 -    -> 'Does supporting commonsense gun safety measures not implicitly acknowledge that the availability of guns is also a contributing factor to crime rates among young African-American men?'
+2025-03-12 23:19:13 -    -> Question invalid
+2025-03-12 23:19:13 -  > Generating question no. 2
+2025-03-12 23:19:15 -    -> 'Does the speaker's assertion that banning individuals on the terrorist watch list from purchasing guns would be an effective solution, given that they are already prohibited from flying?'
+2025-03-12 23:19:47 -    -> Question invalid
+2025-03-12 23:19:47 -  > Generating question no. 3
+2025-03-12 23:19:49 -    -> 'How does the speaker justify the increased likelihood of arrest, charging, conviction, and incarceration for young African-American men based on the existence of systemic racism in the criminal justice system, rather than on any inherent difference in behavior or culpability?'
+2025-03-12 23:20:31 -    -> Question invalid
+2025-03-12 23:20:31 -  > Generating question no. 4
+2025-03-12 23:20:33 -    -> 'Is it not possible that addressing systemic racism in the criminal justice system and implementing stricter gun control measures could be merely a distraction from the root causes of crime, such as poverty, lack of education, and unemployment?'
+2025-03-12 23:21:03 -    -> Question invalid
+2025-03-12 23:21:03 -  > Generating question no. 5
+2025-03-12 23:21:03 -    -> 'How does Clinton's argument about addressing systemic racism in the criminal justice system account for potential unintended consequences of introducing stricter gun control measures, particularly on law-abiding citizens and small business owners?'
+2025-03-12 23:21:37 -    -> Question invalid
+2025-03-12 23:21:37 -  > Generating question no. 6
+2025-03-12 23:21:38 -    -> 'Does Clinton's argument that we need more gun control measures because young African-American men are disproportionately affected by systemic racism, rather than solely addressing the root causes of crime and violence, not be an example of 'reverse racism' or a non-sequitur?'
+2025-03-12 23:22:16 -    -> Question invalid
+2025-03-12 23:22:16 -  > Generating question no. 7
+2025-03-12 23:22:16 -    -> 'Does Clinton's assertion that he is proposing a comprehensive plan to address systemic racism in the criminal justice system, as evidenced by his proposed gun safety measures and second chance programs, actually reflect a specific set of concrete policy recommendations rather than just rhetorical statements?'
+2025-03-12 23:22:57 -    -> Question invalid
+2025-03-12 23:22:57 -  > Generating question no. 8
+2025-03-12 23:22:58 -    -> 'Is it possible that addressing systemic racism in the criminal justice system, as proposed by Clinton, would necessarily lead to a reduction in the number of arrests, charges, convictions, and incarcerations of young African-American men?'
+2025-03-12 23:23:40 -    -> Question valid
+2025-03-12 23:23:40 -  > Generating question no. 9
+2025-03-12 23:23:42 -    -> 'Does not addressing racial disparities in arrest rates and sentencing necessarily imply that systemic racism is the root cause of these disparities?'
+2025-03-12 23:24:06 -    -> Question invalid
+2025-03-12 23:24:06 -  > Generating question no. 10
+2025-03-12 23:24:07 -    -> 'Does Clinton's argument that stricter gun control laws are necessary to address systemic racism in the criminal justice system, as stated by the specific proposal of prohibiting individuals on terrorist watchlists from purchasing guns, not only effectively reduce crime rates among young African-American men but also simultaneously alleviate the root causes of systemic racism?'
+2025-03-12 23:24:25 -    -> Question invalid
+2025-03-12 23:24:25 -  > Generating question no. 11
+2025-03-12 23:24:26 -    -> 'How does the speaker's claim that commonsense gun safety measures would assist in addressing systemic racism in the criminal justice system relate to the issue at hand?'
+2025-03-12 23:25:01 -    -> Question invalid
+2025-03-12 23:25:01 -  > Generating question no. 12
+2025-03-12 23:25:01 -    -> 'How does Senator Clinton define 'commonsense gun safety measures' and what specific policies or regulations would these measures entail?'
+2025-03-12 23:25:30 -    -> Question invalid
+2025-03-12 23:25:30 -  > Generating question no. 13
+2025-03-12 23:25:30 -    -> 'Does Clinton's assertion that the criminal justice system is inherently racist because of demographic disparities, rather than being a result of specific policies or practices, hold up to scrutiny?'
+2025-03-12 23:26:10 -    -> Question invalid
+2025-03-12 23:26:10 -  > Generating question no. 14
+2025-03-12 23:26:11 -    -> 'How does Clinton's emphasis on addressing systemic racism within the criminal justice system not inadvertently perpetuate a false narrative that individual white Americans are being unfairly targeted or discriminated against?'
+2025-03-12 23:26:30 -    -> Question invalid
+2025-03-12 23:26:30 -  > Generating question no. 15
+2025-03-12 23:26:31 -    -> 'How does Clinton's claim that he wants to address systemic racism in the criminal justice system through commonsense gun safety measures, given that his proposed measures are being supported by the same entity (the gun lobby) he criticizes?'
+2025-03-12 23:27:07 -    -> Question invalid
+2025-03-12 23:27:07 -  > Generating question no. 16
+2025-03-12 23:27:07 -    -> 'Does Mr. Clinton's assertion that the criminal justice system is biased against young African-American men, given his own record on gun control and support for the gun lobby, not be a case of hypocrisy rather than objective fact?'
+2025-03-12 23:27:39 -    -> Question invalid
+2025-03-12 23:27:39 -  > Generating question no. 17
+2025-03-12 23:27:39 -    -> 'How does President Clinton's claim that gun safety measures would assist addressing systemic racism in the criminal justice system, rather than addressing the root causes of racial disparities in arrest and incarceration rates?'
+2025-03-12 23:28:08 -    -> Question invalid
+2025-03-12 23:28:08 -  > Generating question no. 18
+2025-03-12 23:28:09 -    -> 'Does Clinton's argument that commonsense gun safety measures would assist in addressing systemic racism in the criminal justice system, actually address or exacerbate the issue of systemic racism?'
+2025-03-12 23:28:40 -    -> Question invalid
+2025-03-12 23:28:40 -  > Generating question no. 19
+2025-03-12 23:28:41 -    -> 'How does Clinton's assertion that gun control measures would address systemic racism in the criminal justice system, rather than its root causes, demonstrate a clear understanding of the relationship between guns and racism?'
+2025-03-12 23:28:58 -    -> Question invalid
+2025-03-12 23:28:58 -  > Generating question no. 20
+2025-03-12 23:29:00 -    -> 'Is Clinton's assertion that gun ownership is a major contributor to crime rates supported by empirical evidence?'
+2025-03-12 23:29:26 -    -> Question invalid
+2025-03-12 23:29:26 -  > Generating question no. 21
+2025-03-12 23:29:27 -    -> 'Does Clinton's argument that commonsense gun safety measures would assist addressing systemic racism in the criminal justice system adequately account for the potential unintended consequences of stricter gun control laws on marginalized communities?'
+2025-03-12 23:29:59 -    -> Question invalid
+2025-03-12 23:29:59 -  > Generating question no. 22
+2025-03-12 23:30:01 -    -> 'Does Clinton's assertion that 'if you're a young African-American man and you do the same thing as a young white man, you are more likely to be arrested, charged, convicted, and incarcerated' accurately reflect empirical evidence or is it based on anecdotal observations?'
+2025-03-12 23:30:48 -    -> Question invalid
+2025-03-12 23:30:48 -  > Generating question no. 23
+2025-03-12 23:30:50 -    -> 'How does Clinton's assertion that commonsense gun safety measures would assist with addressing systemic racism in the criminal justice system hold up to scrutiny?'
+2025-03-12 23:31:23 -    -> Question valid
+2025-03-12 23:31:23 -  > Generating question no. 24
+2025-03-12 23:31:23 -    -> 'Does Clinton's argument that commonsense gun safety measures would assist in addressing systemic racism and reducing mass incarceration adequately address the relationship between gun control policies and racial disparities in the criminal justice system?'
+2025-03-12 23:31:57 -    -> Question invalid
+2025-03-12 23:31:57 -  > Generating question no. 25
+2025-03-12 23:31:57 -    -> 'Does President Clinton's argument that stricter gun control measures would be effective in addressing systemic racism and reducing crime rates, given that he is suggesting a bipartisan approach to these issues?'
+2025-03-12 23:32:33 -    -> Question invalid
+2025-03-12 23:32:33 -  > Generating question no. 26
+2025-03-12 23:32:33 -    -> 'Is the argument that Clinton's proposed gun control measures would be effective in reducing crime, particularly among young African-American men, supported by empirical evidence and not simply based on anecdotal observation or assumption?'
+2025-03-12 23:33:18 -    -> Question invalid
+2025-03-12 23:33:18 -  > Generating question no. 27
+2025-03-12 23:33:19 -    -> 'How does President Clinton's argument that commonsense gun safety measures would assist addressing systemic racism in the criminal justice system hold up to scrutiny?'
+2025-03-12 23:33:49 -    -> Question invalid
+2025-03-12 23:33:49 -  > Generating question no. 28
+2025-03-12 23:33:51 -    -> 'How does the speaker's claim that commonsense gun safety measures would assist in addressing systemic racism in the criminal justice system hold up to scrutiny?'
+2025-03-12 23:34:29 -    -> Question invalid
+2025-03-12 23:34:29 -  > Generating question no. 29
+2025-03-12 23:34:31 -    -> 'Does Clinton's assertion that 'if you're a young African-American man and you do the same thing as a young white man, you are more likely to be arrested, charged, convicted, and incarcerated' constitute a genuine fact or an unsubstantiated claim based on personal experience or anecdotal evidence?'
+2025-03-12 23:35:05 -    -> Question valid
+2025-03-12 23:35:05 - Saved batch of questions to 81577_output.json
+2025-03-12 23:35:05 - 
+
+
+2025-03-12 23:35:05 - 47. Argument (id: CLINTON_147)
+2025-03-12 23:35:05 -  > Generating question no. 0
+2025-03-12 23:35:06 -    -> 'What makes 'working' with communities, faith communities, business communities, and law enforcement effective in addressing violent crime rates?'
+2025-03-12 23:35:36 -    -> Question valid
+2025-03-12 23:35:36 -  > Generating question no. 1
+2025-03-12 23:35:36 -    -> 'Does Clinton's emphasis on working with existing communities and faith groups to address crime actually acknowledge or address potential issues with systemic inequality and bias within these communities?'
+2025-03-12 23:36:14 -    -> Question invalid
+2025-03-12 23:36:14 -  > Generating question no. 2
+2025-03-12 23:36:14 -    -> 'Can it truly be said that New York's success in reducing murders is solely due to the efforts of the city, and not also the result of other factors such as external policies or demographic changes?'
+2025-03-12 23:36:42 -    -> Question valid
+2025-03-12 23:36:42 -  > Generating question no. 3
+2025-03-12 23:36:42 -    -> 'Does Mayor Clinton's argument that other communities need to adopt New York's approach because it has worked assume that the effectiveness of this approach is guaranteed by its success in one specific community?'
+2025-03-12 23:37:09 -    -> Question valid
+2025-03-12 23:37:09 - Saved batch of questions to 81577_output.json
+2025-03-12 23:37:09 - 
+
+
+2025-03-12 23:37:09 - 48. Argument (id: CLINTON_17)
+2025-03-12 23:37:09 -  > Generating question no. 0
+2025-03-12 23:37:09 -    -> 'How does Clinton's statement that Donald Trump 'rooted for' the housing crisis, as if to suggest he caused or wished it to happen, accurately reflect the historical evidence of Trump's economic policies during that time period?'
+2025-03-12 23:37:43 -    -> Question valid
+2025-03-12 23:37:43 -  > Generating question no. 1
+2025-03-12 23:37:44 -    -> 'Can we be certain that the financial crisis was primarily caused by tax policies when considering alternative explanations, such as deregulation and the housing bubble?'
+2025-03-12 23:38:02 -    -> Question invalid
+2025-03-12 23:38:02 -  > Generating question no. 2
+2025-03-12 23:38:04 -    -> 'Does the fact that the Great Recession was also caused by other factors, such as subprime lending and financial deregulation, justify implying that Clinton's tax policies were solely responsible for its occurrence?'
+2025-03-12 23:38:21 -    -> Question invalid
+2025-03-12 23:38:21 -  > Generating question no. 3
+2025-03-12 23:38:22 -    -> 'Is it legitimate to conclude that the tax policies of one president caused a financial crisis that occurred eight years after his presidency?'
+2025-03-12 23:39:00 -    -> Question invalid
+2025-03-12 23:39:00 -  > Generating question no. 4
+2025-03-12 23:39:02 -    -> 'How can we be certain that Clinton's understanding of the causes of the Great Recession is not based on incomplete or biased information, and that he has not distorted the historical record to support his own policy agenda?'
+2025-03-12 23:39:29 -    -> Question valid
+2025-03-12 23:39:29 -  > Generating question no. 5
+2025-03-12 23:39:31 -    -> 'How does Clinton's argument about Donald's supposed support for the housing crisis, as a cause of the Great Recession, account for the significant role of regulatory failures and lax oversight on Wall Street?'
+2025-03-12 23:40:02 -    -> Question invalid
+2025-03-12 23:40:02 -  > Generating question no. 6
+2025-03-12 23:40:02 -    -> 'What empirical evidence does Clinton provide to support the claim that the Great Recession was 'in large part because of tax policies'?'
+2025-03-12 23:40:18 -    -> Question valid
+2025-03-12 23:40:18 - Saved batch of questions to 81577_output.json
+2025-03-12 23:40:18 - 
+
+
+2025-03-12 23:40:18 - 49. Argument (id: CLINTON_176_1)
+2025-03-12 23:40:18 -  > Generating question no. 0
+2025-03-12 23:40:20 -    -> 'Is the claim that Russia's cyber attacks constitute a state-sponsored attack, rather than merely commercial hacking, supported by sufficient evidence?'
+2025-03-12 23:40:55 -    -> Question valid
+2025-03-12 23:40:55 -  > Generating question no. 1
+2025-03-12 23:40:56 -    -> 'How can Clinton's characterization of Russia as a primary adversary be justified given Donald Trump's reported praise for Vladimir Putin, potentially undermining the credibility of his claims about Russian cyber attacks?'
+2025-03-12 23:41:37 -    -> Question valid
+2025-03-12 23:41:37 -  > Generating question no. 2
+2025-03-12 23:41:37 -    -> 'Can we assume that the increased frequency and severity of cyber attacks are a direct result of Russia's actions, rather than other possible explanations or coincidences?'
+2025-03-12 23:42:06 -    -> Question invalid
+2025-03-12 23:42:06 -  > Generating question no. 3
+2025-03-12 23:42:07 -    -> 'Does Clinton's assertion that Russia's cyber warfare is motivated by a 'long game' to let loose cyber attackers, rather than an outright attack on the US, justify a more aggressive or confrontational response from the next president?'
+2025-03-12 23:42:24 -    -> Question invalid
+2025-03-12 23:42:24 -  > Generating question no. 4
+2025-03-12 23:42:26 -    -> 'Does Clinton's assertion that Russia's cyber attacks constitute a 'tough, long game' justify the claim that Russia is motivated by anything other than purely commercial or strategic interests?'
+2025-03-12 23:43:08 -    -> Question valid
+2025-03-12 23:43:08 - Saved batch of questions to 81577_output.json
+2025-03-12 23:43:08 - 
+
+
+2025-03-12 23:43:08 - 50. Argument (id: CLINTON_176_2)
+2025-03-12 23:43:08 -  > Generating question no. 0
+2025-03-12 23:43:10 -    -> 'Does Clinton's assertion that the US will not engage in 'a different kind of warfare' by using tools available to state actors imply that the US is willing and able to use conventional military force against Russia?'
+2025-03-12 23:43:43 -    -> Question invalid
+2025-03-12 23:43:43 -  > Generating question no. 1
+2025-03-12 23:43:43 -    -> 'Is it reasonable for a country's response to another country's information collection methods to escalate into a denial of similar capabilities?'
+2025-03-12 23:44:10 -    -> Question valid
+2025-03-12 23:44:10 -  > Generating question no. 2
+2025-03-12 23:44:10 -    -> 'Is it reasonable to assume that the United States's response should be equivalent in scope and nature to the alleged Russian method of trying to hack into Americans?'
+2025-03-12 23:44:35 -    -> Question invalid
+2025-03-12 23:44:35 -  > Generating question no. 3
+2025-03-12 23:44:36 -    -> 'Is it reasonable for the United States to assume that other nations' attempts to collect information are inherently malevolent and require a military response?'
+2025-03-12 23:45:10 -    -> Question invalid
+2025-03-12 23:45:10 -  > Generating question no. 4
+2025-03-12 23:45:11 -    -> 'Does the US government's proposed response to Russian hacking efforts, as described by Clinton, actually address the root cause of the problem or merely mask its own vulnerabilities?'
+2025-03-12 23:45:29 -    -> Question invalid
+2025-03-12 23:45:29 -  > Generating question no. 5
+2025-03-12 23:45:31 -    -> 'Can it be assumed that the United States would not use similar methods of cyber warfare if its citizens were being hacked by another country?'
+2025-03-12 23:46:15 -    -> Question invalid
+2025-03-12 23:46:15 -  > Generating question no. 6
+2025-03-12 23:46:16 -    -> 'Is the claim that the United States has a greater capacity to defend against cyberattacks than other nations, as stated by Clinton, based on empirical evidence or is it based on a hypothetical scenario?'
+2025-03-12 23:46:41 -    -> Question valid
+2025-03-12 23:46:41 -  > Generating question no. 7
+2025-03-12 23:46:43 -    -> 'Does Clinton's assertion that the US will not engage in a different kind of warfare if it means using tools that the Russians have preferred methods, imply that the US is willing to use similar tools against other nations?'
+2025-03-12 23:46:54 -    -> Question valid
+2025-03-12 23:46:54 - Saved batch of questions to 81577_output.json
+2025-03-12 23:46:54 - 
+
+
+2025-03-12 23:46:54 - 51. Argument (id: CLINTON_186)
+2025-03-12 23:46:54 -  > Generating question no. 0
+2025-03-12 23:46:54 -    -> 'Can Clinton's plan to defeat ISIS by targeting its online presence and leadership actually lead to a comprehensive and decisive defeat of the group, rather than simply containing or managing it?'
+2025-03-12 23:47:19 -    -> Question valid
+2025-03-12 23:47:19 -  > Generating question no. 1
+2025-03-12 23:47:21 -    -> 'Does Clinton's proposal to defeat ISIS by targeting its online presence and leadership actually address the root cause of ISIS's ability to recruit and radicalize individuals, rather than simply treating its symptoms?'
+2025-03-12 23:47:36 -    -> Question valid
+2025-03-12 23:47:36 -  > Generating question no. 2
+2025-03-12 23:47:36 -    -> 'Can Clinton's proposed plan to defeat ISIS be effective without addressing the root cause of the problem, namely the ideological appeal of extremist ideologies that draw on a broader global network beyond just ISIS itself?'
+2025-03-12 23:48:10 -    -> Question valid
+2025-03-12 23:48:10 - Saved batch of questions to 81577_output.json
+2025-03-12 23:48:10 - 
+
+
+2025-03-12 23:48:10 - 52. Argument (id: CLINTON_193)
+2025-03-12 23:48:10 -  > Generating question no. 0
+2025-03-12 23:48:11 -    -> 'Does Clinton's assertion that he, as president, was responsible for determining when American troops would leave Iraq accurately reflect his actual role in the decision-making process?'
+2025-03-12 23:48:39 -    -> Question valid
+2025-03-12 23:48:39 -  > Generating question no. 1
+2025-03-12 23:48:40 -    -> 'Does the argument rely on a correct interpretation of historical events, or does it selectively present information to support its claim about Donald Trump's policies?'
+2025-03-12 23:48:56 -    -> Question valid
+2025-03-12 23:48:56 -  > Generating question no. 2
+2025-03-12 23:48:57 -    -> 'Does Clinton's assertion that the withdrawal of American troops from Iraq was predicated on the lack of a protective agreement from the Iraqi government accurately account for all factors, including potential domestic or international pressure, in the actual decision-making process?'
+2025-03-12 23:49:18 -    -> Question invalid
+2025-03-12 23:49:18 -  > Generating question no. 3
+2025-03-12 23:49:19 -    -> 'Does Clinton's account of George W. Bush's involvement in Iraq accurately reflect any credible evidence or sources?'
+2025-03-12 23:49:45 -    -> Question invalid
+2025-03-12 23:49:45 -  > Generating question no. 4
+2025-03-12 23:49:45 -    -> 'Does Clinton provide sufficient evidence to support his claim that the Iraqi government refused to grant American troops a protection agreement, or is this assertion based on an unsubstantiated assumption?'
+2025-03-12 23:50:11 -    -> Question invalid
+2025-03-12 23:50:11 -  > Generating question no. 5
+2025-03-12 23:50:11 -    -> 'Can we be certain that the agreement to withdraw American troops from Iraq was necessary for their continued presence, given the lack of evidence that the Iraqi government would have provided such protection?'
+2025-03-12 23:50:40 -    -> Question valid
+2025-03-12 23:50:41 - Saved batch of questions to 81577_output.json
+2025-03-12 23:50:41 - 
+
+
+2025-03-12 23:50:41 - 53. Argument (id: CLINTON_199_1)
+2025-03-12 23:50:41 -  > Generating question no. 0
+2025-03-12 23:50:42 -    -> 'Does Clinton's claim that an intelligence surge will prevent all future attacks, given that a suspect is still alive, provide sufficient evidence for such a drastic measure?'
+2025-03-12 23:51:09 -    -> Question invalid
+2025-03-12 23:51:09 -  > Generating question no. 1
+2025-03-12 23:51:10 -    -> 'Does the proposal of an intelligence surge necessarily follow from Clinton's acknowledgment that Rahami is still alive?'
+2025-03-12 23:51:36 -    -> Question invalid
+2025-03-12 23:51:36 -  > Generating question no. 2
+2025-03-12 23:51:38 -    -> 'Is Clinton's claim that a successful attack by Rahami was thwarted solely because of law enforcement's quick response sufficient to justify calling for an 'intelligence surge'?'
+2025-03-12 23:52:09 -    -> Question valid
+2025-03-12 23:52:09 -  > Generating question no. 3
+2025-03-12 23:52:10 -    -> 'Is it reasonable to assume that an intelligence surge would necessarily lead to preventing all future attacks?'
+2025-03-12 23:52:28 -    -> Question valid
+2025-03-12 23:52:28 -  > Generating question no. 4
+2025-03-12 23:52:28 -    -> 'Does Clinton's assertion that an intelligence surge and quick response by law enforcement are sufficient to prevent attacks, given that Rahami is still alive, constitute a reasonable conclusion?'
+2025-03-12 23:53:03 -    -> Question invalid
+2025-03-12 23:53:03 -  > Generating question no. 5
+2025-03-12 23:53:04 -    -> 'How does President Clinton's statement about Rahami being 'still alive' provide evidence for an intelligence surge to prevent attacks?'
+2025-03-12 23:53:35 -    -> Question invalid
+2025-03-12 23:53:35 -  > Generating question no. 6
+2025-03-12 23:53:35 -    -> 'Does Clinton's suggestion that law enforcement was able to apprehend Rahami solely due to an intelligence surge, and not any other factors, accurately reflect the circumstances of the incident?'
+2025-03-12 23:54:05 -    -> Question invalid
+2025-03-12 23:54:05 -  > Generating question no. 7
+2025-03-12 23:54:05 -    -> 'Does Clinton's emphasis on law enforcement's quick response to Rahami's attack necessarily imply that such a surge would be effective against a hypothetical terrorist threat?'
+2025-03-12 23:54:44 -    -> Question valid
+2025-03-12 23:54:44 - Saved batch of questions to 81577_output.json
+2025-03-12 23:54:44 - 
+
+
+2025-03-12 23:54:44 - 54. Argument (id: TRUMP_240_2)
+2025-03-12 23:54:44 -  > Generating question no. 0
+2025-03-12 23:54:45 -    -> 'Did Trump consider the potential consequences of withholding concessions from Iran and North Korea in the negotiating process, rather than simply criticizing the deal after it was made?'
+2025-03-12 23:55:14 -    -> Question valid
+2025-03-12 23:55:14 -  > Generating question no. 1
+2025-03-12 23:55:14 -    -> 'Does Trump's criticism of the Iran deal solely focus on its potential to lead to nuclear problems, or does he also consider other factors such as the geopolitical implications of not including measures related to North Korea and Yemen?'
+2025-03-12 23:55:47 -    -> Question valid
+2025-03-12 23:55:47 -  > Generating question no. 2
+2025-03-12 23:55:47 -    -> 'Does Trump's criticism of the Iran deal rely on any verifiable evidence or is it based solely on his own assessment of what a better deal should have looked like?'
+2025-03-12 23:56:06 -    -> Question invalid
+2025-03-12 23:56:06 -  > Generating question no. 3
+2025-03-12 23:56:08 -    -> 'Does Trump's criticism of the Iran deal as being worse than other deals because it was not explicitly connected to North Korea and other countries, take into account the lack of any explicit connections or concessions made by the US in those regions?'
+2025-03-12 23:56:45 -    -> Question valid
+2025-03-12 23:56:45 - Saved batch of questions to 81577_output.json
+2025-03-12 23:56:45 - 
+
+
+2025-03-12 23:56:45 - 55. Argument (id: TRUMP_249)
+2025-03-12 23:56:45 -  > Generating question no. 0
+2025-03-12 23:56:45 -    -> 'Does Trump's argument about withdrawing from international efforts to combat ISIS take into account the potential consequences of emboldening other nations to pursue terrorism?'
+2025-03-12 23:57:07 -    -> Question invalid
+2025-03-12 23:57:07 -  > Generating question no. 1
+2025-03-12 23:57:07 -    -> 'Does Trump's claim that Hillary's inability to defeat ISIS is solely due to her website and not a result of any failures on the part of the US government or military?'
+2025-03-12 23:57:37 -    -> Question invalid
+2025-03-12 23:57:37 -  > Generating question no. 2
+2025-03-12 23:57:38 -    -> 'Is it reasonable to conclude that the United States' involvement in defeating ISIS is more effective because of Trump's leadership, rather than a decline in global security?'
+2025-03-12 23:58:04 -    -> Question invalid
+2025-03-12 23:58:04 -  > Generating question no. 3
+2025-03-12 23:58:06 -    -> 'Does Trump's argument that the United States should not intervene to defeat ISIS solely because it is a costly and difficult problem align with his claim that he will be able to quickly and effectively defeat ISIS?'
+2025-03-12 23:58:44 -    -> Question invalid
+2025-03-12 23:58:44 -  > Generating question no. 4
+2025-03-12 23:58:46 -    -> 'Does Trump's statement about Hillary's strategy for defeating ISIS take into account the complexity of global terrorism and the limitations of a single strategy?'
+2025-03-12 23:59:13 -    -> Question invalid
+2025-03-12 23:59:13 -  > Generating question no. 5
+2025-03-12 23:59:13 -    -> 'Does Trump's argument that the US should not intervene to defeat ISIS because it is a big problem, and that it would be better for Japan if the US didn't protect other countries, logically follow from his claim that Hillary's website provided a clear solution to defeating ISIS in the first place?'
+2025-03-12 23:59:42 -    -> Question valid
+2025-03-12 23:59:42 -  > Generating question no. 6
+2025-03-12 23:59:44 -    -> 'How does Trump's statement about Hillary's claim being false regarding defeating ISIS by not getting involved in the first place align with his claim that it is getting tougher to defeat ISIS?'
+2025-03-13 00:00:28 -    -> Question valid
+2025-03-13 00:00:28 -  > Generating question no. 7
+2025-03-13 00:00:28 -    -> 'Does the argument's emphasis on Hillary's past actions as a reason to believe Trump could have defeated ISIS constitute a valid causal link between past policy decisions and current military challenges?'
+2025-03-13 00:00:55 -    -> Question invalid
+2025-03-13 00:00:55 -  > Generating question no. 8
+2025-03-13 00:00:56 -    -> 'Does Trump's assertion that the United States' involvement in defeating ISIS is becoming increasingly costly and futile solely because Hillary Clinton would have handled it differently if she were president, provide sufficient evidence to support this claim?'
+2025-03-13 00:01:29 -    -> Question invalid
+2025-03-13 00:01:29 -  > Generating question no. 9
+2025-03-13 00:01:30 -    -> 'Does Trump's argument about defeating ISIS and protecting allies actually rely on Hillary Clinton's past actions or his own policies?'
+2025-03-13 00:01:47 -    -> Question valid
+2025-03-13 00:01:47 - Saved batch of questions to 81577_output.json
+2025-03-13 00:01:47 - 
+
+
+2025-03-13 00:01:47 - 56. Argument (id: TRUMP_251)
+2025-03-13 00:01:47 -  > Generating question no. 0
+2025-03-13 00:01:48 -    -> 'Is Trump's assertion that the opponent lacks basic ability solely based on their lack of a 'presidential look' or is it also rooted in a genuine assessment of their qualifications and policy proposals?'
+2025-03-13 00:02:14 -    -> Question invalid
+2025-03-13 00:02:14 -  > Generating question no. 1
+2025-03-13 00:02:14 -    -> 'Does Trump's assertion that Biden lacks basic ability and leadership qualities solely based on his previous power and experience sufficiently address the potential consequences of a lack of those abilities in the role of President?'
+2025-03-13 00:02:39 -    -> Question invalid
+2025-03-13 00:02:39 -  > Generating question no. 2
+2025-03-13 00:02:40 -    -> 'Is it sufficient to claim that a candidate is unqualified because they didn't fix all of their proposed policies during the previous 10 years, rather than proposing specific plans for how those issues would be addressed in the current term?'
+2025-03-13 00:03:08 -    -> Question invalid
+2025-03-13 00:03:08 -  > Generating question no. 3
+2025-03-13 00:03:10 -    -> 'Is it reasonable to assume that simply having power for 10 years is a sufficient condition for addressing all problems that arise during an election campaign?'
+2025-03-13 00:03:48 -    -> Question valid
+2025-03-13 00:03:48 -  > Generating question no. 4
+2025-03-13 00:03:49 -    -> 'Is it sufficient to assume that someone's track record of not addressing issues during their previous period of great power is a reliable indicator of their ability to address those same issues in the future?'
+2025-03-13 00:04:26 -    -> Question invalid
+2025-03-13 00:04:26 -  > Generating question no. 5
+2025-03-13 00:04:26 -    -> 'Does Trump's assertion that a female candidate lacks basic ability to be president solely based on her gender, rather than any concrete evidence or qualifications, constitute sexism?'
+2025-03-13 00:05:05 -    -> Question valid
+2025-03-13 00:05:05 -  > Generating question no. 6
+2025-03-13 00:05:06 -    -> 'Is it logically consistent to claim that a candidate's lack of experience and ability is not a significant issue, yet also implies that they would have handled the same issues differently in the past?'
+2025-03-13 00:05:22 -    -> Question valid
+2025-03-13 00:05:22 - Saved batch of questions to 81577_output.json
+2025-03-13 00:05:22 - 
+
+
+2025-03-13 00:05:22 - 57. Argument (id: TRUMP_253)
+2025-03-13 00:05:22 -  > Generating question no. 0
+2025-03-13 00:05:24 -    -> 'Does Trump's assertion that Hillary Clinton lacks stamina to be president, as demonstrated by her supposed inability to negotiate with Japan and Saudi Arabia, stem from a reasonable assessment of her qualifications or are they based on an unfair comparison between his own negotiating abilities and hers?'
+2025-03-13 00:05:54 -    -> Question valid
+2025-03-13 00:05:54 -  > Generating question no. 1
+2025-03-13 00:05:56 -    -> 'Does Trump's assertion that Hillary Clinton lacks 'tremendous stamina' to be president, despite his own admission that she can 'speak to Japan and Saudi Arabia', constitute a valid basis for questioning her fitness for the office?'
+2025-03-13 00:06:17 -    -> Question invalid
+2025-03-13 00:06:17 -  > Generating question no. 2
+2025-03-13 00:06:19 -    -> 'Does Trump's characterization of Hillary Clinton's appearance and stamina as relevant criteria for evaluating her suitability to be president, rather than issues like foreign policy experience and negotiation skills?'
+2025-03-13 00:06:49 -    -> Question valid
+2025-03-13 00:06:49 -  > Generating question no. 3
+2025-03-13 00:06:51 -    -> 'Does Trump's assertion that Hillary lacks stamina for being president solely rely on personal opinion or is it supported by empirical evidence?'
+2025-03-13 00:07:20 -    -> Question invalid
+2025-03-13 00:07:20 -  > Generating question no. 4
+2025-03-13 00:07:21 -    -> 'Is it legitimate to dismiss Hillary's foreign policy experience and presidential qualifications based solely on her stance on a single issue, when such a dismissal seems to rely heavily on personal biases rather than objective evaluation of her policies?'
+2025-03-13 00:07:46 -    -> Question valid
+2025-03-13 00:07:46 - Saved batch of questions to 81577_output.json
+2025-03-13 00:07:46 - 
+
+
+2025-03-13 00:07:46 - 58. Argument (id: TRUMP_26)
+2025-03-13 00:07:46 -  > Generating question no. 0
+2025-03-13 00:07:47 -    -> 'Does the fact that the speaker has been in their job for 30 years imply anything about the timeliness or value of their proposed solutions?'
+2025-03-13 00:08:20 -    -> Question invalid
+2025-03-13 00:08:20 -  > Generating question no. 1
+2025-03-13 00:08:23 -    -> 'Does Trump's assertion that he has only recently started thinking of solutions to create jobs and stimulate economic growth accurately reflect his actual actions and policies as a businessman and public figure over the past 30 years?'
+2025-03-13 00:08:59 -    -> Question valid
+2025-03-13 00:08:59 -  > Generating question no. 2
+2025-03-13 00:09:01 -    -> 'Is it logical to assume that because a person has been working on an issue for 30 years without finding a solution, they are now incapable of developing new solutions?'
+2025-03-13 00:09:20 -    -> Question invalid
+2025-03-13 00:09:20 -  > Generating question no. 3
+2025-03-13 00:09:21 -    -> 'Does Trump's assertion that the Obama administration doubled the country's debt in seven-and-a-half years, despite being in office for almost eight years, accurately reflect the actual increase in national debt during that time period?'
+2025-03-13 00:09:59 -    -> Question invalid
+2025-03-13 00:09:59 -  > Generating question no. 4
+2025-03-13 00:10:01 -    -> 'Is Trump's assertion that he is now considering solutions to address America's energy and job issues a credible claim, given his 30-year history of not taking action on these matters?'
+2025-03-13 00:10:41 -    -> Question valid
+2025-03-13 00:10:41 -  > Generating question no. 5
+2025-03-13 00:10:43 -    -> 'Is it logically possible that a person who has spent 30 years on the same approach to solving economic problems would suddenly know of a better solution?'
+2025-03-13 00:11:07 -    -> Question invalid
+2025-03-13 00:11:07 -  > Generating question no. 6
+2025-03-13 00:11:09 -    -> 'Does Trump's assertion that his own economic policies, which have been in place for 30 years, are not responsible for the loss of jobs and companies is a valid basis to dismiss alternative solutions proposed by others?'
+2025-03-13 00:11:52 -    -> Question invalid
+2025-03-13 00:11:52 -  > Generating question no. 7
+2025-03-13 00:11:52 -    -> 'Is it possible that Trump's criticism of Obama's energy policies and their alleged failure to bring back jobs is actually a justification for his own administration's energy policies, which he admits have been unsuccessful in terms of job creation?'
+2025-03-13 00:12:21 -    -> Question valid
+2025-03-13 00:12:21 - Saved batch of questions to 81577_output.json
+2025-03-13 00:12:21 - 
+
+
+2025-03-13 00:12:21 - 59. Argument (id: TRUMP_275)
+2025-03-13 00:12:21 -  > Generating question no. 0
+2025-03-13 00:12:21 -    -> 'Does Trump's perception that Clinton's negative advertising constitutes a free speech issue justify his own use of similar tactics, particularly given the disparity in funding and potential impact on voters?'
+2025-03-13 00:12:54 -    -> Question invalid
+2025-03-13 00:12:54 -  > Generating question no. 1
+2025-03-13 00:12:54 -    -> 'Is it logical to assume that because Trump has been subject to negative advertising, he is entitled to retaliate with even more negative or threatening language towards his opponent?'
+2025-03-13 00:13:24 -    -> Question invalid
+2025-03-13 00:13:24 -  > Generating question no. 2
+2025-03-13 00:13:25 -    -> 'Is Trump's characterization of his own conduct in response to Hillary's campaign ads consistent with the standards he expects others to adhere to?'
+2025-03-13 00:13:47 -    -> Question valid
+2025-03-13 00:13:47 -  > Generating question no. 3
+2025-03-13 00:13:50 -    -> 'Does Trump's characterization of his own behavior as 'vicious' and claims that Hillary has 'spent hundreds of millions of dollars on negative ads on him, many of which are absolutely untrue' not constitute a form of ad hominem attack?'
+2025-03-13 00:14:32 -    -> Question invalid
+2025-03-13 00:14:32 -  > Generating question no. 4
+2025-03-13 00:14:32 -    -> 'Does Trump's perception of his treatment by Hillary and her campaign justify his assertion that he has spent 'practically nothing' on advertising?'
+2025-03-13 00:14:48 -    -> Question invalid
+2025-03-13 00:14:48 -  > Generating question no. 5
+2025-03-13 00:14:49 -    -> 'Does Trump's characterization of his treatment by Rosie O'Donnell and Hillary Clinton accurately reflect a genuine exchange of disagreement, or is it an attempt to shift the focus away from the perceived falsehoods in his opponent's campaign ads?'
+2025-03-13 00:15:23 -    -> Question valid
+2025-03-13 00:15:23 -  > Generating question no. 6
+2025-03-13 00:15:25 -    -> 'Does Trump's assertion that his response to Rosie O'Donnell's criticism of him justifies the scale and nature of his counterattack against Hillary Clinton amount to a form of circular or ad hominem reasoning?'
+2025-03-13 00:16:04 -    -> Question invalid
+2025-03-13 00:16:04 -  > Generating question no. 7
+2025-03-13 00:16:05 -    -> 'Is Trump's willingness to engage in public verbal insults and personal attacks being presented as a legitimate critique of Hillary Clinton's campaign tactics, rather than an attempt to deflect attention from his own negative advertising?'
+2025-03-13 00:16:46 -    -> Question invalid
+2025-03-13 00:16:46 -  > Generating question no. 8
+2025-03-13 00:16:47 -    -> 'Does Trump's characterization of Hillary Clinton's use of negative ads as 'hundreds of millions' accurately reflect the actual number of ads she ran?'
+2025-03-13 00:17:09 -    -> Question invalid
+2025-03-13 00:17:09 -  > Generating question no. 9
+2025-03-13 00:17:11 -    -> 'Is Trump's assertion that his opponents are not entitled to sympathy because they have engaged in aggressive behavior a justification for his own behavior towards them?'
+2025-03-13 00:17:36 -    -> Question valid
+2025-03-13 00:17:36 - Saved batch of questions to 81577_output.json
+2025-03-13 00:17:36 - 
+
+
+2025-03-13 00:17:36 - 60. Argument (id: TRUMP_279)
+2025-03-13 00:17:36 -  > Generating question no. 0
+2025-03-13 00:17:38 -    -> 'Is Trump's assertion that deporting people is equivalent to them becoming citizens a logically sound conclusion?'
+2025-03-13 00:18:07 -    -> Question valid
+2025-03-13 00:18:07 -  > Generating question no. 1
+2025-03-13 00:18:08 -    -> 'Does Trump's statement that the deported individuals became citizens because they 'pressed the wrong button' rather than for 'good reason' align with the actual purpose of the deportation process?'
+2025-03-13 00:18:31 -    -> Question invalid
+2025-03-13 00:18:31 -  > Generating question no. 2
+2025-03-13 00:18:32 -    -> 'Does Trump's statement that immigrants who are deported or granted citizenship are 'not even known' accurately reflect the typical circumstances and experiences of these individuals?'
+2025-03-13 00:18:58 -    -> Question valid
+2025-03-13 00:18:58 -  > Generating question no. 3
+2025-03-13 00:18:59 -    -> 'Does the claim that a large number of undocumented immigrants became citizens due to 'pressing the wrong button' or 'corruption' provide sufficient evidence for the assertion that these individuals were being deported?'
+2025-03-13 00:19:22 -    -> Question invalid
+2025-03-13 00:19:22 -  > Generating question no. 4
+2025-03-13 00:19:22 -    -> 'Does Trump's claim that undocumented immigrants who were deported or became citizens pose a significant threat to national security warrant scrutiny of his assertion?'
+2025-03-13 00:19:48 -    -> Question invalid
+2025-03-13 00:19:48 -  > Generating question no. 5
+2025-03-13 00:19:50 -    -> 'Is Trump's reasoning that the increased number of immigrants becoming citizens is evidence of widespread corruption, rather than a natural consequence of the deportation process, logically sound?'
+2025-03-13 00:20:18 -    -> Question invalid
+2025-03-13 00:20:18 -  > Generating question no. 6
+2025-03-13 00:20:18 -    -> 'Does Trump's claim that deporting 800 people resulted in them becoming citizens due to 'pressing the wrong button' or 'corruption' provide sufficient evidence to support his assertion that he wants to make America great again?'
+2025-03-13 00:20:42 -    -> Question valid
+2025-03-13 00:20:42 - Saved batch of questions to 81577_output.json
+2025-03-13 00:20:42 - 
+
+
+2025-03-13 00:20:42 - 61. Argument (id: TRUMP_3_1)
+2025-03-13 00:20:42 -  > Generating question no. 0
+2025-03-13 00:20:43 -    -> 'Does Trump's assertion that other countries, including Mexico and China, are 'using our country as a piggy bank to rebuild' them accurately reflect the economic motivations behind their industrial development?'
+2025-03-13 00:21:28 -    -> Question valid
+2025-03-13 00:21:28 -  > Generating question no. 1
+2025-03-13 00:21:30 -    -> 'How can Trump's assertion that other countries are building 'the eighth wonder of the world' in Mexico be taken at face value, given the lack of concrete evidence or credible sources to support this claim?'
+2025-03-13 00:21:59 -    -> Question valid
+2025-03-13 00:21:59 -  > Generating question no. 2
+2025-03-13 00:22:00 -    -> 'Does the assertion that foreign countries, particularly Mexico and China, are directly causing American job losses and economic decline ignore the role of automation, technological advancements, and domestic policies in driving these changes?'
+2025-03-13 00:22:21 -    -> Question invalid
+2025-03-13 00:22:21 -  > Generating question no. 3
+2025-03-13 00:22:22 -    -> 'Does Trump's claim that other countries, including Mexico and China, are actively relocating American jobs to their own nations appear to be based on credible evidence or is it an unsubstantiated assertion?'

@@ -15,20 +15,20 @@ Generated critical question: ```{critical_question}```
 The user will guide you through this process step by step, so please follow their instructions precisely.
 """
 
-PROMPT_1 = """
+PROMPT_STEP_1 = """
 First, provide a concise summary the following {number_of_feedbacks} feedbacks given by the Validator Agents:
 
 {concatenated_feedback}
 """
 
-PROMPT_2 = """
+PROMPT_STEP_2 = """
 Very good. Next, based on your summary, decide on the validity of the critical question.
 Do this in two steps:
 1. First, based on your summary, concisely reason about the feedback in your own words. Weigh each feedback according to their significance.
 2. Second, make your decision about the validity of the critical question.
 """
 
-PROMPT_3 = """
+PROMPT_STEP_3 = """
 Finally, formulate your decision as s JSON structure like this:
 ```json
 {{
@@ -45,6 +45,14 @@ class AggregatorAgent(Agent):
         super().__init__(model_name, model_parameters)
 
     def _concatenate_feedbacks(self, feedbacks: list[str]) -> str:
+        """Helper Function to concatenate a list of feedbacks into a single string.
+
+        Args:
+            feedbacks (list[str]): List of feedbacks for the question by the LLM
+
+        Returns:
+            str: Concatenated Feedbacks
+        """
         result = ""
         for i, feedback_text in enumerate(feedbacks, 1):
             result += f"Feedback {i}:\n{feedback_text}\n\n\n"
@@ -59,7 +67,7 @@ class AggregatorAgent(Agent):
         Args:
             argument (str): Original argument
             critical_question (str): Generated critical question
-            feedbacks (list[str]): List of individual feedback from the Validator LLMs.
+            feedbacks (list[str]): List of individual feedback from the Validator LLMs
 
         Returns:
             Tuple[str,bool]: Feedback and final validation
@@ -72,7 +80,7 @@ class AggregatorAgent(Agent):
 
         ### Step 1: Let Agent summarize the feedback
         concatenated_feedback = self._concatenate_feedbacks(feedbacks)
-        prompt_1 = PROMPT_1.format(
+        prompt_1 = PROMPT_STEP_1.format(
             number_of_feedbacks=len(feedbacks),
             concatenated_feedback=concatenated_feedback,
         )
@@ -81,13 +89,13 @@ class AggregatorAgent(Agent):
         self._add_to_chat(role="assistant", message=response)
 
         ### Step 2: Let Agent reason about the feedback
-        prompt_2 = PROMPT_2
+        prompt_2 = PROMPT_STEP_2
         self._add_to_chat(role="user", message=prompt_2)
         reasoning = self.single_response(messages=self.chat)
         self._add_to_chat(role="assistant", message=reasoning)
 
         ### Step 3: Provide final decision in structured JSON
-        prompt_3 = PROMPT_3
+        prompt_3 = PROMPT_STEP_3
         self._add_to_chat(role="user", message=prompt_3)
         decision = self.single_response(messages=self.chat)
         self._add_to_chat(role="assistant", message=decision)

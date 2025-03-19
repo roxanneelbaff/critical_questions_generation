@@ -1,0 +1,1480 @@
+{
+    "CLINTON_199_2": {
+        "intervention_id": "CLINTON_199_2",
+        "intervention": "CLINTON: \"which may prove to be an intelligence benefit\nwe've got to do everything we can to vacuum up intelligence from Europe, from the Middle East\nThat means we've got to work more closely with our allies, and that's something that Donald has been very dismissive of\nWe're working with NATO, the longest military alliance in the history of the world, to really turn our attention to terrorism\nWe're working with our friends in the Middle East, many of which, as you know, are Muslim majority nations\nDonald has consistently insulted Muslims abroad, Muslims at home, when we need to be cooperating with Muslim nations and with the American Muslim community\nThey're on the front lines\nThey can provide information to us that we might not get anywhere else\nThey need to have close working cooperation with law enforcement in these communities, not be alienated and pushed away as some of Donald's rhetoric, unfortunately, has led to\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Example",
+            "CauseToEffect",
+            "PracticalReasoning",
+            "Consequences",
+            "Example",
+            "Consequences"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_199_2_27550",
+                "cq": "Does Clinton's emphasis on cooperation with Muslim-majority nations and the American Muslim community not undermine her claim that Donald has been dismissive of working with allies, particularly in light of NATO's enduring role in global security?"
+            },
+            {
+                "id": "CLINTON_199_2_56427",
+                "cq": "Does working closely with Muslim-majority nations necessarily require cooperation with Donald's policies towards Muslims, or is there an alternative approach that could achieve similar intelligence benefits?"
+            },
+            {
+                "id": "CLINTON_199_2_57681",
+                "cq": "How can we be certain that Clinton's characterization of Trump's rhetoric is accurate and not just a selective interpretation of his words?"
+            }
+        ]
+    },
+    "CLINTON_1_2": {
+        "intervention_id": "CLINTON_1_2",
+        "intervention": "CLINTON: \"If you help create the profits , you should be able to share in them , not just the executives at the top\nI want us to do more to support people who are struggling to balance family and work\nI 've heard from so many of you about the difficult choices you face and the stresses that you 're under\nlet 's have paid family leave , earned sick days\nLet 's be sure we have affordable child care and debt-free college\nHow are we going to do it\nWe 're going to do it by having the wealthy pay their fair share and close the corporate loopholes\nwe tonight are on the stage together , Donald Trump and I\nit 's good to be with you\nWe 're going to have a debate where we are talking about the important issues facing our country\nYou have to judge us , who can shoulder the immense , awesome responsibilities of the presidency , who can put into action the plans that will make your life better\nI hope that I will be able to earn your vote on November 8th\"",
+        "dataset": "US2016",
+        "schemes": [
+            "PopularOpinion",
+            "Values",
+            "PracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_1_2_45340",
+                "cq": "Does Clinton's plan for increasing taxes on the wealthy to fund social programs actually address the root causes of the struggles many working-class Americans face?"
+            },
+            {
+                "id": "CLINTON_1_2_97331",
+                "cq": "How can Clinton's plan to have the wealthy pay their fair share and close corporate loopholes specifically address the struggles of individuals who do not work for corporations?"
+            },
+            {
+                "id": "CLINTON_1_2_49254",
+                "cq": "How does paying higher taxes on the wealthy necessarily lead to policies that benefit working-class families, such as paid family leave and affordable child care?"
+            }
+        ]
+    },
+    "CLINTON_21": {
+        "intervention_id": "CLINTON_21",
+        "intervention": "CLINTON: \"nine million people lost their jobs\nFive million people lost their homes\n$ 13 trillion in family wealth was wiped out\nNow , we have come back from that abyss\nit has not been easy\nwe 're now on the precipice of having a potentially much better economy\nthe last thing we need to do is to go back to the policies that failed us in the first place\nIndependent experts have looked at what I 've proposed\nlooked at what Donald 's proposed\nI intend to get it done\nTake clean energy\nSome country is going to be the clean- energy superpower of the 21st century\nDonald thinks that climate change is a hoax perpetrated by the Chinese\nI think it 's real\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Analogy"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_21_64325",
+                "cq": "How can Clinton's assertion that the proposed policies are a cause of economic recovery be reconciled with his characterization of those same policies as having failed in the first place?"
+            },
+            {
+                "id": "CLINTON_21_55819",
+                "cq": "How can Clinton be certain that the policies he proposes for a clean energy superpower will not also lead to job losses, home foreclosures, and loss of family wealth?"
+            },
+            {
+                "id": "CLINTON_21_55239",
+                "cq": "How can Clinton's assertion that his proposed policies will lead to a potentially better economy be supported by evidence that directly compares the economic outcomes of his policies with those of Donald's proposals?"
+            }
+        ]
+    },
+    "CLINTON_223_1": {
+        "intervention_id": "CLINTON_223_1",
+        "intervention": "CLINTON: \"Let 's talk about two important issues that were briefly mentioned by Donald\nfirst , NATO\nNATO as a military alliance has something called Article 5\nyou know the only time it 's ever been invoked ?\nAfter 9/11 , when the 28 nations of NATO said that they would go to Afghanistan with us to fight terrorism\nsomething that they still are doing by our side\nWith respect to Iran , when I became secretary of state , Iran was weeks away from having enough nuclear material to form a bomb\nThey had mastered the nuclear fuel cycle under the Bush administration\nThey had built covert facilities\nThey had stocked them with centrifuges that were whirling away\nwe had sanctioned them\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Sign",
+            "Sign",
+            "PracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_223_1_55233",
+                "cq": "Is it sufficient to establish a historical precedent of NATO invoking Article 5 for military intervention as evidence of its reliability and commitment to collective defense, given the absence of any current or recent instances of invocation?"
+            },
+            {
+                "id": "CLINTON_223_1_43957",
+                "cq": "Did the Clinton administration actually have access to and utilize this information about Iran's nuclear program, or is this claim based on post-hoc rationalization?"
+            },
+            {
+                "id": "CLINTON_223_1_87504",
+                "cq": "Is Clinton's claim about Article 5 being invoked only after 9/11 supported by evidence that it was not invoked previously, or is this claim based on a selective reading of history?"
+            }
+        ]
+    },
+    "CLINTON_223_2": {
+        "intervention_id": "CLINTON_223_2",
+        "intervention": "CLINTON: \"I voted for every sanction against Iran when I was in the Senate\nit was n't enough\nI spent a year-and-a-half putting together a coalition that included Russia and China to impose the toughest sanctions on Iran\n we did drive them to the negotiating table\nmy successor , John Kerry , and President Obama got a deal that put a lid on Iran 's nuclear program without firing a single shot\nThat 's diplomacy\nThat 's coalition-building\nThat 's working with other nations\nThat 's not good judgment\"",
+        "dataset": "US2016",
+        "schemes": [
+            "CauseToEffect",
+            "Consequences"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_223_2_63743",
+                "cq": "Does Clinton's evaluation of her own policy choices as 'good judgment' not belie a criticism of her successor, Obama, for achieving the same diplomatic goals through different means?"
+            },
+            {
+                "id": "CLINTON_223_2_28190",
+                "cq": "How does Clinton's claim that his actions were ineffective and therefore bad judgment align with his statement that he 'drove them to the negotiating table', which implies a level of success?"
+            },
+            {
+                "id": "CLINTON_223_2_94721",
+                "cq": "Does Clinton's claim that her successor and President Obama's agreement with Iran, which allowed it to retain a significant nuclear program, constitute 'putting a lid on' Iran's nuclear program rather than achieving the toughest sanctions?"
+            }
+        ]
+    },
+    "CLINTON_225": {
+        "intervention_id": "CLINTON_225",
+        "intervention": "CLINTON: \"That is not the right temperament to be commander-in- chief , to be taunted\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Sign"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_225_87140",
+                "cq": "Is the assertion that being 'taunted' is an incompatible qualification for commander-in-chief based on a reasonable understanding of the term 'temperament'?"
+            },
+            {
+                "id": "CLINTON_225_76640",
+                "cq": "Is the assessment of someone's temperament relevant to their qualification as commander-in-chief?"
+            },
+            {
+                "id": "CLINTON_225_67859",
+                "cq": "What specific behaviors or incidents is Clinton referring to as 'taunting' that would disqualify someone from being Commander-in-Chief?"
+            }
+        ]
+    },
+    "CLINTON_231": {
+        "intervention_id": "CLINTON_231",
+        "intervention": "CLINTON: \"in fact , his cavalier attitude about nuclear weapons is so deeply troubling\nThat is the number-one threat we face in the world\nit becomes particularly threatening if terrorists ever get their hands on any nuclear material\"",
+        "dataset": "US2016",
+        "schemes": [
+            "FearAppeal",
+            "DangerAppeal"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_231_18223",
+                "cq": "How can we be certain that allowing Clinton's proposed policy will actually prevent terrorists from getting their hands on nuclear material?"
+            },
+            {
+                "id": "CLINTON_231_11846",
+                "cq": "Is it possible that Clinton's concern about nuclear weapons is being conflated with the risk posed by terrorists acquiring conventional nuclear materials, rather than the highly classified and potentially catastrophic scenario of actual nuclear devices falling into terrorist hands?"
+            },
+            {
+                "id": "CLINTON_231_37178",
+                "cq": "Does Mr. Clinton's assessment of the number-one threat we face in the world solely based on a single, unspecified characteristic (his cavalier attitude) constitute a valid and comprehensive evaluation of global security threats?"
+            }
+        ]
+    },
+    "CLINTON_235": {
+        "intervention_id": "CLINTON_235",
+        "intervention": "CLINTON: \"It 's a good one , though\nIt well describes the problem\"",
+        "dataset": "US2016",
+        "schemes": [
+            "VerbalClassification"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_235_30013",
+                "cq": "What makes it a good description of the problem, and how does this adequacy ensure it is a valid solution?"
+            },
+            {
+                "id": "CLINTON_235_86991",
+                "cq": "Does saying something is a 'good' description of a problem automatically imply that the speaker actually supports or endorses the underlying issue?"
+            },
+            {
+                "id": "CLINTON_235_65219",
+                "cq": "Is the term 'good' being used to describe the quality of the description, or the adequacy of addressing the problem?"
+            }
+        ]
+    },
+    "CLINTON_244_2": {
+        "intervention_id": "CLINTON_244_2",
+        "intervention": "CLINTON: \"If he 's going to criticize a deal that has been very successful in giving us access to Iranian facilities that we never had before , then he should tell us what his alternative would be\nit 's like his plan to defeat ISIS\nthe only secret is that he has no plan\nHe says it 's a secret plan\nwe need to be more precise in how we talk about these issues\nPeople around the word follow our presidential campaigns so closely , trying to get hints about what we will do\nCan they rely on us ?\nAre we going to lead the world with strength and in accordance with our values ?\nThat 's what I intend to do\nI intend to be a leader of our country that people can count on , both here at home and around the world\nto make decisions that will further peace and prosperity\nalso stand up to bullies , whether they 're abroad or at home\nWe can not let those who would try to destabilize the world to interfere with American interests and security\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Consequences"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_244_2_77393",
+                "cq": "Can Clinton's assertion that he has a secret plan to defeat ISIS be justified without him providing concrete details or evidence, and if not, what implications does this have for his credibility on foreign policy?"
+            },
+            {
+                "id": "CLINTON_244_2_71757",
+                "cq": "Is Clinton's assertion that his lack of a detailed plan on defeating ISIS is a reasonable justification for failing to provide one?"
+            },
+            {
+                "id": "CLINTON_244_2_67381",
+                "cq": "Does Mr. Clinton's criticism of his opponent's plan for defeating ISIS rely on the opponent having presented a specific, detailed alternative, or is it based solely on the fact that the opponent has not explicitly revealed their plan?"
+            }
+        ]
+    },
+    "CLINTON_25": {
+        "intervention_id": "CLINTON_25",
+        "intervention": "CLINTON: \"it 's important that we grip this and deal with it , both at home and abroad\nhere 's what we can do\nWe can deploy a half a billion more solar panels\nWe can have enough clean energy to power every home\nWe can build a new modern electric grid\nThat 's a lot of jobs\nthat 's a lot of new economic activity\n I 've tried to be very specific about what we can and should do\nI am determined that we 're going to get the economy really moving again , building on the progress we 've made over the last eight years , but never going back to what got us in trouble in the first place\"",
+        "dataset": "US2016",
+        "schemes": [
+            "CauseToEffect",
+            "Consequences",
+            "Consequences",
+            "CauseToEffect"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_25_97944",
+                "cq": "How does deploying a half billion more solar panels and building a new modern electric grid address the underlying causes of economic stagnation, rather than just treating its symptoms?"
+            },
+            {
+                "id": "CLINTON_25_13718",
+                "cq": "How can deploying a half billion more solar panels and building a new electric grid be sufficient to 'get the economy really moving again' without addressing the underlying structural issues that led to economic trouble in the first place?"
+            },
+            {
+                "id": "CLINTON_25_14730",
+                "cq": "How can deploying a half billion more solar panels and building a new electric grid create jobs without also increasing costs for consumers and potentially leading to inflation?"
+            }
+        ]
+    },
+    "CLINTON_37": {
+        "intervention_id": "CLINTON_37",
+        "intervention": "CLINTON: \" Some of them I voted for\nThe biggest one, a multinational one known as CAFTA, I voted against\nI hold the same standards as I look at all of these trade deals\nlet's not assume that trade is the only challenge we have in the economy\nit is a part of it\nI'm going to have a special prosecutor\nWe're going to enforce the trade deals we have, and we're going to hold people accountable\nWhen I was secretary of state, we actually increased American exports globally 30 percent\nWe increased them to China 50 percent\n know how to really work to get new jobs and to get exports that helped to create more new jobs\"",
+        "dataset": "US2016",
+        "schemes": [
+            "PracticalReasoning",
+            "Example",
+            "Example"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_37_93637",
+                "cq": "Does holding a special prosecutor accountable for enforcing trade deals necessarily imply that Clinton is committed to investigating and prosecuting corruption in all economic contexts, not just trade?"
+            },
+            {
+                "id": "CLINTON_37_30234",
+                "cq": "How can Clinton reconcile the fact that he voted against CAFTA with his claim to hold the same standards for all trade deals?"
+            },
+            {
+                "id": "CLINTON_37_44173",
+                "cq": "How can Clinton's experience as Secretary of State directly translate to her ability to enforce trade deals as President?"
+            }
+        ]
+    },
+    "CLINTON_39": {
+        "intervention_id": "CLINTON_39",
+        "intervention": "CLINTON: \"I've been a senator, Donald\n...\nYou haven't done it.\n I have been a secretary of state\nAnd I have done a lot\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Example",
+            "Example"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_39_56955",
+                "cq": "What is the relevance and basis for comparing Clinton's roles as senator, Secretary of State to the alleged accusation made against Donald Trump?"
+            },
+            {
+                "id": "CLINTON_39_59483",
+                "cq": "Is Clinton's comparison of his roles as senator and secretary of state sufficient to establish a meaningful basis for contrasting his qualifications with those of Donald Trump?"
+            },
+            {
+                "id": "CLINTON_39_94978",
+                "cq": "Is Clinton's claim that being a secretary of state is equivalent to accomplishing all the tasks that he himself lists as accomplishments?"
+            }
+        ]
+    },
+    "CLINTON_55": {
+        "intervention_id": "CLINTON_55",
+        "intervention": "CLINTON: \"There are different views about what's good for our country, our economy, and our leadership in the world\nit's important to look at what we need to do to get the economy going again\nnew jobs with rising incomes, investments, not in more tax cuts that would add $5 trillion to the debt\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Values",
+            "Values"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_55_62312",
+                "cq": "What makes Clinton's proposed solution for creating new jobs and investments with rising incomes a superior alternative to other possible solutions, such as further tax cuts?"
+            },
+            {
+                "id": "CLINTON_55_91854",
+                "cq": "Does Clinton's proposed policy of increased investments and lower tax cuts on wealthy individuals directly address and alleviate the economic issues that are causing $5 trillion in debt?"
+            },
+            {
+                "id": "CLINTON_55_35292",
+                "cq": "How can Clinton's proposed solution (new jobs with rising incomes, investments) actually get the economy going again without addressing the potential unintended consequences of increasing government spending?"
+            }
+        ]
+    },
+    "CLINTON_57": {
+        "intervention_id": "CLINTON_57",
+        "intervention": "CLINTON: \"you have no plan\nI have written a book about it. It's called \"Stronger Together.\"\nYou can pick it up tomorrow at a bookstore\nwe need to have strong growth , fair growth , sustained growth\nWe also have to look at how we help families balance the responsibilities at home and the responsibilities at business\nwe have a very robust set of plans\npeople have looked at both of our plans , have concluded that mine would create 10 million jobs and yours would lose us 3.5 million jobs , and explode the debt which would have a recession\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Example",
+            "Example",
+            "ExpertOpinion"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_57_58258",
+                "cq": "Does having written a book about economic policy constitute sufficient evidence to support a claim about its effectiveness?"
+            },
+            {
+                "id": "CLINTON_57_59851",
+                "cq": "Does Clinton's assertion that his book provides an alternative plan that has been thoroughly vetted by experts and concluded to be superior to his opponent's plan, in fact reflect a genuine attempt at constructive criticism or simply a partisan marketing ploy?"
+            },
+            {
+                "id": "CLINTON_57_42035",
+                "cq": "How does Clinton's plan to create 10 million jobs and prevent a recession account for the potential costs and unintended consequences of implementing such large-scale economic changes?"
+            }
+        ]
+    },
+    "CLINTON_66": {
+        "intervention_id": "CLINTON_66",
+        "intervention": "CLINTON: \"what I have proposed would not add a penny to the debt\n your plans would add $ 5 trillion to the debt\nWhat I have proposed would cut regulations and streamline them for small businesses\nWhat I have proposed would be paid for by raising taxes on the wealthy\nthey have made all the gains in the economy\nit 's time that the wealthy and corporations paid their fair share to support this country\"",
+        "dataset": "US2016",
+        "schemes": [
+            "PracticalReasoning",
+            "PracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_66_25351",
+                "cq": "How does raising taxes on the wealthy ensure that they will actually pay their fair share, and what evidence is there to suggest that corporations have not already paid a substantial portion of their profits in taxes?"
+            },
+            {
+                "id": "CLINTON_66_62176",
+                "cq": "How does raising taxes on the wealthy necessarily follow from Clinton's proposal to cut regulations and streamline them for small businesses?"
+            },
+            {
+                "id": "CLINTON_66_99688",
+                "cq": "How can raising taxes on the wealthy be considered a means of cutting regulations and streamlining them for small businesses?"
+            }
+        ]
+    },
+    "CLINTON_6_1": {
+        "intervention_id": "CLINTON_6_1",
+        "intervention": "CLINTON: \"we are 5 percent of the world 's population ; we have to trade with the other 95 percent\nwe need to have smart , fair trade deals\nWe also , though , need to have a tax system that rewards work and not just financial transactions\nthe kind of plan that Donald has put forth would be trickle-down economics all over again\nit would be the most extreme version , the biggest tax cuts for the top percent of the people in this country than we 've ever had\ntrumped-up trickle-down , because that 's exactly what it would be\nThat is not how we grow the economy\nWe just have a different view about what 's best for growing the economy , how we make investments that will actually produce jobs and rising incomes\nwe come at it from somewhat different perspectives\nDonald was very fortunate in his life , and that 's all to his benefit\"",
+        "dataset": "US2016",
+        "schemes": [
+            "VerbalClassification",
+            "Bias",
+            "PracticalReasoning",
+            "Consequences"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_6_1_12983",
+                "cq": "Does Clinton's assertion that Donald Trump's economic plan would be the most extreme version of trickle-down economics be justified by evidence from Trump's own policies and business history?"
+            },
+            {
+                "id": "CLINTON_6_1_17690",
+                "cq": "Does Clinton's view on trickle-down economics as an extreme version of it being beneficial for growing the economy hold up to scrutiny and what evidence or logical argumentation supports this claim?"
+            },
+            {
+                "id": "CLINTON_6_1_82880",
+                "cq": "How can Clinton's assertion that Trump's tax plan would be an 'extreme version' of trickle-down economics, given his own statement that he comes from a perspective that views 'trickle-down' as the most effective way to grow the economy?"
+            }
+        ]
+    },
+    "CLINTON_6_2": {
+        "intervention_id": "CLINTON_6_2",
+        "intervention": "CLINTON: \"He started his business with $ 14 million , borrowed from his father\nhe really believes that the more you help wealthy people , the better off we 'll be and that everything will work out from there\nI do n't buy that\nI have a different experience\nMy father was a small-businessman\nHe worked really hard\nHe printed drapery fabrics on long tables, where he pulled out those fabrics and he went down with a silkscreen and dumped the paint in and took the squeegee and kept going\nwhat I believe is the more we can do for the middle class, the more we can invest in you, your education, your skills, your future\nthe better we will be off and the better we'll grow\nThat's the kind of economy I want us to see again\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Example",
+            "Bias",
+            "Bias",
+            "VerbalClassification",
+            "PracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_6_2_74132",
+                "cq": "Does Clinton's experience as a small-business owner with his father translate to the broader economic situation and the policies he proposes?"
+            },
+            {
+                "id": "CLINTON_6_2_49997",
+                "cq": "Does his personal anecdote about printing drapery fabrics and investing in education for the middle class constitute sufficient evidence to challenge his assertion that helping wealthy people benefits the broader economy?"
+            },
+            {
+                "id": "CLINTON_6_2_52470",
+                "cq": "Is it logically possible that a business founded with $14 million borrowed from a wealthy family member could be seen as a representative example of the economic benefits of helping wealthy individuals?"
+            }
+        ]
+    },
+    "CLINTON_85": {
+        "intervention_id": "CLINTON_85",
+        "intervention": "CLINTON: \"let 's start the clock again , Lester\nWe 've looked at your tax proposals\nI do n't see changes in the corporate tax rates or the kinds of proposals you 're referring to that would cause the repatriation , bringing back of money that 's stranded overseas\nI happen to support that\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Alternatives"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_85_59070",
+                "cq": "Does Clinton's assertion that he supports the repatriation of money stranded overseas, as stated in his tax proposals, actually imply a commitment to lowering corporate tax rates?"
+            },
+            {
+                "id": "CLINTON_85_87694",
+                "cq": "Does Clinton's claim about not seeing changes in corporate tax rates accurately reflect his own proposed policy?"
+            },
+            {
+                "id": "CLINTON_85_47270",
+                "cq": "Does Clinton's statement about not seeing changes in corporate tax rates actually assume that his own proposed policies would be different from Lester's, or does he simply lack information about Lester's plans?"
+            }
+        ]
+    },
+    "CLINTON_87": {
+        "intervention_id": "CLINTON_87",
+        "intervention": "CLINTON: \"I happen to support that in a way that will actually work to our benefit\nwhen I look at what you have proposed , you have what is called now the Trump loophole\nit would so advantage you and the business you do\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Bias"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_87_46558",
+                "cq": "Does Clinton's characterization of the Trump loophole accurately reflect its actual nature and implications?"
+            },
+            {
+                "id": "CLINTON_87_44363",
+                "cq": "How does Clinton's characterization of 'the Trump loophole' as an advantage to the proposed policy align with his claimed support for a similar approach that would benefit everyone?"
+            },
+            {
+                "id": "CLINTON_87_85961",
+                "cq": "How can Clinton's characterization of the proposal as a 'Trump loophole' be taken at face value, given his apparent attempt to undermine its legitimacy?"
+            }
+        ]
+    },
+    "CLINTON_92": {
+        "intervention_id": "CLINTON_92",
+        "intervention": "CLINTON: \"it is\ntrumped-up trickle-down\nTrickle-down did not work\nIt got us into the mess we were in , in 2008 and 2009\nSlashing taxes on the wealthy has n't worked\na lot of really smart , wealthy people know that\nthey are saying , hey , we need to do more to make the contributions we should be making to rebuild the middle class\nI do n't think top-down works in America\nbuilding the middle class , investing in the middle class , making college debt-free so more young people can get their education , helping people refinance their\u2014their debt from college at a lower rate\nThose are the kinds of things that will really boost the economy\nBroad-based , inclusive growth is what we need in America , not more advantages for people at the very top\"",
+        "dataset": "US2016",
+        "schemes": [
+            "PopularOpinion",
+            "PopularOpinion",
+            "PracticalReasoning",
+            "Example"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_92_68264",
+                "cq": "Does the argument that trickle-down economics is ineffective solely because it was associated with the 2008 financial crisis provide a sufficient basis for dismissing its potential to stimulate economic growth in other contexts?"
+            },
+            {
+                "id": "CLINTON_92_26497",
+                "cq": "Does the historical evidence of trickle-down economics being ineffective since 2008 and 2009, as cited by Clinton, provide a sufficient basis to dismiss its potential benefits altogether?"
+            },
+            {
+                "id": "CLINTON_92_17894",
+                "cq": "Does Clinton's characterization of trickle-down economics as a proven failure accurately account for its proponents' alternative explanations for its perceived failures?"
+            }
+        ]
+    },
+    "CL_57": {
+        "intervention_id": "CL_57",
+        "intervention": "CL: \"Well, both sides of the transaction suffer as a result of ignoring moral hazard\nbecause moral hazard is a natural part of the process of lending and borrowing\nAnd if you suppress it, then in fact you're in a situation where the wealth that you look like you're generating is fool\u2019s gold, not real wealth at all.\"",
+        "dataset": "moral_maze_schemes",
+        "schemes": [
+            "CauseToEffect",
+            "CauseToEffect"
+        ],
+        "cqs": [
+            {
+                "id": "CL_57_32993",
+                "cq": "Does the argument that moral hazard is a natural part of lending and borrowing imply that suppressing it would necessarily lead to the absence of any benefits from lending?"
+            },
+            {
+                "id": "CL_57_90429",
+                "cq": "Is suppressing moral hazard necessarily a necessary condition for generating genuine wealth?"
+            },
+            {
+                "id": "CL_57_27847",
+                "cq": "Is it possible that CL's claim about moral hazard being a natural part of lending and borrowing is not supported by empirical evidence or theoretical frameworks in economics?"
+            }
+        ]
+    },
+    "Doctor-Mom_205": {
+        "intervention_id": "Doctor-Mom_205",
+        "intervention": "Doctor-Mom: \"I would support a full ban of peanut products on any airline.\nPeanut reactions can be life threatening.\nAn individual doesn't have to consume the product to have a life threatening reaction.\nThey can have contact or inhalation reactions.\nRestricting to certain flights is not enough,\nas residue can be rampant.\nProviding buffer zones is a thoughtful gesture,\nbut from a practical point of view does not work.\nWith so many food choices available, why are peanuts a necessary choice?\nI am a physician , and author on the subject.\nI have free food allergy online support forums with 3000 members.\nhttp://www.drmomsallergyrx.com/\nI would be more than willing to work with you in any way on this decision making process.\nThe allergic community is so grateful that you are allowing our voices to be heard.\nThe decision you are considering could save many lives.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExpertOpinion",
+            "ERPracticalReasoning",
+            "ERPracticalReasoning",
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "Doctor-Mom_205_25676",
+                "cq": "Is the conclusion that a full ban on peanut products is necessary to prevent life-threatening reactions based solely on the experiences of individuals with food allergies, or have these individuals' perspectives been supplemented by any empirical data or research on the prevalence and severity of peanut-related reactions in general populations?"
+            },
+            {
+                "id": "Doctor-Mom_205_75879",
+                "cq": "Is it logically necessary to assume that complete elimination of peanuts from the air, rather than just comprehensive precautions and strict regulations, is a necessary step to ensure safety for individuals with peanut allergies?"
+            },
+            {
+                "id": "Doctor-Mom_205_30967",
+                "cq": "Does the Doctor's assertion that a full ban on peanut products is necessary to prevent life-threatening reactions assume that the benefits of such a ban outweigh the potential harm and disruption it could cause to air travel, including the impact on people who are not allergic to peanuts but may be inconvenienced by the ban?"
+            }
+        ]
+    },
+    "Elmattador__92": {
+        "intervention_id": "Elmattador__92",
+        "intervention": "Elmattador: \"you must have missed the GOP debates\"\n < this message is answering to > \nBigtwinkie: \"This debate has honestly been making me uncomfortable\nits been way too hostile\nIts like listening to mom and dad fight in the kitchen while your hide under the covers in your room\n all they succeed at is making the entire panel seem unlikable\nthe democratic nominee will be bleeding votes no matter who wins\"",
+        "dataset": "us2016reddit",
+        "schemes": [
+            "Ad hominem"
+        ],
+        "cqs": [
+            {
+                "id": "Elmattador__92_40597",
+                "cq": "Does Bigtwinkie's assessment of the GOP debates being hostile and unpleasantly similar to a domestic argument necessarily imply that the debates are inherently unrepresentative of the broader Republican Party's values?"
+            },
+            {
+                "id": "Elmattador__92_54849",
+                "cq": "Is the speaker's assertion that the Democratic nominee will inevitably lose votes based on their assessment of the debate's hostility and likability actually an opinion or a prediction grounded in facts?"
+            },
+            {
+                "id": "Elmattador__92_72811",
+                "cq": "Does Bigtwinkie's assertion that the debate will result in the democratic nominee bleeding votes regardless of who wins logically follow from their complaint about the hostilities and unlikability of the panel?"
+            }
+        ]
+    },
+    "FoodAllergyMom_199_1": {
+        "intervention_id": "FoodAllergyMom_199_1",
+        "intervention": "FoodAllergyMom: \"My child is 2 years old and he is severely allergic to peanuts, tree nuts, egg and milk.\nMy son has reacted to airborne particles from someone opening a bag of nuts near him.\nMy husband and I used to be world traveler's and dreamed of traveling with our son.\nIt is heartbreaking to think that our child will not get to experience the world, or if he does it may cost him his life.\nWhat about when he gets older and his job requires him to fly across the country in a weekend?\nShould he have to risk his life so he can work in his possible future dream job?\nThis is a disability, no question about it.\nWe are talking about being in the air with peanut particles being circulated through the cabin and possible no place to land for hours.\nAn EpiPen only last 15 minutes.\nPeanut allergy is unpredictable.\nThe first reaction could be mild\nand the second could cause your blood pressure to drop like a rocket, your throat to close up and your heart to stop beating.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample",
+            "ERExample",
+            "ERExample",
+            "ERExample",
+            "ERExample"
+        ],
+        "cqs": [
+            {
+                "id": "FoodAllergyMom_199_1_37411",
+                "cq": "Does the potential risk of anaphylactic shock from airborne peanut particles while flying warrant a blanket ban on individuals with peanut allergies from air travel, regardless of their ability to carry an EpiPen or take preventative measures?"
+            },
+            {
+                "id": "FoodAllergyMom_199_1_90702",
+                "cq": "Can it be reasonably inferred that an individual's severe peanut allergy would necessarily render them unable to safely work with peanuts or in environments where peanut particles may be present, without considering alternative measures or accommodations?"
+            },
+            {
+                "id": "FoodAllergyMom_199_1_23165",
+                "cq": "Is the hypothetical scenario of a child being exposed to peanut particles on a plane justified by the need for travel across the country in a weekend, given that an EpiPen can be administered at most once every 15 minutes?"
+            }
+        ]
+    },
+    "Frequent-Flyer_157": {
+        "intervention_id": "Frequent-Flyer_157",
+        "intervention": "Frequent-Flyer: \"I have sympathy for those with peanut allergies,\nbut banning peanuts from flights via a DOT regulation seems to go too far.\nPerhaps advocacy groups for those who are peanutallergic will approach the major carriers to voluntarily set aside seating blocks that are reserved for allergy sufferers, and nonsufferers who are willing to agree not to eat peanuts while sitting in that particular block.\nAs someone who suffers from a medical condition which requires me to carry my \"rescue\" medication with me everywhere I go,\nI think that if the risk to an allergy sufferer is deemed to be significant, then they should\nconsider alternate travel methods other than flying,\nensure they have sufficient \"rescue\" medication to last the entire time they might be stuck in an aircraft,\nthey should wear appropriate clothing / face masks to minimize exposed skin and inhalation risk.\nRequiring other passengers to forgo their \"right\" to eat peanuts so as to accommodate the \"right\" of allergy sufferers to fly seems a bit much,\nparticularly if the allergy sufferers don't fly often, anyway.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "Frequent-Flyer_157_71343",
+                "cq": "Does requiring all passengers to abstain from eating peanuts solely because of the risk to allergy sufferers not disproportionately penalize those who are most severely impacted by peanut allergies?"
+            },
+            {
+                "id": "Frequent-Flyer_157_93510",
+                "cq": "Does the proposed solution of requiring passengers to give up their right to eat peanuts on flights if it might minimize the risk of an allergic reaction only consider the perspectives of those who do fly frequently, and neglect the potential impact on those who fly less often?"
+            },
+            {
+                "id": "Frequent-Flyer_157_44244",
+                "cq": "Does the speaker's claim that requiring passengers to give up their right to eat peanuts is a disproportionate burden, given the relatively low risk of peanut allergy-related incidents during flights?"
+            }
+        ]
+    },
+    "Glblwrmingisfak__552": {
+        "intervention_id": "Glblwrmingisfak__552",
+        "intervention": "Glblwrmingisfak: \"What argument?\nNobody proposes common sense gun solutions\nThe DOJ over a decade ago already determined that an assault weapons ban won't do shit for addressing homicide rates in the US\nIt is not a solution for any of our problems\nBernie should know\nhe clearly isn't stupid\"",
+        "dataset": "us2016reddit",
+        "schemes": [
+            "ArgumentFromAuthority"
+        ],
+        "cqs": [
+            {
+                "id": "Glblwrmingisfak__552_27931",
+                "cq": "Does the argument that an assault weapons ban won't address homicide rates in the US necessarily imply that common sense gun solutions are not worth considering?"
+            },
+            {
+                "id": "Glblwrmingisfak__552_72553",
+                "cq": "Does Glblwrmingisfak's claim that there is no common sense gun solution because of the DOJ's previous assessment not being based on a consideration of all possible solutions, including those that might have been proposed by others besides Bernie?"
+            },
+            {
+                "id": "Glblwrmingisfak__552_64644",
+                "cq": "Does the speaker's dismissal of common sense gun solutions rely on a reliable source (e.g. the DOJ study) to support their claim that an assault weapons ban is ineffective in addressing homicide rates?"
+            }
+        ]
+    },
+    "HOLT_126": {
+        "intervention_id": "HOLT_126",
+        "intervention": "HOLT: \"Stop-and-frisk was ruled unconstitutional in New York\nit largely singled out black and Hispanic young men\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Consequences"
+        ],
+        "cqs": [
+            {
+                "id": "HOLT_126_83586",
+                "cq": "How can we be certain that the ruling was based on a broader critique of stop-and-frisk policies rather than solely targeting black and Hispanic young men?"
+            },
+            {
+                "id": "HOLT_126_78153",
+                "cq": "Does Holt have a plausible reason for his assertion that 'stop-and-frisk was ruled unconstitutional' beyond stating a general fact about its impact on minority groups?"
+            },
+            {
+                "id": "HOLT_126_91993",
+                "cq": "Does Holt's assertion that stop-and-frisk was ruled unconstitutional solely because it targeted black and Hispanic young men provide sufficient evidence to support his conclusion?"
+            }
+        ]
+    },
+    "HOLT_239": {
+        "intervention_id": "HOLT_239",
+        "intervention": "HOLT: \"Which leads to my next question\nwe enter our last segment here on the , still on the subject of securing America\nOn nuclear weapons , President Obama reportedly considered changing the nation 's longstanding policy on first use\nDo you support the current policy ?\nMr. Trump , you have two minutes on that\"",
+        "dataset": "US2016",
+        "schemes": [
+            "CauseToEffect"
+        ],
+        "cqs": [
+            {
+                "id": "HOLT_239_19542",
+                "cq": "How does Holt's consideration of changing President Obama's policy on nuclear weapons relate to his questioning of the current policy?"
+            },
+            {
+                "id": "HOLT_239_47998",
+                "cq": "What makes Mr. Trump's opinion on the nation's policy on first use of nuclear weapons relevant to a discussion about securing America?"
+            },
+            {
+                "id": "HOLT_239_65888",
+                "cq": "What evidence does Holt have to suggest that President Obama's consideration of changing the nation's policy on first use is relevant to the current policy?"
+            }
+        ]
+    },
+    "HOLT_94": {
+        "intervention_id": "HOLT_94",
+        "intervention": "HOLT: \"we 're talking about the burden that Americans have to pay , yet you have not released your tax returns\nthe reason nominees have released their returns for decades is so that voters will know if their potential president owes money to\u2014who he owes it to and any business conflicts\nDo n't Americans have a right to know if there are any conflicts of interest\"",
+        "dataset": "US2016",
+        "schemes": [
+            "PopularPractice"
+        ],
+        "cqs": [
+            {
+                "id": "HOLT_94_28031",
+                "cq": "Does the nominee's obligation to disclose tax returns necessarily imply that their financial information is relevant to evaluating their fitness for office?"
+            },
+            {
+                "id": "HOLT_94_36759",
+                "cq": "Does the fact that nominees have released their tax returns for decades necessarily imply a corresponding level of transparency and accountability in their financial dealings?"
+            },
+            {
+                "id": "HOLT_94_24234",
+                "cq": "Does the nominee's decision not to release their tax returns create a situation where Americans are being forced to rely on unverified assumptions about potential conflicts of interest, rather than having direct access to the information?"
+            }
+        ]
+    },
+    "Helen__66": {
+        "intervention_id": "Helen__66",
+        "intervention": "Helen: \"they\u2019re not able to impose the right sort of levels\nand within that bracket I would certainly put families who are living with very high levels of aggression and violence, who are terrorising communities\nSo, yes I\u2019d agree with that\nBut I would also say that there are other families, where actually they do need a great deal of help\nit\u2019s right to intervene\nand actually you can help them get back on their feet and able to parent their children effectively\"",
+        "dataset": "moral_maze_schemes",
+        "schemes": [
+            "PositiveConsequences",
+            "Example"
+        ],
+        "cqs": [
+            {
+                "id": "Helen__66_49232",
+                "cq": "Does Helen's suggestion that families with high levels of aggression and violence are not in need of help, while simultaneously stating that other families do require assistance, provide a clear justification for why she believes the scope of intervention should be limited to only those families?"
+            },
+            {
+                "id": "Helen__66_40420",
+                "cq": "Is it clear that families experiencing high levels of aggression and violence are inherently unable to receive the necessary support, rather than simply needing targeted intervention?"
+            },
+            {
+                "id": "Helen__66_91309",
+                "cq": "How does Helen define a 'family' and what criteria does she use to determine when intervention is necessary versus when it's not?"
+            }
+        ]
+    },
+    "17th_knight__247": {
+        "intervention_id": "17th_knight__247",
+        "intervention": "17th: \"They should get the coverage\nThey are here\nthey work\nthey are a part of this society\nFuck off with your xenophobia\"\n < this message is answering to > \nreaper527: \"now you have a field of democrat presidential candidates supporting it\nrepublicans used to get mocked and laughed at when they said that illegal immigrants would be getting obamacare coverage\"",
+        "dataset": "us2016reddit",
+        "schemes": [
+            "Ad hominem"
+        ],
+        "cqs": [
+            {
+                "id": "17th_knight__247_49303",
+                "cq": "Does the fact that some Republican candidates used to advocate for immigration-friendly policies imply that they now support universal healthcare coverage for undocumented immigrants?"
+            },
+            {
+                "id": "17th_knight__247_11952",
+                "cq": "Does the fact that some Democrats support a particular policy necessarily imply its legitimacy or moral justifiability?"
+            },
+            {
+                "id": "17th_knight__247_14958",
+                "cq": "Does the fact that some Democrats and Republicans have expressed support for providing health care coverage to undocumented immigrants in the past necessarily mean that it is a good policy idea in general?"
+            }
+        ]
+    },
+    "AFCHF_154": {
+        "intervention_id": "AFCHF_154",
+        "intervention": "AFCHF: \"DOT should set maximum tarmac delay trigger.\nIt then should apply to ALL AIRLINES and ALL CLASSES of AIRCRAFT.\nThe airlines need to make a legal committment (contract of carriage).\nDeplaneing without CBP screening IS a viable option.\nAs a military member, I have done this many times during overseas contract flights.\nI realize this is customs rather than airport security, but the concept is the same.\nAllow passengers to deplane during gate holds,\nbut require them to remain in the immediate area.\nThis is no different than an openended delay prior to boarding.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "AFCHF_154_65728",
+                "cq": "Does requiring airlines to deplane passengers for CBP screening at gates, instead of the tarmac, align with the principles of airline safety and security protocols already in place?"
+            },
+            {
+                "id": "AFCHF_154_87081",
+                "cq": "Does deplaning without CBP screening, even if done during a gate hold and with certain restrictions, constitute a viable alternative to the proposed maximum tarmac delay trigger?"
+            },
+            {
+                "id": "AFCHF_154_45486",
+                "cq": "How can requiring airlines to screen departing passengers during gate holds be equivalent to allowing them to deplane without any screening?"
+            }
+        ]
+    },
+    "AK-traveler_186": {
+        "intervention_id": "AK-traveler_186",
+        "intervention": "AK-traveler: \"Airlines should not be allowed to charge for items necessary because of factors out of the passengers control.\nSeat size and configuration (arm and leg room) should be addressed as a health issue.\nThe inflight magazines show exercises passengers should do at their seats to prevent deep vein thrombosis\nbut there isn't enough room to do them.\nAnd finally, I think it is unfair if not criminal and discriminatory to charge exorbinant fees for carrying your pet onboard with you.\nThe carrier is handled as a carry on bag solely by me,\nthe airline doesn't do anything\nyet they carage $100 or more each way.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "AK-traveler_186_67333",
+                "cq": "How does the airline determine what expenses are 'necessary' versus those that are discretionary, and how do they justify charging passengers for items that can be deemed a health issue?"
+            },
+            {
+                "id": "AK-traveler_186_21888",
+                "cq": "Does the airline's policy of charging for these items not being out of their control imply that they are allowed to charge for essential items that are within their control?"
+            },
+            {
+                "id": "AK-traveler_186_99904",
+                "cq": "Does not charging for carry-on pet fees not disproportionately harm economically disadvantaged travelers, who may be less able to afford the additional expense?"
+            }
+        ]
+    },
+    "AllergyDad_200": {
+        "intervention_id": "AllergyDad_200",
+        "intervention": "AllergyDad: \"As a parent of a child with severe lifethreatening allergies to peanuts and treenuts, the thought of getting on an airplane today is frightening.\nSo much so, that it is strictly avoided.\nIt is not worth risking my child's life to fly on an airplane.\nA recent study reveals that 1 in 3 airplane reactions was anaphylaxis\n(Allergic Living Magazine).\nI don't like those odds.\nThe substitution of cashews, walnuts, or other tree nuts is not a viable option,\nas they pose the same risks as peanuts.\nA large number of people who are allergic to peanuts are also allergic to tree nuts,\nplus they are typically processed in a plant that also processes peanuts.\nIf there were a ban on peanut and tree nut products on flights, it would open the world to my son.\nHe didn't choose to be allergic,\nbut he is.\nSo true.\nWe are not talking about sensitivity, being offended, not liking the smell, etc.;\nwe are talking about life.\nThere are a lot of things that are banned from airplanes that can cause death to someone.\nIn the case of my son, a peanut can have the same result.\nI urge the DOT to issue the ban,\nand make traveling safe for everyone.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample",
+            "ERExample",
+            "ERExample"
+        ],
+        "cqs": [
+            {
+                "id": "AllergyDad_200_31552",
+                "cq": "Does the argument assume that the risk of anaphylaxis from a peanut or tree nut on an airplane is comparable to other known airborne hazards?"
+            },
+            {
+                "id": "AllergyDad_200_61973",
+                "cq": "Is it reasonable to conclude that a blanket ban on all peanut and tree nut products on flights is necessary based solely on the risk of anaphylaxis associated with peanuts, or are there other factors at play that would be mitigated by such a ban?"
+            },
+            {
+                "id": "AllergyDad_200_72694",
+                "cq": "Does the proposed ban on peanut and tree nut products on flights necessarily follow from the fact that there is a risk of anaphylaxis associated with these allergens?"
+            }
+        ]
+    },
+    "AngelComa__638": {
+        "intervention_id": "AngelComa__638",
+        "intervention": "AngelComa: \"Funny, I thought he did good\nThey get timed responses\nhis plan is all there\nHe can't talk about everything in the plan\nMust be how used you are to politicians saying things and not having a plan\"\n < this message is answering to > \nPunchee: \"That was a weird moment in American debate history. \"Yo check my website. Shit's on there.\"\"",
+        "dataset": "us2016reddit",
+        "schemes": [
+            "Ad hominem"
+        ],
+        "cqs": [
+            {
+                "id": "AngelComa__638_98059",
+                "cq": "Does Punchee's response demonstrate an understanding of the limitations of politicians' statements versus their actual plans?"
+            },
+            {
+                "id": "AngelComa__638_86657",
+                "cq": "Is Punchee's claim that AngelComa is overly familiar with politicians' lack of preparedness justified or based on a misleading generalization?"
+            },
+            {
+                "id": "AngelComa__638_88870",
+                "cq": "Is it reasonable to assume that Punchee is being truthful about having evidence on his website to support his claim, or could he be being sarcastic?"
+            }
+        ]
+    },
+    "Antanagoge_104": {
+        "intervention_id": "Antanagoge_104",
+        "intervention": "Antanagoge: \"The airline industry can not be left to selfmonitor this.\nStudies have shown that the quality of information from airline customer service department is highly variable and, in some cases, incomplete or inaccurate.\nThe psychological effects of this, combined with the risk of death, are significant.\nStories told by families of vacations never taken, of midair retraction of the promise by the airline that peanuts would not be served, of public humiliation of peanutallergic individuals and their family by airline staff, and of serious reactions in flight, abound.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample"
+        ],
+        "cqs": [
+            {
+                "id": "Antanagoge_104_35577",
+                "cq": "Does Antanagoge's conclusion that the airline industry cannot be left to self-monitor follow necessarily and logically from the presented evidence about the variability and potential inaccuracies of customer service information?"
+            },
+            {
+                "id": "Antanagoge_104_43876",
+                "cq": "Does Antanagoge's conclusion that the airline industry cannot be left to self-monitor necessarily follow from the variability and potential inaccuracies of customer service information?"
+            },
+            {
+                "id": "Antanagoge_104_18058",
+                "cq": "Does Antanagoge have sufficient evidence to conclude that the airline industry is incapable of self-monitoring, rather than simply demonstrating a few isolated incidents or anecdotal stories?"
+            }
+        ]
+    },
+    "Antanagoge_111": {
+        "intervention_id": "Antanagoge_111",
+        "intervention": "Antanagoge: \"The opponents of accommodations are well aware that studies have been published in the journals of the American Academy of Allergy Asthma and Immunology, the American Medical Association, and the American College of Allergy, Asthma and Immunology, not to mention medical associations in other countries.\nThey can purchase full text access for themselves,\nbut they already have a prejudgment against the researchers and their conclusions,\nso why bother?\nThere was a moment on the board when the moderators asked for a discussion of a hypothetical compromise position.\nBut those demanding funerals before entertaining even a compromise position muted that.\nThat is sad.\nThere are several others on the board with some good reasonable ideas.\nIt's fairly clear that meanspiritedness abounds, here\nprobably as a result of emphasis in current American politics on the potential for influence of minority interests and needs.\nBut some of the people on this board  calling for funerals before advancing the discussion  give new meaning to the Founders' fears of the tyranny of the majority.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExpertOpinion"
+        ],
+        "cqs": [
+            {
+                "id": "Antanagoge_111_27567",
+                "cq": "Does Antanagoge's assumption that those opposed to accommodations have a prejudged position against researchers and their conclusions, despite having access to the same studies, not violate Occam's Razor by overcomplicating a more likely explanation of their opposition?"
+            },
+            {
+                "id": "Antanagoge_111_17239",
+                "cq": "Does Antanagoge's assumption that those who oppose accommodations are motivated by a prejudgment against researchers and their conclusions, rather than by the need for accommodations based on individual health needs, warrant scrutiny?"
+            },
+            {
+                "id": "Antanagoge_111_99715",
+                "cq": "Does Antanagoge's argument that opponents of accommodations are dismissive solely because they have a prejudgment against researchers and conclusions, rather than considering the merits of those arguments?"
+            }
+        ]
+    },
+    "Antanagoge_227": {
+        "intervention_id": "Antanagoge_227",
+        "intervention": "Antanagoge: \"Peanut allergens are indeed present in the recirculated air in the aircraft cabin.\nThis study, \"Recovery of peanut allergens from ventilation filters of commercial airliners,\" ? conducted \"to help address whether peanutsensitive travelers are exposed to peanut aeroallergans during airline flights on which peanuts are served\" ? resulted in the conclusion that \"that peanut allergens can be eluted from ventilation system filters in commercial airliners. The most likely source of these allergens are the peanuts served during flights.\" ?\nhttp://download.journals.elsevierhealth.com/pdfs/journals/00916749/PIIS0091674996811791.pdf\"\n < this message is answering to > \nMulder: \"Apparently Samsmom is the ignorant one.\nShe attacks what she clearly does not understand.\nIf her child has a true peanut allergy that is so severe, he shouldn't be flying,\nsince her argument is that any contact with peanut dust or oil would cause anaphylactic shock.\nSince that possibility is very real even outside an airline cabin,\nshe's making her own argument for living in a bubble.\nFacts are stubborn things,\nand one of those facts is that the air onboard an airliner is cleaner than in most public buildings,\nso there's very little, if any, real risk involved in flying on a jet where peanuts have been consumed before or are even being served now.\nAnother stubborn fact is that you can be desensitized to peanut allergies,\nbut if you're unwilling to do it, don't blame others for not bending to your petty fears.\nNobody has studied this subject,\nso there's no hard data.\nBut we do know that the air onboard an airliner is much cleaner than people think.\nOnly one confirmed death onboard an airliner has been reported,\nbut it may have been as far back as 1998,\nand it was an Eastern European airline.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERAdHominem",
+            "ERExpertOpinion"
+        ],
+        "cqs": [
+            {
+                "id": "Antanagoge_227_83169",
+                "cq": "Does Mulder's argument that since peanutsensitive travelers can be desensitized to peanut allergies, they should not restrict themselves to flying only in 'clean' environments, assume that the risks of anaphylactic shock from airborne peanut allergens are solely dependent on the level of exposure to such allergens?"
+            },
+            {
+                "id": "Antanagoge_227_36522",
+                "cq": "Is the conclusion that peanuts served on flights are the primary source of peanut allergens in recirculated air, based solely on the study's findings, or is it also influenced by the assumption that airline cabins are 'clean' and thus eliminating other possible sources of allergens?"
+            },
+            {
+                "id": "Antanagoge_227_78988",
+                "cq": "Is it reasonable to assume that the study's conclusions about the presence of peanut allergens in recirculated air on commercial airliners are not influenced by the fact that the study's authors may have had a vested interest in showing that peanutsensitive travelers are not disproportionately exposed to peanut aeroallergans?"
+            }
+        ]
+    },
+    "Antanagoge_239": {
+        "intervention_id": "Antanagoge_239",
+        "intervention": "Antanagoge: \"Is it really possible that all blindly partisan advocates of the peanut in this context eat peanuts and only peanuts?\nThat they are overtaken by such a compulsion to consume peanut while flying that they lose sight of all other priorities?\nThat they are unable to stop using their peanut  the one dragon they can't put to sleep  to create a sense of pleasure and comfort?\nThese sound like essential symptoms of disordered eating and addiction, which, in all likelihood, derive from some longstanding issues.\nThe remedy is to avoid the substance in question.... \"just say 'no'\" ? to your peanuts.\nServing/eating peanuts on airplanes has risen to the level of a public health menace, as had tobacco smoking.\nAgain, the only prudent course of action is to require that distribution of peanut on airplanes be discontinued.\"\n < this message is answering to > \nhowie: \"Mulder is right on point.\nMost food allergies are completely imagined.\nAn overly anxious parent gets it in her head that little jimmy might have had a hive after someone had peanuts in his vicinity,\nand now he's \"deathly allergic\".\nHas ANYONE ever actually died on a plane from peanuts (other than by choking on them)?\nI sincerely doubt it.\nPeanuts are incredibly nutritious,\nalmost universally enjoyed,\nand quite filling in a small serving.\nSimply put, pound for pound there is no better food on the planet.\nThis whole antipeanut hysteria is ridiculous!\nLeave my peanuts alone!\nIf you are one of the incredibly rare people that have an actual medically diagnosed severe allergy to this wonderful food, then you better never leave the house because peanuts are everywhere.\nYou certainly should not be flying.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERAdHominem"
+        ],
+        "cqs": [
+            {
+                "id": "Antanagoge_239_70159",
+                "cq": "Does Antanagoge's conclusion that serving peanuts on airplanes constitutes a public health menace solely based on his observation of the symptoms described, actually follow from his premises about peanut consumption and addiction?"
+            },
+            {
+                "id": "Antanagoge_239_75976",
+                "cq": "Is it a valid conclusion that prohibiting peanuts on airplanes is necessary solely because there may be cases of individuals with severe peanut allergies, when the benefits of allowing peanuts for most people outweigh these risks?"
+            },
+            {
+                "id": "Antanagoge_239_24747",
+                "cq": "Is Antanagoge's argument that a public health menace requires distribution of peanuts on airplanes to be discontinued based solely on the potential for peanut allergies, or does it account for other possible risks associated with in-flight peanut consumption?"
+            }
+        ]
+    },
+    "Bill_106": {
+        "intervention_id": "Bill_106",
+        "intervention": "Bill: \"I run a retail business.\nIf I changed my prices every few minutes or hours like the airline does or charge my customers different prices on the same day.\nThey would probably never come back and call the better business bureau.\nAnd they wonder why so much distrust and angry customers.\nRecently I wrote to one airline that had a ticket price of around $198. but then listed the taxes at something like $400.00 extra.\nI told them it was Bait and Add on.\nSimilar to some retail stores that Bait customers with low price and then Switch to higher priced goods.\nIt is illegal and called Bait and Switch.\nThe airlines or some ticket sellers are guilty of lies.\nTaxes are never higher than the price of the ticket.\nI spend hours trying to buy a ticket without getting ripped off.\nIt should not be this difficult.\nAnd one way fare should be half of a RT not higher than RT.\nhey force us to buy RT and then use only the one way portion.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample",
+            "ERExample",
+            "ERExample",
+            "ERExample",
+            "ERExample"
+        ],
+        "cqs": [
+            {
+                "id": "Bill_106_41010",
+                "cq": "Does Bill's observation that an airline's practice of adding high taxes to a ticket price constitutes 'Bait and Switch' necessarily imply that the airline is intentionally trying to deceive customers, or could there be a legitimate explanation for the tax structure?"
+            },
+            {
+                "id": "Bill_106_24105",
+                "cq": "Is it possible that Bill is not accusing airlines of Bait and Switch tactics when they list separate taxes for ticket prices, rather than suggesting that airlines are intentionally adding on extra fees?"
+            },
+            {
+                "id": "Bill_106_55001",
+                "cq": "Does Bill's claim that airlines or ticket sellers are engaging in bait and switch tactics by adding excessive taxes to already high prices constitute a legitimate criticism, given his own experience with retail businesses employing similar pricing strategies?"
+            }
+        ]
+    },
+    "CF_29": {
+        "intervention_id": "CF_29",
+        "intervention": "CF: \"Yes, but what I'm saying is we shouldn\u2019t encourage it for ourselves either\nThat\u2019s my point.\nAnd then finally, if I could just ask you, there\u2019s a danger I think when you kind of say, \u201cThe poor are the ones who suffer. The rich are the bad guys.\u201d\nIt is the case that some of the greatest examples of social progress over the years have come from well-off rich people, banks and so on, investing productively\nIsn\u2019t the problem that the only thing the banks have done is kind of consumer credit?\nWhat they should have been doing, what they could be doing, and what they haven\u2019t got the nerve to do, is not loaning enough\nThey should actually be taking more risk and giving more money out\"",
+        "dataset": "moral_maze_schemes",
+        "schemes": [
+            "PracticalReasoning",
+            "Example",
+            "PopularOpinion"
+        ],
+        "cqs": [
+            {
+                "id": "CF_29_60219",
+                "cq": "Does the argument's emphasis on the banks' responsibility to take greater risks and invest more assume that their current consumer credit activities are entirely benign?"
+            },
+            {
+                "id": "CF_29_19621",
+                "cq": "Doesn't the speaker's criticism of banks for not loaning enough money to underprivileged groups assume that these groups are capable of making smart investment decisions, when there is no evidence provided to support this claim?"
+            },
+            {
+                "id": "CF_29_63085",
+                "cq": "Is it possible to distinguish between the banks' lack of risk-taking and their actual motivations, such as maximizing profits for shareholders?"
+            }
+        ]
+    },
+    "CF_46": {
+        "intervention_id": "CF_46",
+        "intervention": "CF: \"Yes, but I'm suggesting that that was a political strategy, a way of covering things up\nAll I'm saying is that I think the people who took the sub-prime mortgages were the beneficiaries \u2013 and now the sufferers \u2013 of what I was saying is a policy\nWhen you think about it now, I actually find it frustrating when I'm trying to talk to people about the real state the economy is in\nAnd people sort of assume like everything can just carry on, and all that you need is a kind of credit based consumer thing\n\u201cWell, do we have to have cuts? Do we have to have this? Do we have to have that?\u201d\nAnd you do actually want to say, \u201cMoney doesn\u2019t grow on trees.\u201d\"",
+        "dataset": "moral_maze_schemes",
+        "schemes": [
+            "CauseToEffect"
+        ],
+        "cqs": [
+            {
+                "id": "CF_46_36714",
+                "cq": "Is the speaker's assertion that they were trying to criticize the economic system, rather than advocate for austerity measures, actually a justification or an evasion of their own role in promoting such policies?"
+            },
+            {
+                "id": "CF_46_91928",
+                "cq": "Is the implication that those who benefited from sub-prime mortgages are now suffering as a result of their own actions a logical consequence, rather than an unintended political strategy?"
+            },
+            {
+                "id": "CF_46_54658",
+                "cq": "Is the argument that the economist was trying to convey a critique of the consequences of economic policies rather than an endorsement of those policies?"
+            }
+        ]
+    },
+    "CLINTON_103": {
+        "intervention_id": "CLINTON_103",
+        "intervention": "CLINTON: \"I think you 've seen another example of bait-and- switch here\nFor 40 years , everyone running for president has released their tax returns\nYou can go and see nearly , I think , 39 , 40 years of our tax returns\neveryone has done it\nWe know the IRS has made clear there is no prohibition on releasing it when you 're under audit\nyou 've got to ask yourself , why wo n't he release his tax returns ?\nthere may be a couple of reasons\nFirst , maybe he 's not as rich as he says he is\nSecond , maybe he 's not as charitable as he claims to be\nmaybe he does n't want the American people , all of you watching tonight , to know that he 's paid nothing in federal taxes\nthe only years that anybody 's ever seen were a couple of years when he had to turn them over to state authorities when he was trying to get a casino license\nthey showed he did n't pay any federal income tax\"",
+        "dataset": "US2016",
+        "schemes": [
+            "CircumstantialAdHominem",
+            "CircumstantialAdHominem",
+            "VerbalClassification"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_103_48707",
+                "cq": "Does the argument that Clinton's refusal to release his tax returns necessarily imply dishonesty or financial issues about him, given the fact that he has released nearly 40 years of state tax returns?"
+            },
+            {
+                "id": "CLINTON_103_41377",
+                "cq": "Does Clinton's assumption that Donald Trump is unique in not releasing his tax returns account for the fact that nearly 40 years of presidential candidates' tax returns are available, while Clinton has only released a handful?"
+            },
+            {
+                "id": "CLINTON_103_26843",
+                "cq": "If Clinton's tax returns are indeed under audit, why does he claim that releasing them would be impossible according to the IRS's own guidelines?"
+            }
+        ]
+    },
+    "CLINTON_123_1": {
+        "intervention_id": "CLINTON_123_1",
+        "intervention": "CLINTON: \"Race remains a significant challenge in our country\nUnfortunately, race still determines too much\noften determines where people live\ndetermines what kind of education in their public schools they can get,\nit determines how they're treated in the criminal justice system\nWe've just seen those two tragic examples in both Tulsa and Charlotte\nwe've got to do several things at the same time\nWe have to restore trust between communities and the police\nWe have to work to make sure that our police are using the best training, the best techniques, that they're well prepared to use force only when necessary\nEveryone should be respected by the law, and everyone should respect the law\nRight now, that's not the case in a lot of our neighborhoods\nI have, ever since the first day of my campaign, called for criminal justice reform\"",
+        "dataset": "US2016",
+        "schemes": [
+            "CauseToEffect",
+            "Example",
+            "Example",
+            "Example",
+            "Consequences",
+            "Example"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_123_1_59271",
+                "cq": "Does Clinton's assertion that addressing systemic racism requires simultaneously restoring trust between communities and the police, as well as implementing criminal justice reform, not be an overly simplistic or overly broad solution to a complex problem?"
+            },
+            {
+                "id": "CLINTON_123_1_25621",
+                "cq": "Is the association between racial disparities in education and treatment by law enforcement being taken into account when arguing that addressing one issue will automatically solve the problem of racism?"
+            },
+            {
+                "id": "CLINTON_123_1_49668",
+                "cq": "Does Clinton's claim that 'race determines where people live' and 'determines what kind of education in their public schools they can get' are being overstated or misrepresented, and if so, by how much?"
+            }
+        ]
+    },
+    "CLINTON_123_2": {
+        "intervention_id": "CLINTON_123_2",
+        "intervention": "CLINTON: \"I've laid out a platform that I think would begin to remedy some of the problems we have in the criminal justice system\nwe also have to recognize, in addition to the challenges that we face with policing, there are so many good, brave police officers who equally want reform\nwe have to bring communities together in order to begin working on that as a mutual goal\nwe've got to get guns out of the hands of people who should not have them\nThe gun epidemic is the leading cause of death of young African- American men, more than the next nine causes put together\nwe have to do two things\nWe have to restore trust\nWe have to work with the police\nWe have to make sure they respect the communities and the communities respect them\nwe have to tackle the plague of gun violence\nwhich is a big contributor to a lot of the problems that we're seeing today\"",
+        "dataset": "US2016",
+        "schemes": [
+            "PositionToKnow",
+            "PositionToKnow",
+            "PracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_123_2_88665",
+                "cq": "How can Clinton's assertion that the gun epidemic is the leading cause of death of young African-American men be supported by empirical evidence?"
+            },
+            {
+                "id": "CLINTON_123_2_54004",
+                "cq": "How can Clinton's proposed solution to gun violence, which is supposedly leading cause of death for young African American men, actually address the deeper social and economic factors contributing to this issue?"
+            },
+            {
+                "id": "CLINTON_123_2_30395",
+                "cq": "Does acknowledging the significant impact of guns on the death rate among young African-American men necessarily lead to a conclusion that stricter gun control measures are required?"
+            }
+        ]
+    },
+    "CLINTON_130_1": {
+        "intervention_id": "CLINTON_130_1",
+        "intervention": "CLINTON: \"I've heard Donald say this at his rallies\nit's really unfortunate that he paints such a dire negative picture of black communities in our country\nthe vibrancy of the black church\nthe black businesses that employ so many people\nthe opportunities that so many families are working to provide for their kids\nThere's a lot that we should be proud of and we should be supporting and lifting up\nwe do always have to make sure we keep people safe\nThere are the right ways of doing it\nthen there are ways that are ineffective\nStop-and-frisk was found to be unconstitutional\nin part, because it was ineffective\nIt did not do what it needed to do\nI believe in community policing\nin fact, violent crime is one-half of what it was in 1991\nProperty crime is down 40 percent\nWe just don't want to see it creep back up\nWe've had 25 years of very good cooperation\nthere were some problems\nsome unintended consequences\nToo many young African-American and Latino men ended up in jail for nonviolent offenses\"",
+        "dataset": "US2016",
+        "schemes": [
+            "VerbalClassification",
+            "Example",
+            "Consequences",
+            "Example",
+            "Example",
+            "Example",
+            "Example",
+            "Alternatives",
+            "CauseToEffect"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_130_1_55470",
+                "cq": "Does Clinton's criticism of stop-and-frisk accurately account for the broader context and systemic issues contributing to mass incarceration among young African-American and Latino men?"
+            },
+            {
+                "id": "CLINTON_130_1_59644",
+                "cq": "Is it reasonable to assume that because a policy has been deemed unconstitutional, its ineffectiveness is the sole reason for its rejection?"
+            },
+            {
+                "id": "CLINTON_130_1_29401",
+                "cq": "Is it reasonable to conclude that supporting community policing solely because of its effectiveness, particularly when considering alternative methods like stop-and-frisk, is a morally justifiable reason to disagree with and criticize policies implemented by Donald Trump?"
+            }
+        ]
+    },
+    "CLINTON_130_2": {
+        "intervention_id": "CLINTON_130_2",
+        "intervention": "CLINTON: \"it's just a fact that if you're a young African-American man and you do the same thing as a young white man, you are more likely to be arrested, charged, convicted, and incarcerated\nwe've got to address the systemic racism in our criminal justice system\nWe cannot just say law and order\nwe have to come forward with a plan that is going to divert people from the criminal justice system\ndeal with mandatory minimum sentences, which have put too many people away for too long for doing too little\nWe need to have more second chance programs\nI'm glad that we're ending private prisons in the federal system\nI want to see them ended in the state system\nYou shouldn't have a profit motivation to fill prison cells with young Americans\nhere are some positive ways we can work on this\nI believe strongly that commonsense gun safety measures would assist us\nRight now\u2014and this is something Donald has supported, along with the gun lobby\u2014right now, we've got too many military- style weapons on the streets\nthis is something Donald has supported, along with the gun lobby\nIn a lot of places, our police are outgunned\nWe need comprehensive background checks\nwe need to keep guns out of the hands of those who will do harm\nwe finally need to pass a prohibition on anyone who's on the terrorist watch list from being able to buy a gun in our country\nIf you're too dangerous to fly, you are too dangerous to buy a gun\nthere are things we can do\nwe ought to do it in a bipartisan way\"",
+        "dataset": "US2016",
+        "schemes": [
+            "CauseToEffect",
+            "VerbalClassification",
+            "CauseToEffect",
+            "Consequences",
+            "Example",
+            "Sign",
+            "Example",
+            "PracticalReasoning",
+            "PracticalReasoning",
+            "PracticalReasoning",
+            "Example",
+            "PracticalReasoning",
+            "Example",
+            "PracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_130_2_78617",
+                "cq": "Is it possible that addressing systemic racism in the criminal justice system, as proposed by Clinton, would necessarily lead to a reduction in the number of arrests, charges, convictions, and incarcerations of young African-American men?"
+            },
+            {
+                "id": "CLINTON_130_2_65106",
+                "cq": "How does Clinton's assertion that commonsense gun safety measures would assist with addressing systemic racism in the criminal justice system hold up to scrutiny?"
+            },
+            {
+                "id": "CLINTON_130_2_99695",
+                "cq": "Does Clinton's assertion that 'if you're a young African-American man and you do the same thing as a young white man, you are more likely to be arrested, charged, convicted, and incarcerated' constitute a genuine fact or an unsubstantiated claim based on personal experience or anecdotal evidence?"
+            }
+        ]
+    },
+    "CLINTON_147": {
+        "intervention_id": "CLINTON_147",
+        "intervention": "CLINTON: \"New York has done an excellent job\nI give credit across the board going back two mayors, two police chiefs\nit has worked\nother communities need to come together to do what will work\none murder is too many\nit is important that we learn about what has been effective\nnot go to things that sound good that really did not have the kind of impact that we would want\nWho disagrees with keeping neighborhoods safe\nno one should disagree about respecting the rights of young men who live in those neighborhoods\nwe need to do a better job of working, again, with the communities, faith communities, business communities, as well as the police to try to deal with this problem\"",
+        "dataset": "US2016",
+        "schemes": [
+            "PopularOpinion",
+            "PopularOpinion",
+            "PopularPractice",
+            "PopularPractice",
+            "PracticalReasoning",
+            "Consequences"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_147_43861",
+                "cq": "What makes 'working' with communities, faith communities, business communities, and law enforcement effective in addressing violent crime rates?"
+            },
+            {
+                "id": "CLINTON_147_66837",
+                "cq": "Can it truly be said that New York's success in reducing murders is solely due to the efforts of the city, and not also the result of other factors such as external policies or demographic changes?"
+            },
+            {
+                "id": "CLINTON_147_29312",
+                "cq": "Does Mayor Clinton's argument that other communities need to adopt New York's approach because it has worked assume that the effectiveness of this approach is guaranteed by its success in one specific community?"
+            }
+        ]
+    },
+    "CLINTON_17": {
+        "intervention_id": "CLINTON_17",
+        "intervention": "CLINTON: \"let 's stop for a second and remember where we were eight years ago\nWe had the worst financial crisis , the Great Recession\nthe worst since the 1930s\n slashed taxes on the wealthy\nfailed to invest in the middle class\ntook their eyes off of Wall Street\ncreated a perfect storm\nwas in large part because of tax policies\nDonald was one of the people who rooted for the housing crisis\n...\n it did collapse\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Example",
+            "Example",
+            "CauseToEffect",
+            "Example",
+            "Consequences"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_17_43653",
+                "cq": "How does Clinton's statement that Donald Trump 'rooted for' the housing crisis, as if to suggest he caused or wished it to happen, accurately reflect the historical evidence of Trump's economic policies during that time period?"
+            },
+            {
+                "id": "CLINTON_17_43486",
+                "cq": "How can we be certain that Clinton's understanding of the causes of the Great Recession is not based on incomplete or biased information, and that he has not distorted the historical record to support his own policy agenda?"
+            },
+            {
+                "id": "CLINTON_17_15769",
+                "cq": "What empirical evidence does Clinton provide to support the claim that the Great Recession was 'in large part because of tax policies'?"
+            }
+        ]
+    },
+    "CLINTON_176_1": {
+        "intervention_id": "CLINTON_176_1",
+        "intervention": "CLINTON: \"cyber security, cyber warfare will be one of the biggest challenges facing the next president\nclearly we're facing at this point two different kinds of adversaries\nThere are the independent hacking groups that do it mostly for commercial reasons to try to steal information that they can use to make money\nincreasingly, we are seeing cyber attacks coming from states, organs of states\nThe most recent and troubling of these has been Russia\nThere's no doubt now that Russia has used cyber attacks against all kinds of organizations in our country\nI am deeply concerned about this\nDonald's very praiseworthy of Vladimir Putin\nPutin is playing a really tough, long game here\none of the things he's done is to let loose cyber attackers to hack into government files, to hack into personal files, hack into the Democratic National Committee\"",
+        "dataset": "US2016",
+        "schemes": [
+            "CauseToEffect",
+            "CauseToEffect",
+            "Example",
+            "Example",
+            "Example",
+            "Example",
+            "Example"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_176_1_51284",
+                "cq": "Is the claim that Russia's cyber attacks constitute a state-sponsored attack, rather than merely commercial hacking, supported by sufficient evidence?"
+            },
+            {
+                "id": "CLINTON_176_1_85881",
+                "cq": "How can Clinton's characterization of Russia as a primary adversary be justified given Donald Trump's reported praise for Vladimir Putin, potentially undermining the credibility of his claims about Russian cyber attacks?"
+            },
+            {
+                "id": "CLINTON_176_1_27746",
+                "cq": "Does Clinton's assertion that Russia's cyber attacks constitute a 'tough, long game' justify the claim that Russia is motivated by anything other than purely commercial or strategic interests?"
+            }
+        ]
+    },
+    "CLINTON_176_2": {
+        "intervention_id": "CLINTON_176_2",
+        "intervention": "CLINTON: \"we recently have learned that, you know, that this is one of their preferred methods of trying to wreak havoc and collect information\nWe need to make it very clear\u2014whether it's Russia, China, Iran or anybody else\u2014the United States has much greater capacity\nwe are not going to sit idly by and permit state actors to go after our information, our private-sector information or our public-sector information\n we're going to have to make it clear that we don't want to use the kinds of tools that we have\nWe don't want to engage in a different kind of warfare\nwe will defend the citizens of this country\n the Russians need to understand that\n they've been treating it as almost a probing, how far would we go, how much would we do\nI was so shocked when Donald publicly invited Putin to hack into Americans\nThat is just unacceptable\"",
+        "dataset": "US2016",
+        "schemes": [
+            "DangerAppeal",
+            "DangerAppeal",
+            "Example"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_176_2_10423",
+                "cq": "Is it reasonable for a country's response to another country's information collection methods to escalate into a denial of similar capabilities?"
+            },
+            {
+                "id": "CLINTON_176_2_15009",
+                "cq": "Is the claim that the United States has a greater capacity to defend against cyberattacks than other nations, as stated by Clinton, based on empirical evidence or is it based on a hypothetical scenario?"
+            },
+            {
+                "id": "CLINTON_176_2_66523",
+                "cq": "Does Clinton's assertion that the US will not engage in a different kind of warfare if it means using tools that the Russians have preferred methods, imply that the US is willing to use similar tools against other nations?"
+            }
+        ]
+    },
+    "CLINTON_186": {
+        "intervention_id": "CLINTON_186",
+        "intervention": "CLINTON: \"there are a number of issues that we should be addressing\nI have put forth a plan to defeat ISIS\nIt does involve going after them online\nwe need to do much more with our tech companies to prevent ISIS and their operatives from being able to use the Internet to radicalize , even direct people in our country and Europe and elsewhere\neventually support our Arab and Kurdish partners to be able to actually take out ISIS in Raqqa\nend their claim of being a Caliphate\nWe 're making progress\nOur military is assisting in Iraq\nwe 're hoping that within the year we 'll be able to push ISIS out of Iraq\nreally squeeze them in Syria\nwe have to be cognizant of the fact that they 've had foreign fighters coming to volunteer for them\nforeign money\nforeign weapons\nwe have to make this the top priority\nI would also do everything possible to take out their leadership\nI was involved in a number of efforts to take out Al Qaida leadership when I was secretary of state\nincluding , of course , taking out bin Laden\nwe need to go after Baghdadi , as well\nmake that one of our organizing principles\nwe 've got to defeat ISIS\nwe 've got to do everything we can to disrupt their propaganda efforts online\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Example",
+            "Example",
+            "VerbalClassification",
+            "Example",
+            "PracticalReasoning",
+            "Values",
+            "Values",
+            "PracticalReasoning",
+            "Values"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_186_67779",
+                "cq": "Can Clinton's plan to defeat ISIS by targeting its online presence and leadership actually lead to a comprehensive and decisive defeat of the group, rather than simply containing or managing it?"
+            },
+            {
+                "id": "CLINTON_186_45633",
+                "cq": "Does Clinton's proposal to defeat ISIS by targeting its online presence and leadership actually address the root cause of ISIS's ability to recruit and radicalize individuals, rather than simply treating its symptoms?"
+            },
+            {
+                "id": "CLINTON_186_10161",
+                "cq": "Can Clinton's proposed plan to defeat ISIS be effective without addressing the root cause of the problem, namely the ideological appeal of extremist ideologies that draw on a broader global network beyond just ISIS itself?"
+            }
+        ]
+    },
+    "CLINTON_193": {
+        "intervention_id": "CLINTON_193",
+        "intervention": "CLINTON: \"I hope the fact-checkers are turning up the volume and really working hard\nDonald supported the invasion of Iraq\n...\nThat is absolutely proved over and over again\n...\nHe actually advocated for the actions we took in Libya\nurged that Gadhafi be taken out\nafter actually doing some business with him one time\nlarger point\u2014and he says this constantly\u2014is George W. Bush made the agreement about when American troops would leave Iraq , not Barack Obama\n the only way that American troops could have stayed in Iraq is to get an agreement from the then-Iraqi government that would have protected our troops\nthe Iraqi government would not give that\nlet 's talk about the question you asked , Lester\"",
+        "dataset": "US2016",
+        "schemes": [
+            "VerbalClassification",
+            "Analogy"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_193_25689",
+                "cq": "Does Clinton's assertion that he, as president, was responsible for determining when American troops would leave Iraq accurately reflect his actual role in the decision-making process?"
+            },
+            {
+                "id": "CLINTON_193_23625",
+                "cq": "Does the argument rely on a correct interpretation of historical events, or does it selectively present information to support its claim about Donald Trump's policies?"
+            },
+            {
+                "id": "CLINTON_193_50200",
+                "cq": "Can we be certain that the agreement to withdraw American troops from Iraq was necessary for their continued presence, given the lack of evidence that the Iraqi government would have provided such protection?"
+            }
+        ]
+    },
+    "CLINTON_199_1": {
+        "intervention_id": "CLINTON_199_1",
+        "intervention": "CLINTON: \"That's the most important part of this\nHow do we prevent attacks\nHow do we protect our people\nwe've got to have an intelligence surge, where we are looking for every scrap of information\nI was so proud of law enforcement in New York, in Minnesota, in New Jersey\n they responded so quickly, so professionally to the attacks that occurred by Rahami\nthey brought him down\nwe may find out more information\n he is still alive\"",
+        "dataset": "US2016",
+        "schemes": [
+            "CauseToEffect",
+            "CauseToEffect",
+            "CauseToEffect",
+            "CauseToEffect"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_199_1_91643",
+                "cq": "Is Clinton's claim that a successful attack by Rahami was thwarted solely because of law enforcement's quick response sufficient to justify calling for an 'intelligence surge'?"
+            },
+            {
+                "id": "CLINTON_199_1_33804",
+                "cq": "Is it reasonable to assume that an intelligence surge would necessarily lead to preventing all future attacks?"
+            },
+            {
+                "id": "CLINTON_199_1_53763",
+                "cq": "Does Clinton's emphasis on law enforcement's quick response to Rahami's attack necessarily imply that such a surge would be effective against a hypothetical terrorist threat?"
+            }
+        ]
+    },
+    "TRUMP_240_2": {
+        "intervention_id": "TRUMP_240_2",
+        "intervention": "TRUMP: \"by the way , another one powerful is the worst deal I think I 've ever seen negotiated that you started is the Iran deal\nIran is one of their biggest trading partners\nIran has power over North Korea\nwhen they made that horrible deal with Iran , they should have included the fact that they do something with respect to North Korea\nthey should have done something with respect to Yemen and all these other places\nwhen asked to Secretary Kerry , why did n't you do that ?\nWhy did n't you add other things into the deal ?\nOne of the great giveaways of all time , of all time , including $ 400 million in cash\nNobody 's ever seen that before\nThat turned out to be wrong\nIt was actually $ 1.7 billion in cash\nobviously , I guess for the hostages\nIt certainly looks that way\nThis is one of the worst deals ever made by any country in history\nyou say to yourself , why did n't they make the right deal ?\nThe deal with Iran will lead to nuclear problems\nAll they have to do is sit back 10 years , and they do n't have to do much\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Consequences",
+            "Consequences",
+            "GenericAdHominem",
+            "CircumstantialAdHominem",
+            "PracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "TRUMP_240_2_84582",
+                "cq": "Did Trump consider the potential consequences of withholding concessions from Iran and North Korea in the negotiating process, rather than simply criticizing the deal after it was made?"
+            },
+            {
+                "id": "TRUMP_240_2_78418",
+                "cq": "Does Trump's criticism of the Iran deal solely focus on its potential to lead to nuclear problems, or does he also consider other factors such as the geopolitical implications of not including measures related to North Korea and Yemen?"
+            },
+            {
+                "id": "TRUMP_240_2_44224",
+                "cq": "Does Trump's criticism of the Iran deal as being worse than other deals because it was not explicitly connected to North Korea and other countries, take into account the lack of any explicit connections or concessions made by the US in those regions?"
+            }
+        ]
+    },
+    "TRUMP_249": {
+        "intervention_id": "TRUMP_249",
+        "intervention": "TRUMP: \"I will go very quickly\nI will tell you that Hillary will tell you to go to her website and read all about how to defeat ISIS\nwhich she could have defeated by never having it\nget going in the first place\nRight now , it 's getting tougher and tougher to defeat them\nthey 're in more and more places\nmore and more states\nmore and more nations\nit 's a big problem\nas far as Japan is concerned , I want to help all of our allies\nwe are losing billions and billions of dollars\nWe can not be the policemen of the world\nWe can not protect countries all over the world\"",
+        "dataset": "US2016",
+        "schemes": [
+            "CauseToEffect",
+            "CauseToEffect",
+            "CauseToEffect",
+            "GenericAdHominem",
+            "VerbalClassification"
+        ],
+        "cqs": [
+            {
+                "id": "TRUMP_249_90077",
+                "cq": "Does Trump's argument that the US should not intervene to defeat ISIS because it is a big problem, and that it would be better for Japan if the US didn't protect other countries, logically follow from his claim that Hillary's website provided a clear solution to defeating ISIS in the first place?"
+            },
+            {
+                "id": "TRUMP_249_81191",
+                "cq": "How does Trump's statement about Hillary's claim being false regarding defeating ISIS by not getting involved in the first place align with his claim that it is getting tougher to defeat ISIS?"
+            },
+            {
+                "id": "TRUMP_249_22415",
+                "cq": "Does Trump's argument about defeating ISIS and protecting allies actually rely on Hillary Clinton's past actions or his own policies?"
+            }
+        ]
+    },
+    "TRUMP_251": {
+        "intervention_id": "TRUMP_251",
+        "intervention": "TRUMP: \"they 're not paying us what we need\nshe 's got no business ability\nWe need heart\nWe need a lot of things\nyou have to have some basic ability\nsadly , she does n't have that\nAll of the things that she 's talking about could have been taken care of during the last 10 years , let 's say , while she had great power\nthey were n't taken care of\nif she ever wins this race , they wo n't be taken care of\nshe does n't have a presidential look\n...\nshe does n't say that\"",
+        "dataset": "US2016",
+        "schemes": [
+            "CircumstantialAdHominem",
+            "CircumstantialAdHominem",
+            "CircumstantialAdHominem",
+            "CircumstantialAdHominem"
+        ],
+        "cqs": [
+            {
+                "id": "TRUMP_251_36078",
+                "cq": "Is it reasonable to assume that simply having power for 10 years is a sufficient condition for addressing all problems that arise during an election campaign?"
+            },
+            {
+                "id": "TRUMP_251_44354",
+                "cq": "Does Trump's assertion that a female candidate lacks basic ability to be president solely based on her gender, rather than any concrete evidence or qualifications, constitute sexism?"
+            },
+            {
+                "id": "TRUMP_251_59420",
+                "cq": "Is it logically consistent to claim that a candidate's lack of experience and ability is not a significant issue, yet also implies that they would have handled the same issues differently in the past?"
+            }
+        ]
+    },
+    "TRUMP_253": {
+        "intervention_id": "TRUMP_253",
+        "intervention": "TRUMP: \"She does n't have the look\nShe does n't have the stamina\nI said she does n't have the stamina\nI do n't believe she does have the stamina\nTo be president of this country , you need tremendous stamina\nI just do n't think she has the presidential look\nYou asked me a question\nYou have to be able to negotiate our trade deals\nYou have to be able to negotiate , that 's right , with Japan , with Saudi Arabia\nAll you have to do is speak to them\nWait\n...\nDid you ask me a question\ncan you imagine , we 're defending Saudi Arabia\nwith all of the money they have , we 're defending them , and they 're not paying\nYou have so many different things you have to be able to do , and I do n't believe that Hillary has the stamina\nThe world\nHillary has experience , but it 's bad experience\nit 's bad , bad experience\nit 's the Iran deal that you 're so in love with , where we gave them $ 150 billion back\nit 's the Iran deal\nit 's anything you can\u2014name\nyou almost ca n't name a good deal\nShe 's got experience , but it 's bad experience\"",
+        "dataset": "US2016",
+        "schemes": [
+            "GenericAdHominem"
+        ],
+        "cqs": [
+            {
+                "id": "TRUMP_253_45865",
+                "cq": "Does Trump's assertion that Hillary Clinton lacks stamina to be president, as demonstrated by her supposed inability to negotiate with Japan and Saudi Arabia, stem from a reasonable assessment of her qualifications or are they based on an unfair comparison between his own negotiating abilities and hers?"
+            },
+            {
+                "id": "TRUMP_253_62633",
+                "cq": "Does Trump's characterization of Hillary Clinton's appearance and stamina as relevant criteria for evaluating her suitability to be president, rather than issues like foreign policy experience and negotiation skills?"
+            },
+            {
+                "id": "TRUMP_253_79715",
+                "cq": "Is it legitimate to dismiss Hillary's foreign policy experience and presidential qualifications based solely on her stance on a single issue, when such a dismissal seems to rely heavily on personal biases rather than objective evaluation of her policies?"
+            }
+        ]
+    },
+    "TRUMP_26": {
+        "intervention_id": "TRUMP_26",
+        "intervention": "TRUMP: \"She talks about solar panels\nWe invested in a solar company , our country\nThat was a disaster\nThey lost plenty of money on that one\nI 'm a great believer in all forms of energy\nwe 're putting a lot of people out of work\nOur energy policies are a disaster\nOur country is losing so much in terms of energy\n in terms of paying off our debt\nYou ca n't do what you 're looking to do with $ 20 trillion in debt\nThe Obama administration , from the time they 've come in , is over 230 years ' worth of debt\nhe 's topped it\nHe 's doubled it in a course of almost eight years\nseven-and-a-half years , to be semi- exact\nWe have to do a much better job at keeping our jobs\nwe have to do a much better job at giving companies incentives to build new companies or to expand\nthey 're not doing it\nall you have to do is look at Michigan and look at Ohio and look at all of these places where so many of their jobs and their companies are just leaving\nthey 're gone\nYou 've been doing this for 30 years\nWhy are you just thinking about these solutions right now ?\nFor 30 years , you 've been doing it\nnow you 're just starting to think of solutions\nI will bring back jobs\nYou ca n't bring back jobs\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Consequences",
+            "Consequences",
+            "GenericAdHominem",
+            "CircumstantialAdHominem",
+            "GenericAdHominem",
+            "Consequences",
+            "Consequences",
+            "Example"
+        ],
+        "cqs": [
+            {
+                "id": "TRUMP_26_77379",
+                "cq": "Does Trump's assertion that he has only recently started thinking of solutions to create jobs and stimulate economic growth accurately reflect his actual actions and policies as a businessman and public figure over the past 30 years?"
+            },
+            {
+                "id": "TRUMP_26_38044",
+                "cq": "Is Trump's assertion that he is now considering solutions to address America's energy and job issues a credible claim, given his 30-year history of not taking action on these matters?"
+            },
+            {
+                "id": "TRUMP_26_61754",
+                "cq": "Is it possible that Trump's criticism of Obama's energy policies and their alleged failure to bring back jobs is actually a justification for his own administration's energy policies, which he admits have been unsuccessful in terms of job creation?"
+            }
+        ]
+    },
+    "TRUMP_275": {
+        "intervention_id": "TRUMP_275",
+        "intervention": "TRUMP: \"Hillary is hitting me with tremendous commercials\nSome of it 's said in entertainment\nSome of it 's said\nsomebody who 's been very vicious to me , Rosie O'Donnell\nI said very tough things to her\neverybody would agree that she deserves it\nnobody feels sorry for her\nyou want to know the truth ?\nI was going to say something\nI was going to say something extremely rough to Hillary\nto her family\nI can't do it\nI just can't do it\nIt's inappropriate\nIt's not nice\nshe spent hundreds of millions of dollars on negative ads on me\nmany of which are absolutely untrue\nThey're untrue\nthey're misrepresentations\nI don't deserve that\nit's certainly not a nice thing that she's done\nIt's hundreds of millions of ads\nI've spent practically nothing\"",
+        "dataset": "US2016",
+        "schemes": [
+            "PopularPractice",
+            "PopularPractice",
+            "Values"
+        ],
+        "cqs": [
+            {
+                "id": "TRUMP_275_54066",
+                "cq": "Is Trump's characterization of his own conduct in response to Hillary's campaign ads consistent with the standards he expects others to adhere to?"
+            },
+            {
+                "id": "TRUMP_275_21952",
+                "cq": "Does Trump's characterization of his treatment by Rosie O'Donnell and Hillary Clinton accurately reflect a genuine exchange of disagreement, or is it an attempt to shift the focus away from the perceived falsehoods in his opponent's campaign ads?"
+            },
+            {
+                "id": "TRUMP_275_47199",
+                "cq": "Is Trump's assertion that his opponents are not entitled to sympathy because they have engaged in aggressive behavior a justification for his own behavior towards them?"
+            }
+        ]
+    },
+    "TRUMP_279": {
+        "intervention_id": "TRUMP_279",
+        "intervention": "TRUMP: \"I want to make America great again\nWe are a nation that is seriously troubled\nWe 're losing our jobs\nPeople are pouring into our country\nThe other day , we were deporting 800 people\nperhaps they passed the wrong button\nthey pressed the wrong button\nperhaps worse than that\nit was corruption\nthese people that we were going to deport for good reason ended up becoming citizens\nEnded up becoming citizens\nit was 800\nnow it turns out it might be 1,800\nthey do n't even know\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Example",
+            "CauseToEffect",
+            "Sign",
+            "CircumstantialAdHominem",
+            "Sign"
+        ],
+        "cqs": [
+            {
+                "id": "TRUMP_279_49783",
+                "cq": "Is Trump's assertion that deporting people is equivalent to them becoming citizens a logically sound conclusion?"
+            },
+            {
+                "id": "TRUMP_279_14722",
+                "cq": "Does Trump's statement that immigrants who are deported or granted citizenship are 'not even known' accurately reflect the typical circumstances and experiences of these individuals?"
+            },
+            {
+                "id": "TRUMP_279_19075",
+                "cq": "Does Trump's claim that deporting 800 people resulted in them becoming citizens due to 'pressing the wrong button' or 'corruption' provide sufficient evidence to support his assertion that he wants to make America great again?"
+            }
+        ]
+    }
+}

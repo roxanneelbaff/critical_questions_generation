@@ -67,7 +67,7 @@ class ValidatorAgent(Agent):
             argument (str): The argument to which the question belongs.
 
         Returns:
-            dict[str, str]: The evaluation result. Dictionary that contains the key 'is_useful' and 'feedback'.
+            dict[str, str]: The evaluation result. Dictionary that contains the key 'is_valid' and 'feedback'.
         """
         self._initialize(SYSTEM_PROMPT.format(subtask=self.subtask))
 
@@ -91,16 +91,18 @@ class ValidatorAgent(Agent):
             response = self.single_response(messages=self.chat)
             self._add_to_chat(role="assistant", message=response)
 
-            # Process response
+            # Process response which is supposed to be a JSON with the key "is_valid*"
             response_dict: dict = extract_json_from_string(response)
             is_valid = response_dict.get("is_valid", None)
+
+            # If no valid JSON was extracted, retry
             if is_valid == None:
                 retry += 1
                 if retry >= max_retries:
                     evaluation = None
                     print("LLM did not output a valid response. Discarding result.")
                     break
-                self._initialize()
+                self._initialize(SYSTEM_PROMPT.format(subtask=self.subtask))
                 continue
             is_response_valid = True
 

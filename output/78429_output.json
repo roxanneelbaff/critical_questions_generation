@@ -1,0 +1,1824 @@
+{
+    "citizen-s_176": {
+        "intervention_id": "citizen-s_176",
+        "intervention": "citizen-s: \"I strongly support cash compensation for bumping passengers with zeroprice tickets,\nBut to assure adequate compensation and prevent airlines gaming such a requirement,\ncompensation should be at the average (cash) ticket price for that service class on that flight.\nDOT's proposed rule using the lowest fare ticket would encourage airlines to bump those with zeroprice tickets first,\nsince that cost would be lowest.\nAs long as they continue to offer tickets for miles, airlines should not be encouraged to treat passengers using those tickets as secondclass when it comes to bumping.\nThe growing scarcity of actual seats for miles\nsomething that cries out for regulatory intervention\nis bad enough.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "citizen-s_176_40210",
+                "cq": "Does requiring compensation at the average ticket price for that service class on that flight effectively address the potential for airlines to prioritize lower-cost passengers over those with zero-priced tickets?"
+            },
+            {
+                "id": "citizen-s_176_37196",
+                "cq": "Does the proposed rule based on the lowest fare ticket truly account for the potential difference in perceived value between zeroprice and miles tickets?"
+            },
+            {
+                "id": "citizen-s_176_11211",
+                "cq": "Does requiring compensation at the average ticket price for a specific service class on a flight adequately address the potential for airlines to discriminate against passengers using miles, without imposing undue burden or complexity on airlines?"
+            }
+        ]
+    },
+    "darawayne_121": {
+        "intervention_id": "darawayne_121",
+        "intervention": "darawayne: \"The price of fuel doesn't change while I am trying to book a flight.\nMaybe airlines should only be allowed to change prices once a week, or once a day, always at midnight, or something like that.\nIt is extremely frustrating to try to buy a ticket and have availability and/or price change while you are pushing the \"Buy\" button.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "darawayne_121_64825",
+                "cq": "Does the author's frustration with changing flight prices necessarily imply that the price change is the primary cause of inconvenience?"
+            },
+            {
+                "id": "darawayne_121_50717",
+                "cq": "Does the fact that the price of fuel does not change concurrently with booking a flight imply anything about the airlines' pricing strategy?"
+            },
+            {
+                "id": "darawayne_121_26577",
+                "cq": "Does the inconvenience of having dynamic fuel prices at the time of booking necessarily imply that airlines should be restricted from changing prices during this process?"
+            }
+        ]
+    },
+    "darawayne_182": {
+        "intervention_id": "darawayne_182",
+        "intervention": "darawayne: \"This is the same as bumping and should be compensated (punishment to the airlines) as such.\nIt is not just the five hours, though that is bad enough; it is all the other inconveniences, arriving late at night, having to cancel engagements, having to call a cab for a long ride vs bus transportation, and a myriad other inconveniences for which the airlines in their hubris currently accepts no responsibility.\"\n < this message is answering to > \ndrgreg: \"I believe airlines should be forced to fully reimburse confirmed passengers whenever the airline changes flight schedules after booking.\nI frequently reserve flights up to one year in advance, in order to secure the lowest price and best seat.\nI do this even though the airline will charge me $150 (plus fare difference) to change my itinerary for personal reasons once booked.\nHowever, the airline frequently change flight schedules for confirmed passengers without compensation, nor consideration of passengers' plans.\nFor example, a trip to Europe on United Airlines has now been changed 7 times by the airline since I confirmed my reservation in December 2009.\nThe resulting changes have added nearly 5 hours to the total trip, plus I'm now required to leave at 3AM for the airport (instead of my original departure of 8AM), and I return after midnight, rather than a more reasonable 10:30PM.\nIn addition, United Airlines has not offered to waive the change fee, nor provide seats on alternate dates or airline partners.\nIf I'm required to pay exorbitant fees to the airlines to change my original itinerary, due to personal circumstances, then the airlines should also be required to compensate inconvenienced passengers in full AND provide satisfactory alternate travel arrangements comparable to the original flight schedule.\nPerhaps this would force the airlines to recognize the hardships they create for passengers when schedules are revised after passengers have already received confirmed flights and make related travel arrangements.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "darawayne_182_22843",
+                "cq": "Does not changing flight schedules without providing compensation or consideration for passengers' plans amount to a significant hardship that justifies forcing airlines to reimburse passengers in full?"
+            },
+            {
+                "id": "darawayne_182_56412",
+                "cq": "Does the author's proposed solution, where airlines are forced to fully reimburse confirmed passengers whenever flight schedules change after booking, proportionally account for the varying degrees of inconvenience caused by such changes across different passengers?"
+            },
+            {
+                "id": "darawayne_182_56428",
+                "cq": "Does requiring airlines to compensate inconvenienced passengers for schedule changes also incentivize them to unnecessarily revise flight schedules?"
+            }
+        ]
+    },
+    "JDwyer_17": {
+        "intervention_id": "JDwyer_17",
+        "intervention": "JDwyer: \"Size of aircraft should be irrelevant.\nI was trapped on a very small (approx 21 passengers) aircraft, in the hot summer sun, for hours, with no ventilation.\nOutrageous!\nBeing cooked in a small tin can is no better than being cooked in a big one!\"",
+        "dataset": "rrd",
+        "schemes": [
+            "Example",
+            "Example"
+        ],
+        "cqs": [
+            {
+                "id": "JDwyer_17_91504",
+                "cq": "Does JDwyer's personal experience of being trapped on a small aircraft imply that all aircraft of similar capacity are equally uncomfortable and unsuitable?"
+            },
+            {
+                "id": "JDwyer_17_73695",
+                "cq": "Does JDwyer's personal experience necessarily apply to the hypothetical situation of an average passenger on a large commercial airliner, and if so, do they have any evidence that the size of such an aircraft would indeed make little difference in terms of heat retention?"
+            },
+            {
+                "id": "JDwyer_17_81510",
+                "cq": "How does JDwyer's personal experience with a small aircraft justify his blanket statement that the size of an aircraft should be irrelevant?"
+            }
+        ]
+    },
+    "JJMurray_140": {
+        "intervention_id": "JJMurray_140",
+        "intervention": "JJMurray: \"Make the compensation exactly what it is intended to be...\nthe cost (or double the cost) of the ticket, no cap since there is no cap on how much you may pay for that ticket.\nFrequent flyer miles should simply be refunded\nor a double amount refunded\nin the same way as a cash ticket is handled.\nKeep this simple and it will work much better.\nOn smaller flights, use the same rules.\nAgain, keep it simple.\nBest way to give passengers information is to post it online, on a legible sign in the gate area, and in print large enough to read on tickets.\nIf people won't take the time to read at least one of those sources then they only have themselves to blame for not knowing about this.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning",
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "JJMurray_140_78716",
+                "cq": "Does JJMurray's proposal account for any potential costs or expenses associated with implementing and maintaining this policy?"
+            },
+            {
+                "id": "JJMurray_140_92727",
+                "cq": "Does the proposal's simplicity and consistency across different flight sizes effectively address potential concerns about equity and fairness for passengers with varying amounts of frequent flyer miles?"
+            },
+            {
+                "id": "JJMurray_140_14599",
+                "cq": "Does JJMurray's proposal for compensation equitably account for potential disparities in the value of frequent flyer miles across different airline partners?"
+            }
+        ]
+    },
+    "JJMurray_143": {
+        "intervention_id": "JJMurray_143",
+        "intervention": "JJMurray: \"No, no, no!\nIf you have an allergy to peanuts and you know you have it then take your own precautions.\nIf I decide to bring a bag of peanuts onboard an airplane and am then told I'm in a \"peanut free zone\" or something like that, then my rights have been trampled as have the rights of everyone in that zone.\nRequest peanut free services from the airlines for yourself,\nbut do not force those restrictions on the rest of the flying public.\nI have no problem with the airline offering peanut free foods, etc.\nbut it should be an option that people can select\nnot a requirement for everyone else to abide by.\nWhat's next?\nCan I have all perfume banned from an airplane or have people wearing them banned?\nHow about deodorants, hair sprays, any product with latex in it?\nIt is not a \"right\" if you have to impose that behavior on others for yourself.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "JJMurray_143_62520",
+                "cq": "Is it logically consistent to claim that having a peanut allergy and taking precautions is not infringing on others' rights, while simultaneously insisting that airlines must accommodate one's desire for a 'peanut-free zone' at the expense of others?"
+            },
+            {
+                "id": "JJMurray_143_96614",
+                "cq": "Does Murray's argument for exempting himself from the peanut-free zone simply because he has a medical allergy imply that his right to avoid peanuts is more important than the rights of others to not be affected by his choices?"
+            },
+            {
+                "id": "JJMurray_143_46414",
+                "cq": "Is Murray's argument about peanut restrictions on airplanes an analogy to a potential right to opt-out of other airborne restrictions, or is it a case of conflating personal preference with universal safety concerns?"
+            }
+        ]
+    },
+    "JJMurray_166": {
+        "intervention_id": "JJMurray_166",
+        "intervention": "JJMurray: \"I have no problem with airlines developing their own policies vice a mandated government requirement\nbut whatever those policies are they need to be easy to find, easy to read and understandable by your \"average\" person before someone books and pays for a flight.\nIf you want to regulate this then insist that all policies related to overbooking, rebooking, rerouting, basically any changes to the originally contracted flight must be made available in a format that is easily accessible and understandable to the general public.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "JJMurray_166_45927",
+                "cq": "How can we be certain that making policies easily accessible and understandable to the general public will actually prevent confusion and issues, rather than simply allowing for more opportunities for misinterpretation?"
+            },
+            {
+                "id": "JJMurray_166_16948",
+                "cq": "Does JJMurray's proposed solution (i.e., easily accessible and understandable airline policies) actually address the problem of lack of transparency in airline regulations, or is it simply a symptom of the issue?"
+            },
+            {
+                "id": "JJMurray_166_62267",
+                "cq": "How does the speaker define what it means for policies to be 'easy to find, easy to read and understandable by your average person'?"
+            }
+        ]
+    },
+    "JJMurray_180": {
+        "intervention_id": "JJMurray_180",
+        "intervention": "JJMurray: \"a classic example above.\nDon't just ban peanuts,\nban everything that might contain something which may have encountered a peanut or peanut product in it's life.\nOnce you start a ban on one product, you better be prepared for more and more demands to ban a lot of other items.\"\n < this message is answering to > \nPracticalJo: \"Take peanuts off of planes.\nSafety first.\nIt is not only airborne particles that are problematical,\nit is also the crumbs, whole peanuts that \"get away\" from the passenger (i.e., dropped on floor or in seat), and residue left behind on seats, seat belts, floors, tray tables and other surfaces.\nIngestion or contact can trigger severe reactions.\nTake peanuts and items containing peanuts/peanut butter (e.g., trail mix, peanut butter crackers) off of airplanes.\nThis is all the airlines need to do.\nMost airlines already have a suitable replacement snack.\nAnyone with a severe allergy already has EpiPens or other medications.\nAirlines need not provide these.\nAs an outsider to the airline industry, it is hard for me to say what level of cleaning currently occurs on an aircraft.\nObviously, on quick turnaround layovers, flight crews only have time for a cursory cleaning.\nI don't know.\nIf so, perhaps repeated standard cleanings without further peanut exposure would be sufficient?\nThe rule probably has the best chance of being enacted if it minimizes overall cost to the airline industry while meeting the desired safety requirements.\nPersonally, I would be satisfied if the rule simply called for removal of peanuts from aircraft and allowed the airlines to put forth a good faith effort at cleaning their fleets.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "JJMurray_180_89359",
+                "cq": "Does JJMurray's extension of the ban to all items that might have come into contact with peanuts, based on a hypothetical scenario where such contamination is possible, take into account the lack of empirical evidence supporting the severity of this risk?"
+            },
+            {
+                "id": "JJMurray_180_14302",
+                "cq": "Does JJMurray's argument that banning peanuts on planes should prevent bans on other products containing peanut exposure consider the possibility that alternative solutions, such as thorough cleaning protocols or allergy-friendly alternatives, may not be feasible or cost-effective for all airlines?"
+            },
+            {
+                "id": "JJMurray_180_12348",
+                "cq": "Does JJMurray's recommendation to ban everything that might contain something which may have encountered a peanut or peanut product imply that peanuts are inherently hazardous, rather than just posing a risk in certain situations?"
+            }
+        ]
+    },
+    "JL_15": {
+        "intervention_id": "JL_15",
+        "intervention": "JL: \"The consumer credit industry is very highly regulated\nThe regulations have been over-hauled three times in the last decade\"",
+        "dataset": "moral_maze_schemes",
+        "schemes": [
+            "CauseToEffect"
+        ],
+        "cqs": [
+            {
+                "id": "JL_15_45074",
+                "cq": "Is JL's claim that the consumer credit industry is highly regulated based solely on the frequency of regulatory over-hauls, or does it also take into account other factors such as effectiveness or scope?"
+            },
+            {
+                "id": "JL_15_23724",
+                "cq": "Are these 'over-hauls' merely minor tweaks, or are they fundamentally transforming the regulatory framework?"
+            },
+            {
+                "id": "JL_15_41250",
+                "cq": "Is it possible for an industry to be considered highly regulated if three significant over-hauls of its regulations have occurred within a single decade?"
+            }
+        ]
+    },
+    "JL_3": {
+        "intervention_id": "JL_3",
+        "intervention": "JL: \"Oh, I don\u2019t think that\u2019s true at all\nYou don\u2019t pay an interest rate\nThe interest rate varies by the amount of the charge for the credit but also the time over which you repay it\nSo if you borrow some money from me, and you pay it back very quickly, the interest rate will be much higher than if you pay it back over a long period\nBut the amount it costs you is exactly the same\"",
+        "dataset": "moral_maze_schemes",
+        "schemes": [
+            "Example",
+            "Example"
+        ],
+        "cqs": [
+            {
+                "id": "JL_3_44755",
+                "cq": "Does the argument's claim about the cost being 'exactly the same' accurately account for the possibility that some borrowers may choose to repay their debt more quickly due to factors unrelated to interest rate?"
+            },
+            {
+                "id": "JL_3_71763",
+                "cq": "Does JL's statement about the interest rate being 'exactly the same' account for any potential differences in fees or charges associated with repaying the borrowed amount?"
+            },
+            {
+                "id": "JL_3_35904",
+                "cq": "Does JL accurately account for the impact of compounding interest on the overall cost of borrowing?"
+            }
+        ]
+    },
+    "JL_5": {
+        "intervention_id": "JL_5",
+        "intervention": "JL: \"Because they\u2019re very short-term loans\nif you borrowed \u00a3200 from me, and in 30 days time you pay back \u00a3250, the interest rate on that is 1,413.01%\nIt sounds horrendous\n...\nBut if you pay me back the same amount of money in six months time the interest rate is only 57.3%.\nAnd if you take a year to pay it back it goes down\"",
+        "dataset": "moral_maze_schemes",
+        "schemes": [
+            "Example",
+            "Example"
+        ],
+        "cqs": [
+            {
+                "id": "JL_5_69165",
+                "cq": "Is the comparison of interest rates based on different loan repayment periods a fair representation of the overall cost of borrowing?"
+            },
+            {
+                "id": "JL_5_34952",
+                "cq": "Is the difference in interest rates solely due to the length of time it takes to pay back the loan, or are there other factors at play?"
+            },
+            {
+                "id": "JL_5_56103",
+                "cq": "Is the interest rate on long-term loans typically lower than the interest rate on short-term loans?"
+            }
+        ]
+    },
+    "JW_41": {
+        "intervention_id": "JW_41",
+        "intervention": "JW: \"It\u2019s only since the state intervened that people have been uninterested in which bank they put their money in\nIn the old days of early capitalism, bankers were famously prudent people. And they went to great lengths to advertise how prudent they were.\nThis stopped not because of the big bang, which liberalised banking, which is what everybody thinks.\nIt stopped because of government guarantees to depositors.\"",
+        "dataset": "moral_maze_schemes",
+        "schemes": [
+            "Analogy",
+            "Analogy",
+            "Analogy"
+        ],
+        "cqs": [
+            {
+                "id": "JW_41_80808",
+                "cq": "Does the author's claim that government guarantees caused a decrease in bank advertising necessarily imply that these guarantees were the primary cause, rather than other factors such as changes in market conditions or consumer preferences?"
+            },
+            {
+                "id": "JW_41_12782",
+                "cq": "Did the supposed increase in prudence among bankers solely result from their desire to maintain government guarantees, or could there be other factors at play?"
+            },
+            {
+                "id": "JW_41_40575",
+                "cq": "Does the argument's claim that government guarantees to depositors is the sole reason for the shift away from advertising by bankers in early capitalism, and not also influenced by other factors such as changes in market conditions or consumer preferences?"
+            }
+        ]
+    },
+    "Javier_84": {
+        "intervention_id": "Javier_84",
+        "intervention": "Javier: \"I have no problem requiring the airlines to give notification of any \"known\" delays within 30 minutes of when they become aware of it.\nBUT, being a frequent traveler, I see all sorts of problems which are unavoidable and for which the airlines will be blamed by giving such notice with the intend that some flyers may be able to delay thier trip to the airport or even the departure gate.\nI know that many times the airlines can't also know exactly when a weather hold or a maintenance issue will be rectified and that the flight is then ready to go.\nMany time it can be surprisingly faster than expected.\nThe problem is that some flyers may then  wait before going to the airport,\nbut then find that the problem was rectified sooner than expected and the flight departed.\nOf course the flyer and the flyers rights organization will then crucify the airlines for such poor planning.\nFlyers need to grow up and quit pouting and blaming everthing on the airlines.\nThey can't have it both ways.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "Javier_84_78033",
+                "cq": "Does Javier's distinction between 'known' and 'unknown' delays sufficiently account for potential airline communication of a delay that later proves to be unnecessary?"
+            },
+            {
+                "id": "Javier_84_54235",
+                "cq": "Does Javier's proposed notification requirement account for cases where delays are unavoidable and unforeseeable, such as those caused by weather or maintenance issues?"
+            },
+            {
+                "id": "Javier_84_92215",
+                "cq": "Does Javier's consideration of potential countermeasures from flyers (e.g., delayed arrivals) sufficiently address the potential need for airlines to proactively disclose delay information, or does his argument rely on an unjustifiably broad assumption about flyer behavior?"
+            }
+        ]
+    },
+    "JetJock_156_1": {
+        "intervention_id": "JetJock_156_1",
+        "intervention": "JetJock: \"Yes, most airlines pay flight crew members scheduled flight time or actual time away from the gate whichever is more.\nEg. if a flight is scheduled for 2 hours \"block to block\" (from/to the gate) but it takes 3 to fly it, the crew gets 3.\nIf the flight leaves that gate and returns 2.5 hours later, most airlines only pay that crew either the 2.0 scheduled (if it cancels) or much less.\nFor most crewmembers, the notion that 1 hour at the gate, 2.5 hours of sitting on that taxiway and only get paid for 2 is not very palatable.\nWhereas sitting for 2.5 hours then fly 2 totals 4.5.\nIt is mostly the pay structure of pilots/flight attendants that poorly designed.\nMost people would balk at the notion of working 4.5 hours and getting paid for 2.\nThe ground delay limitation, has, well, it's limitations.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "JetJock_156_1_45373",
+                "cq": "Does the argument assume that all airlines pay flight crew members for both scheduled and actual time away from the gate, or only for one?"
+            },
+            {
+                "id": "JetJock_156_1_97027",
+                "cq": "Does the fact that the airline pays for actual flight time instead of guaranteed scheduled gate time adequately account for variations in flight duration and ground delays?"
+            },
+            {
+                "id": "JetJock_156_1_95626",
+                "cq": "Does the argument about pay structures being poorly designed solely rest on the subjective discomfort of pilots/flight attendants rather than objective calculations and empirical data?"
+            }
+        ]
+    },
+    "JetJock_156_2": {
+        "intervention_id": "JetJock_156_2",
+        "intervention": "JetJock: \"If we were in preregulation days where an airline was making money with only 60% of the seats filled, flights canceling due to the 3 hour limit would not be much of a problem.\nWhat is a problem is flights that are now being canceled because of the new rule\nand virtually no seats available on subsequent flights to accommodate those passengers.\nIf the ground delays are due to ATC, weather, VIP movement (president in the area) then passengers will not be, as a rule, given cancellation perks since they are beyond the control of the company.\nIf the air conditioning, and restrooms are functioning properly and there are plenty of beverages and snacks on board then that maximum number of hours should be flexible.\nI would be curious to hear from people that had their flight cancel due to the 3 hour limit and how the airlines handled them after that.\nMy guess this rule will cause greater damage to air travel then the occasional extended ground hold on an airplane with poor air conditioning or nonfunctioning lavatories.\nif the airplane is comfortable and exceeding the 3 hour limit would cancel the flight with no hotel or meal compensation, would exceeding the 3 hours be ok and if so what would be a reasonable number above 3 be?\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "JetJock_156_2_54040",
+                "cq": "Does the author's conclusion that the 3 hour limit will cause greater damage to air travel than occasional extended ground holds assume that airlines' primary goal is to provide a comfortable flying experience?"
+            },
+            {
+                "id": "JetJock_156_2_62964",
+                "cq": "How can an airline's comfort standards and passenger experience justify prioritizing a time limit over the potentially more significant inconvenience of extended flight delays and poor on-board conditions?"
+            },
+            {
+                "id": "JetJock_156_2_46673",
+                "cq": "Does the assumption that passengers are no less inconvenienced by a flight cancellation due to the new rule than they would be by a similar cancellation in preregulation days, considering differences in airline business models and travel expectations?"
+            }
+        ]
+    },
+    "KHenrickson_172": {
+        "intervention_id": "KHenrickson_172",
+        "intervention": "KHenrickson: \"The notification isn't so much a problem at most airports.\nThe electronic boards are usually updated minute by minute.\nThe problem is that the airlines will say \"Flight 100, delayed till 7:00pm.\" then \"Flight 100, delayed till 7:05pm\".  And so on and so forth.\nThey're notifying everyone...with completely useless information.\nForcing them to do so more frequently isn't going to fix a thing.\nForcing them to come up with an accurate estimate is what is needed.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "KHenrickson_172_16871",
+                "cq": "Does KHenrickson's proposed solution to the problem of unnecessary updates on electronic boards at airports rely on the assumption that airlines can accurately predict flight delays?"
+            },
+            {
+                "id": "KHenrickson_172_36087",
+                "cq": "Does KHenrickson's claim that airlines are providing useless information simply by updating flight delays more frequently, and not a problem with the actual delay itself?"
+            },
+            {
+                "id": "KHenrickson_172_67147",
+                "cq": "Is it possible that the frequent updates are actually providing useful information, even if it's not always accurate, by giving passengers a sense of the changing delay time?"
+            }
+        ]
+    },
+    "MP_22": {
+        "intervention_id": "MP_22",
+        "intervention": "MP: \"Well, you say the banks are the lenders\nthere are lots of other people who are lenders too\nI mean everyone who puts money into a bank, or a building society, is putting it there so that the bank can lend it on\nI mean you just heard Simon Rose say\nthere\u2019s been 100 billion pounds transfer from savers to borrowers\nSo if you're going to raise your banner for anybody who\u2019s doing badly in this situation, I would have thought you might have raised it for savers, in the first instance\"",
+        "dataset": "moral_maze_schemes",
+        "schemes": [
+            "ExpertOpinion"
+        ],
+        "cqs": [
+            {
+                "id": "MP_22_90998",
+                "cq": "Does Simon Rose's statement that all money transferred to banks is ultimately lent to borrowers necessarily mean that the bulk of this lending is done by savers, or could it be that most of this lending is done by banks themselves?"
+            },
+            {
+                "id": "MP_22_81648",
+                "cq": "Does the claim that all money put into banks and building societies is for lending purposes necessarily mean that savers are not being lent money by their deposit accounts?"
+            },
+            {
+                "id": "MP_22_73806",
+                "cq": "Does the argument assume that the primary purpose of savers' deposits is solely for lending, without considering other possible purposes?"
+            }
+        ]
+    },
+    "MP_48": {
+        "intervention_id": "MP_48",
+        "intervention": "MP: \"\tI think it\u2019s very interesting that capitalism is coming under such a lot of attack here\nAnd I don\u2019t say that\u2019s inappropriate\nBut we haven\u2019t yet attacked democracy\nI mean one of the things that strikes me about this is that when you have incumbent governments, and they see that consumer credit boom mushrooming and mushrooming, what do they do?\nThey don\u2019t want to stop it\nThey don\u2019t want to stop it, because they want voters.\nThey want voters who feel artificially rich\nbecause voters who feel artificially rich will probably vote for the incumbent\"",
+        "dataset": "moral_maze_schemes",
+        "schemes": [
+            "CauseToEffect",
+            "CauseToEffect",
+            "CauseToEffect"
+        ],
+        "cqs": [
+            {
+                "id": "MP_48_34403",
+                "cq": "Does the argument that an incumbent government wants to maintain consumer credit growth to influence voter behavior generalize to all types of governments, not just those coming under attack?"
+            },
+            {
+                "id": "MP_48_64629",
+                "cq": "Does the claim that incumbent governments allow consumer credit booms to persist solely for voter manipulation assume a causal relationship between economic policy and voter behavior?"
+            },
+            {
+                "id": "MP_48_72012",
+                "cq": "Does MP's argument that incumbents engage in pro-consumer credit policies to secure votes from artificially rich voters provide sufficient evidence for the claim that democracy is being undermined by capitalist systems?"
+            }
+        ]
+    },
+    "MR_TELEVOID__178": {
+        "intervention_id": "MR_TELEVOID__178",
+        "intervention": "MR: \"Maybe you're just the only one who gives a shit about their hair\"\n < this message is answering to > \nXxEnder: \"Am I the only one who noticed that Bernie combed his hair\"",
+        "dataset": "us2016reddit",
+        "schemes": [
+            "Ad hominem"
+        ],
+        "cqs": [
+            {
+                "id": "MR_TELEVOID__178_11312",
+                "cq": "Is XxEnder's inference about Bernie's grooming habits based solely on a single incident?"
+            },
+            {
+                "id": "MR_TELEVOID__178_67517",
+                "cq": "Does XxEnder's observation about Bernie's hair necessarily imply that he is any less deserving of concern than MR?"
+            },
+            {
+                "id": "MR_TELEVOID__178_43142",
+                "cq": "Is Mr.'s skepticism about XxEnder's concern for their hair necessarily justified by his assumption that XxEnder is somehow unique or exceptional in this regard?"
+            }
+        ]
+    },
+    "MT_10": {
+        "intervention_id": "MT_10",
+        "intervention": "MT: \"we know from lots and lots of research, you know this, that people aren\u2019t very good at understanding financial products\nAnd they're easily seduced into acting, in the short-term, in ways which aren\u2019t very good for them in the long-term\nDoesn\u2019t the history of the financial services industry demonstrate that this is an industry with a deep commitment to exploiting those weaknesses, in order to make a fast buck?\"",
+        "dataset": "moral_maze_schemes",
+        "schemes": [
+            "DirectAdHominem"
+        ],
+        "cqs": [
+            {
+                "id": "MT_10_91957",
+                "cq": "Doesn't the assumption that the financial services industry's primary goal is to exploit people's weaknesses rely on an unstated value judgment about what constitutes a 'fast buck', and therefore may be based on an unjustified moral equivalence between short-term gains and long-term harm?"
+            },
+            {
+                "id": "MT_10_14772",
+                "cq": "Doesn't the argument rely on the assumption that the financial services industry's history is directly causal evidence of its current motivations?"
+            },
+            {
+                "id": "MT_10_17833",
+                "cq": "Doesn't the fact that there's 'lots and lots of research' on this topic imply that MT is relying on a specific, unrepresentative subset of studies rather than a comprehensive examination of the entire field?"
+            }
+        ]
+    },
+    "MT_40": {
+        "intervention_id": "MT_40",
+        "intervention": "MT: \"I don\u2019t think you just said the opposite of them was neutral\nSo if they're virtues, doesn\u2019t that imply that the opposite of thrift and prudence is immoral?\nBut, hold on\nIsn\u2019t it simply the case that buying a cup of coffee is something which is substantially less demanding than working up a long-term interest rate?\nTherefore isn\u2019t it a reasonable thing for the state to intervene in those cases\nbecause the knowledge is bounded?\"",
+        "dataset": "moral_maze_schemes",
+        "schemes": [
+            "PracticalReasoning",
+            "PracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "MT_40_56169",
+                "cq": "Doesn't the argument's conclusion that a rational decision to spend money on coffee is justifiable because it requires less effort than investing in a long-term interest rate assume that the state's role is solely determined by the level of mental effort required for each action?"
+            },
+            {
+                "id": "MT_40_78938",
+                "cq": "Does the argument's assumption that the state should only intervene when there is a substantial difference in demand between buying a cup of coffee and working up a long-term interest rate justify its conclusion?"
+            },
+            {
+                "id": "MT_40_94502",
+                "cq": "Is it possible that the state's intervention is justified solely because of a difference in effort, rather than any moral or intrinsic implications of the activity?"
+            }
+        ]
+    },
+    "Melanie_64": {
+        "intervention_id": "Melanie_64",
+        "intervention": "Melanie: \"Well the State has taken a moral position\nthat position was non-judgmentalism\nand terrible harm it\u2019s done\nIt\u2019s created a lot of victims who now need help themselves, and who sometimes go on to create other victims through crime\n I think they do need help\nbut that help should be very carefully calibrated, to restore the capacity for independence and personal responsibility\"",
+        "dataset": "moral_maze_schemes",
+        "schemes": [
+            "NegativeConsequences"
+        ],
+        "cqs": [
+            {
+                "id": "Melanie_64_25400",
+                "cq": "Does Melanie's argument that the State needs to provide help to victims of its own actions necessarily imply a paternalistic solution, which may undermine individual autonomy and agency?"
+            },
+            {
+                "id": "Melanie_64_80896",
+                "cq": "Is Melanie's argument that the State should provide help to victims of its own actions based on a notion of moral retribution, rather than purely on humanitarian grounds?"
+            },
+            {
+                "id": "Melanie_64_52395",
+                "cq": "Does Melanie's argument for helping the State's victims assume that the primary cause of their harm is a lack of personal responsibility, rather than other possible factors?"
+            }
+        ]
+    },
+    "Mpogoda_184": {
+        "intervention_id": "Mpogoda_184",
+        "intervention": "Mpogoda: \"As a frequent traveler, I would welcome the rule requiring 24 hour refundability of fares + all fees.\nAdditionally, there should be a certain window,\nsay, 3 days prior to flying where you should be able to cancel your flight without penalty and receive a refund or at least the ability to change your itinerary without fee.\nAs I always say to all who will listen,\nthe airline model is one of the worst business models I know of:\ntreat your customers with disdain and make it as inconvenient as possible for them to use your product.\nWhether it be added fees to check luggage\nmaking it too costly to change your itinerary;\nmaking it virtually impossible to easily use frequent flyer miles or charging an exorbitant amount to actually use them;\nnot getting timely notice when there are delays to flights\nor, even worse, when a flight has been canceled;\nand lastly, being treated like cattle at the airport and on the plane.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample",
+            "ERExample",
+            "ERExample",
+            "ERExample",
+            "ERExample",
+            "ERExample"
+        ],
+        "cqs": [
+            {
+                "id": "Mpogoda_184_86455",
+                "cq": "Does the author's personal experience as a frequent traveler justify their blanket criticism of the entire airline industry?"
+            },
+            {
+                "id": "Mpogoda_184_99670",
+                "cq": "How does requiring a 24-hour refundability of fares + all fees align with the argument that the airline model is one of the worst business models, and therefore should be subject to such consumer-friendly policies?"
+            },
+            {
+                "id": "Mpogoda_184_42140",
+                "cq": "Does Mpogoda's proposed rule of requiring a 3-day cancellation window before imposing penalties not only benefit frequent travelers, or also disproportionately disadvantage budget-conscious flyers who may need to cancel at short notice?"
+            }
+        ]
+    },
+    "MrFordization__82": {
+        "intervention_id": "MrFordization__82",
+        "intervention": "MrFordization: \"Pentagon classifies global warming as a national security threat\nMaybe he just knows more than you\"",
+        "dataset": "us2016reddit",
+        "schemes": [
+            "ArgumentFromAuthority"
+        ],
+        "cqs": [
+            {
+                "id": "MrFordization__82_69990",
+                "cq": "Does Mr. Ford's assertion that Pentagon classifies global warming as a national security threat provide sufficient evidence to support his claim, or is it based solely on his personal opinion?"
+            },
+            {
+                "id": "MrFordization__82_56896",
+                "cq": "Is Mr. Ford's assertion about Pentagon's classification of global warming as a national security threat based on verifiable evidence or his personal opinion?"
+            },
+            {
+                "id": "MrFordization__82_52691",
+                "cq": "Does the credibility of the classification of global warming as a national security threat solely rely on the expertise of Mr. Ford, without considering other sources or evidence?"
+            }
+        ]
+    },
+    "Mulder_112": {
+        "intervention_id": "Mulder_112",
+        "intervention": "Mulder: \"Your argument is a strawman.\nNobody is advocating funerals;\nyou're just trying to deflect attention away from the issue,\nwhich is that there is no real risk to peanut allergy sufferers.\nAnd there is no scientific evidence to support your argument.\nYou can't even cite the studies you claim exist,\nbecause they don't exist.\nThe only mean spirited people are those like yourself, who want to trample the rights of the majority for a nonexistent risk that affects a very small number of people.\nThis has nothing to do with the founding of the U.S. at all.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExpertOpinion"
+        ],
+        "cqs": [
+            {
+                "id": "Mulder_112_78293",
+                "cq": "Does Mulder's dismissal of opposing views as a 'strawman' and 'mean spirited' represent an attempt to foreclose discussion rather than engage with the substance of the argument?"
+            },
+            {
+                "id": "Mulder_112_85808",
+                "cq": "Does Mulder's assertion that there are no studies to support his argument actually provide evidence for its validity?"
+            },
+            {
+                "id": "Mulder_112_91861",
+                "cq": "Does Mulder's argument assume that not citing studies is equivalent to claiming they exist?"
+            }
+        ]
+    },
+    "Mulder_226": {
+        "intervention_id": "Mulder_226",
+        "intervention": "Mulder: \"Apparently Samsmom is the ignorant one.\nShe attacks what she clearly does not understand.\nIf her child has a true peanut allergy that is so severe, he shouldn't be flying,\nsince her argument is that any contact with peanut dust or oil would cause anaphylactic shock.\nSince that possibility is very real even outside an airline cabin,\nshe's making her own argument for living in a bubble.\nFacts are stubborn things,\nand one of those facts is that the air onboard an airliner is cleaner than in most public buildings,\nso there's very little, if any, real risk involved in flying on a jet where peanuts have been consumed before or are even being served now.\nAnother stubborn fact is that you can be desensitized to peanut allergies,\nbut if you're unwilling to do it, don't blame others for not bending to your petty fears.\nNobody has studied this subject,\nso there's no hard data.\nBut we do know that the air onboard an airliner is much cleaner than people think.\nOnly one confirmed death onboard an airliner has been reported,\nbut it may have been as far back as 1998,\nand it was an Eastern European airline.\"\n < this message is answering to > \nSamsmom: \"I am utterly amazed at the ignorance displayed by some of those commenting here.\nAllergies are not \"perceived\"\nas Mulder suggests,\nand it is ridiculous and unrealistic  to suggest that people with severe food allergies \"live in a bubble\".\nNo one who has an allergy chooses to be in this situation,\nand walking onto an airplane where peanuts either are being consumed or have been consumed is like playing Russian Roulette.\nWe are talking about a SNACK ON AN AIRPLANE.\nCan you really be complaining about your rights to eat a snack?!?\nMy son could DIE because you can't forgo a snack for two hours.\nWhile we could drive everywhere we need to go for the rest of his life,\nthere may come a time when time constraints force us to fly.\nNo matter how much \"responsibility we take\", we cannot sufficiently protect him if people around us are eating any peanut product.\nWe always carry an epipen,\nand feel that should be our responsibility.\nBut, again, that may not be enough to save his life.\nThose autoinjectors can only buy us 1015 minutes,\nbarely enough time for a plane to request an emergency landing site.\nHe would be dead before we taxied to the gate.\nFOR A SNACK!!\nAn outright ban should be in place.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERAdHominem"
+        ],
+        "cqs": [
+            {
+                "id": "Mulder_226_56804",
+                "cq": "Does Samsmom's assertion that flying is comparable to playing Russian Roulette when it comes to her son's life, given the limited protective measures in place (such as an EpiPen), provide sufficient evidence for a blanket airline ban on peanuts?"
+            },
+            {
+                "id": "Mulder_226_11565",
+                "cq": "Does Samsmom's argument for an outright ban on peanuts being served onboard flights, despite her own acknowledgment of the limited time an EpiPen provides before a potential allergic reaction could be fatal, not rely on an unjustified exaggeration of risks?"
+            },
+            {
+                "id": "Mulder_226_27453",
+                "cq": "Is it reasonable to assume that a person with a severe food allergy should be excused from eating certain foods simply because others around them may be consuming those same foods, regardless of the small risk involved?"
+            }
+        ]
+    },
+    "Mulder_240": {
+        "intervention_id": "Mulder_240",
+        "intervention": "Mulder: \"You're the one who seems to be partisan.\nInstead of thinking logically about it, you try to deflect blame for your misguided apprehension onto others by insinuating they have a compulsion.\nServing and eating peanuts is not a public health menace,\nso you need to get over it.\nInstead of conflating the possible with the inevitable, you should focus on the reality, which is that the possibility is extremely small.\nYou're more likely to die from getting hit by a car crossing the street, yet you're not advocating we ban driving.\nThat's being a hypocrite.\"\n < this message is answering to > \nAntanagoge: \"Is it really possible that all blindly partisan advocates of the peanut in this context eat peanuts and only peanuts?\nThat they are overtaken by such a compulsion to consume peanut while flying that they lose sight of all other priorities?\nThat they are unable to stop using their peanut  the one dragon they can't put to sleep  to create a sense of pleasure and comfort?\nThese sound like essential symptoms of disordered eating and addiction, which, in all likelihood, derive from some longstanding issues.\nThe remedy is to avoid the substance in question.... \"just say 'no'\" ? to your peanuts.\nServing/eating peanuts on airplanes has risen to the level of a public health menace, as had tobacco smoking.\nAgain, the only prudent course of action is to require that distribution of peanut on airplanes be discontinued.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERAdHominem",
+            "ERAdHominem"
+        ],
+        "cqs": [
+            {
+                "id": "Mulder_240_19127",
+                "cq": "Does Antanagoge's attribution of disordered eating and addiction to peanut consumption justify the extension of these diagnoses to a voluntary choice made in a low-stress, public setting like an airplane?"
+            },
+            {
+                "id": "Mulder_240_33992",
+                "cq": "Is Antanagoge's argument assuming that serving and eating peanuts on airplanes constitutes a form of addiction or compulsion, without providing any empirical evidence to support this claim?"
+            },
+            {
+                "id": "Mulder_240_33029",
+                "cq": "Does Antanagoge's argument about disordered eating and addiction being symptoms of a compulsion to consume peanuts provide sufficient reason to restrict the consumption of peanuts on airplanes?"
+            }
+        ]
+    },
+    "ND_28": {
+        "intervention_id": "ND_28",
+        "intervention": "ND: \"In some ways I agree with you\nIf you want the economy to run smoothly, you have to incentivise certain types of behaviour.\nSo, for example in South Korea, in terms of how South Korean grew, it did incentivise saving, at certain times, by certain economic policies\nOn the other hand, I think what people don\u2019t realise, or only half realise, is the fact that we have actually written off massive amounts of debt\nBut it certainly isn\u2019t the debts of the people who most need it in society\nFor productive investments. I agree with you.\"",
+        "dataset": "moral_maze_schemes",
+        "schemes": [
+            "Example"
+        ],
+        "cqs": [
+            {
+                "id": "ND_28_25326",
+                "cq": "What makes you think that the economic policies which incentivised saving in South Korea are being targeted at productive investments rather than, say, wealthy individuals or corporations?"
+            },
+            {
+                "id": "ND_28_23957",
+                "cq": "Does the speaker's acknowledgment of incentivizing certain types of behaviour imply that they believe the government should be prioritizing debt forgiveness for those who need it most?"
+            },
+            {
+                "id": "ND_28_98060",
+                "cq": "Does the acknowledgment of incentivizing certain behaviors to improve economic outcomes justify shifting debt responsibility from those who most need it to others?"
+            }
+        ]
+    },
+    "NYCMuscleman18_161": {
+        "intervention_id": "NYCMuscleman18_161",
+        "intervention": "NYCMuscleman18: \"I know this sounds silly,\nbut I think I shouldn't be charged as much to check a bag as the 250lb man sitting next to me.\nI don't mind getting weighed in public...\nI don't know.\nThis is just something that seems unfair to lots of passengers,\nand that probably won't get changed without regulation.\nAt the very least, DOT should make clear to airlines that they can discriminate on the basis of weight without fearing regulatory action.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "NYCMuscleman18_161_66522",
+                "cq": "Does NYCMuscleman18's argument for non-discriminatory baggage checking assume that his weight is not a protected characteristic under relevant regulations or laws?"
+            },
+            {
+                "id": "NYCMuscleman18_161_43415",
+                "cq": "Does NYCMuscleman18's argument rely on the implicit assumption that airlines have a moral obligation to charge customers fairly based solely on their weight, rather than on the airline's own pricing policies?"
+            },
+            {
+                "id": "NYCMuscleman18_161_81169",
+                "cq": "Is it morally justifiable to prioritize one individual's comfort over others based on arbitrary and publicly visible criteria, such as body weight?"
+            }
+        ]
+    },
+    "NYCMuscleman18_187": {
+        "intervention_id": "NYCMuscleman18_187",
+        "intervention": "NYCMuscleman18: \"Agreed.\nThe most frustrating thing about airline travel is the lack of space.\nI don't see why they care so much about letting people game the bumping system, but not at all about personal space.\nI guess the big question is, what's DOT's job, exactly?\nIs this about inair convenience?\nAvoiding pricegouging?\nOr something else?\"\n < this message is answering to > \nAK-traveler: \"Airlines should not be allowed to charge for items necessary because of factors out of the passengers control.\nSeat size and configuration (arm and leg room) should be addressed as a health issue.\nThe inflight magazines show exercises passengers should do at their seats to prevent deep vein thrombosis\nbut there isn't enough room to do them.\nAnd finally, I think it is unfair if not criminal and discriminatory to charge exorbinant fees for carrying your pet onboard with you.\nThe carrier is handled as a carry on bag solely by me,\nthe airline doesn't do anything\nyet they carage $100 or more each way.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "NYCMuscleman18_187_43123",
+                "cq": "Does the argument that airlines should prioritize personal space based on the potential health risks of insufficient arm and leg room assume a causal relationship between seat size, in-flight exercise options, and deep vein thrombosis?"
+            },
+            {
+                "id": "NYCMuscleman18_187_73293",
+                "cq": "Is it reasonable to assume that the airlines' decisions regarding seat configuration and personal space are primarily driven by cost-cutting measures rather than genuine concerns about passenger health or convenience?"
+            },
+            {
+                "id": "NYCMuscleman18_187_34693",
+                "cq": "Does AK-traveler's criticism of airline fees for services (pet carriage) not subject to control or reasonable price gouging, imply that they believe airlines are morally obligated to provide free services simply because passengers pay fares?"
+            }
+        ]
+    },
+    "PeanutAllergy_232": {
+        "intervention_id": "PeanutAllergy_232",
+        "intervention": "PeanutAllergy: \"My son is allergic to peanuts.\nThe last time we flew on an airline that served peanuts (Southwest) we called ahead and requested that no peanuts be served on our flight.\nThe airline was extremely accommodating, but there were peanuts on the floor and between the seats from earlier flights.\nFor that reason, I don't see banning peanuts on specific flights or a peanutfree buffer zone as real solutions.\nWe now only fly airlines that don't serve peanuts.\nWe're okay with Snickers because the peanuts are less likely to get spilled.\nHowever, this wouldn't be a good solution for those with an inhalation allergy.\nMaybe the ban could extend to all foods when there is a specific request.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERExample",
+            "ERExample",
+            "ERExample"
+        ],
+        "cqs": [
+            {
+                "id": "PeanutAllergy_232_94111",
+                "cq": "Does avoiding peanuts by choosing peanut-free airlines and alternative snack options demonstrate that a blanket airline-wide ban on peanuts is unnecessary for someone with a severe peanut allergy?"
+            },
+            {
+                "id": "PeanutAllergy_232_28063",
+                "cq": "Would not allowing peanuts on specific flights or creating a peanut-free buffer zone necessarily ensure that individuals with severe inhalation allergies are protected?"
+            },
+            {
+                "id": "PeanutAllergy_232_36034",
+                "cq": "Does excluding peanuts solely because they are a common allergen trigger imply that other food items with potential allergenic properties could be treated similarly?"
+            }
+        ]
+    },
+    "PracticalJo_179_1": {
+        "intervention_id": "PracticalJo_179_1",
+        "intervention": "PracticalJo: \"Take peanuts off of planes.\nSafety first.\nIt is not only airborne particles that are problematical,\nit is also the crumbs, whole peanuts that \"get away\" from the passenger (i.e., dropped on floor or in seat), and residue left behind on seats, seat belts, floors, tray tables and other surfaces.\nIngestion or contact can trigger severe reactions.\nTake peanuts and items containing peanuts/peanut butter (e.g., trail mix, peanut butter crackers) off of airplanes.\nThis is all the airlines need to do.\nMost airlines already have a suitable replacement snack.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "PracticalJo_179_1_67252",
+                "cq": "Does the fact that most airlines can provide an alternative snack to those with peanuts guarantee the safety of air travelers who may not choose this option?"
+            },
+            {
+                "id": "PracticalJo_179_1_73793",
+                "cq": "Does the argument account for the negligible health risks associated with peanut consumption and the potential for cross-contamination on airplanes?"
+            },
+            {
+                "id": "PracticalJo_179_1_63680",
+                "cq": "Does the decision to remove peanuts from planes solely for safety reasons, without considering or addressing the potential economic impact on airlines and passengers who rely on peanuts as a snack option?"
+            }
+        ]
+    },
+    "PracticalJo_179_2": {
+        "intervention_id": "PracticalJo_179_2",
+        "intervention": "PracticalJo: \"Anyone with a severe allergy already has EpiPens or other medications.\nAirlines need not provide these.\nAs an outsider to the airline industry, it is hard for me to say what level of cleaning currently occurs on an aircraft.\nObviously, on quick turnaround layovers, flight crews only have time for a cursory cleaning.\nI don't know.\nIf so, perhaps repeated standard cleanings without further peanut exposure would be sufficient?\nThe rule probably has the best chance of being enacted if it minimizes overall cost to the airline industry while meeting the desired safety requirements.\nPersonally, I would be satisfied if the rule simply called for removal of peanuts from aircraft and allowed the airlines to put forth a good faith effort at cleaning their fleets.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "PracticalJo_179_2_30550",
+                "cq": "Does PragmaticJo's assumption that airlines are capable of effectively removing and cleaning peanuts without providing EpiPens adequately address the potential risks to passengers with severe allergies?"
+            },
+            {
+                "id": "PracticalJo_179_2_48710",
+                "cq": "Does the argument's focus on minimizing cost to the airline industry justify potentially sacrificing passenger safety?"
+            },
+            {
+                "id": "PracticalJo_179_2_49119",
+                "cq": "Does PraticalJo's proposed solution, allowing airlines to minimize overall cost while meeting desired safety requirements through a general cleaning schedule and removal of peanuts from aircraft, adequately address the specific risk posed by severe peanut allergies on flights with quick turnaround layovers?"
+            }
+        ]
+    },
+    "Qubbin_80": {
+        "intervention_id": "Qubbin_80",
+        "intervention": "Qubbin: \"I generally support the idea,\nbut it should be limited only to those fees which are variable,\nThey should not be allowed to list fees separately that are part of a ticket fee for every ticket issued,\nThis process serves no purpose other than to show a lower base fee.\nThat is misleading and meaningless.\nIf they want to show these components of a ticket, so be it,\nbut not to suggest a price which could never be exercised.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "Qubbin_80_93042",
+                "cq": "Does Qubbin's proposed limitation on variable fees not create a slippery slope where other fee components, such as service charges or convenience fees, could be similarly restricted?"
+            },
+            {
+                "id": "Qubbin_80_33364",
+                "cq": "Is Qubbin's proposed limitation of variable fees to those that are not listed separately as part of a ticket fee actually addressing the potential for misleading pricing or is it simply masking an underlying issue with the fee structure?"
+            },
+            {
+                "id": "Qubbin_80_78986",
+                "cq": "Does limiting variable fees based on their separate listing from ticket fees truly address potential price inflation, or does it merely mask a lack of transparency?"
+            }
+        ]
+    },
+    "SWong_118_1": {
+        "intervention_id": "SWong_118_1",
+        "intervention": "SWong: \"My son is severely allergic to peanuts and has allergic reactions as a result of being around people eating peanuts due to the peanut dust in the air.\nWe had to travel internationally and were able to work with the airline to book peanut free roundtrip flights after submitting a letter from my son's allergist.\nThe airline did everything they could including serving snacks without peanuts, putting allergy alert stickers on our seats, and making an announcement asking passengers to refrain from eating their peanut snacks.\nMy son was fine going to our destination but had an allergic reaction within minutes of being seated for our return trip.\nSince he didn't eat any peanuts, we gave him some benadryl, moved him to a different row, and wiped down his new seat.\nWe were fortunate that his reaction was not severe enough to require an epipen injection and a trip to the hospital in another country.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample",
+            "ERExample",
+            "ERExample"
+        ],
+        "cqs": [
+            {
+                "id": "SWong_118_1_71300",
+                "cq": "Was the airline's attempt to minimize exposure to peanut dust sufficient to prevent an allergic reaction?"
+            },
+            {
+                "id": "SWong_118_1_25255",
+                "cq": "Was it reasonable for the airline to take measures to minimize exposure to peanuts, given that the son's reaction was severe and unexpected despite the precautions?"
+            },
+            {
+                "id": "SWong_118_1_96779",
+                "cq": "Was it possible that the peanut dust in the air was not solely from the eating of peanuts by other passengers, and might have also come from other sources?"
+            }
+        ]
+    },
+    "SWong_118_2": {
+        "intervention_id": "SWong_118_2",
+        "intervention": "SWong: \"We suspect that he was reacting to peanut residue in the area of his seat from the previous flight.\nWe may not be so lucky next time because we have been told that the next reaction is even stronger than the last.\nEven though we were on a peanutfree fight, my son still was not safe because of the peanut residue on the plane from a previous flight.\nIf peanuts are banned on all flights, my son would have been safe.\nWhen an allergic reaction occurs high up in the sky over a huge ocean, and an epipen injection can only give a person an extra 20 minutes, there is not enough time to turn the plane around and take the person to the hospital.\nI believe that it is reasonable to ban peanuts from airline flights if that assures the safety of a passenger that has a severe peanut allergy.\nThis decision could mean life or death for someone.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample",
+            "ERExample",
+            "ERExample"
+        ],
+        "cqs": [
+            {
+                "id": "SWong_118_2_34309",
+                "cq": "Does Wong's conclusion that banning peanuts on all flights is necessary to ensure safety, given the limited response time of an EpiPen injection and the vastness of the ocean, follow logically from his premises about the risks associated with peanut residue?"
+            },
+            {
+                "id": "SWong_118_2_14915",
+                "cq": "Is the conclusion that banning peanuts from all flights is reasonable based solely on the hypothetical scenario of a severe allergic reaction during flight, without considering potential consequences or alternatives for handling such emergencies?"
+            },
+            {
+                "id": "SWong_118_2_22780",
+                "cq": "Does banning peanuts on all flights based solely on preventing future allergic reactions assume a direct causal link between peanut presence and allergic reaction severity?"
+            }
+        ]
+    },
+    "Sithsaber__198": {
+        "intervention_id": "Sithsaber__198",
+        "intervention": "Sithsaber: \"Have you been to high school\nIt's shit\"\n < this message is answering to > \ng: \"high school is high school, college is college\"",
+        "dataset": "us2016reddit",
+        "schemes": [
+            "Ad hominem"
+        ],
+        "cqs": [
+            {
+                "id": "Sithsaber__198_64166",
+                "cq": "Does the comparison of 'high school' to 'shit' necessarily imply that the respondent's experience at high school was unfavorable, rather than simply being a colloquial or informal assessment?"
+            },
+            {
+                "id": "Sithsaber__198_89509",
+                "cq": "Does the conclusion that 'high school is high school, college is college' necessarily follow from the premise that 'high school is shit', without additional context or information about what constitutes a 'good' education?"
+            },
+            {
+                "id": "Sithsaber__198_62180",
+                "cq": "Does the comparison between 'high school' and 'college' imply that all high schools are equally bad, regardless of their individual quality?"
+            }
+        ]
+    },
+    "SofieM_128": {
+        "intervention_id": "SofieM_128",
+        "intervention": "SofieM: \"Keep in mind that you wouldn't be able to get out of the plane if it were in the air, either.\nI think deplaning is a bit extreme,\nbecause it could throw an already imbalanced flight schedule out of whack, and might delay flights even further or lead to cancellation.\nI sat on a tarmac in London for five hours earlier this year, but I'd rather wait it out than hop off the plane and miss an opportunity to take off.\nHowever, I see no problem with regular passenger updates on the progress of the delay.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample"
+        ],
+        "cqs": [
+            {
+                "id": "SofieM_128_97878",
+                "cq": "Does SofieM's consideration of personal comfort and delayed travel plans justify her dismissal of deplaning as a viable solution for handling delays, or is this a case of prioritizing convenience over safety?"
+            },
+            {
+                "id": "SofieM_128_42680",
+                "cq": "Does SofieM's consideration of her own past experience on a delayed flight at the airport necessarily justify applying that same reasoning to the situation where she is currently on the plane?"
+            },
+            {
+                "id": "SofieM_128_71476",
+                "cq": "Isn't the fact that you waited five hours sitting on a tarmac without deplaning evidence that waiting is, indeed, an acceptable option in this situation?"
+            }
+        ]
+    },
+    "SofieM_73": {
+        "intervention_id": "SofieM_73",
+        "intervention": "SofieM: \"the DOT got the idea of flight notifications from the airlines themselves,\nso I wouldn't be so quick to discount the incentive that customer satisfaction plays to airlines.\nHere is an excerpt from the proposed rule:\n\"Carriers recognize the importance of timely and accurate flight information, as evidenced by the fact that many of the largest U.S. carriers promise through their customer service plans to provide passengers all known information about delays and cancellations as soon as they become aware of the issue\" (48).\nAny business which intends to survive has to satisfy its customers, otherwise the customers will simply stop buying their product, and the business will go bankrupt. Airlines themselves already thought up flight status notifications because there was customer demand for them.\nI find it interesting that you claim neither passengers nor profits to be benefiting from the current state of air transit affairs.\nNow, air fare is affordable (prices of air fares have decreased 25% since 1991) and more available to citizens than ever before.\nAirlines like Southwest are benefiting exactly because they are offering low fares, serving their customer needs, which would seem to disprove your statement that both profits and passengers suffer in the status quo.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample"
+        ],
+        "cqs": [
+            {
+                "id": "SofieM_73_16869",
+                "cq": "Does the argument's assumption that airlines only provide flight notifications because of customer demand overlook the possibility that carriers might have developed these features due to industry-wide competitive pressures?"
+            },
+            {
+                "id": "SofieM_73_62126",
+                "cq": "Does the argument's conclusion that airlines' current flight notification practices are neutral, where both profits and passengers benefit, not follow logically from its claim that customer satisfaction is an important incentive for airlines to provide accurate and timely flight information?"
+            },
+            {
+                "id": "SofieM_73_22078",
+                "cq": "Does SofieM's claim that customer satisfaction is a key driver of business decision-making, as evidenced by airlines' own practices and the benefits they derive from it, not provide sufficient evidence to counter the potential alternative explanation that DOT proposed flight notifications in response to legislative or regulatory pressure rather than customer demand?"
+            }
+        ]
+    },
+    "SofieM_8": {
+        "intervention_id": "SofieM_8",
+        "intervention": "SofieM: \"In general, I think that blanket policies on this topic would be a bad idea,\nbecause people have varying capacities to handle travel.\nFor example, the first time I ever flew without a parent (13 years ago), I was 7 years old, and I went with my older brother who was 10.\nWe flew from Chicago to Colorado with no incident.\nHowever, that doesn't mean that every 7 or 10 year old can handle itmany can't, and shouldn't try.\nIt's something that the parents themselves should decide,\nbecause they know their children better than the airlines do.\nAlso, be careful when talking about \"minors\" flying alone on airplanes.\nI didn't turn 18 until I was already a sophomore in college\nDifferent airlines will treat this issue differently.\nApplying a blanket policy will take away the options that come in an open marketplace of ideas.\nIf I only had one option, because every airline was required to treat \"minors\" in the same manner, my travel choices would have been limited, not expanded.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "Example"
+        ],
+        "cqs": [
+            {
+                "id": "SofieM_8_62700",
+                "cq": "Does SofieM's personal experience and anecdote serve as a representative sample of all cases, or does it illustrate only one possible scenario?"
+            },
+            {
+                "id": "SofieM_8_81367",
+                "cq": "Does SofieM's personal experience of flying alone at a young age with adult supervision constitute sufficient evidence to support a blanket rejection of all blanket policies on minors flying alone?"
+            },
+            {
+                "id": "SofieM_8_58846",
+                "cq": "Does SofieM's experience as a 7-year-old flying with her older brother justify a blanket conclusion about the suitability of universal age restrictions on unaccompanied minors, or does it merely illustrate an anecdotal case that may not be representative of all possible situations?"
+            }
+        ]
+    },
+    "TRUMP_101": {
+        "intervention_id": "TRUMP_101",
+        "intervention": "TRUMP: \"It 's not negotiable , no\nLet her release the e-mails\nWhy did she delete 33,000\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Alternatives"
+        ],
+        "cqs": [
+            {
+                "id": "TRUMP_101_74859",
+                "cq": "What is the relevance of the number 33,000 to the argument's point about releasing the e-mails?"
+            },
+            {
+                "id": "TRUMP_101_24197",
+                "cq": "What evidence does Trump have that the deleted emails were indeed related to his alleged misconduct and not, for example, a routine management task?"
+            },
+            {
+                "id": "TRUMP_101_78486",
+                "cq": "What makes Trump's demand for releasing 33,000 emails non-negotiable?"
+            }
+        ]
+    },
+    "dberger_74_1": {
+        "intervention_id": "dberger_74_1",
+        "intervention": "dberger: \"There must be a complete ban on tree nuts and peanuts on planes.\nIt is a closed space.\nI am allergic to peanuts and almonds\nand I am impacted every time I fly.\nA nut free zone does not work\nsince the dust from nuts gets in the closed air system of the plane.\nFor the time that people are on planes there should be consideration of others who have no control as to the reactions they have to nuts.\nFor almost all other foods the allergy only occurs if the food is ingested\nso you can easily avoid the allergic reaction but not eating the food.\nThis is not true for many of us with nut allergies\nwe react if other people are eating the food\nsince it is an airborne allergy.\nI do fly but I have to take multiple Benadryl pills every 4 hours to keep from reacting to the airborne dust of the nuts.\nThis works for now\nbut I always wonder when it will no longer be enough.\nAn epipen is not the answer\nas it lasts only look enough for the plane to land\nwhich is not a practical solution when you are flying on a long flight over water\nand would certainly be a much greater inconvenience to the other passengers than a ban on nut products on planes if the plane was able to land.\nThe rules airlines have are ridiculous\nSouthwest is not nut free\nthey will not serve nuts\nbut if you fly a late flight the peanuts are all over the floor and seats.\nSome other airlines have the rows around you 'nut free'\nbut advise you they can do nothing if the person seated next to you brings nuts on and wants to eat them.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample",
+            "ERPracticalReasoning",
+            "ERExample",
+            "ERPracticalReasoning",
+            "ERExample",
+            "ERExample",
+            "ERExample",
+            "ERExample",
+            "ERExample",
+            "ERPracticalReasoning",
+            "ERExample",
+            "ERExample",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "dberger_74_1_58199",
+                "cq": "Does the argument's conclusion that a complete ban on tree nuts and peanuts is necessary because of the potential for airborne allergic reactions actually account for all possible scenarios, including cases where the allergic reaction occurs not from direct ingestion or exposure to airborne dust but through other means, such as cross-contamination?"
+            },
+            {
+                "id": "dberger_74_1_34567",
+                "cq": "Does the requirement of a complete ban on tree nuts and peanuts on planes for individuals with severe allergic reactions to airborne particles justify the imposition of this restriction on all passengers, regardless of their own allergy status?"
+            },
+            {
+                "id": "dberger_74_1_26069",
+                "cq": "Does the speaker's personal experience with a nut allergy on planes constitute sufficient evidence to justify a blanket ban on tree nuts and peanuts for all passengers, regardless of their individual allergies or sensitivities?"
+            }
+        ]
+    },
+    "dberger_74_2": {
+        "intervention_id": "dberger_74_2",
+        "intervention": "dberger: \"Other airlines with advance notice will not serve nuts\nbut all airlines allow passengers to bring on foods including nuts\nand will not stop the person from eating them if they wish to.\nSo you can have a 'nut free' flight and the person sitting next to you can take out their package of peanuts and eat away\nand the airlines will do nothing to help you.\nAgain all nuts should be banned from airplanes unless it is your own private plane  then go ahead and eat what you want.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "dberger_74_2_69461",
+                "cq": "Does the argument's solution of allowing all passengers to bring on foods including nuts, while excluding their consumption in-flight by other passengers, constitute a fair and reasonable way to address potential nut-related concerns?"
+            },
+            {
+                "id": "dberger_74_2_99603",
+                "cq": "Does the airline's refusal to serve nuts at check-in necessarily imply that they will not take any action if a passenger brings and consumes nuts on board, despite allowing other foods including nuts in carry-on luggage?"
+            },
+            {
+                "id": "dberger_74_2_17125",
+                "cq": "Does the fact that airlines allow passengers to bring their own food onto a flight necessarily mean they are implicitly allowing that food on other people's flights?"
+            }
+        ]
+    },
+    "dlpoole_223_1": {
+        "intervention_id": "dlpoole_223_1",
+        "intervention": "dlpoole: \"Bumping compensation should apply to all carriers\nbecause of the increasing use of regional carriers to serve smaller markets\nand their no lesser disruptiveness and potential expense to the traveler.\nPassengers may lack check cashing privileges away from their home airport, yet face unplanned and likely elevated expenses after being \"bumped.\"\nThey should have a mandatory option of cash payment.\nAn credit card credit, if immediate, would be more secure and as useful to more passengers than either a check or cash.\nThe proposed compensation limits are too low to provide an incentive to the airlines to limit overbooking\nand may be arbitrarily unfair to certain travelers.\nThe Wall Street Journal recently reproposed a 1977 proposal by the late economist Julian Simon of an auction that would offer bumped passengers a gradually rising reward for giving up their seat.\nThe arguments are rather compelling.\nSee the WSJ, June 8, 2010, \"Auctions for Overbooking\"  or\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "dlpoole_223_1_29928",
+                "cq": "Does the assumption that mandatory cash payment would be a secure and useful option for bumped passengers account for the potential risks and drawbacks of check cashing services?"
+            },
+            {
+                "id": "dlpoole_223_1_48202",
+                "cq": "Does the argument that bumped passengers may lack access to alternative financial resources (e.g., check cashing privileges) justify imposing a mandatory cash payment option on all carriers?"
+            },
+            {
+                "id": "dlpoole_223_1_51975",
+                "cq": "Does the author's argument that bumped passengers should have a mandatory option of cash payment hold true for all types of travelers, including those with alternative access to credit or financial resources?"
+            }
+        ]
+    },
+    "dlpoole_223_2": {
+        "intervention_id": "dlpoole_223_2",
+        "intervention": "dlpoole: \"http://online.wsj.com/article/SB10001424052748703303904575293011757655060.html\nThe airlines will overbook so as to optimize their financial results under any given set of caps,\nso some passengers will still be involuntarily denied boarding on overbooked flights.\nAn auction will more accurately price the delay\nand the sellers (the delayed passenger(s)) will be left with no complaint that it was involuntary.\nAn auction would also force the carriers to face the cost of overbooking in customer dissatisfaction and better inform their flight scheduling decisions.\nI recall hearing seats being auctioned by progressive increases in the promised compensation by gate agents,\nbut that was long, long ago and under far greater seat availability and lower probabilities of cascading delays and subsequent denials of boarding for those who took the compensation.\nThose procedures were surely regulated by DOT,\n(perhaps when the industry was more heavily regulated,)\nso perhaps those earlier rules should be revisited.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "dlpoole_223_2_20103",
+                "cq": "Does the assumption that an auction would accurately price the delay and that carriers would be incentivized to minimize overbooking hold when accounting for factors such as bid manipulation, asymmetric information, and differing willingness-to-pay among passengers?"
+            },
+            {
+                "id": "dlpoole_223_2_75917",
+                "cq": "Does allowing airlines to auction off involuntarily denied boarding seats, rather than compensating passengers directly, actually increase overall satisfaction among affected travelers?"
+            },
+            {
+                "id": "dlpoole_223_2_99677",
+                "cq": "Does the conclusion that an auction would force carriers to face the cost of overbooking and lead to better flight scheduling decisions logically follow from the premises about the nature of airline overbooking?"
+            }
+        ]
+    },
+    "drgreg_181_1": {
+        "intervention_id": "drgreg_181_1",
+        "intervention": "drgreg: \"I believe airlines should be forced to fully reimburse confirmed passengers whenever the airline changes flight schedules after booking.\nI frequently reserve flights up to one year in advance, in order to secure the lowest price and best seat.\nI do this even though the airline will charge me $150 (plus fare difference) to change my itinerary for personal reasons once booked.\nHowever, the airline frequently change flight schedules for confirmed passengers without compensation, nor consideration of passengers' plans.\nFor example, a trip to Europe on United Airlines has now been changed 7 times by the airline since I confirmed my reservation in December 2009.\nThe resulting changes have added nearly 5 hours to the total trip, plus I'm now required to leave at 3AM for the airport (instead of my original departure of 8AM), and I return after midnight, rather than a more reasonable 10:30PM.\nIn addition, United Airlines has not offered to waive the change fee, nor provide seats on alternate dates or airline partners.\nIf I'm required to pay exorbitant fees to the airlines to change my original itinerary, due to personal circumstances, then the airlines should also be required to compensate inconvenienced passengers in full AND provide satisfactory alternate travel arrangements comparable to the original flight schedule.\nPerhaps this would force the airlines to recognize the hardships they create for passengers when schedules are revised after passengers have already received confirmed flights and make related travel arrangements.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERExample",
+            "ERPracticalReasoning",
+            "ERExample",
+            "ERExample",
+            "ERExample",
+            "ERExample",
+            "ERExample"
+        ],
+        "cqs": [
+            {
+                "id": "drgreg_181_1_87176",
+                "cq": "Does the fact that an individual's plans are significantly disrupted by repeated unscheduled changes to their confirmed flight schedule, resulting in substantial additional travel time and inconvenience, justify a requirement for airlines to fully reimburse all confirmed passengers, regardless of personal circumstances?"
+            },
+            {
+                "id": "drgreg_181_1_39024",
+                "cq": "Is it reasonable to assume that airlines' financial losses from changing flight schedules are equivalent to the losses incurred by passengers when their travel plans are disrupted?"
+            },
+            {
+                "id": "drgreg_181_1_22064",
+                "cq": "Does requiring airlines to fully reimburse confirmed passengers for schedule changes necessarily ensure that they will prioritize providing satisfactory alternate travel arrangements comparable to the original flight schedule?"
+            }
+        ]
+    },
+    "elizwestley_222": {
+        "intervention_id": "elizwestley_222",
+        "intervention": "elizwestley: \"A peanutfree table is less likely to have smears of peanut butter on/under it.\nRisk of exposure is reduced\nwhich is not as good as eliminated but is better than full exposure.\nI see the parallel with these flight proposals.\nBan peanut products.\nYes, people will \"sneak\" them.\nHowever, the risk will still be reduced over the nothing that we are doing now.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "elizwestley_222_16055",
+                "cq": "Does the proposed ban on peanut products effectively address the root cause of smears and exposure, or would it merely displace the problem to another environment?"
+            },
+            {
+                "id": "elizwestley_222_60781",
+                "cq": "Is it reasonable to assume that banning peanut products would eliminate all instances of exposure, when in fact some individuals may still be able to access or consume these products despite the ban?"
+            },
+            {
+                "id": "elizwestley_222_57030",
+                "cq": "Does reducing risk of exposure mean eliminating the possibility entirely, or is there still a chance that a prohibited substance could be introduced into the environment?"
+            }
+        ]
+    },
+    "elizwestley_68": {
+        "intervention_id": "elizwestley_68",
+        "intervention": "elizwestley: \"I've registered my son on a flight as peanutallergic and had the attendant try to hand him a bag of peanuts.\nFlight personnel need more education on this.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample"
+        ],
+        "cqs": [
+            {
+                "id": "elizwestley_68_75201",
+                "cq": "Did the flight attendant's attempt to hand Elizwestley's son a bag of peanuts occur after he had explicitly informed her of his peanut allergy?"
+            },
+            {
+                "id": "elizwestley_68_55731",
+                "cq": "Does the airline's policy of issuing peanut allergy warnings not being sufficient to prevent an allergic reaction justify deviating from standard procedure?"
+            },
+            {
+                "id": "elizwestley_68_87950",
+                "cq": "Does the airline's policy on handling peanut allergies specify that flight attendants should not offer peanuts to passengers with known nut allergies?"
+            }
+        ]
+    },
+    "golff4fun_155": {
+        "intervention_id": "golff4fun_155",
+        "intervention": "golff4fun: \"I think it's important to stress the real reason that aircraft is not returning to the gate.\nOnce the aircraft pulls away from the jetway, the crew is on the clock.\nThey are not being paid while sitting at a gate.\nAnd 3 hours is too long to keep people on a grounded airplane.\"\n < this message is answering to > \nAFCHF: \"DOT should set maximum tarmac delay trigger.\nIt then should apply to ALL AIRLINES and ALL CLASSES of AIRCRAFT.\nThe airlines need to make a legal committment (contract of carriage).\nDeplaneing without CBP screening IS a viable option.\nAs a military member, I have done this many times during overseas contract flights.\nI realize this is customs rather than airport security, but the concept is the same.\nAllow passengers to deplane during gate holds,\nbut require them to remain in the immediate area.\nThis is no different than an openended delay prior to boarding.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "golff4fun_155_20164",
+                "cq": "Does the argument that deplaning during gate holds without CBP screening is a viable option for all airlines and classes of aircraft assume that the absence of screening is acceptable when the crew is still on duty?"
+            },
+            {
+                "id": "golff4fun_155_22755",
+                "cq": "Does the argument assume that airlines are always responsible for paying crew members during ground delays, regardless of the airline's contractual obligations?"
+            },
+            {
+                "id": "golff4fun_155_72433",
+                "cq": "Does the proposed solution of allowing deplaning during gate holds, but requiring passengers to remain in the immediate area, not create a new and potentially more complex issue of managing disembarking passengers while still ensuring security screening?"
+            }
+        ]
+    },
+    "golff4fun_162": {
+        "intervention_id": "golff4fun_162",
+        "intervention": "golff4fun: \"Since weight seems to be the issue with charging extra fees for checked luggage,\nthe 98 lb person should pay less for a ticket than the 250 pounder.\nI have thought that from the very beginning when the airlines introduced this new fee.\"\n < this message is answering to > \nNYCMuscleman18: \"I know this sounds silly,\nbut I think I shouldn't be charged as much to check a bag as the 250lb man sitting next to me.\nI don't mind getting weighed in public...\nI don't know.\nThis is just something that seems unfair to lots of passengers,\nand that probably won't get changed without regulation.\nAt the very least, DOT should make clear to airlines that they can discriminate on the basis of weight without fearing regulatory action.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "golff4fun_162_38510",
+                "cq": "Does the claim that charging extra fees for checked luggage based on weight is unfair imply that all other factors, such as seat size or boarding difficulty, should also be taken into account when determining ticket prices?"
+            },
+            {
+                "id": "golff4fun_162_15580",
+                "cq": "Does the argument's assumption that being overweight increases one's risk of damaging airline equipment or taking up more space on a plane hold any empirical evidence to support it?"
+            },
+            {
+                "id": "golff4fun_162_87326",
+                "cq": "Does being a 250-pound person sitting next to someone who weighs less have any bearing on whether or not they should be charged the same fee for checking a bag?"
+            }
+        ]
+    },
+    "grayk47__302": {
+        "intervention_id": "grayk47__302",
+        "intervention": "grayk47: \" you give an illegally (as in you stole it) acquired firearm to a friend to use responsibly\nthat person accidentally shoots someone\nwho should be blamed\nBoth should be held responsible\nThis is the same case for Snowden\nhe gave illegally acquired papers that he stole, to the Times in the hopes that they would responsible with it\nThey failed in that\na terrorist group was able to use the exposed information to alter their plans\nIt's cut and dry\"",
+        "dataset": "us2016reddit",
+        "schemes": [
+            "Analogy"
+        ],
+        "cqs": [
+            {
+                "id": "grayk47__302_32944",
+                "cq": "Does the fact that one individual (the original gun owner) broke the law by acquiring the firearm imply that they have a diminished moral obligation to be responsible with it, or is this a distinction without a difference?"
+            },
+            {
+                "id": "grayk47__302_70644",
+                "cq": "Does the argument's reliance on a binary distinction between the responsibility of the person giving and receiving illegally acquired items assume that both parties are equally culpable, and does it ignore the potential for differing levels of control and knowledge over the consequences of their actions?"
+            },
+            {
+                "id": "grayk47__302_30875",
+                "cq": "Does the argument equating the responsibility of an individual who steals a firearm with that of a whistleblower like Snowden, who steals classified information to expose national security threats, take into account the fundamentally different risks and consequences associated with each action?"
+            }
+        ]
+    },
+    "hgranato_211": {
+        "intervention_id": "hgranato_211",
+        "intervention": "hgranato: \"As an adult with a severe tree nut allergy,\nI certainly empathize with the folks with peanut allergies.\nThat said, it seems arbitrary to ban peanuts and not tree nuts\ngiven the likelihood of a serious reaction is fairly similar.\nIf the airlines could have precautions in place,\nthat would be a positive step.\nHowever, supplying those items really should be the responsibility of the person with the allergy or, if it is a child, the caretaker.\nFurther, the logistics of implementing such a ban would be almost impossible.\nAre we looking at searching passenger luggage, banning the sale of all foods with peanuts\n(and since most carry the \"made in a facility that also handles\", you'd be looking at eliminating almost all foods)\nand regulating all restaurants at airports as well?\nUnfortunately, personal responsibility and proactive steps on the part of the person with the allergy is likely the only viable solution.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERExample",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "hgranato_211_40966",
+                "cq": "Does the speaker's argument that personal responsibility is a viable solution to mitigating the risk of peanut allergies adequately address the potential burden and inconvenience it may place on individuals with severe allergies?"
+            },
+            {
+                "id": "hgranato_211_98674",
+                "cq": "Does the author's argument for personal responsibility in managing food allergies adequately address and mitigate the risk of harm to individuals with life-threatening allergies who may not have the means or ability to take such precautions?"
+            },
+            {
+                "id": "hgranato_211_55496",
+                "cq": "Does the argument's assumption that banning peanuts would be similarly effective in preventing serious reactions for tree nut allergies account for potential differences in how different types of nuts are processed and handled?"
+            }
+        ]
+    },
+    "howie_201": {
+        "intervention_id": "howie_201",
+        "intervention": "howie: \"First, stop reading that propaganda magazine.\nPublications like that only serve to create fear in minds like yours.\nSecond, how old is your kid?\nIf under 5, relax the sensitivity will probably go away by the time he is 5.\nThird, go to a real doctor  not an allergist and see if there is really even a problem at all.\nThis supposed plague of food allergies is the result of very clever advertising by this profession of pseudoscientists.\nAllergists are not doctors.\nI sincerely doubt you \"know plenty of people who will die if they do have peanuts or breathe in peanut dust\".\nAlmost noone is actually that allergic.\nLot's of people think they are much worse off than they really are.\nMethinks you have an agenda.\nHighly suspicious that the child of a physician who is hyper aware of bad things that can happen coincidentally has not one, but three life threatening allergies.\nHave you heard of Munchasen by Proxy?\nDo you realize that most kids have mild reactions to various food items that they invariably grow out of by the age of 5?\nFood allergies have to be the most overblown imagined health problem of our time.\nHypochondriacs all.\"\n < this message is answering to > \njsooudi: \"I'm a physician, epidemiologist, and mother to a four year old boy with allergies to milk, peanuts and egg.\nMy son's dairy allergy is severe,\nand he has had numerous lifethreatening anaphylactic reactions to trace amounts of milk,\nwhich required multiple doses of epinephrine and trips to the Emergency Department.\nTests indicate that his peanut allergy is worse,\nbut fortunately he has only been exposed once to a peanut;\nhe put one in his mouth and had a relatively mild  reaction.\nI've traveled with my children\nand despite calling ahead, making requests, and reminding employees at the door, I've rarely had respect, let alone consistency, in any kind of peanutfree buffer zone or flight.\nSeveral years ago Continental Airlines customer service headquarters informed me that they would serve peanuts on all flights as they were unable to guarantee a peanut free flight.\n(So why not hand out weapons since they can't guarantee a weapon free flight either?)\nI've sat with my epi pen in hand on a filthy flight with visible peanut crumbs on the floor while a flight attendant insisted on offering peanuts to the passengers around me because \"it was their right.\"\nFortunately for me, my son's peanut allergy is not severe enough that it prohibits us from air travel.\nNow that he is old enough to not put things in his mouth, and to protect himself, we are safer.\nHowever, I know of many, many others in the allergy community, children and adults who simply can NOT fly.\nMy son's dairy allergy is quite severe.\nThe world would be a much safer place for us if no one consumed milk near him.\nIf his skin touches anything that once touched milk, even if it was partially cleaned, he will get severe hives.\nIf he consumes even less than a drop, within seconds his lips, eyes and face will swell, he will be covered in hives, vomit, and be gasping for breath.\nWithout epinephrine he would probably die within minutes.\nBut milk is ubiquitous,\nand milk allergy relatively uncommon,\nso we must protect ourselves.\nPeanut allergy is common,\nand it is a simple step to serve an alternative peanut based snacks for a short period of time.\nSo why is this a big problem?\nThe vast majority of potential reactions would be eliminated by simply avoiding snacks that have peanuts or peanut butter as an ingredient.\nPeanut oil is known to contain very little of the actual peanut protein,\nand would be of little risk in an airborne environment.\nAs a physician, I have responded to the call from airline staff asking for emergency medical assistance.\nI am well aware of how expensive and inconvenient it is to ground a plane.\nIn addition, most epipens come in two pack doses,\neach of which are good for maybe 10 to 15 minutes.\nWhich in a severe anaphylactic reaction is simply not enough time between the beginning of a reaction and the patient reaching EMS.\nI've found that other passengers, as a rule, are extremely supportive,\nand are more than happy to help with a fellow passengers safety.\nI think the people commenting on this site would react entirely differently were they seated next to an allergic child on a plane.\nOf course they would refrain from eating peanuts for a few hours if they knew it would hurt someone they were looking in the face.\nBut I am sympathetic to individuals who are unhappy with yet another discomfort inflicted on air travelers.\nThis restriction is designed to protect people with allergies from the airlines callous disregard for cleanliness and for our safety, not from our fellow passengers.\n\"Hi.  My name is Steven.  I am 4 years old.\nI am allergic to peanuts, eggs and cow milk.\nIf I eat a peanut I'll get sick.\nI ate a nut one time and got a big bump on my lip and it swelled up and it was hard to breathe.\nIt was scary and my dad gave me some medicine that made it better.\nI would like for them to not give out peanuts so I won't get sick because I'm allergic.\nEverybody should drink Sprite and eat Pringles and Pretzels.\"\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERAdHominem"
+        ],
+        "cqs": [
+            {
+                "id": "howie_201_49685",
+                "cq": "How does Howie's skepticism of the prevalence and severity of food allergies align with his own family's experience as a physician, epidemiologist, and parent of a child with multiple life-threatening allergies?"
+            },
+            {
+                "id": "howie_201_26342",
+                "cq": "Does Howie's dismissal of Jsooudi's experiences and concerns as an allergist, physician, and mother based on unverified assumptions about the prevalence and severity of food allergies among children, reflect a lack of understanding or empathy for individuals with life-threatening allergies?"
+            },
+            {
+                "id": "howie_201_49127",
+                "cq": "Does the author's personal experience with her child's severe allergies warrant a blanket restriction on peanuts for all airline passengers, or is this policy merely a convenience-driven measure?"
+            }
+        ]
+    },
+    "howie_208": {
+        "intervention_id": "howie_208",
+        "intervention": "howie: \"Has ANYONE ever actually died on a plane from eating peanuts?\nDidn't think so.\nMost food allergies are imagined.\nYou clearly have a financial interest in promoting the myth of food allergy.\nIf someone is actually that allergic, they should stay home and not inconvenience the rest of us.\"\n < this message is answering to > \nDoctor-Mom: \"I would support a full ban of peanut products on any airline.\nPeanut reactions can be life threatening.\nAn individual doesn't have to consume the product to have a life threatening reaction.\nThey can have contact or inhalation reactions.\nRestricting to certain flights is not enough,\nas residue can be rampant.\nProviding buffer zones is a thoughtful gesture,\nbut from a practical point of view does not work.\nWith so many food choices available, why are peanuts a necessary choice?\nI am a physician , and author on the subject.\nI have free food allergy online support forums with 3000 members.\nhttp://www.drmomsallergyrx.com/\nI would be more than willing to work with you in any way on this decision making process.\nThe allergic community is so grateful that you are allowing our voices to be heard.\nThe decision you are considering could save many lives.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERAdHominem"
+        ],
+        "cqs": [
+            {
+                "id": "howie_208_19358",
+                "cq": "Is the argument that a full ban on peanut products is necessary to prevent life-threatening reactions based solely on the author's experience with her own online support forums, rather than robust empirical evidence or expert consensus?"
+            },
+            {
+                "id": "howie_208_55047",
+                "cq": "Does Doctor-Mom's assertion that peanut reactions can be life-threatening regardless of consumption actually account for the fact that airline peanuts are typically not a direct contact food source, and therefore the risk is likely negligible?"
+            },
+            {
+                "id": "howie_208_66421",
+                "cq": "Is Doctor-Mom's conclusion that a full ban on peanut products is necessary to prevent life-threatening reactions justified by her own assertion that individuals with severe allergies can experience reactions through contact or inhalation, rather than just consumption?"
+            }
+        ]
+    },
+    "howie_213": {
+        "intervention_id": "howie_213",
+        "intervention": "howie: \"While I still dispute whether your reaction will be as severe as you believe, at least you realize that it is your responsibility to take precautions.\nYour ailment is not shared by the general population,\nand should not be an excuse to infringe upon the rights of others.\"\n < this message is answering to > \nhgranato: \"As an adult with a severe tree nut allergy,\nI certainly empathize with the folks with peanut allergies.\nThat said, it seems arbitrary to ban peanuts and not tree nuts\ngiven the likelihood of a serious reaction is fairly similar.\nIf the airlines could have precautions in place,\nthat would be a positive step.\nHowever, supplying those items really should be the responsibility of the person with the allergy or, if it is a child, the caretaker.\nFurther, the logistics of implementing such a ban would be almost impossible.\nAre we looking at searching passenger luggage, banning the sale of all foods with peanuts\n(and since most carry the \"made in a facility that also handles\", you'd be looking at eliminating almost all foods)\nand regulating all restaurants at airports as well?\nUnfortunately, personal responsibility and proactive steps on the part of the person with the allergy is likely the only viable solution.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "howie_213_60363",
+                "cq": "Does howie's assumption about the severity of his own reaction guarantee that the risks associated with peanuts are equally severe for someone else, like hgranato?"
+            },
+            {
+                "id": "howie_213_65944",
+                "cq": "Does Howie's argument about personal responsibility adequately address the potential risks and consequences of not providing accommodations for individuals with severe tree nut allergies?"
+            },
+            {
+                "id": "howie_213_23558",
+                "cq": "Is it reasonable to assume that the severity of a tree nut allergy is comparable to that of a peanut allergy, based solely on their potential impact on an individual's life?"
+            }
+        ]
+    },
+    "howie_238": {
+        "intervention_id": "howie_238",
+        "intervention": "howie: \"Mulder is right on point.\nMost food allergies are completely imagined.\nAn overly anxious parent gets it in her head that little jimmy might have had a hive after someone had peanuts in his vicinity,\nand now he's \"deathly allergic\".\nHas ANYONE ever actually died on a plane from peanuts (other than by choking on them)?\nI sincerely doubt it.\nPeanuts are incredibly nutritious,\nalmost universally enjoyed,\nand quite filling in a small serving.\nSimply put, pound for pound there is no better food on the planet.\nThis whole antipeanut hysteria is ridiculous!\nLeave my peanuts alone!\nIf you are one of the incredibly rare people that have an actual medically diagnosed severe allergy to this wonderful food, then you better never leave the house because peanuts are everywhere.\nYou certainly should not be flying.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "howie_238_40605",
+                "cq": "Does the argument's dismissal of an individual's severe allergy diagnosis based solely on its rarity and perceived inconsequentiality justify denying their right to take necessary precautions for safety?"
+            },
+            {
+                "id": "howie_238_90868",
+                "cq": "Is it possible that an overly anxious parent may have misinterpreted a harmless exposure to peanuts as a severe allergic reaction, leading them to advocate for stricter peanut restrictions?"
+            },
+            {
+                "id": "howie_238_11661",
+                "cq": "Does Howie's claim that there is no credible evidence of peanut-induced fatalities on planes assume away the possibility of extremely rare, unreported incidents?"
+            }
+        ]
+    },
+    "kateinhawaii_103": {
+        "intervention_id": "kateinhawaii_103",
+        "intervention": "kateinhawaii: \"I personally have suffered from peanut allergies for over 40 years.\nIf there are packaged peanuts served on board a flight, it's 100% guaranteed that I will have a reaction from the peanut dust.\nI do not agree with a buffer zone for a couple of reasons.\nFor me, it's the dust in the air.\nSomeone posted that the air circulates peanut dust right out of the air\nbut apparently not quick enough to prevent a life threatening reaction.\nYou know, airlines tried to create nonsmoking zones on airplanes but that didn't work either.\nI have been on flights where nasty (and do I mean NASTY) flight attendants have made sarcastic remarks about me and my allergies especially on one Delta flight.\nNorthwest was great\nbecause they respected their passengers enough to address their concerns\nand prohibited peanuts altogether.\nIt was as much a relief to walk onto one of their flights as it was to walk onto one of the first smoke free flights!\nSmokers use to use the same logic and reasoning to justify smoking on flights as these peanut proponents are using now.\nI flew on many smoking flights and never needed to inject myself so that I could breathe\nI can't say the same for flights with peanuts.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample",
+            "ERExample"
+        ],
+        "cqs": [
+            {
+                "id": "kateinhawaii_103_26270",
+                "cq": "Does Kate's personal experience with peanut allergies and her perceived airline experiences justify a blanket prohibition on peanuts for all passengers?"
+            },
+            {
+                "id": "kateinhawaii_103_20261",
+                "cq": "Is Kateinhawaii's claim that flight attendants who have never experienced a peanut allergy can adequately assess and mitigate the risks associated with peanut dust in the air on flights sufficient to justify her proposed buffer zone?"
+            },
+            {
+                "id": "kateinhawaii_103_34970",
+                "cq": "Is it possible that Kate's personal experience with peanut allergies is not representative of the typical reaction to peanut dust on a plane?"
+            }
+        ]
+    },
+    "lauraclare_136": {
+        "intervention_id": "lauraclare_136",
+        "intervention": "lauraclare: \"I have two children with potentially life threatening allergies to peanuts.\nUnlike what one person commented, this is not a latest illness fad.\nThe latest research indicates that peanut allergy doubled in children from 1997 to 2002 and that number continues to increase.\nIt is one of the most deadly food allergies.\nThe presence of nuts on planes is a real fear.\nWhile my kids have other potentially deadly food allergies,\npeanuts pose a unique risk.\nNuts break into fine pieces with dust that can become airborne.\nPeanut butter is sticky and gets wiped on seats and tray tables.\nEven the slightest microscopic amount of nuts can create an anaphylactic reaction.\nAlthough EpiPens can help,\nthey are not 100% effective\nand should not be considered a solution to the risk peanuts pose to allergic individuals on planes.\nAdditional steroids, Benadryl shots, oxygen and other medical intervention may be necessary to stop an anaphylactic reaction.\nEpiPens may need to be administered every 15 to 30 minutes as well.\nPeople still die even with intervention.\nPlease help protect people by offering people the opportunity to get peanut free flights or ban the sale and serving of nut products on the planes.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "lauraclare_136_96308",
+                "cq": "Does the argument's emphasis on peanuts posing a unique risk to children with life-threatening allergies, combined with the potential consequences of anaphylactic reactions, justify the blanket prohibition on nuts and nut products on planes?"
+            },
+            {
+                "id": "lauraclare_136_17492",
+                "cq": "Does Lauraclare's conclusion that peanut-free flights or a ban on nut products are necessary to protect people from anaphylactic reactions to peanuts adequately address the potential risks and benefits of such measures, taking into account the limited effectiveness of EpiPens and the availability of alternative medical interventions?"
+            },
+            {
+                "id": "lauraclare_136_45008",
+                "cq": "Does the argument that peanuts pose a unique risk to children with allergies on planes, based solely on their potential for airborne transmission and severity of anaphylactic reactions, justify restricting the sale and serving of peanut products on all flights, regardless of the effectiveness of existing safety measures?"
+            }
+        ]
+    },
+    "mcliverty_188_1": {
+        "intervention_id": "mcliverty_188_1",
+        "intervention": "mcliverty: \"Lack of space should be at the top of the list of issues the airlines need to address.\nWhenever you hear about new airliners (the big 300) they don't mention improved arm and leg room.\nI can handle the commuters because typically you aren't on there long, but cross country is killer in those economy class seats.\nIf they were ergonomically designed and comfortable, maybe they would be better, but they are terrible for lumbar and leg support.\nYou could probably save space by using more comfortable materials that are slimmer in design.\nEven the same leg room with a 3\" wider seat would be great.\nMaybe a pop up foot rest/block from the floor to rest your feet on..\nAir travel has really just become a necessary evil you have to survive.\nIt's certainly not something enjoyed or eagerly anticipated any longer.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning",
+            "ERPracticalReasoning",
+            "ERPracticalReasoning",
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "mcliverty_188_1_95940",
+                "cq": "Does the speaker's conclusion that airlines should prioritize comfort due to the unpleasantness of economy class seats on long flights justify their claim that lack of space should be at the top of the list of issues airlines need to address?"
+            },
+            {
+                "id": "mcliverty_188_1_86688",
+                "cq": "Does the argument's focus solely on passenger comfort overlook the economic and practical considerations that may be more significant factors in airline design decisions?"
+            },
+            {
+                "id": "mcliverty_188_1_93657",
+                "cq": "How can the speaker be certain that changing the materials used in airline seats would necessarily result in improved ergonomics and comfort for passengers, rather than just making them slimmer?"
+            }
+        ]
+    },
+    "mcliverty_188_2": {
+        "intervention_id": "mcliverty_188_2",
+        "intervention": "mcliverty: \"I avoid it if I can and consolidate my trips whenever possible.\nI would rather drive 1012 hours in my car than fly at this point.\nI travel with my dog about twice a year.\nBecause he is 28 pnds, he has to be checked and travel in cargo.\nIt costs anywhere from $300400 round trip to take him.\nI would rather be allowed to put him in a carrier that is secured by the seat belt and have him travel in the seat next to me (that I purchase a ticket for), especially if I have to pay the same or more for his ticket in cargo as I do for mine.\nThe cost and stress of handing him over to cargo is wearing me down and I will most likely not take him on some future trips so they will loose my business.\nIf the airlines could make their processes more customer & dog friendly, it would make travel much more enjoyable.\nI'm sure my dog would behave as well or better than some humans in the cabin.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample",
+            "ERExample",
+            "ERExample"
+        ],
+        "cqs": [
+            {
+                "id": "mcliverty_188_2_44386",
+                "cq": "Does the argument's conclusion that airlines need to become more customer and dog friendly solely because the speaker is willing to give up traveling with their dog if they can't find a pet-friendly solution actually require the airlines to cater specifically to the needs of customers like the speaker, or could it be that the speaker's own willingness to adapt would suffice?"
+            },
+            {
+                "id": "mcliverty_188_2_57100",
+                "cq": "Does the argument's assumption that airlines can simply modify their processes to accommodate pet owners without making significant changes to the underlying operational and safety protocols of flying an animal in cargo hold justify the proposed solution?"
+            },
+            {
+                "id": "mcliverty_188_2_39721",
+                "cq": "Is it logically consistent to assume that airlines can simply modify their processes without actually having to add or increase revenue streams to compensate for the additional costs and logistical challenges associated with accommodating service animals in the cabin?"
+            }
+        ]
+    },
+    "mfball__143": {
+        "intervention_id": "mfball__143",
+        "intervention": "mfball: \"we listen to the top five Democrats\nthe Republicans had the top eleven or so in their debate\nChafee seemed like a trainwreck in the debate\nO'Malley did alright\nYou might be right about his chances at getting the nomination\nsome candidates' chances could be influenced greatly by the amount of media coverage they're getting\nPeople were swearing up and down that Bernie didn't have a shot\nno one had ever heard of him\nHillary was the only one getting airtime\nnow he's getting a lot of attention\n he's a competitive candidate\n I don't know a lot about O'Malley\nnobody's been talking about him or interviewing him\nI don't think he came off as a \"sideshow\" candidate in the debate\nIf he started getting more attention, I imagine he could probably pull numbers at least as good as the lowest of the Republicans that are still being talked about\"",
+        "dataset": "us2016reddit",
+        "schemes": [
+            "Example",
+            "Example",
+            "Example",
+            "Example"
+        ],
+        "cqs": [
+            {
+                "id": "mfball__143_86160",
+                "cq": "How does mfball's claim about media coverage influencing candidates' chances of getting the nomination relate to his initial assertion that Bernie Sanders was unlikely to win?"
+            },
+            {
+                "id": "mfball__143_59498",
+                "cq": "How does mfball's claim about O'Malley's chances being influenced by media coverage, which is supposedly scarce for him, justify the comparison to the lowest performing Republicans?"
+            },
+            {
+                "id": "mfball__143_89101",
+                "cq": "Does the argument's conclusion ('he could probably pull numbers at least as good as the lowest of the Republicans') follow logically and reasonably from the provided information about media coverage, candidate debate performances, and public perception?"
+            }
+        ]
+    },
+    "msrocker_127": {
+        "intervention_id": "msrocker_127",
+        "intervention": "msrocker: \"I agree with many others that even 3 hours is too long..\nI think it should be 2\nand should apply to all flights regardless of what airport, airline, destination, etc.\nPeople are people no matter where they are\nand should not be subjected to being miserable after paying a fee to fly somewhere!\nPersonally I have anxiety issues\nand not being able to get out of an enclosed space is extremely stressful.\nI think the airlines will now be forced to do all they can to prevent these delays.\nEven though all will not be possible to prevent\nI think there will be much less episodes wtih these new rules.\nI think it goes a LONG ways to alleviate frustration\nif we were informed in detail every 30 minutes.\nI have been stranded on a plane 3 times\nthankfully not more than 1 1/2 hours\nbut on one of these flights we were informed regularly along the way\nand it made all the difference.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERExample",
+            "ERExample",
+            "ERExample",
+            "ERPracticalReasoning",
+            "ERExample",
+            "ERPracticalReasoning",
+            "ERExample",
+            "ERExample"
+        ],
+        "cqs": [
+            {
+                "id": "msrocker_127_81053",
+                "cq": "Does the speaker's personal experience with anxiety and their anecdotal account of a positive outcome justify applying to all flights, regardless of potential airline variability in implementation?"
+            },
+            {
+                "id": "msrocker_127_19529",
+                "cq": "Does being informed every 30 minutes actually alleviate frustration for individuals with anxiety issues, or would it merely serve as a distraction from the underlying delay?"
+            },
+            {
+                "id": "msrocker_127_67895",
+                "cq": "How can a blanket exemption for flights under 3 hours justify applying a strict new rule to all other flights, despite acknowledging that people's experiences and needs may vary greatly?"
+            }
+        ]
+    },
+    "secretcurse__137": {
+        "intervention_id": "secretcurse__137",
+        "intervention": "secretcurse: \"Don't hold your breath for the Green Party Presidential Debate on any of our major news networks\na person that wants to run on the Green Party (or any other party) ticket absolutely has that right and should be able to express their views in public\nthere's no obligation to give them equal time on privately owned networks compared to the Democratic or Republican candidates that actually have a shot at winning the election\nClinton is extremely likely to win the Democratic nomination\nSanders has a shot at beating her\nO'Malley, Webb, and Chafee are all sideshow candidates in the primary\njust like the nominees from the Green, Libertarian, and Communist parties will be in the general election\nEveryone should be allowed to express themselves in public places freely, but a cable news network isn't a public place\"",
+        "dataset": "us2016reddit",
+        "schemes": [
+            "Example"
+        ],
+        "cqs": [
+            {
+                "id": "secretcurse__137_29808",
+                "cq": "Is the distinction between a publicly accessible forum (e.g. the Democratic Debate) and private, cable news networks justified?"
+            },
+            {
+                "id": "secretcurse__137_49958",
+                "cq": "Does the restriction of non-mainstream candidates to not appearing on major news networks in favor of their privately owned counterparts constitute a form of indirect discrimination based on party affiliation?"
+            },
+            {
+                "id": "secretcurse__137_42056",
+                "cq": "Does the argument's distinction between publicly accessible spaces (e.g., town halls, public debates) and privately owned media outlets (e.g., cable news networks) align with a logically consistent and fair application of freedom of expression?"
+            }
+        ]
+    },
+    "secretcurse__139": {
+        "intervention_id": "secretcurse__139",
+        "intervention": "secretcurse: \"The first debate was already limited to five people\nAccording to the FEC\n171 people have officially declared their candidacy for the Democratic Party nomination with the FEC (sort by party to see the 171 people a bit easier)\nDo you think every single one of the 171 people that have filed the paperwork with the FEC declaring their candidacy deserves their fair shot at expressing themselves at the first debate\"",
+        "dataset": "us2016reddit",
+        "schemes": [
+            "ArgumentFromAuthority",
+            "ArgumentFromAuthority"
+        ],
+        "cqs": [
+            {
+                "id": "secretcurse__139_50215",
+                "cq": "Does being listed as a candidate by the FEC with formal paperwork necessarily imply that the individual has actually been invited or qualified to participate in the first debate?"
+            },
+            {
+                "id": "secretcurse__139_76612",
+                "cq": "Does being included on a list of 171 officially declared candidates necessarily imply that each individual deserves equal time to express themselves at the first debate?"
+            },
+            {
+                "id": "secretcurse__139_81166",
+                "cq": "Does the fact that some candidates have already established a significant platform and polling presence before the first debate, as evidenced by their FEC filings, warrant equal access to debate participation compared to those who may still be in the early stages of building their campaigns?"
+            }
+        ]
+    },
+    "smg_72": {
+        "intervention_id": "smg_72",
+        "intervention": "smg: \"It has become abundantly clear that commercial airline travel is a \"race to the bottom\" that satisfies needs of neither passengers nor airline profits.\nA change of environment, which can only be imposed from outside the industry is needed.\nImposition of common sense regulations,\nwould level the playing field and remove the impetus for airlines to costcut in this area.\nThe results would be better service to customers and a renormalization of the playing field from which the airlines compete without fear of being undercut.\nThis goes for most of the proposed new regulations.\nI sincerely believe that these regulations are in the best interests of both airlines and passengers.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning",
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "smg_72_55976",
+                "cq": "Does the argument's assumption that new regulations would be effective in addressing the problem without being resisted by airlines, which are often financially incentivized to reduce costs and compete on price, hold up under scrutiny?"
+            },
+            {
+                "id": "smg_72_87658",
+                "cq": "Does the argument's proposed solution (imposition of common sense regulations) adequately address the root causes of the problem (costcutting driven by competition), rather than simply treating symptoms?"
+            },
+            {
+                "id": "smg_72_38249",
+                "cq": "Does the assertion that common sense regulations would lead to better service for customers without negatively impacting airline profits rely on a credible estimate of how airlines currently allocate resources for cost-cutting measures?"
+            }
+        ]
+    },
+    "smr_174_1": {
+        "intervention_id": "smr_174_1",
+        "intervention": "smr: \"The problem of whether to deplane or not is a tricky one.\nOn one side is the fact that sitting for an excessive amount of time is uncomfortable at best and unhealthy at worst.\nHowever, on the other side there will be considerable time lost with the deplaning and reboarding.\nOne item which should be addressed is food and drink.\nIf the airline would normally have food for the passengers on that flight it seems silly to deny access to anything more than a bag of peanuts and a glass of water.\nThis happened to my husband last week on a Delta flight from Newark to Amsterdam.\nThe passengers were sitting on the plane for over six hours, at the gate,\nbut they were only offered one bag of peanuts and a glass of water or orange juice.\nThe plane eventually took off at approximately 1 a.m.,\nwhen it should have taken off at 6.40 the previous evening.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample",
+            "ERExample",
+            "ERExample",
+            "ERExample",
+            "ERExample",
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "smr_174_1_51328",
+                "cq": "Was the decision to limit food and drink access during an extended layover at the gate a result of financial constraints rather than a deliberate attempt by Delta to increase profit margins?"
+            },
+            {
+                "id": "smr_174_1_13511",
+                "cq": "Is the speaker's claim that being denied food and drink during an extended wait at the gate constitutes a significant inconvenience or entitlement, rather than a reasonable aspect of airline waiting times?"
+            },
+            {
+                "id": "smr_174_1_41203",
+                "cq": "Does the speaker's personal anecdote about their husband's experience on a specific flight serve as evidence for the universal problem of deplaning and reboarding times, or is it merely a singular instance?"
+            }
+        ]
+    },
+    "smr_174_2": {
+        "intervention_id": "smr_174_2",
+        "intervention": "smr: \"The dinner was not served until the normal point in the flight, somewhere over the Atlantic!\nAllowing passengers off the plane into a holding area would not give them access to food and drink,\nbut would let them move around.\nHowever, when passengers expect food to be served on a flight they will often depend on that being served\nand an excessive delay in serving meals could be hazardous to some people's health,\nespecially when on a connecting flight\nso there has been no opportunity to purchase food and drinks at the airport.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample"
+        ],
+        "cqs": [
+            {
+                "id": "smr_174_2_38921",
+                "cq": "Does the speaker's assumption about passengers' expectations of when meals are served on a flight justify the decision to delay serving dinner?"
+            },
+            {
+                "id": "smr_174_2_93553",
+                "cq": "Is allowing passengers off the plane into a holding area sufficient to ensure their health and safety during an excessive delay in serving meals?"
+            },
+            {
+                "id": "smr_174_2_77421",
+                "cq": "Does the speaker's conclusion about passengers being unable to purchase food and drinks at the airport actually follow necessarily from the assumption that they would need to buy it?"
+            }
+        ]
+    },
+    "travellots_133_1": {
+        "intervention_id": "travellots_133_1",
+        "intervention": "travellots: \"There should be no discrimination in how a passenger is bumped or compensated just because they may have paid less for a ticket or used frequent flyer miles.\nAirline tickets are not lottery tickets.\nOne does not purchase a ticket hoping to reach a certain destination.\nSame as if one pays $4 for a cup of coffee or $1, the cup is supposed to have coffee in it.\nThe price does not dictate that \"maybe\" you will get the product or service.\nAlso, the airline decides what prices or miles are used to purchase a promise to get you from point A to point B.\nIf they can not afford to give  a ticket for that price, they should not sell it.\nWhen you reserve a ticket, the assumption is that you will be taken from point A to point B by the times given by the airline.\nA passenger does not purchase a ticket just to see if maybe they can get somewhere because they have nothing better to do.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "travellots_133_1_45518",
+                "cq": "Does the airline's decision to offer a discounted ticket with certain limitations (e.g. no change fees, restrictions on changes) not be equivalent to offering a 'maybe' product or service, which is then subject to their discretion in delivering it?"
+            },
+            {
+                "id": "travellots_133_1_85982",
+                "cq": "Does the airline's right to decide ticket prices and compensation terms not contradict the assumption that a passenger has a guaranteed seat on a flight, rather than a chance to potentially get one?"
+            },
+            {
+                "id": "travellots_133_1_36379",
+                "cq": "Does the fact that air travel is not a gamble or a lottery, with its own set of inherent risks and uncertainties, justify treating frequent flyers who have paid for their tickets with the same level of consideration as those who purchased them at full price?"
+            }
+        ]
+    },
+    "travellots_133_2": {
+        "intervention_id": "travellots_133_2",
+        "intervention": "travellots: \"If compensation is not high enough, the airlines will not have an incentive to schedule properly.\nIt is not fair to allow airlines to discriminate against lower fared passengers or \"free\" passengers\nsince it is the airline, not the passenger or government, who gave that passenger a seat.\nOtherwise, airlines can advertise low fares or con you into using them to build up your \"miles\" and then always bump you for someone who paid more.\nIn away,it is the same as being able to increase your ticket price anytime after purchase.\nWhen you are bumped, there are a lot of hidden extra costs\nIt irks me that airlines seem to be treating passengers more and more as if they have nothing better to do but wait around in airports and not get to where the airline promised to bring them.\nAgain, the airline sets the agreed price or miles for a seat, no one else.\nThe incentives to the airline should be to get all confirmed passengers (regardless of price paid) to the destination promised.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning",
+            "ERPracticalReasoning",
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "travellots_133_2_97892",
+                "cq": "Does the argument's assumption that airlines' scheduling incentives are solely dependent on compensation, rather than other factors such as demand and capacity constraints, seem reasonable?"
+            },
+            {
+                "id": "travellots_133_2_87556",
+                "cq": "Does the airline's pricing structure and incentive system not being in line with the agreed-upon price of a seat provide sufficient justification for bumping confirmed, but lower-paid, passengers?"
+            },
+            {
+                "id": "travellots_133_2_12786",
+                "cq": "Does the claim that airlines have an incentive to discriminate against lower-fared passengers solely because it allows them to maximize revenue necessarily assume that compensation is not a viable alternative to scheduling incentives?"
+            }
+        ]
+    },
+    "zuclinator_125": {
+        "intervention_id": "zuclinator_125",
+        "intervention": "zuclinator: \"I know Delta serves peanuts\nas I travel to and from Detroit on Delta.\nI was really surprised to learn this\nas I didn't know until I was on the plane and in the air.\nshouldn't they tell people before they pay for a flight?\nOh and the two row minimum around a person with a peanut allergy is a joke.\nSomeone with a peanut allergy is not going to be protected by that!\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERExample"
+        ],
+        "cqs": [
+            {
+                "id": "zuclinator_125_33714",
+                "cq": "Does Delta's failure to inform customers about peanuts on flights justify the absence of explicit warnings before ticket purchases, or is this a matter of passengers being responsible for their own knowledge?"
+            },
+            {
+                "id": "zuclinator_125_40806",
+                "cq": "Does Delta's policy of serving peanuts on flights actually contribute to the risk associated with peanut allergies, or is there another explanation for why passengers are surprised by this information?"
+            },
+            {
+                "id": "zuclinator_125_40287",
+                "cq": "Does Delta's failure to inform passengers about their peanut allergy options on board constitute a breach of their duty to provide safe and reasonable accommodations for customers with dietary restrictions?"
+            }
+        ]
+    },
+    "TRUMP_114_1": {
+        "intervention_id": "TRUMP_114_1",
+        "intervention": "TRUMP: \"we have been told through investigative reporting that he owes about $ 650 million to Wall Street and foreign banks\nYou learn a lot from financial disclosure\nThat I can tell you\nyou should go down and take a look at that\nI 'm extremely underleveraged\nThe report that said $ 650\na lot of friends of mine that know my business\nIt 's not a lot of money relative to what I had\nThe buildings that were in question , they said in the same report , which was\u2014actually , it was n't even a bad story , to be honest with you , but the buildings are worth $ 3.9 billion\nthe $ 650 is n't even on that\nit 's not $ 650\nIt 's much less than that\nI could give you a list of banks\nI would\u2014if that would help you , I would give you a list of banks\nThese are very fine institutions\nvery fine banks\nI could do that very quickly\nI am very underleveraged\nI have a great company\nI have a tremendous income\nthe reason I say that is not in a braggadocios way\nIt 's because it 's about time that this country had somebody running it that has an idea about money\nwe have $ 20 trillion in debt\"",
+        "dataset": "US2016",
+        "schemes": [
+            "PracticalReasoning",
+            "Sign",
+            "Sign",
+            "Sign",
+            "PracticalReasoning",
+            "Sign",
+            "PositionToKnow"
+        ],
+        "cqs": [
+            {
+                "id": "TRUMP_114_1_75408",
+                "cq": "How can Trump's claim that he is 'extremely underleveraged' be taken seriously when his own company's debt to foreign banks exceeds $650 million, and the total value of the properties in question is over $3.9 billion?"
+            },
+            {
+                "id": "TRUMP_114_1_97842",
+                "cq": "Does Trump's assertion that he is 'extremely underleveraged' given his reported $650 million debt to Wall Street and foreign banks align with the claim that this amount is 'much less than' the total value of the properties in question?"
+            },
+            {
+                "id": "TRUMP_114_1_73871",
+                "cq": "Does Trump's assertion that he is 'extremely underleveraged' based on his personal financial disclosure, given that $650 million is a significant portion of the $3.9 billion in value of the buildings at issue, provide sufficient evidence to support this claim?"
+            }
+        ]
+    },
+    "TRUMP_114_2": {
+        "intervention_id": "TRUMP_114_2",
+        "intervention": "TRUMP: \"our country 's a mess\nit 's one thing to have $ 20 trillion in debt\nOur airports are like from a third world country\nYou land at LaGuardia , you land at Kennedy , you land at LAX , you land at Newark , and you come in from Dubai and Qatar and you see these incredible\u2014you come in from China , you see these incredible airports\nwe 've become a third world country\nour bridges are good\neverything 's in great shape\nour airports\nthe worst of all things has happened\nWe owe $ 20 trillion\nwe 're a mess\nWe have n't even started\nwe 've spent $ 6 trillion in the Middle East\naccording to a report that I just saw\nWhether it 's 6 or 5\n it looks like it 's 6\nwe could have rebuilt our country twice\nit 's really a shame\nit 's politicians like Secretary Clinton that have caused this problem\nOur country has tremendous problems\nWe 're a debtor nation\nWe 're a serious debtor nation\nwe have a country that needs new roads , new tunnels , new bridges , new airports , new schools , new hospitals\nwe don't have the money\nit 's been squandered on so many of your ideas\"",
+        "dataset": "US2016",
+        "schemes": [
+            "VerbalClassification",
+            "Example",
+            "Example",
+            "Example",
+            "GenericAdHominem",
+            "CircumstantialAdHominem",
+            "VerbalClassification",
+            "PracticalReasoning",
+            "Example",
+            "ExpertOpinion",
+            "Example",
+            "VerbalClassification",
+            "VerbalClassification"
+        ],
+        "cqs": [
+            {
+                "id": "TRUMP_114_2_71523",
+                "cq": "Does spending $6 trillion in the Middle East justify Trump's claim that we could have rebuilt our country twice?"
+            },
+            {
+                "id": "TRUMP_114_2_70423",
+                "cq": "How can President Trump justify the country being a 'third world country' based on the quality of its airports, when he also states that many of these airports are 'incredible', implying that they are comparable to international standards?"
+            },
+            {
+                "id": "TRUMP_114_2_98871",
+                "cq": "Does Trump's argument that the country is a 'third world country' due to its debt and infrastructure issues accurately account for the complex factors contributing to these problems?"
+            }
+        ]
+    },
+    "TRUMP_121_1": {
+        "intervention_id": "TRUMP_121_1",
+        "intervention": "TRUMP: \"I do think it's time\nit's all words\nit's all sound bites\nI built an unbelievable company\nSome of the greatest assets anywhere in the world\nreal estate assets anywhere in the world\nbeyond the United States, in Europe, lots of different places\nIt's an unbelievable company\non occasion, four times, we used certain laws that are there\nwhen Secretary Clinton talks about people that didn't get paid, first of all, they did get paid a lot, but taken advantage of the laws of the nation\nif you want to change the laws, you've been there a long time, change the laws\nyou've been there a long time,\nI take advantage of the laws of the nation\nI'm running a company\nMy obligation right now is to do well for myself, my family, my employees, for my companies\nthat's what I do\nwhat she doesn't say is that tens of thousands of people that are unbelievably happy and that love me\"",
+        "dataset": "US2016",
+        "schemes": [
+            "PracticalReasoning",
+            "GenericAdHominem",
+            "Example",
+            "Example",
+            "Example",
+            "PracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "TRUMP_121_1_80805",
+                "cq": "Does Trump's assertion that he is a successful businessman solely based on his company's assets and profits, without providing concrete evidence of fair labor practices or compensation for all employees, constitute a convincing defense against criticism of his business ethics?"
+            },
+            {
+                "id": "TRUMP_121_1_67375",
+                "cq": "Does Trump's assertion that he is entitled to take advantage of laws for personal gain, as a businessman, justify his decision to prioritize self-interest over the needs and rights of workers, as implied by Secretary Clinton?"
+            },
+            {
+                "id": "TRUMP_121_1_73142",
+                "cq": "Does Trump's assertion that he only benefits from using existing laws, rather than creating new ones, account for the fact that his company has used loopholes and tax breaks to avoid paying taxes on billions of dollars in profits?"
+            }
+        ]
+    },
+    "TRUMP_121_2": {
+        "intervention_id": "TRUMP_121_2",
+        "intervention": "TRUMP: \"I'll give you an example\nWe're just opening up on Pennsylvania Avenue right next to the White House\nif I don't get there one way, I'm going to get to Pennsylvania Avenue another\nwe're opening the Old Post Office\nI'm a year ahead of schedule\nthat's what this country should be doing\nWe build roads\nthey cost two and three and four times what they're supposed to cost\nWe buy products for our military\nthey come in at costs that are so far above what they were supposed to be\nwe don't have people that know what they're doing\nWhen we look at the budget, the budget is bad to a large extent\nwe have people that have no idea as to what to do and how to buy\nThe Trump International is way under budget\nway ahead of schedule\nwe should be able to do that for our country\"",
+        "dataset": "US2016",
+        "schemes": [
+            "CauseToEffect",
+            "CauseToEffect",
+            "Analogy",
+            "Analogy"
+        ],
+        "cqs": [
+            {
+                "id": "TRUMP_121_2_95278",
+                "cq": "Is it fair to assume that just because a project or business has been completed successfully under Trump's leadership, he can simply apply the same approach to more complex and costly national projects?"
+            },
+            {
+                "id": "TRUMP_121_2_28732",
+                "cq": "Does Mr. Trump provide any empirical evidence or credible sources to support his claims about the inefficiencies and cost overruns in government projects and military procurements?"
+            },
+            {
+                "id": "TRUMP_121_2_12826",
+                "cq": "Does Trump's assertion that a successful private project like Trump International can be replicated on a national scale without any significant improvements to government management, oversight, and procurement practices necessarily follow from the success of that particular project?"
+            }
+        ]
+    },
+    "TRUMP_125_1": {
+        "intervention_id": "TRUMP_125_1",
+        "intervention": "TRUMP: \"Secretary Clinton doesn't want to use a couple of words, and that's law and order\nIf we don't have it, we're not going to have a country\nwhen I look at what's going on in Charlotte, a city I love, a city where I have investments, when I look at what's going on throughout various parts of our country, whether it's\u2014I mean, I can just keep naming them all day long\nI just got today the, as you know, the endorsement of the Fraternal Order of Police, we just\u2014just came in\nWe have endorsements from, I think, almost every police group, very\u2014I mean, a large percentage of them in the United States\nWe have a situation where we have our inner cities, African- Americans, Hispanics are living in hell\nit's so dangerous\nYou walk down the street, you get shot\nIn Chicago, they've had thousands of shootings, thousands since January 1st\nI'm saying, where is this\nIs this a war-torn country\nWhat are we doing\nwe have to stop the violence\nIn a place like Chicago, where thousands of people have been killed, thousands over the last number of years\nalmost 4,000 have been killed since Barack Obama became president\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Example",
+            "Example",
+            "Sign",
+            "Sign",
+            "VerbalClassification"
+        ],
+        "cqs": [
+            {
+                "id": "TRUMP_125_1_88896",
+                "cq": "Does Trump's assertion that a lack of specific language from Secretary Clinton regarding law and order is directly causing thousands of violent deaths in cities like Chicago, without providing any evidence or credible sources to support this claim?"
+            },
+            {
+                "id": "TRUMP_125_1_71248",
+                "cq": "Does Trump's assertion that Secretary Clinton's refusal to use certain words is equivalent to a lack of concern for the violence plaguing American cities, such as Chicago, based on his own selective and potentially misleading presentation of data?"
+            },
+            {
+                "id": "TRUMP_125_1_57293",
+                "cq": "Does Trump's argument that certain cities are war-torn and violent solely because of the presence of African Americans and Hispanics, without providing evidence or context about systemic issues such as racism, poverty, and police brutality, constitute a fair and unbiased assessment of the situation?"
+            }
+        ]
+    },
+    "TRUMP_125_2": {
+        "intervention_id": "TRUMP_125_2",
+        "intervention": "TRUMP: \"almost 4,000 people in Chicago have been killed\n whether or not in a place like Chicago you do stop and frisk, which worked very well, Mayor Giuliani is here, worked very well in New York\nIt brought the crime rate way down\nyou take the gun away from criminals that shouldn't be having it\nWe have gangs roaming the street\nin many cases, they're illegally here, illegal immigrants\nthey have guns\nthey shoot people\nwe have to be very strong\nwe have to be very vigilant\nWe have to be\u2014we have to know what we're doing\n our police, in many cases, are afraid to do anything\nWe have to protect our inner cities\nAfrican-American communities are being decimated by crime, decimated\nNo\"",
+        "dataset": "US2016",
+        "schemes": [
+            "DangerAppeal",
+            "DangerAppeal",
+            "Consequences",
+            "DangerAppeal",
+            "Consequences"
+        ],
+        "cqs": [
+            {
+                "id": "TRUMP_125_2_23251",
+                "cq": "Does the argument's claim that stopping and frisking is effective in reducing crime in cities with high crime rates, such as Chicago and New York, remain valid when controlling for the fact that these cities have significant poverty, unemployment, and social inequality, which are likely to be major drivers of crime?"
+            },
+            {
+                "id": "TRUMP_125_2_81178",
+                "cq": "Does Trump's argument that stopping and frisking is necessary to protect African-American communities in cities like Chicago assume a causal link between the practice of stop-and-frisk and its purported benefits, without controlling for other factors such as policing strategies, socioeconomic conditions, or systemic racism?"
+            },
+            {
+                "id": "TRUMP_125_2_44027",
+                "cq": "Does Trump's suggestion that stopping and frisking, a tactic used primarily by police in New York City under Mayor Giuliani, is an effective solution for addressing the root causes of crime and gun violence in Chicago's African-American communities?"
+            }
+        ]
+    },
+    "TRUMP_127": {
+        "intervention_id": "TRUMP_127",
+        "intervention": "TRUMP: \"you're wrong\nIt went before a judge, who was a very against-police judge\nIt was taken away from her\nour mayor, our new mayor, refused to go forward with the case\nThey would have won an appeal\nIf you look at it, throughout the country, there are many places where it's allowed\"",
+        "dataset": "US2016",
+        "schemes": [],
+        "cqs": [
+            {
+                "id": "TRUMP_127_75099",
+                "cq": "Does Trump's assertion that a certain law was 'taken away' from his daughter simply mean that it was not enforced or passed, rather than being entirely invalidated?"
+            },
+            {
+                "id": "TRUMP_127_67529",
+                "cq": "How can Trump justify that the case was 'taken away from her' when it was actually withdrawn by the mayor's office, rather than being decided against by a judge?"
+            },
+            {
+                "id": "TRUMP_127_91791",
+                "cq": "Is Trump's argument that the law is unconstitutional because of a specific judge being involved in the case relevant to the actual law, rather than just a personal bias against the police?"
+            }
+        ]
+    }
+}

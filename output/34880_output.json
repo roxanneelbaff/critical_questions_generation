@@ -1,0 +1,122 @@
+{
+    "CLINTON_199_2": {
+        "intervention_id": "CLINTON_199_2",
+        "intervention": "CLINTON: \"which may prove to be an intelligence benefit\nwe've got to do everything we can to vacuum up intelligence from Europe, from the Middle East\nThat means we've got to work more closely with our allies, and that's something that Donald has been very dismissive of\nWe're working with NATO, the longest military alliance in the history of the world, to really turn our attention to terrorism\nWe're working with our friends in the Middle East, many of which, as you know, are Muslim majority nations\nDonald has consistently insulted Muslims abroad, Muslims at home, when we need to be cooperating with Muslim nations and with the American Muslim community\nThey're on the front lines\nThey can provide information to us that we might not get anywhere else\nThey need to have close working cooperation with law enforcement in these communities, not be alienated and pushed away as some of Donald's rhetoric, unfortunately, has led to\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Example",
+            "CauseToEffect",
+            "PracticalReasoning",
+            "Consequences",
+            "Example",
+            "Consequences"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_199_2_34083",
+                "cq": "How can we be certain that increased cooperation with Muslim nations and communities, particularly those led by individuals who are often stereotyped as the 'front lines' of terrorism, is actually effective in gathering intelligence to combat terrorism?"
+            },
+            {
+                "id": "CLINTON_199_2_57292",
+                "cq": "Is it logically possible that a politician who consistently insults and alienates an entire group of people is best equipped to work closely with and trust the intelligence provided by members of those same groups?"
+            },
+            {
+                "id": "CLINTON_199_2_78378",
+                "cq": "Can Clinton's claim that working closely with Muslim nations and American Muslims is necessary to counter terrorism be supported by evidence from actual terrorist organizations or attacks?"
+            }
+        ]
+    },
+    "CLINTON_1_2": {
+        "intervention_id": "CLINTON_1_2",
+        "intervention": "CLINTON: \"If you help create the profits , you should be able to share in them , not just the executives at the top\nI want us to do more to support people who are struggling to balance family and work\nI 've heard from so many of you about the difficult choices you face and the stresses that you 're under\nlet 's have paid family leave , earned sick days\nLet 's be sure we have affordable child care and debt-free college\nHow are we going to do it\nWe 're going to do it by having the wealthy pay their fair share and close the corporate loopholes\nwe tonight are on the stage together , Donald Trump and I\nit 's good to be with you\nWe 're going to have a debate where we are talking about the important issues facing our country\nYou have to judge us , who can shoulder the immense , awesome responsibilities of the presidency , who can put into action the plans that will make your life better\nI hope that I will be able to earn your vote on November 8th\"",
+        "dataset": "US2016",
+        "schemes": [
+            "PopularOpinion",
+            "Values",
+            "PracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_1_2_61233",
+                "cq": "How can Clinton's proposal to have the wealthy pay their fair share and close corporate loopholes be achieved without significantly increasing taxes on middle-class Americans?"
+            },
+            {
+                "id": "CLINTON_1_2_23604",
+                "cq": "How can Clinton justify her proposed policies and increased taxes on the wealthy as a means to support low- and middle-income families, given that many of these individuals are already struggling to make ends meet?"
+            },
+            {
+                "id": "CLINTON_1_2_19464",
+                "cq": "How does Clinton's plan to have wealthy individuals pay their fair share and close corporate loopholes specifically benefit the middle class, which she claims to be supporting with policies like paid family leave, earned sick days, affordable child care, and debt-free college?"
+            }
+        ]
+    },
+    "CLINTON_21": {
+        "intervention_id": "CLINTON_21",
+        "intervention": "CLINTON: \"nine million people lost their jobs\nFive million people lost their homes\n$ 13 trillion in family wealth was wiped out\nNow , we have come back from that abyss\nit has not been easy\nwe 're now on the precipice of having a potentially much better economy\nthe last thing we need to do is to go back to the policies that failed us in the first place\nIndependent experts have looked at what I 've proposed\nlooked at what Donald 's proposed\nI intend to get it done\nTake clean energy\nSome country is going to be the clean- energy superpower of the 21st century\nDonald thinks that climate change is a hoax perpetrated by the Chinese\nI think it 's real\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Analogy"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_21_75119",
+                "cq": "How can Clinton confidently claim that his proposed clean energy policies will be more effective than those of Donald, given that independent experts have evaluated both plans and found no significant differences?"
+            },
+            {
+                "id": "CLINTON_21_28721",
+                "cq": "How can Clinton's assertion that his proposed policies will lead to a potentially better economy be justified, given that his opponent's alternative approach is based on uncorroborated claims about climate change?"
+            },
+            {
+                "id": "CLINTON_21_26166",
+                "cq": "How can the speaker's assertion that independent experts have evaluated and validated both Clinton's and Trump's proposals for addressing economic issues be taken seriously when it is well-known that the same experts had previously and publicly disagreed with Trump's views on climate change?"
+            }
+        ]
+    },
+    "CLINTON_223_1": {
+        "intervention_id": "CLINTON_223_1",
+        "intervention": "CLINTON: \"Let 's talk about two important issues that were briefly mentioned by Donald\nfirst , NATO\nNATO as a military alliance has something called Article 5\nyou know the only time it 's ever been invoked ?\nAfter 9/11 , when the 28 nations of NATO said that they would go to Afghanistan with us to fight terrorism\nsomething that they still are doing by our side\nWith respect to Iran , when I became secretary of state , Iran was weeks away from having enough nuclear material to form a bomb\nThey had mastered the nuclear fuel cycle under the Bush administration\nThey had built covert facilities\nThey had stocked them with centrifuges that were whirling away\nwe had sanctioned them\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Sign",
+            "Sign",
+            "PracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_223_1_20797",
+                "cq": "Does Clinton's assertion about Iran's nuclear capabilities being under control by the Bush administration, despite his own administration sanctioning them, not contradict his claim that the previous administration had mastered the nuclear fuel cycle and built covert facilities?"
+            },
+            {
+                "id": "CLINTON_223_1_49154",
+                "cq": "Is it possible that Clinton's characterization of Article 5 and Iran's nuclear program is based on incomplete or inaccurate information?"
+            },
+            {
+                "id": "CLINTON_223_1_97371",
+                "cq": "Does invoking Article 5 by the member nations of NATO only occur when they are being asked to take military action alongside the United States, or can it be invoked for other reasons as well?"
+            }
+        ]
+    },
+    "CLINTON_223_2": {
+        "intervention_id": "CLINTON_223_2",
+        "intervention": "CLINTON: \"I voted for every sanction against Iran when I was in the Senate\nit was n't enough\nI spent a year-and-a-half putting together a coalition that included Russia and China to impose the toughest sanctions on Iran\n we did drive them to the negotiating table\nmy successor , John Kerry , and President Obama got a deal that put a lid on Iran 's nuclear program without firing a single shot\nThat 's diplomacy\nThat 's coalition-building\nThat 's working with other nations\nThat 's not good judgment\"",
+        "dataset": "US2016",
+        "schemes": [
+            "CauseToEffect",
+            "Consequences"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_223_2_33816",
+                "cq": "If imposing the toughest sanctions on Iran was insufficient, why did Clinton's coalition also include Russia and China, both of which have traditionally been close allies of Iran?"
+            },
+            {
+                "id": "CLINTON_223_2_31775",
+                "cq": "Does Clinton's characterization of her own foreign policy approach as 'good judgment' remain plausible if her proposed coalition with Russia and China, which were allies of Iran at the time, was effectively nullified by subsequent actions taken by Obama and Kerry?"
+            },
+            {
+                "id": "CLINTON_223_2_19493",
+                "cq": "Does Clinton's claim of being able to impose 'the toughest sanctions' on Iran through a coalition including Russia and China, when in fact the US ultimately negotiated an agreement with Iran alone, demonstrate true coalition-building or merely US leadership masquerading as cooperation?"
+            }
+        ]
+    }
+}

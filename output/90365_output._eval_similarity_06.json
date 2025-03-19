@@ -1,0 +1,136 @@
+{
+    "CLINTON_1_1": {
+        "intervention_id": "CLINTON_1_1",
+        "intervention": "CLINTON: \"The central question in this election is really what kind of country we want to be and what kind of future we 'll build together\nToday is my granddaughter 's second birthday\nI think about this a lot\nwe have to build an economy that works for everyone , not just those at the top\nwe need new jobs , good jobs , with rising incomes\nI want us to invest in you\nI want us to invest in your future\njobs in infrastructure , in advanced manufacturing , innovation and technology , clean , renewable energy , and small business\nmost of the new jobs will come from small business\nWe also have to make the economy fairer\nThat starts with raising the national minimum wage and also guarantee , finally , equal pay for women 's work\nI also want to see more companies do profit-sharing\"",
+        "dataset": "US2016",
+        "schemes": [
+            "PracticalReasoning",
+            "PracticalReasoning",
+            "PracticalReasoning",
+            "PopularPractice",
+            "PracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "CLINTON_1_1_95541",
+                "cq": "How does Clinton plan to ensure that investments in infrastructure, advanced manufacturing, and innovation actually benefit the majority of Americans, rather than just large corporations?",
+                "label": "not_able_to_evaluate"
+            },
+            {
+                "id": "CLINTON_1_1_10205",
+                "cq": "How will investing in infrastructure, advanced manufacturing, innovation, and technology, while also promoting small businesses and making the economy fairer, address the concerns of workers who may be displaced by these changes?",
+                "label": "Useful"
+            },
+            {
+                "id": "CLINTON_1_1_56694",
+                "cq": "How will you ensure that investments in infrastructure, advanced manufacturing, and innovation actually benefit low-income communities and address existing economic inequalities?",
+                "label": "Invalid"
+            }
+        ]
+    },
+    "Javier_84": {
+        "intervention_id": "Javier_84",
+        "intervention": "Javier: \"I have no problem requiring the airlines to give notification of any \"known\" delays within 30 minutes of when they become aware of it.\nBUT, being a frequent traveler, I see all sorts of problems which are unavoidable and for which the airlines will be blamed by giving such notice with the intend that some flyers may be able to delay thier trip to the airport or even the departure gate.\nI know that many times the airlines can't also know exactly when a weather hold or a maintenance issue will be rectified and that the flight is then ready to go.\nMany time it can be surprisingly faster than expected.\nThe problem is that some flyers may then  wait before going to the airport,\nbut then find that the problem was rectified sooner than expected and the flight departed.\nOf course the flyer and the flyers rights organization will then crucify the airlines for such poor planning.\nFlyers need to grow up and quit pouting and blaming everthing on the airlines.\nThey can't have it both ways.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "Javier_84_84224",
+                "cq": "Does requiring advance notice of potential delays truly prioritize the needs and safety of passengers or could it be seen as an exercise in damage control for airlines?",
+                "label": "Unhelpful"
+            },
+            {
+                "id": "Javier_84_92557",
+                "cq": "Isn't requiring notification of potential delays just a way for airlines to buy time and avoid responsibility for passengers' inconvenience, rather than a genuine effort to provide transparency and improve customer experience?",
+                "label": "Unhelpful"
+            },
+            {
+                "id": "Javier_84_94389",
+                "cq": "Does allowing airlines some buffer time to rectify unforeseen issues before giving notification of a delay really serve the best interest of frequent flyers?",
+                "label": "Useful"
+            }
+        ]
+    },
+    "TRUMP_125_1": {
+        "intervention_id": "TRUMP_125_1",
+        "intervention": "TRUMP: \"Secretary Clinton doesn't want to use a couple of words, and that's law and order\nIf we don't have it, we're not going to have a country\nwhen I look at what's going on in Charlotte, a city I love, a city where I have investments, when I look at what's going on throughout various parts of our country, whether it's\u2014I mean, I can just keep naming them all day long\nI just got today the, as you know, the endorsement of the Fraternal Order of Police, we just\u2014just came in\nWe have endorsements from, I think, almost every police group, very\u2014I mean, a large percentage of them in the United States\nWe have a situation where we have our inner cities, African- Americans, Hispanics are living in hell\nit's so dangerous\nYou walk down the street, you get shot\nIn Chicago, they've had thousands of shootings, thousands since January 1st\nI'm saying, where is this\nIs this a war-torn country\nWhat are we doing\nwe have to stop the violence\nIn a place like Chicago, where thousands of people have been killed, thousands over the last number of years\nalmost 4,000 have been killed since Barack Obama became president\"",
+        "dataset": "US2016",
+        "schemes": [
+            "Example",
+            "Example",
+            "Sign",
+            "Sign",
+            "VerbalClassification"
+        ],
+        "cqs": [
+            {
+                "id": "TRUMP_125_1_88023",
+                "cq": "How do you reconcile the endorsement of law enforcement groups with a platform that has repeatedly been criticized for its treatment of police officers and its support for policies that have led to increased gun violence?",
+                "label": "not_able_to_evaluate"
+            },
+            {
+                "id": "TRUMP_125_1_82814",
+                "cq": "How can you claim to be a champion of law and order while simultaneously describing Chicago as a place where people are 'living in hell' and getting shot walking down the street?",
+                "label": "Useful"
+            },
+            {
+                "id": "TRUMP_125_1_51510",
+                "cq": "How does Trump's assertion that African Americans and Hispanics are living in a state of 'hell' and being 'shot down the street' align with his own administration's policies and actions on issues such as police brutality, racial profiling, and economic inequality?",
+                "label": "Useful"
+            }
+        ]
+    },
+    "travellots_133_1": {
+        "intervention_id": "travellots_133_1",
+        "intervention": "travellots: \"There should be no discrimination in how a passenger is bumped or compensated just because they may have paid less for a ticket or used frequent flyer miles.\nAirline tickets are not lottery tickets.\nOne does not purchase a ticket hoping to reach a certain destination.\nSame as if one pays $4 for a cup of coffee or $1, the cup is supposed to have coffee in it.\nThe price does not dictate that \"maybe\" you will get the product or service.\nAlso, the airline decides what prices or miles are used to purchase a promise to get you from point A to point B.\nIf they can not afford to give  a ticket for that price, they should not sell it.\nWhen you reserve a ticket, the assumption is that you will be taken from point A to point B by the times given by the airline.\nA passenger does not purchase a ticket just to see if maybe they can get somewhere because they have nothing better to do.\"",
+        "dataset": "rrd",
+        "schemes": [
+            "ERPracticalReasoning",
+            "ERPracticalReasoning"
+        ],
+        "cqs": [
+            {
+                "id": "travellots_133_1_14188",
+                "cq": "Does the assumption that a passenger will be taken from point A to point B as promised by the airline necessarily imply that they have paid a fair price for their ticket, or is there still room for arbitrary treatment of passengers regardless of fare level?",
+                "label": "Useful"
+            },
+            {
+                "id": "travellots_133_1_12685",
+                "cq": "Doesn't the airline's ability to honor its promise of transporting a passenger from point A to point B, regardless of ticket price or means of purchase, not imply a implicit contract that they will provide some level of compensation when their promised service is disrupted?",
+                "label": "Useful"
+            },
+            {
+                "id": "travellots_133_1_37818",
+                "cq": "If an airline is unable to fulfill its promise of transporting a passenger from point A to point B, as evidenced by their inability to afford the ticket price or provide compensation when bumped, then does that not imply that the airline's business model is fundamentally flawed?",
+                "label": "Useful"
+            }
+        ]
+    },
+    "Zewstain__641": {
+        "intervention_id": "Zewstain__641",
+        "intervention": "Zewstain: \"It seemed like that was most of her argument. Being a woman\nHow will you differ from Obama? Hillary: As a woman it's clear. Cooper: Any policy differences? Hillary: Hello, I'm a woman\"",
+        "dataset": "us2016reddit",
+        "schemes": [
+            "Example"
+        ],
+        "cqs": [
+            {
+                "id": "Zewstain__641_52162",
+                "cq": "Does being a woman necessarily qualify someone to hold a political office, regardless of their policy expertise or qualifications?",
+                "label": "Unhelpful"
+            },
+            {
+                "id": "Zewstain__641_89619",
+                "cq": "Does being a woman necessarily qualify someone to hold public office or inform their policy decisions?",
+                "label": "Unhelpful"
+            },
+            {
+                "id": "Zewstain__641_21954",
+                "cq": "Does being a woman necessarily imply inherent policy expertise or qualifications?",
+                "label": "Unhelpful"
+            }
+        ]
+    }
+}
