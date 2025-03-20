@@ -1,5 +1,6 @@
 ## Validators and Aggregator
-Validator and Aggregator class are located in the `agents` subdirectory.
+**Validator and Aggregator class are located in the `./agents` subdirectory.**
+
 # Libraries
 `pip install json-repair`
 
