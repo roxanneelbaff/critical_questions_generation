@@ -11,7 +11,7 @@ Do this in two steps:
 2. Second, assess whether the question challenges any of those.
 3. Finally, reason about the usefulness of the question. The better the question adressess core points, claims and/or assumptions made in the argument, the more useful it can be considered.
 
-If possible, tend towards a clear decision that a question is either fully useful and valid or fully invald and not helpful.
+It can be assumed that questions are either fully helpful or not helpful at all, but rarely partially helpful. Consider that in your evaluation.
 """
 WEIGHT_1 = 1.0
 
@@ -24,14 +24,14 @@ Do this in three steps:
 
 Keep your answer concise overall. Don't be too strict in your evaluation.
 
-If possible, tend towards a clear decision that a question is either fully useful and valid or fully invald and not helpful.
+It can be assumed that questions are either fully helpful or not helpful at all, but rarely partially helpful. Consider that in your evaluation.
 """
 WEIGHT_2 = 1.0
 
 SUBROLE_3 = """
 Specifically assess whether the critical question is specific to the argument or rather generic. Reason about the usefulness of the question. The more concrete the question is towards the argument, the higher the usefulness. If the question could be posed for any argument, it is not useful.
 
-If possible, tend towards a clear decision that a question is either fully useful and valid or fully invald and not helpful.
+It can be assumed that questions are either fully helpful or not helpful at all, but rarely partially helpful. Consider that in your evaluation.
 """
 WEIGHT_3 = 1.0
 

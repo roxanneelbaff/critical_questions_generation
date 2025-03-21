@@ -38,3 +38,6 @@ scorer = QuestionScorer(LLM)
 # Sort questions, helpful first, unhelpful/invalid last
 sorted_questions = scorer.sort_questions(argument, questions)
 ```
+
+#### Best Run
+![alt text](sample_scored_1578.png)
