@@ -25,7 +25,7 @@ Corresponding critical question to evaluate:
 """
 
 PROMPT_STEP_2 = """
-Now, based on your reasoning, rate the usefulness of the question on a scale from 0 to 10. Assign a low score between 0 and 3 if the question is not helpful at all. Assign a medium score between 4 and 6 if the question is somewhat helpful. Assign a high score between 8 and 10 if you find the question to be very helpfull.
+Now, based on your reasoning, rate the usefulness of the question on a scale from 1 to 10. The lower the score, the less helpful or valid the question is. The higher the score, the more helpful or valid the question is. Assign a low score between 1 and 5 if the question is not helpful at all. Assign a high score between 6 and 10 if you find the question to be very helpful. Do use the full range of the scale from 1 and 10.
 
 Strictly return your score in a JSON in the following structure:
 ```json

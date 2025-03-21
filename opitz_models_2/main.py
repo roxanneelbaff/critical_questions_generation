@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from collections import defaultdict
 
-LLM = "llama3.2:3b-instruct-q8_0"
+LLM = "llama3.2:latest" # "llama3.2:3b-instruct-q8_0"
 
 # Load arguments
 filename = "sample.json"
@@ -49,7 +49,7 @@ with open(output_path, 'w') as file:
 
 # Visualize scores
 # Define the range of possible scores (0 to 10)
-all_scores = list(range(11))  # This will ensure the y-axis shows all integers from 0 to 10
+all_scores = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  # This will ensure the y-axis shows all integers from 0 to 10
 
 # Find unique categories (x-axis)
 labels = list(statistics.keys())
