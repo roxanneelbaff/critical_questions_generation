@@ -62,7 +62,7 @@ class QuestionScorer:
         final_score: int = round(weighted_average)
         return final_score
 
-    def rank_questions(self, argument: str, questions: list[str]) -> list[str]:
+    def sort_questions(self, argument: str, questions: list[str]) -> list[str]:
         """Sort questions by their usefulness score.
 
         Args:
