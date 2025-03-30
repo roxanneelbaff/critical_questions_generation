@@ -3,7 +3,7 @@ from typing import Optional, Union
 import uuid
 
 import pandas as pd
-from social_agents.state import SocialAgentState
+from social_agents.state import BasicState, SocialAgentState
 
 # -------- #
 #  HELPERS #
@@ -100,6 +100,20 @@ def generate_experiment_settings(
         by=["rounds", "number_of_agents"], ascending=True
     )
     return pd.DataFrame(all_expr)
+
+
+def _basic_state_to_serializable(state: BasicState) -> dict:
+    serializable_state = {}
+    for key, value in state.items():
+        if key == "final_cq":
+            # Convert final_cq if it's a Pydantic model
+            if hasattr(value, "model_dump"):
+                serializable_state[key] = value.model_dump()
+            else:
+                serializable_state[key] = value
+        else:
+            serializable_state[key] = value
+    return serializable_state
 
 
 def _state_to_serializable(state: SocialAgentState) -> dict:

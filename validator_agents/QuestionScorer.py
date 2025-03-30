@@ -37,7 +37,7 @@ WEIGHT_3 = 1.0
 
 
 class QuestionScorer:
-    def __init__(self, llm:str):
+    def __init__(self, llm: str):
         scorer_agent_1 = ScorerAgent(SUBROLE_1, llm, WEIGHT_1, DEFAULT_PARAMETERS)
         scorer_agent_2 = ScorerAgent(SUBROLE_2, llm, WEIGHT_2, DEFAULT_PARAMETERS)
         scorer_agent_3 = ScorerAgent(SUBROLE_3, llm, WEIGHT_3, DEFAULT_PARAMETERS)

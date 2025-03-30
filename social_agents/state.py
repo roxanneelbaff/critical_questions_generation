@@ -12,7 +12,7 @@ class BasicState(TypedDict):
     input_arg: str
 
     # OutPut
-    final_c: CriticalQuestionList
+    final_cq: CriticalQuestionList
 
 
 class SocialAgentState(TypedDict):
@@ -25,6 +25,16 @@ class SocialAgentState(TypedDict):
     round_answer_dict: Annotated[dict[str, list[SocialAgentAnswer]],
                                  utils.dict_reducer]
     current_round: int = -2
+
+    # OUTPUT
+    final_cq: CriticalQuestionList
+    validation_instruction: str
+
+
+class ValidatorAgentState(TypedDict):
+    # INPUT
+    input_arg: str
+    cqs: list[str]
 
     # OUTPUT
     final_cq: CriticalQuestionList

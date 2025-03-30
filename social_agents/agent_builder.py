@@ -12,6 +12,7 @@ from langgraph.checkpoint.memory import MemorySaver
 from pyparsing import abstractmethod
 import tqdm
 from langchain.chat_models import init_chat_model
+from langchain_mistralai import ChatMistralAI
 
 from social_agents import helper
 
@@ -39,7 +40,7 @@ class CQSTAbstractAgent(ABC):
     experiment_name: Optional[str] = None
     temperature: Optional[float] = None
 
-    serialize_func: callable = None
+    serialize_func: callable = helper._basic_state_to_serializable
 
     # DO NOT SET
     out: json = None
@@ -73,14 +74,20 @@ class CQSTAbstractAgent(ABC):
             return ChatOpenAI(model=llm_name)
         elif llm_name.startswith("gpt") or llm_name.startswith("openai"):
             return ChatOpenAI(model=llm_name, temperature=temperature)
-        elif llm_name.lower().startswith("meta-llama".lower()) or llm_name.lower().startswith("mistralai".lower()):
+        elif llm_name.lower().startswith(
+            "meta-llama".lower()
+        ) or llm_name.lower().startswith("mistralai".lower()):
             return init_chat_model(
                 llm_name,
                 model_provider="together",
                 temperature=temperature,
             )
-       
-       
+        elif llm_name.lower().startswith("mistral"):
+            return init_chat_model(
+                llm_name,
+                model_provider="mistralai",
+                temperature=temperature,
+            )
 
     @abstractmethod
     def build_agent(self) -> StateGraph:
@@ -93,7 +100,9 @@ class CQSTAbstractAgent(ABC):
         if os.path.exists(fname):
             print("arg already exist and cq generated, loading file")
             with open(fname, "r") as f:
-                questions.append(CriticalQuestionList.model_validate(json.load(f)["final_cq"]))
+                questions.append(
+                    CriticalQuestionList.model_validate(json.load(f)["final_cq"])
+                )
         else:
             for event in self.graph.stream(params, config, stream_mode="values"):
                 # Review
@@ -113,7 +122,6 @@ class CQSTAbstractAgent(ABC):
                                 json.dump(self.serialize_func(event), f, indent=2)
                         except Exception:
                             print("error whiles saving file: ", fname)
-
         assert len(questions) == 1
         return questions[0]
 
@@ -154,6 +162,10 @@ class CQSTAbstractAgent(ABC):
 # ZERO SHOT MODEL
 @dataclasses.dataclass
 class BasicCQModel(CQSTAbstractAgent):
+
+    
+    _MAX_REPEAT_ : ClassVar = 5
+
     def build_agent(self):
         # Define all the logic of the Graph here
         def generate_critical_questions(state: BasicState):
@@ -162,19 +174,27 @@ class BasicCQModel(CQSTAbstractAgent):
             )
             with open("prompts/system.txt", "r") as f:
                 system_prompt = f.read()
-            with open("prompts/basic.txt", "r") as file:
+            with open("prompts/question.txt", "r") as file:
                 instructions = file.read()
 
             instructions = instructions.format(
                 input_arg=state["input_arg"],
             )
 
-            response = structured_llm.invoke(
-                [SystemMessage(content=system_prompt)]
-                + [HumanMessage(content=instructions)]
-            )
+            response = None
 
-            return {"critical_question_list": response}
+            exception_repeat = BasicCQModel._MAX_REPEAT_
+            while exception_repeat > 0 and response is None:
+                if exception_repeat < BasicCQModel._MAX_REPEAT_:
+                    print(
+                        f"Exception repeat {BasicCQModel._MAX_REPEAT_-exception_repeat}"
+                    )
+                response = structured_llm.invoke([HumanMessage(instructions)])
+                exception_repeat = exception_repeat - 1
+            if len(response.critical_questions) > 3:
+                print("limiting it to 3")
+                response.critical_questions = response.critical_questions[:3]
+            return {"final_cq": response}
 
         builder = StateGraph(BasicState)
         builder.add_node("generate_critical_questions", generate_critical_questions)
@@ -190,6 +210,7 @@ class SocialAgentBuilder(CQSTAbstractAgent):
 
     collaborative_strategy: Optional[list[str]] = []
     agent_trait_lst: list[str] = ["easy_going"]
+    validator_type: str = "DEFAULT"  # AGGREGATED_VALIDATOR EXTERNAL_SCORER
 
     _REPEAT_ON_FAIL_: ClassVar = 10
 
@@ -249,7 +270,7 @@ class SocialAgentBuilder(CQSTAbstractAgent):
                 system_prompt = f.read()
             with open("prompts/question.txt", "r") as file:
                 instructions = file.read()
-            
+
             instructions = instructions.format(
                 input_arg=state["input_arg"],
             )
@@ -257,13 +278,17 @@ class SocialAgentBuilder(CQSTAbstractAgent):
             response = None
             while exception_repeat > 0 and response is None:
                 if exception_repeat < SocialAgentBuilder._REPEAT_ON_FAIL_:
-                    print(f"Q - Exception repeat {SocialAgentBuilder._REPEAT_ON_FAIL_-exception_repeat}")
+                    print(
+                        f"Q - Exception repeat {SocialAgentBuilder._REPEAT_ON_FAIL_-exception_repeat}"
+                    )
                 response = (
                     self.llm_lst[node_id]
                     .with_structured_output(CriticalQuestionList)
-                    .invoke([SystemMessage(system_prompt)] + [HumanMessage(instructions)])
+                    .invoke(
+                        [SystemMessage(system_prompt)] + [HumanMessage(instructions)]
+                    )
                 )
-                exception_repeat = exception_repeat -1
+                exception_repeat = exception_repeat - 1
 
             answer: SocialAgentAnswer = SocialAgentAnswer(
                 critical_question_list=response,
@@ -315,13 +340,17 @@ class SocialAgentBuilder(CQSTAbstractAgent):
             response = None
             while exception_repeat > 0 and response is None:
                 if exception_repeat < SocialAgentBuilder._REPEAT_ON_FAIL_:
-                    print(f"Debate - Exception repeat {SocialAgentBuilder._REPEAT_ON_FAIL_-exception_repeat}")
+                    print(
+                        f"Debate - Exception repeat {SocialAgentBuilder._REPEAT_ON_FAIL_-exception_repeat}"
+                    )
                 response = (
                     self.llm_lst[node_id]
                     .with_structured_output(CriticalQuestionList)
-                    .invoke([SystemMessage(system_prompt)] + [HumanMessage(instructions)])
+                    .invoke(
+                        [SystemMessage(system_prompt)] + [HumanMessage(instructions)]
+                    )
                 )
-                exception_repeat = exception_repeat-1
+                exception_repeat = exception_repeat - 1
             answer: SocialAgentAnswer = SocialAgentAnswer(
                 critical_question_list=response,
                 question_type="debate",
@@ -363,13 +392,17 @@ class SocialAgentBuilder(CQSTAbstractAgent):
             response = None
             while exception_repeat > 0 and response is None:
                 if exception_repeat < SocialAgentBuilder._REPEAT_ON_FAIL_:
-                    print(f"Reflect - Exception repeat {SocialAgentBuilder._REPEAT_ON_FAIL_-exception_repeat}")
+                    print(
+                        f"Reflect - Exception repeat {SocialAgentBuilder._REPEAT_ON_FAIL_-exception_repeat}"
+                    )
                 response = (
                     self.llm_lst[node_id]
                     .with_structured_output(CriticalQuestionList)
-                    .invoke([SystemMessage(system_prompt)] + [HumanMessage(instructions)])
+                    .invoke(
+                        [SystemMessage(system_prompt)] + [HumanMessage(instructions)]
+                    )
                 )
-                exception_repeat = exception_repeat-1
+                exception_repeat = exception_repeat - 1
             answer: SocialAgentAnswer = SocialAgentAnswer(
                 critical_question_list=response,
                 question_type="reflect",
@@ -414,7 +447,9 @@ class SocialAgentBuilder(CQSTAbstractAgent):
                 response = None
                 while exception_repeat > 0 and response is None:
                     if exception_repeat < SocialAgentBuilder._REPEAT_ON_FAIL_:
-                        print(f"Validate - Exception repeat {SocialAgentBuilder._REPEAT_ON_FAIL_-exception_repeat}")
+                        print(
+                            f"Validate - Exception repeat {SocialAgentBuilder._REPEAT_ON_FAIL_-exception_repeat}"
+                        )
                     response = validator_llm.with_structured_output(
                         CriticalQuestionList
                     ).invoke([HumanMessage(instructions)])
@@ -529,3 +564,12 @@ class SocialAgentBuilder(CQSTAbstractAgent):
         memory = MemorySaver()
         print("Building Completed!")
         return workflow.compile(checkpointer=memory)
+
+
+class ValidatorAgentBuilder(CQSTAbstractAgent):
+    def build_agent(self) -> StateGraph:
+        def validator_criteria_node():
+            pass
+
+        def aggregator():
+            pass

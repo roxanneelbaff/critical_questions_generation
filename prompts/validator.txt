@@ -1,10 +1,11 @@
 # Context:
-You are provided with an argument from an oral debate and nine generated critical questions.
+You are provided with an argument from an oral debate and generated critical questions.
 
 # Argument:
 '''
 {input_arg}
 '''
+
 # Critical Questions:
 {other_agents_response}
 
