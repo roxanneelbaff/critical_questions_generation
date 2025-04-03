@@ -2,29 +2,36 @@ from abc import ABC
 import dataclasses
 import json
 import os
+import statistics
 from typing import ClassVar, Optional
 from langchain_openai import ChatOpenAI
 import pandas as pd
 from langgraph.graph import START, END, StateGraph
-from langchain_core.messages import HumanMessage, SystemMessage
+from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 from langgraph.types import Command
 from langgraph.checkpoint.memory import MemorySaver
 from pyparsing import abstractmethod
 import tqdm
 from langchain.chat_models import init_chat_model
-from langchain_mistralai import ChatMistralAI
 
 from social_agents import helper
 
 from .data_model import (
     Confirmation,
+    CriteriaRank,
+    CriteriaScore,
+    CriticalQuestion,
     CriticalQuestionList,
+    Validator4Agent,
 )
 
 from .state import (
     BasicState,
+    RankerAgentState,
     SocialAgentAnswer,
     SocialAgentState,
+    TwoStageValState,
+    ValidatorAgentState,
 )
 from .utils import get_st_data, timer
 
@@ -94,6 +101,7 @@ class CQSTAbstractAgent(ABC):
         pass
 
     def _invoke_graph(self, params, id_):
+        print("invoking")
         questions = []
         config = {"configurable": {"thread_id": f"{self.model_thread_id}_{id_}"}}
         fname = f"{CQSTAbstractAgent.ROOT_FOLDER}final_states/{self.experiment_name}_arg{id_}.json"
@@ -129,7 +137,8 @@ class CQSTAbstractAgent(ABC):
         out = {}
         time_in_seconds_arr = []
         for _, line in tqdm.tqdm(get_st_data(data_type).items()):
-            with timer(f"Iteration {line['intervention_id']}", time_in_seconds_arr):
+            with timer(f"Iteration {line['intervention_id']}",
+                       time_in_seconds_arr):
                 input_arg = (
                     line["intervention"].encode("utf-8").decode("unicode-escape")
                 )
@@ -163,8 +172,7 @@ class CQSTAbstractAgent(ABC):
 @dataclasses.dataclass
 class BasicCQModel(CQSTAbstractAgent):
 
-    
-    _MAX_REPEAT_ : ClassVar = 5
+    _MAX_REPEAT_: ClassVar = 5
 
     def build_agent(self):
         # Define all the logic of the Graph here
@@ -172,8 +180,7 @@ class BasicCQModel(CQSTAbstractAgent):
             structured_llm = self.llm_lst[0].with_structured_output(
                 CriticalQuestionList
             )
-            with open("prompts/system.txt", "r") as f:
-                system_prompt = f.read()
+
             with open("prompts/question.txt", "r") as file:
                 instructions = file.read()
 
@@ -567,9 +574,341 @@ class SocialAgentBuilder(CQSTAbstractAgent):
 
 
 class ValidatorAgentBuilder(CQSTAbstractAgent):
-    def build_agent(self) -> StateGraph:
-        def validator_criteria_node():
-            pass
+    cqs: list[str]
+    weights = {"depth": 1, "relevance": 1, "specificity": 1, "reasoning": 1}
 
-        def aggregator():
-            pass
+    def __init__(
+        self,
+        model_thread_id: str,
+        llm_name: str,
+        llm_num: int = 1,
+        experiment_name: Optional[str] = None,
+        temperature: Optional[float] = None,
+        serialize_func: callable = helper._basic_state_to_serializable,
+        cqs: list[str] = [],
+        weights: Optional[list[str]] = {
+            "depth": 1,
+            "relevance": 1,
+            "specificity": 1,
+            "reasoning": 1,
+        },
+    ):
+        self.cqs = cqs if cqs is not None else []
+        self.weights = (
+            weights
+            if weights is not None
+            else {"depth": 1, "relevance": 1, "specificity": 1, "reasoning": 1}
+        )
+        assert len(cqs) > 3
+        super().__init__(
+            model_thread_id=model_thread_id,
+            llm_name=llm_name,
+            llm_num=llm_num,
+            experiment_name=experiment_name,
+            temperature=temperature,
+            serialize_func=serialize_func,
+        )
+
+    def calculate_score(self, criteria: Validator4Agent):
+        score = (
+            criteria.depth * self.weights["depth"]
+            + criteria.reasoning * self.weights["reasoning"]
+            + criteria.relevance * self.weights["relevance"]
+            + criteria.specificity * self.weights["specificity"]
+        ) / sum(self.weights.values())
+        return score
+
+    def build_agent(self) -> StateGraph:
+        # llm_num = len(self.agent_trait_lst)
+        print("building workflow")
+        validator_llm = CQSTAbstractAgent._init_llm(self.llm_name, self.temperature)
+        repeat = 1 if self.temperature == 0 else 3
+
+        def _score_cq_node(state: ValidatorAgentState, cq: str):
+            with open("prompts/validators/four_scores.txt", "r") as f:
+                prompt = f.read()
+            scores = []
+            while len(scores) < repeat:
+                response = validator_llm.with_structured_output(Validator4Agent).invoke(
+                    [
+                        SystemMessage(
+                            "You are a critical thinker, you trust the power of sound reasoning."
+                        ),
+                        HumanMessage(
+                            prompt.format(input_arg=state["input_arg"], cq=cq)
+                        ),
+                    ],
+                )
+                if response is not None:
+                    scores.append(self.calculate_score(response))
+            return {"cq_scores_dict": {cq: round(statistics.mean(scores), 2)}}
+
+        def aggregator(state: ValidatorAgentState):
+            print(state["cq_scores_dict"])
+            print(
+                type(
+                    sorted(
+                        state["cq_scores_dict"],
+                        key=state["cq_scores_dict"].get,
+                        reverse=True,
+                    )[:3]
+                )
+            )
+            cqs = sorted(
+                state["cq_scores_dict"], key=state["cq_scores_dict"].get, reverse=True
+            )[:3]
+            return {
+                "final_cq": CriticalQuestionList(
+                    critical_questions=[
+                        CriticalQuestion(id=i, critical_question=cq, reason="")
+                        for i, cq in enumerate(cqs)
+                    ]
+                )
+            }
+
+        workflow = StateGraph(ValidatorAgentState)
+        workflow.add_node("aggregator", aggregator)
+        for i, cq in enumerate(self.cqs):
+            workflow.add_node(
+                f"{i}_score_cq_node", lambda state, cq=cq: _score_cq_node(state, cq)
+            )
+            workflow.add_edge(START, f"{i}_score_cq_node")
+
+            workflow.add_edge(f"{i}_score_cq_node", "aggregator")
+        workflow.add_edge("aggregator", END)
+        memory = MemorySaver()
+        print("Building Completed!")
+        return workflow.compile(checkpointer=memory)
+
+
+class RankerAgentBuilder(CQSTAbstractAgent):
+    # cqs: list[str]
+    weights = {"depth": 1, "relevance": 1, "specificity": 1, "reasoning": 1}
+
+    # do not set
+    criteria_desc: dict = None
+    
+    _CRITERIA_DESC_JSON_FILE_: ClassVar = "prompts/validators/criteria_ranker_desc.json"
+
+    def __init__(
+        self,
+        model_thread_id: str,
+        llm_name: str,
+        llm_num: int = 1,
+        experiment_name: Optional[str] = None,
+        temperature: Optional[float] = None,
+        serialize_func: callable = helper._state_to_serializable,
+        weights: Optional[list[str]] = {
+            "depth": 1,
+            "relevance": 1,
+            "specificity": 1,
+            "reasoning": 1,
+        },
+    ):
+        self.weights = (
+            weights
+            if weights is not None
+            else {"depth": 1, "relevance": 1, "specificity": 1, "reasoning": 1}
+        )
+        with open("prompts/validators/criteria_ranker_desc.json", "r") as f:
+            self.criteria_desc = json.load(f)
+
+        super().__init__(
+            model_thread_id=model_thread_id,
+            llm_name=llm_name,
+            llm_num=llm_num,
+            experiment_name=experiment_name,
+            temperature=temperature,
+            serialize_func=serialize_func,
+        )
+
+    def build_agent(self) -> StateGraph:
+        # llm_num = len(self.agent_trait_lst)
+        print("building workflow")
+        validator_llm = CQSTAbstractAgent._init_llm(self.llm_name,
+                                                    self.temperature)
+
+        def rank_criteria_node(state: RankerAgentState, criterion: str):
+            criterion_desc = self.criteria_desc[criterion]
+            with open("prompts/validators/criteria_ranker.txt", "r") as f:
+                prompt = f.read().format(
+                    criteria_name=criterion_desc["name"],
+                    criteria_adj=criterion_desc["adj"],
+                    criteria_desc=criterion_desc["desc"],
+                    input_arg=state["input_arg"],
+                    cqs=state["cqs"]
+                )
+
+            response = None
+            while response is None:
+                response = validator_llm.with_structured_output(CriteriaRank).invoke(
+                    [
+                        SystemMessage("You are an assistant that evaluates critical questions based on a specific quality."),
+                        HumanMessage(
+                            prompt
+                        ),
+                    ],
+                )
+            assert response is not None
+
+            #print("RESPONSE", response)
+            return {"criteria_cqs_rank_dict": {criterion: response}}
+
+        def aggregator(state: RankerAgentState):
+            cqs_ranks = state["criteria_cqs_rank_dict"]
+            #print(state["criteria_cqs_rank_dict"])
+            scores = {}
+
+            for _, items in cqs_ranks.items():
+                for item in items.cq_ranking_lst:
+                    if item.cq not in scores.keys(): scores[item.cq] = []
+                    scores[item.cq].append(item.rank)
+
+            # Compute mean rank for each question
+            mean_scores = {cq: sum(ranks) / len(ranks) for cq, ranks in scores.items()}
+
+            # Sort by mean score (lower is better)
+            cqs_items = sorted(mean_scores.items(), key=lambda x: x[1])
+            cqs = [x[0] for x in cqs_items][:3]
+
+            return {
+                "final_cq": CriticalQuestionList(
+                    critical_questions=[
+                        CriticalQuestion(id=i, critical_question=cq, reason="")
+                        for i, cq in enumerate(cqs)
+                    ]
+                )
+            }
+
+        workflow = StateGraph(RankerAgentState)
+        workflow.add_node("aggregator", aggregator)
+        for criterion in self.criteria_desc.keys():
+            workflow.add_node(
+                f"{criterion}_validation_node",
+                lambda state, criterion=criterion:
+                rank_criteria_node(state, criterion),
+            )
+            workflow.add_edge(START, f"{criterion}_validation_node")
+
+            workflow.add_edge(f"{criterion}_validation_node", "aggregator")
+        workflow.add_edge("aggregator", END)
+        memory = MemorySaver()
+        print("Building Completed!")
+        return workflow.compile(checkpointer=memory)
+
+
+class TwoStepsCriteriaScorer(CQSTAbstractAgent):
+    # cqs: list[str]
+    weights = {"depth": 1, "relevance": 1, "specificity": 1, "reasoning": 1}    
+
+    def __init__(
+        self,
+        model_thread_id: str,
+        llm_name: str,
+        llm_num: int = 1,
+        experiment_name: Optional[str] = None,
+        temperature: Optional[float] = None,
+        serialize_func: callable = helper._state_to_serializable,
+        weights: Optional[list[str]] = {
+            "depth": 1,
+            "relevance": 1,
+            "specificity": 1,
+            "reasoning": 1,
+        },
+    ):
+        self.weights = (
+            weights
+            if weights is not None
+            else {"depth": 1, "relevance": 1, "specificity": 1, "reasoning": 1}
+        )
+       
+        super().__init__(
+            model_thread_id=model_thread_id,
+            llm_name=llm_name,
+            llm_num=llm_num,
+            experiment_name=experiment_name,
+            temperature=temperature,
+            serialize_func=serialize_func,
+        )
+
+    def build_agent(self) -> StateGraph:
+        # llm_num = len(self.agent_trait_lst)
+        validator_llm = CQSTAbstractAgent._init_llm(self.llm_name,
+                                                    self.temperature)
+
+        def score_criteria_node(state: TwoStageValState, criterion: str):
+            with open(f"prompts/validators/system_2step_{criterion}.txt", "r") as f:
+                system = f.read()
+            with open("prompts/validators/step1.txt", "r") as f:
+                prompt_1 = f.read()
+            with open("prompts/validators/step2.txt", "r") as f:
+                prompt_2 = f.read()
+            response = None
+            cqs = state["cqs"]
+            results: dict[str:dict] = {i: {} for i in range(len(cqs))}
+            for i, cq in enumerate(cqs):
+                response = None
+                while response is None:
+                    try:
+                        messages: list = [
+                                SystemMessage(system),
+                                HumanMessage(
+                                    prompt_1
+                                )
+                            ]
+                        response1 = validator_llm.invoke(
+                            messages
+                        )
+                        #print(response1)
+                        messages = messages + [{"role": "assistant",
+                                                "content": response1.content},
+                                               HumanMessage(prompt_2.format(
+                                                   input_arg=state["input_arg"],
+                                                   cq=cq))]
+                        response = validator_llm.with_structured_output(CriteriaScore).invoke(
+                            messages
+                        )
+                        results[i][criterion] = response.score
+
+                    except Exception as e:
+                        print(f"Error: {e}")
+                        response = None
+            return {"cq_scores_dict": results}
+
+        def aggregator(state: TwoStageValState):
+            cq_score_dict = state["cq_scores_dict"]
+
+            # Compute mean rank for each question
+            mean_scores = {cq: sum(scores.values()) / len(scores.values()) for cq, scores in cq_score_dict.items()}
+
+            # Sort by mean score (lower is better)
+            cqs_items = sorted(mean_scores.items(), key=lambda x: x[1], reverse=True)
+            print(cqs_items)
+            cqs_idx = list([x[0] for x in cqs_items])
+            print("indices", cqs_idx)
+            cqs = [state["cqs"][i] for i in cqs_idx][:3]
+            print(cqs)
+            return {
+                "final_cq": CriticalQuestionList(
+                    critical_questions=[
+                        CriticalQuestion(id=i, critical_question=cq, reason="")
+                        for i, cq in enumerate(cqs)
+                    ]
+                )
+            }
+
+        workflow = StateGraph(TwoStageValState)
+        workflow.add_node("aggregator", aggregator)
+        for criterion in ["depth", "reasoning", "specificity"]:
+            workflow.add_node(
+                f"{criterion}_validation_node",
+                lambda state, criterion=criterion:
+                score_criteria_node(state, criterion),
+            )
+            workflow.add_edge(START, f"{criterion}_validation_node")
+
+            workflow.add_edge(f"{criterion}_validation_node", "aggregator")
+        workflow.add_edge("aggregator", END)
+        memory = MemorySaver()
+        print("Building Completed!")
+        return workflow.compile(checkpointer=memory)

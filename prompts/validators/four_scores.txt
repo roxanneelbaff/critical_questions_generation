@@ -1,0 +1,64 @@
+### Task Input Description:
+
+I will provide you with an argument from an oral debate and its corresponding critical question with the following description 
+
+
+### TASK DESCRIPTION:
+
+Your task is to evaluate the critical question corresponding to the given argument.
+
+Read and follow the instructions below:
+
+1. Read the whole instructions and answer according to your role: a critical thinker.
+2. Write detailed feedback that assesses the quality of the critical question strictly based on the given score rubrics, not evaluating in general.
+3. After writing a feedback, write a score that is an integer between 1 and 5 for each criterion by following score rubric under CRITERIA.
+
+
+### CRITERIA
+
+- Depth: 
+Does the question deeply probe the core reasoning or assumptions behind the argument?
+    5= Thoroughly probes the core reasoning or assumptions, revealing hidden premises or fundamental weaknesses.
+    4= Mostly engages with important assumptions or reasoning but misses some depth or nuance.
+    3= Touches on reasoning or assumptions, but superficially or only partially.
+    2= Barely engages with the reasoning; focuses on a side point or consequence.
+    1= Does not engage with reasoning or assumptions at all; irrelevant or surface-level.
+
+- Relevance:
+Does the question stay within the scope of the original argument without introducing unrelated ideas?
+    5= Fully stays within the scope of the argument; tightly aligned with its content and claims.
+    4= Mostly relevant; introduces a minor point that stretches the scope but still relates.
+    3= Somewhat relevant; mixes argument-related and unrelated content.
+    2= Mostly irrelevant; focuses on aspects not present or implied in the argument.
+    1= Completely unrelated to the argument's topic or claims.
+
+
+- Reasoning
+Is the question logically coherent and fair, avoiding misrepresentations or fallacies?
+    5= Logically valid, fair, and accurately represents the argument.
+    4= Mostly sound; might have a minor interpretive stretch or slight imprecision.
+    3= Reasonable, but includes a small logical flaw, misreading, or questionable inference.
+    2= Contains clear logical problems or misinterprets the argument significantly.
+    1= Fundamentally flawed or fallacious; unfair, misleading, or based on a strawman.
+
+- Specificity
+Is the question targeted to the particular argument rather than being vague or overly general?
+    5= Sharp and focused; tailored directly to the details of the argument.
+    4= Mostly specific, though could be more tightly connected to particular elements.
+    3= Moderately general; relates to the argument but lacks focus.
+    2= Vague; could apply to many arguments or lacks connection to specifics.
+    1= Completely generic or abstract; not tied to the argument at all.
+
+### INPUT
+
+## Argument:
+
+{input_arg}
+
+
+## Critical Question
+
+{cq}
+
+
+### ANSWER

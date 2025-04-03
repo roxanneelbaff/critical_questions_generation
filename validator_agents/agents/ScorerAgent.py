@@ -1,5 +1,4 @@
-from typing import Optional
-from agents.Agent import Agent
+from Agent import Agent
 from utils import extract_json_from_string
 
 SYSTEM_PROMPT = """

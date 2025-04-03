@@ -6,7 +6,8 @@ import subprocess
 import ast
 import re
 from collections import Counter
-
+from typing import Optional, Dict, Any
+import copy
 
 @contextmanager
 def timer(label: str, time_in_seconds_arr: list):
@@ -55,6 +56,39 @@ def dict_reducer(left: dict | None, right: dict | None) -> dict:
             merged[key] = merged[key] + right_value
         else:
             merged[key] = right_value
+
+    return merged
+
+
+def dict_of_dict(
+    left: Optional[Dict[str, Dict[str, Any]]],
+    right: Optional[Dict[str, Dict[str, Any]]]
+) -> Dict[str, Dict[str, Any]]:
+    """
+    Merge two dictionaries whose values are dictionaries.
+
+    If a key exists in both dictionaries, merge the inner dictionaries.
+    If either input is None, it's treated as an empty dictionary.
+
+    Args:
+        left: The first dictionary or None.
+        right: The second dictionary or None.
+
+    Returns:
+        A dictionary containing the merged key-value pairs.
+    """
+    left = left or {}
+    right = right or {}
+    merged = copy.deepcopy(left)  # deep copy to avoid mutating original dicts
+
+    for key, right_value in right.items():
+        if not isinstance(right_value, dict):
+            raise TypeError(f"Expected dict for value of key '{key}', got {type(right_value)}")
+
+        if key in merged:
+            merged[key] = {**merged[key], **right_value}
+        else:
+            merged[key] = copy.deepcopy(right_value)
 
     return merged
 

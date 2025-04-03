@@ -125,6 +125,12 @@ def _state_to_serializable(state: SocialAgentState) -> dict:
             for k, answer_list in value.items():
                 new_dict[k] = [answer.model_dump() for answer in answer_list]
             serializable_state[key] = new_dict
+        elif key == "criteria_cqs_rank_dict":
+            # Convert each SocialAgentAnswer in the dictionary to a dict
+            new_dict = {}
+            for k, answer_list in value.items():
+                new_dict[k] = answer_list.model_dump()  #[answer.model_dump() for answer in answer_list]
+            serializable_state[key] = new_dict
         elif key == "final_cq":
             # Convert final_cq if it's a Pydantic model
             if hasattr(value, "model_dump"):
