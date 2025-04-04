@@ -56,6 +56,7 @@ class CQSTAbstractAgent(ABC):
     llm_lst: list = None
 
     ROOT_FOLDER: ClassVar[str] = "output/elbaff_experiment/"
+    _SUB_FOLDER_: ClassVar[str] = "test_set/" # REMOVE THIS
 
     def __post_init__(self):
         print(f"Initializing LLM {self.llm_name}")
@@ -104,7 +105,7 @@ class CQSTAbstractAgent(ABC):
         print("invoking")
         questions = []
         config = {"configurable": {"thread_id": f"{self.model_thread_id}_{id_}"}}
-        fname = f"{CQSTAbstractAgent.ROOT_FOLDER}final_states/{self.experiment_name}_arg{id_}.json"
+        fname = f"{CQSTAbstractAgent.ROOT_FOLDER}final_states/{CQSTAbstractAgent._SUB_FOLDER_}{self.experiment_name}_arg{id_}.json"
         if os.path.exists(fname):
             print("arg already exist and cq generated, loading file")
             with open(fname, "r") as f:
@@ -738,7 +739,7 @@ class RankerAgentBuilder(CQSTAbstractAgent):
                     input_arg=state["input_arg"],
                     cqs=state["cqs"]
                 )
-
+                print(prompt)
             response = None
             while response is None:
                 response = validator_llm.with_structured_output(CriteriaRank).invoke(

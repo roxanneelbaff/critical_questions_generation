@@ -1,114 +1,114 @@
 traits,strategies,rounds,number_of_agents,has_debate,thread_id,experiment_name
-"('overconfident',)","('reflect',)",1,1,False,bd1b0527-d5c2-4d72-ad58-2208a9b7844e,{llm_name}social_n1_To_Sr
-"('overconfident',)","('reflect', 'reflect')",2,1,False,fffc391f-ce92-4d15-b622-f98b8a94d4db,{llm_name}social_n1_To_Srr
-"('overconfident',)","('reflect', 'reflect', 'reflect')",3,1,False,ffea6ff4-81d3-4abb-9c7c-c093e203ec07,{llm_name}social_n1_To_Srrr
-"('easy_going',)","('reflect',)",1,1,False,c93f8004-a694-48a4-91f5-2f86ab6463a7,{llm_name}social_n1_Te_Sr
-"('easy_going',)","('reflect', 'reflect')",2,1,False,ea3c9fa1-854e-48d1-b917-df05ec873709,{llm_name}social_n1_Te_Srr
-"('easy_going',)","('reflect', 'reflect', 'reflect')",3,1,False,d1225378-4120-4afe-a3ef-f8eeda7ce345,{llm_name}social_n1_Te_Srrr
-"('overconfident', 'overconfident')","('debate',)",1,2,True,067c0368-900b-4dc3-8298-e93eb74efc85,{llm_name}social_n2_Too_Sd
-"('overconfident', 'overconfident')","('reflect',)",1,2,False,cfc9d98d-ad82-416a-b391-163b32658a18,{llm_name}social_n2_Too_Sr
-"('overconfident', 'overconfident')","('debate', 'debate')",2,2,True,c541d032-3791-4a4b-abf0-b6e5fa7876ca,{llm_name}social_n2_Too_Sdd
-"('overconfident', 'overconfident')","('debate', 'reflect')",2,2,True,0d760df2-ffaa-4faa-9a93-40e2efc136af,{llm_name}social_n2_Too_Sdr
-"('overconfident', 'overconfident')","('reflect', 'debate')",2,2,True,fe3d1a2b-af2e-43c2-88f0-46ab29386e80,{llm_name}social_n2_Too_Srd
-"('overconfident', 'overconfident')","('reflect', 'reflect')",2,2,False,3ca69a22-2685-41d5-a225-417eb4f6bdea,{llm_name}social_n2_Too_Srr
-"('overconfident', 'overconfident')","('debate', 'debate', 'debate')",3,2,True,4cb721d7-d532-4e84-ad1d-97db12c463ba,{llm_name}social_n2_Too_Sddd
-"('overconfident', 'overconfident')","('debate', 'debate', 'reflect')",3,2,True,ce0f2a2a-2826-4407-b1db-d0bc2e314ab6,{llm_name}social_n2_Too_Sddr
-"('overconfident', 'overconfident')","('debate', 'reflect', 'debate')",3,2,True,98aff2de-d2a8-4019-bcce-fd6be67d09ca,{llm_name}social_n2_Too_Sdrd
-"('overconfident', 'overconfident')","('debate', 'reflect', 'reflect')",3,2,True,d881310e-8ee8-4499-a882-b29ae98ea79f,{llm_name}social_n2_Too_Sdrr
-"('overconfident', 'overconfident')","('reflect', 'debate', 'debate')",3,2,True,6ee4111d-104d-4a51-8071-7d1a1af13f05,{llm_name}social_n2_Too_Srdd
-"('overconfident', 'overconfident')","('reflect', 'debate', 'reflect')",3,2,True,33d954f2-31b4-48a9-91b5-b9240653e453,{llm_name}social_n2_Too_Srdr
-"('overconfident', 'overconfident')","('reflect', 'reflect', 'debate')",3,2,True,2f0325c2-4740-46d5-aff8-1fd319587cf8,{llm_name}social_n2_Too_Srrd
-"('overconfident', 'overconfident')","('reflect', 'reflect', 'reflect')",3,2,False,f8287b03-44ad-40be-ad76-6b891953472c,{llm_name}social_n2_Too_Srrr
-"('overconfident', 'easy_going')","('debate',)",1,2,True,347fd64a-a73d-447d-8288-739f3e394d4b,{llm_name}social_n2_Teo_Sd
-"('overconfident', 'easy_going')","('reflect',)",1,2,False,c43dacbd-d717-4ebe-b54e-78a0f46d93e6,{llm_name}social_n2_Teo_Sr
-"('overconfident', 'easy_going')","('debate', 'debate')",2,2,True,5deab506-0315-4f70-85b3-cac3f2bbab4a,{llm_name}social_n2_Teo_Sdd
-"('overconfident', 'easy_going')","('debate', 'reflect')",2,2,True,9b61f599-eae7-4bb2-a1bf-eb8534752d18,{llm_name}social_n2_Teo_Sdr
-"('overconfident', 'easy_going')","('reflect', 'debate')",2,2,True,4eafb212-cfae-4e40-a3db-02c4df09fcd1,{llm_name}social_n2_Teo_Srd
-"('overconfident', 'easy_going')","('reflect', 'reflect')",2,2,False,a66e19a7-94f9-40bc-a568-180a71400089,{llm_name}social_n2_Teo_Srr
-"('overconfident', 'easy_going')","('debate', 'debate', 'debate')",3,2,True,85e6a3c8-b5ba-45a5-b242-9d8be591bf44,{llm_name}social_n2_Teo_Sddd
-"('overconfident', 'easy_going')","('debate', 'debate', 'reflect')",3,2,True,f912dc8b-5952-4aa6-959d-6de05f5aac2b,{llm_name}social_n2_Teo_Sddr
-"('overconfident', 'easy_going')","('debate', 'reflect', 'debate')",3,2,True,e6d116ea-223c-4f1f-b510-3f1e6cfe00c0,{llm_name}social_n2_Teo_Sdrd
-"('overconfident', 'easy_going')","('debate', 'reflect', 'reflect')",3,2,True,2ef940c9-ee2f-4294-ad30-c011d172baf0,{llm_name}social_n2_Teo_Sdrr
-"('overconfident', 'easy_going')","('reflect', 'debate', 'debate')",3,2,True,83a1e34f-94f6-4108-a925-decf8a24db6a,{llm_name}social_n2_Teo_Srdd
-"('overconfident', 'easy_going')","('reflect', 'debate', 'reflect')",3,2,True,da06a3fe-055b-4c04-ab35-7e8c72f1aa67,{llm_name}social_n2_Teo_Srdr
-"('overconfident', 'easy_going')","('reflect', 'reflect', 'debate')",3,2,True,97fea38c-c360-40d9-b765-83510d8a11b2,{llm_name}social_n2_Teo_Srrd
-"('overconfident', 'easy_going')","('reflect', 'reflect', 'reflect')",3,2,False,25e6e4c2-1d97-44d3-8371-484a20a37233,{llm_name}social_n2_Teo_Srrr
-"('easy_going', 'easy_going')","('debate',)",1,2,True,15e04a4f-6dce-4a8d-b631-0ca358faba5b,{llm_name}social_n2_Tee_Sd
-"('easy_going', 'easy_going')","('reflect',)",1,2,False,d5a50085-c659-4e19-896c-1c80263ba27c,{llm_name}social_n2_Tee_Sr
-"('easy_going', 'easy_going')","('debate', 'debate')",2,2,True,4fe04fca-b345-4407-937b-7bb530617972,{llm_name}social_n2_Tee_Sdd
-"('easy_going', 'easy_going')","('debate', 'reflect')",2,2,True,7f93ec1b-57c3-4613-9d1d-ca3b44218188,{llm_name}social_n2_Tee_Sdr
-"('easy_going', 'easy_going')","('reflect', 'debate')",2,2,True,3255424e-bc61-4fc5-811b-7ac364a7ef95,{llm_name}social_n2_Tee_Srd
-"('easy_going', 'easy_going')","('reflect', 'reflect')",2,2,False,3bf1949a-fd06-4cfb-9ee6-7b59e4db2aa2,{llm_name}social_n2_Tee_Srr
-"('easy_going', 'easy_going')","('debate', 'debate', 'debate')",3,2,True,e718fb65-1738-4dff-80df-8944c17e1ce8,{llm_name}social_n2_Tee_Sddd
-"('easy_going', 'easy_going')","('debate', 'debate', 'reflect')",3,2,True,b7a6b6ac-718e-4f18-a606-b16eab9637a9,{llm_name}social_n2_Tee_Sddr
-"('easy_going', 'easy_going')","('debate', 'reflect', 'debate')",3,2,True,b8658ffe-7c68-4915-84d7-71fb5b9113eb,{llm_name}social_n2_Tee_Sdrd
-"('easy_going', 'easy_going')","('debate', 'reflect', 'reflect')",3,2,True,f761b131-ef05-4152-b324-32de6b64993a,{llm_name}social_n2_Tee_Sdrr
-"('easy_going', 'easy_going')","('reflect', 'debate', 'debate')",3,2,True,2dc7cf3c-3563-4440-a3ae-edb83db81607,{llm_name}social_n2_Tee_Srdd
-"('easy_going', 'easy_going')","('reflect', 'debate', 'reflect')",3,2,True,02d57136-f386-4f1f-8703-e3d358131c8f,{llm_name}social_n2_Tee_Srdr
-"('easy_going', 'easy_going')","('reflect', 'reflect', 'debate')",3,2,True,1d794e0d-bfb4-4f7f-be70-a091eee446ba,{llm_name}social_n2_Tee_Srrd
-"('easy_going', 'easy_going')","('reflect', 'reflect', 'reflect')",3,2,False,aa099e07-488e-4ccf-8e55-257a84356fce,{llm_name}social_n2_Tee_Srrr
-"('overconfident', 'overconfident', 'overconfident')","('debate',)",1,3,True,85ad5624-9f1c-48ca-8d02-cb99accc2d4b,{llm_name}social_n3_Tooo_Sd
-"('overconfident', 'overconfident', 'overconfident')","('reflect',)",1,3,False,a10aa239-8ec8-49da-8026-92684504ef91,{llm_name}social_n3_Tooo_Sr
-"('overconfident', 'overconfident', 'overconfident')","('debate', 'debate')",2,3,True,d39271e9-8e6d-481f-b8fe-dbc00d35fdc4,{llm_name}social_n3_Tooo_Sdd
-"('overconfident', 'overconfident', 'overconfident')","('debate', 'reflect')",2,3,True,a8d493c8-561c-4ba3-9844-912ff9424431,{llm_name}social_n3_Tooo_Sdr
-"('overconfident', 'overconfident', 'overconfident')","('reflect', 'debate')",2,3,True,4cf90b87-fa47-4d9c-9e1c-14ac6cde093c,{llm_name}social_n3_Tooo_Srd
-"('overconfident', 'overconfident', 'overconfident')","('reflect', 'reflect')",2,3,False,7918b29f-ec56-4d8d-8edf-c2558ec5ab75,{llm_name}social_n3_Tooo_Srr
-"('overconfident', 'overconfident', 'overconfident')","('debate', 'debate', 'debate')",3,3,True,d6b917ca-227e-47e9-adc2-432e5f191502,{llm_name}social_n3_Tooo_Sddd
-"('overconfident', 'overconfident', 'overconfident')","('debate', 'debate', 'reflect')",3,3,True,f3f1b7e9-736b-45f4-b693-bb93c8d5b09d,{llm_name}social_n3_Tooo_Sddr
-"('overconfident', 'overconfident', 'overconfident')","('debate', 'reflect', 'debate')",3,3,True,a4468176-f75a-4032-b29b-0704d6982b4e,{llm_name}social_n3_Tooo_Sdrd
-"('overconfident', 'overconfident', 'overconfident')","('debate', 'reflect', 'reflect')",3,3,True,0a02f1a9-a549-4354-95bc-e713b98387f9,{llm_name}social_n3_Tooo_Sdrr
-"('overconfident', 'overconfident', 'overconfident')","('reflect', 'debate', 'debate')",3,3,True,e95296c4-17c2-4ee7-838b-26003f4f6816,{llm_name}social_n3_Tooo_Srdd
-"('overconfident', 'overconfident', 'overconfident')","('reflect', 'debate', 'reflect')",3,3,True,3640d8fa-152f-40ab-b428-28feb333c874,{llm_name}social_n3_Tooo_Srdr
-"('overconfident', 'overconfident', 'overconfident')","('reflect', 'reflect', 'debate')",3,3,True,872a8334-c1e2-41be-bb32-d0cbd182e78b,{llm_name}social_n3_Tooo_Srrd
-"('overconfident', 'overconfident', 'overconfident')","('reflect', 'reflect', 'reflect')",3,3,False,14d30faa-3942-435b-b0ae-f9751b30c6a8,{llm_name}social_n3_Tooo_Srrr
-"('overconfident', 'overconfident', 'easy_going')","('debate',)",1,3,True,e805ae2c-9b92-46e0-9b53-b809f9cb99c1,{llm_name}social_n3_Teoo_Sd
-"('overconfident', 'overconfident', 'easy_going')","('reflect',)",1,3,False,cb258f53-77b5-4708-b40b-6c9ad614d506,{llm_name}social_n3_Teoo_Sr
-"('overconfident', 'overconfident', 'easy_going')","('debate', 'debate')",2,3,True,c26f3e0b-ac50-4ed8-91eb-60eb05d42af8,{llm_name}social_n3_Teoo_Sdd
-"('overconfident', 'overconfident', 'easy_going')","('debate', 'reflect')",2,3,True,5f3b9a67-d6fd-420f-b50d-e24d373964e8,{llm_name}social_n3_Teoo_Sdr
-"('overconfident', 'overconfident', 'easy_going')","('reflect', 'debate')",2,3,True,ce12741f-c18e-4edd-86df-41bf7b6978c6,{llm_name}social_n3_Teoo_Srd
-"('overconfident', 'overconfident', 'easy_going')","('reflect', 'reflect')",2,3,False,2f6adf65-fa53-4833-bf4f-64f1e4f217f9,{llm_name}social_n3_Teoo_Srr
-"('overconfident', 'overconfident', 'easy_going')","('debate', 'debate', 'debate')",3,3,True,87bdeb34-c75e-496d-95b0-41db4e687e22,{llm_name}social_n3_Teoo_Sddd
-"('overconfident', 'overconfident', 'easy_going')","('debate', 'debate', 'reflect')",3,3,True,cf0ddf7f-f57c-4d52-8ee3-cd9f275ac099,{llm_name}social_n3_Teoo_Sddr
-"('overconfident', 'overconfident', 'easy_going')","('debate', 'reflect', 'debate')",3,3,True,fb35acf5-c900-4b97-af4a-915e53cd8738,{llm_name}social_n3_Teoo_Sdrd
-"('overconfident', 'overconfident', 'easy_going')","('debate', 'reflect', 'reflect')",3,3,True,ceadd382-adcc-43a4-99e8-78da0bacb251,{llm_name}social_n3_Teoo_Sdrr
-"('overconfident', 'overconfident', 'easy_going')","('reflect', 'debate', 'debate')",3,3,True,27746136-23aa-4923-ba23-ccee3534aff2,{llm_name}social_n3_Teoo_Srdd
-"('overconfident', 'overconfident', 'easy_going')","('reflect', 'debate', 'reflect')",3,3,True,a3225734-e3c6-4d77-889d-06dfd9c56a2e,{llm_name}social_n3_Teoo_Srdr
-"('overconfident', 'overconfident', 'easy_going')","('reflect', 'reflect', 'debate')",3,3,True,674c7f07-a86f-4e20-b17c-d6930d019801,{llm_name}social_n3_Teoo_Srrd
-"('overconfident', 'overconfident', 'easy_going')","('reflect', 'reflect', 'reflect')",3,3,False,a7c60fe0-516a-41f3-a4df-a866cf0d4a26,{llm_name}social_n3_Teoo_Srrr
-"('overconfident', 'easy_going', 'easy_going')","('debate',)",1,3,True,929937b4-e7ab-435b-badc-8b9417ba7864,{llm_name}social_n3_Teeo_Sd
-"('overconfident', 'easy_going', 'easy_going')","('reflect',)",1,3,False,401bb048-4965-442e-99a9-7f33f44b888f,{llm_name}social_n3_Teeo_Sr
-"('overconfident', 'easy_going', 'easy_going')","('debate', 'debate')",2,3,True,478ff7c9-7634-481d-a7df-6f1a51cce6ce,{llm_name}social_n3_Teeo_Sdd
-"('overconfident', 'easy_going', 'easy_going')","('debate', 'reflect')",2,3,True,36237699-2b02-475e-a13f-8704d90a4f84,{llm_name}social_n3_Teeo_Sdr
-"('overconfident', 'easy_going', 'easy_going')","('reflect', 'debate')",2,3,True,d655dac3-09e3-40e9-9a54-4a88772ee27f,{llm_name}social_n3_Teeo_Srd
-"('overconfident', 'easy_going', 'easy_going')","('reflect', 'reflect')",2,3,False,c001c2a5-ba3e-48e6-937d-defbdf47843d,{llm_name}social_n3_Teeo_Srr
-"('overconfident', 'easy_going', 'easy_going')","('debate', 'debate', 'debate')",3,3,True,aceb2a9d-021d-4510-805c-28f74f68fe3e,{llm_name}social_n3_Teeo_Sddd
-"('overconfident', 'easy_going', 'easy_going')","('debate', 'debate', 'reflect')",3,3,True,c4a363c0-836e-4d88-a523-611e367014f6,{llm_name}social_n3_Teeo_Sddr
-"('overconfident', 'easy_going', 'easy_going')","('debate', 'reflect', 'debate')",3,3,True,1d504823-a17f-4f61-8d21-a4449e1a7dc5,{llm_name}social_n3_Teeo_Sdrd
-"('overconfident', 'easy_going', 'easy_going')","('debate', 'reflect', 'reflect')",3,3,True,abe414b9-2bd5-4625-b71b-7d30582a5968,{llm_name}social_n3_Teeo_Sdrr
-"('overconfident', 'easy_going', 'easy_going')","('reflect', 'debate', 'debate')",3,3,True,d655c68a-d5db-4f04-bdf4-075ba332d4d6,{llm_name}social_n3_Teeo_Srdd
-"('overconfident', 'easy_going', 'easy_going')","('reflect', 'debate', 'reflect')",3,3,True,8f591833-c301-44c0-b648-a0eedd8f125d,{llm_name}social_n3_Teeo_Srdr
-"('overconfident', 'easy_going', 'easy_going')","('reflect', 'reflect', 'debate')",3,3,True,7c596c05-0945-4182-ac57-de54641eb12e,{llm_name}social_n3_Teeo_Srrd
-"('overconfident', 'easy_going', 'easy_going')","('reflect', 'reflect', 'reflect')",3,3,False,a0b52724-3beb-4722-8c3f-ff0c64d963e7,{llm_name}social_n3_Teeo_Srrr
-"('easy_going', 'easy_going', 'easy_going')","('debate',)",1,3,True,9cac7f93-22cd-42cf-af57-44c98f35cc9b,{llm_name}social_n3_Teee_Sd
-"('easy_going', 'easy_going', 'easy_going')","('reflect',)",1,3,False,6c61f5b8-7e11-49fb-9a02-d57e8b578a6f,{llm_name}social_n3_Teee_Sr
-"('easy_going', 'easy_going', 'easy_going')","('debate', 'debate')",2,3,True,1095a0c9-0f59-4246-95ef-93e5f9cc192a,{llm_name}social_n3_Teee_Sdd
-"('easy_going', 'easy_going', 'easy_going')","('debate', 'reflect')",2,3,True,78b8d24c-9c35-4861-9f83-d633ca74bbe0,{llm_name}social_n3_Teee_Sdr
-"('easy_going', 'easy_going', 'easy_going')","('reflect', 'debate')",2,3,True,ff4efee3-908e-4645-8618-2f1fe495cffc,{llm_name}social_n3_Teee_Srd
-"('easy_going', 'easy_going', 'easy_going')","('reflect', 'reflect')",2,3,False,949abae6-98c9-4e12-be9e-48c9e6bb8726,{llm_name}social_n3_Teee_Srr
-"('easy_going', 'easy_going', 'easy_going')","('debate', 'debate', 'debate')",3,3,True,8e23fb88-86b2-4c8b-ac2e-b3b08541ecc8,{llm_name}social_n3_Teee_Sddd
-"('easy_going', 'easy_going', 'easy_going')","('debate', 'debate', 'reflect')",3,3,True,a85a0aaf-b099-4501-ac44-4fe020edd34c,{llm_name}social_n3_Teee_Sddr
-"('easy_going', 'easy_going', 'easy_going')","('debate', 'reflect', 'debate')",3,3,True,c16ae6fe-adce-4f8d-a4eb-8b81e81786e4,{llm_name}social_n3_Teee_Sdrd
-"('easy_going', 'easy_going', 'easy_going')","('debate', 'reflect', 'reflect')",3,3,True,4ea98875-8280-4a2a-bc74-43b183dc48ee,{llm_name}social_n3_Teee_Sdrr
-"('easy_going', 'easy_going', 'easy_going')","('reflect', 'debate', 'debate')",3,3,True,5e79c7ba-1a83-45b3-8ea1-9defe9b914a9,{llm_name}social_n3_Teee_Srdd
-"('easy_going', 'easy_going', 'easy_going')","('reflect', 'debate', 'reflect')",3,3,True,32fb474f-4132-46ef-8de1-ab8dfaa25fc7,{llm_name}social_n3_Teee_Srdr
-"('easy_going', 'easy_going', 'easy_going')","('reflect', 'reflect', 'debate')",3,3,True,1475b4da-aa2f-4266-b8c4-989929504c36,{llm_name}social_n3_Teee_Srrd
-"('easy_going', 'easy_going', 'easy_going')","('reflect', 'reflect', 'reflect')",3,3,False,96b0571a-e770-463d-99d5-cf762136e3f0,{llm_name}social_n3_Teee_Srrr
-"('overconfident',)",(),0,1,False,550f2b9f-ee1d-4540-a4dd-5549e05d8dbe,{llm_name}social_n1_To_S
-"('easy_going',)",(),0,1,False,83955b44-3333-4e9d-884a-ce5fcb763723,{llm_name}social_n1_Te_S
-"('overconfident', 'overconfident')",(),0,2,False,fe8b159d-cbf4-4811-968f-02b051ee6de8,{llm_name}social_n2_Too_S
-"('overconfident', 'easy_going')",(),0,2,False,2055c70b-9bad-4c2c-a799-c5cb42a5a567,{llm_name}social_n2_Teo_S
-"('easy_going', 'easy_going')",(),0,2,False,19547e75-9bf2-4e99-b9c9-972a40bc59ef,{llm_name}social_n2_Tee_S
-"('overconfident', 'overconfident', 'overconfident')",(),0,3,False,a850df6e-3335-4ec8-ba2f-6e8903634a43,{llm_name}social_n3_Tooo_S
-"('overconfident', 'overconfident', 'easy_going')",(),0,3,False,96a87751-e7fb-4a84-8531-07baf6e57115,{llm_name}social_n3_Teoo_S
-"('overconfident', 'easy_going', 'easy_going')",(),0,3,False,b0cb6b0c-002e-49ce-bc6f-96c260eeca67,{llm_name}social_n3_Teeo_S
-"('easy_going', 'easy_going', 'easy_going')",(),0,3,False,4e0cac59-fe10-45d1-800a-e452df7fe3f7,{llm_name}social_n3_Teee_S
+"('overconfident',)","('reflect',)",1,1,False,7be8654c-6b34-4bff-9216-3484aa143345,{llm_name}social_n1_To_Sr
+"('overconfident',)","('reflect', 'reflect')",2,1,False,6cb8d97b-294f-4f36-9d57-fcfca1635743,{llm_name}social_n1_To_Srr
+"('overconfident',)","('reflect', 'reflect', 'reflect')",3,1,False,9dffada0-f8b5-4f7e-b319-733e30759247,{llm_name}social_n1_To_Srrr
+"('easy_going',)","('reflect',)",1,1,False,edab1496-1e14-4319-8328-c8ac1a658d9e,{llm_name}social_n1_Te_Sr
+"('easy_going',)","('reflect', 'reflect')",2,1,False,615739c2-f389-47e2-b0b9-f31653c78b62,{llm_name}social_n1_Te_Srr
+"('easy_going',)","('reflect', 'reflect', 'reflect')",3,1,False,efe9444e-2373-4d83-8199-21f95f5a72ce,{llm_name}social_n1_Te_Srrr
+"('overconfident', 'overconfident')","('debate',)",1,2,True,4fa10bce-6e79-4c90-aa73-7d9520af726c,{llm_name}social_n2_Too_Sd
+"('overconfident', 'overconfident')","('reflect',)",1,2,False,1ed9a043-a94b-4621-b7f0-d37d849bd50d,{llm_name}social_n2_Too_Sr
+"('overconfident', 'overconfident')","('debate', 'debate')",2,2,True,0294e248-5d07-47dd-a0ab-9e8e56044b69,{llm_name}social_n2_Too_Sdd
+"('overconfident', 'overconfident')","('debate', 'reflect')",2,2,True,b8116d4e-adae-4363-a00a-5d410bb7700c,{llm_name}social_n2_Too_Sdr
+"('overconfident', 'overconfident')","('reflect', 'debate')",2,2,True,4bb23cfd-ba47-4ce5-a6c5-009598b9b3e1,{llm_name}social_n2_Too_Srd
+"('overconfident', 'overconfident')","('reflect', 'reflect')",2,2,False,3a1167d2-df2c-42c4-8298-26a539e1b512,{llm_name}social_n2_Too_Srr
+"('overconfident', 'overconfident')","('debate', 'debate', 'debate')",3,2,True,1d284df2-cd1a-4f79-9605-1270923d5401,{llm_name}social_n2_Too_Sddd
+"('overconfident', 'overconfident')","('debate', 'debate', 'reflect')",3,2,True,ee42300c-66ce-4b64-b87b-d174f70d0bcb,{llm_name}social_n2_Too_Sddr
+"('overconfident', 'overconfident')","('debate', 'reflect', 'debate')",3,2,True,255fe256-1408-406e-8869-cd4d75cd3d28,{llm_name}social_n2_Too_Sdrd
+"('overconfident', 'overconfident')","('debate', 'reflect', 'reflect')",3,2,True,434b4306-e7fc-4591-8243-992f53545d4e,{llm_name}social_n2_Too_Sdrr
+"('overconfident', 'overconfident')","('reflect', 'debate', 'debate')",3,2,True,ac220e75-41f3-4e1a-b4b6-ae45858fb06a,{llm_name}social_n2_Too_Srdd
+"('overconfident', 'overconfident')","('reflect', 'debate', 'reflect')",3,2,True,f75e2536-c172-4368-88d3-dd1be0764cb5,{llm_name}social_n2_Too_Srdr
+"('overconfident', 'overconfident')","('reflect', 'reflect', 'debate')",3,2,True,7ee6a512-d999-4a91-a23d-409725693c9f,{llm_name}social_n2_Too_Srrd
+"('overconfident', 'overconfident')","('reflect', 'reflect', 'reflect')",3,2,False,f8e6d55d-2442-4af3-96d9-8fbf9ee9aa24,{llm_name}social_n2_Too_Srrr
+"('overconfident', 'easy_going')","('debate',)",1,2,True,17137094-341b-4234-b0af-67ce22214be2,{llm_name}social_n2_Teo_Sd
+"('overconfident', 'easy_going')","('reflect',)",1,2,False,62abd5d2-7b97-4aec-9f53-922fb6541f9d,{llm_name}social_n2_Teo_Sr
+"('overconfident', 'easy_going')","('debate', 'debate')",2,2,True,2c6d0aec-36cd-4e31-959d-116d181841ff,{llm_name}social_n2_Teo_Sdd
+"('overconfident', 'easy_going')","('debate', 'reflect')",2,2,True,a102c7d2-05e9-4063-a918-75b7c69f784a,{llm_name}social_n2_Teo_Sdr
+"('overconfident', 'easy_going')","('reflect', 'debate')",2,2,True,d6dbac8f-704b-43c2-8c3f-5160af74d17a,{llm_name}social_n2_Teo_Srd
+"('overconfident', 'easy_going')","('reflect', 'reflect')",2,2,False,c4104997-9763-47c5-af7f-4abe970947a8,{llm_name}social_n2_Teo_Srr
+"('overconfident', 'easy_going')","('debate', 'debate', 'debate')",3,2,True,ae6eaef0-d6af-4a5c-839f-d88ce0a77082,{llm_name}social_n2_Teo_Sddd
+"('overconfident', 'easy_going')","('debate', 'debate', 'reflect')",3,2,True,fc64f2e8-3466-4d1e-997a-88c92e78bb6e,{llm_name}social_n2_Teo_Sddr
+"('overconfident', 'easy_going')","('debate', 'reflect', 'debate')",3,2,True,86ef9f49-f632-44fd-9098-5df03d067ad1,{llm_name}social_n2_Teo_Sdrd
+"('overconfident', 'easy_going')","('debate', 'reflect', 'reflect')",3,2,True,457d32a4-3272-4248-b501-33ac2025e753,{llm_name}social_n2_Teo_Sdrr
+"('overconfident', 'easy_going')","('reflect', 'debate', 'debate')",3,2,True,2a1e93ab-4681-49d4-b17a-2bba5e13df38,{llm_name}social_n2_Teo_Srdd
+"('overconfident', 'easy_going')","('reflect', 'debate', 'reflect')",3,2,True,7f4bf65f-1e48-498d-96de-b6cb492abc99,{llm_name}social_n2_Teo_Srdr
+"('overconfident', 'easy_going')","('reflect', 'reflect', 'debate')",3,2,True,980cb422-ecde-4889-a47e-6036e7d2e849,{llm_name}social_n2_Teo_Srrd
+"('overconfident', 'easy_going')","('reflect', 'reflect', 'reflect')",3,2,False,c423cd81-10f0-4d5e-aeb5-0f1bdee61b88,{llm_name}social_n2_Teo_Srrr
+"('easy_going', 'easy_going')","('debate',)",1,2,True,4c72298c-b4ca-455b-8f1e-291c3adf6677,{llm_name}social_n2_Tee_Sd
+"('easy_going', 'easy_going')","('reflect',)",1,2,False,9bd737ef-7df4-4d73-a39e-77ad002d033c,{llm_name}social_n2_Tee_Sr
+"('easy_going', 'easy_going')","('debate', 'debate')",2,2,True,406b5d54-228f-420d-b7a9-aec5a52e9ebb,{llm_name}social_n2_Tee_Sdd
+"('easy_going', 'easy_going')","('debate', 'reflect')",2,2,True,de4dfa99-1bf5-4164-a43c-335a774508ee,{llm_name}social_n2_Tee_Sdr
+"('easy_going', 'easy_going')","('reflect', 'debate')",2,2,True,2aafc6f1-319c-4470-a138-340139bfe1de,{llm_name}social_n2_Tee_Srd
+"('easy_going', 'easy_going')","('reflect', 'reflect')",2,2,False,97f333dd-2821-41f4-b6f8-2c1deefb40ab,{llm_name}social_n2_Tee_Srr
+"('easy_going', 'easy_going')","('debate', 'debate', 'debate')",3,2,True,27d3ca3b-6198-4508-97f4-f2e0d613fa7b,{llm_name}social_n2_Tee_Sddd
+"('easy_going', 'easy_going')","('debate', 'debate', 'reflect')",3,2,True,3ba5d593-bf46-4908-a6e3-034d1a11ab3b,{llm_name}social_n2_Tee_Sddr
+"('easy_going', 'easy_going')","('debate', 'reflect', 'debate')",3,2,True,e966bc3b-4044-4e38-acf9-d2b1ec99be9f,{llm_name}social_n2_Tee_Sdrd
+"('easy_going', 'easy_going')","('debate', 'reflect', 'reflect')",3,2,True,9421a9ce-6aeb-4ba9-838f-bf4c3ef963c8,{llm_name}social_n2_Tee_Sdrr
+"('easy_going', 'easy_going')","('reflect', 'debate', 'debate')",3,2,True,eccaa65d-8eda-40e4-afe3-bfbc35f6305b,{llm_name}social_n2_Tee_Srdd
+"('easy_going', 'easy_going')","('reflect', 'debate', 'reflect')",3,2,True,75482d40-7cb8-4309-b9ff-bbef4ea6aeb1,{llm_name}social_n2_Tee_Srdr
+"('easy_going', 'easy_going')","('reflect', 'reflect', 'debate')",3,2,True,3f6d8eae-6b0f-41c9-9d86-9ab3081b04d4,{llm_name}social_n2_Tee_Srrd
+"('easy_going', 'easy_going')","('reflect', 'reflect', 'reflect')",3,2,False,89b7c836-16e7-42d8-acf7-04ef48fbbdac,{llm_name}social_n2_Tee_Srrr
+"('overconfident', 'overconfident', 'overconfident')","('debate',)",1,3,True,503dd419-bbc0-4bbb-bee4-15972989a2e0,{llm_name}social_n3_Tooo_Sd
+"('overconfident', 'overconfident', 'overconfident')","('reflect',)",1,3,False,2de35b6d-a0fb-4b9d-a35d-080c3118d905,{llm_name}social_n3_Tooo_Sr
+"('overconfident', 'overconfident', 'overconfident')","('debate', 'debate')",2,3,True,f69bf262-ffa4-45f3-8bba-2728e59c6694,{llm_name}social_n3_Tooo_Sdd
+"('overconfident', 'overconfident', 'overconfident')","('debate', 'reflect')",2,3,True,735664e6-ffc0-48a4-9908-a0783fdef7a6,{llm_name}social_n3_Tooo_Sdr
+"('overconfident', 'overconfident', 'overconfident')","('reflect', 'debate')",2,3,True,8612fac4-2e36-4f6f-b243-5897515ac79d,{llm_name}social_n3_Tooo_Srd
+"('overconfident', 'overconfident', 'overconfident')","('reflect', 'reflect')",2,3,False,d7eaf1c5-654d-4857-b8cf-3e3b0d07764a,{llm_name}social_n3_Tooo_Srr
+"('overconfident', 'overconfident', 'overconfident')","('debate', 'debate', 'debate')",3,3,True,1ebb2f99-e402-4147-875e-081e0b2486cf,{llm_name}social_n3_Tooo_Sddd
+"('overconfident', 'overconfident', 'overconfident')","('debate', 'debate', 'reflect')",3,3,True,2cf9ff00-59f8-4a60-8bad-af7681a03f10,{llm_name}social_n3_Tooo_Sddr
+"('overconfident', 'overconfident', 'overconfident')","('debate', 'reflect', 'debate')",3,3,True,8aab0333-1613-4c80-b7b0-d4e8a16ecb56,{llm_name}social_n3_Tooo_Sdrd
+"('overconfident', 'overconfident', 'overconfident')","('debate', 'reflect', 'reflect')",3,3,True,ecc0ba3f-2b80-4aa2-96cb-e4fe16c3bb36,{llm_name}social_n3_Tooo_Sdrr
+"('overconfident', 'overconfident', 'overconfident')","('reflect', 'debate', 'debate')",3,3,True,951cdf31-79f9-4f76-86cc-becd7bbc51ed,{llm_name}social_n3_Tooo_Srdd
+"('overconfident', 'overconfident', 'overconfident')","('reflect', 'debate', 'reflect')",3,3,True,b38282ca-a0f2-40e6-928c-96fc2b64e9a3,{llm_name}social_n3_Tooo_Srdr
+"('overconfident', 'overconfident', 'overconfident')","('reflect', 'reflect', 'debate')",3,3,True,9d59718c-657f-45a5-9579-c7c393ab9410,{llm_name}social_n3_Tooo_Srrd
+"('overconfident', 'overconfident', 'overconfident')","('reflect', 'reflect', 'reflect')",3,3,False,237a328b-91f1-4dac-a3be-02cd2e7c4ddb,{llm_name}social_n3_Tooo_Srrr
+"('overconfident', 'overconfident', 'easy_going')","('debate',)",1,3,True,92fd67b8-875d-4ecc-b18c-af68d2c37f59,{llm_name}social_n3_Teoo_Sd
+"('overconfident', 'overconfident', 'easy_going')","('reflect',)",1,3,False,9498828f-0d97-40c5-b867-110faee61eaa,{llm_name}social_n3_Teoo_Sr
+"('overconfident', 'overconfident', 'easy_going')","('debate', 'debate')",2,3,True,5aed6aac-f532-401a-b266-9d29ff72e357,{llm_name}social_n3_Teoo_Sdd
+"('overconfident', 'overconfident', 'easy_going')","('debate', 'reflect')",2,3,True,d725364d-0c18-498e-8617-01a83206b283,{llm_name}social_n3_Teoo_Sdr
+"('overconfident', 'overconfident', 'easy_going')","('reflect', 'debate')",2,3,True,2e83bbe7-1c9c-4b1c-906e-e1ddc5d966f1,{llm_name}social_n3_Teoo_Srd
+"('overconfident', 'overconfident', 'easy_going')","('reflect', 'reflect')",2,3,False,5bf7109e-d3cf-4627-ae46-4eb27024fe74,{llm_name}social_n3_Teoo_Srr
+"('overconfident', 'overconfident', 'easy_going')","('debate', 'debate', 'debate')",3,3,True,90a60eb7-938b-4df9-9335-d322cc95effc,{llm_name}social_n3_Teoo_Sddd
+"('overconfident', 'overconfident', 'easy_going')","('debate', 'debate', 'reflect')",3,3,True,db14fe53-07e2-46ca-8140-ac5feb55740a,{llm_name}social_n3_Teoo_Sddr
+"('overconfident', 'overconfident', 'easy_going')","('debate', 'reflect', 'debate')",3,3,True,271c0d77-dce1-4fa8-8eea-74d1b7095c4b,{llm_name}social_n3_Teoo_Sdrd
+"('overconfident', 'overconfident', 'easy_going')","('debate', 'reflect', 'reflect')",3,3,True,c0eb044c-daee-41ed-a60e-f08c28f51184,{llm_name}social_n3_Teoo_Sdrr
+"('overconfident', 'overconfident', 'easy_going')","('reflect', 'debate', 'debate')",3,3,True,0f1e5d00-18fb-42fb-9eb6-82e20cc26e1b,{llm_name}social_n3_Teoo_Srdd
+"('overconfident', 'overconfident', 'easy_going')","('reflect', 'debate', 'reflect')",3,3,True,7940ff0b-2a7f-456a-b73d-061f17fa590e,{llm_name}social_n3_Teoo_Srdr
+"('overconfident', 'overconfident', 'easy_going')","('reflect', 'reflect', 'debate')",3,3,True,ab047ece-bde7-408c-9db6-847c26614d33,{llm_name}social_n3_Teoo_Srrd
+"('overconfident', 'overconfident', 'easy_going')","('reflect', 'reflect', 'reflect')",3,3,False,130845a5-2efa-44a3-b968-2313e4dd1935,{llm_name}social_n3_Teoo_Srrr
+"('overconfident', 'easy_going', 'easy_going')","('debate',)",1,3,True,84e0a2e8-7470-41f8-bb53-824ac147c564,{llm_name}social_n3_Teeo_Sd
+"('overconfident', 'easy_going', 'easy_going')","('reflect',)",1,3,False,c37173e5-53c2-4c75-bd1f-07ab2d37a7a4,{llm_name}social_n3_Teeo_Sr
+"('overconfident', 'easy_going', 'easy_going')","('debate', 'debate')",2,3,True,b7e54280-69a2-41bd-9614-c8de3e4a90e5,{llm_name}social_n3_Teeo_Sdd
+"('overconfident', 'easy_going', 'easy_going')","('debate', 'reflect')",2,3,True,164096d2-92e7-4f97-8728-d61dc19ab174,{llm_name}social_n3_Teeo_Sdr
+"('overconfident', 'easy_going', 'easy_going')","('reflect', 'debate')",2,3,True,932f5aa7-6364-4e52-b9e7-988a61bd4e8b,{llm_name}social_n3_Teeo_Srd
+"('overconfident', 'easy_going', 'easy_going')","('reflect', 'reflect')",2,3,False,646f7224-3527-400d-b1df-191e35ecc561,{llm_name}social_n3_Teeo_Srr
+"('overconfident', 'easy_going', 'easy_going')","('debate', 'debate', 'debate')",3,3,True,70c7cdd8-f198-451c-acd7-18d899c1b5db,{llm_name}social_n3_Teeo_Sddd
+"('overconfident', 'easy_going', 'easy_going')","('debate', 'debate', 'reflect')",3,3,True,82dcd3e6-e40a-4121-a5ca-143aee4b497e,{llm_name}social_n3_Teeo_Sddr
+"('overconfident', 'easy_going', 'easy_going')","('debate', 'reflect', 'debate')",3,3,True,a8e8e2ba-e576-4e91-85d9-d725b1fcd82e,{llm_name}social_n3_Teeo_Sdrd
+"('overconfident', 'easy_going', 'easy_going')","('debate', 'reflect', 'reflect')",3,3,True,a7c00be1-6850-45cb-a88f-05a1f5ad7597,{llm_name}social_n3_Teeo_Sdrr
+"('overconfident', 'easy_going', 'easy_going')","('reflect', 'debate', 'debate')",3,3,True,2bbce254-0b69-40fe-b6ef-b71832be9445,{llm_name}social_n3_Teeo_Srdd
+"('overconfident', 'easy_going', 'easy_going')","('reflect', 'debate', 'reflect')",3,3,True,9b2ada97-797b-4e41-8efb-4667e0076158,{llm_name}social_n3_Teeo_Srdr
+"('overconfident', 'easy_going', 'easy_going')","('reflect', 'reflect', 'debate')",3,3,True,24e204b4-6fbf-4e06-8ea3-9e7e74ada9ed,{llm_name}social_n3_Teeo_Srrd
+"('overconfident', 'easy_going', 'easy_going')","('reflect', 'reflect', 'reflect')",3,3,False,5da91e10-3ca3-4cdb-a402-f0a09202077a,{llm_name}social_n3_Teeo_Srrr
+"('easy_going', 'easy_going', 'easy_going')","('debate',)",1,3,True,b438a3ec-42c0-4a37-bd73-c2bc68af232f,{llm_name}social_n3_Teee_Sd
+"('easy_going', 'easy_going', 'easy_going')","('reflect',)",1,3,False,36cfd884-cc4f-43bf-a2ae-6728381ae94b,{llm_name}social_n3_Teee_Sr
+"('easy_going', 'easy_going', 'easy_going')","('debate', 'debate')",2,3,True,1756abdf-654a-452b-b867-0c979cd5a30c,{llm_name}social_n3_Teee_Sdd
+"('easy_going', 'easy_going', 'easy_going')","('debate', 'reflect')",2,3,True,ffd7e814-f19b-4532-a5c6-d50db8b9d5ee,{llm_name}social_n3_Teee_Sdr
+"('easy_going', 'easy_going', 'easy_going')","('reflect', 'debate')",2,3,True,60fc89f6-172c-41ab-87cb-f3ae601041ff,{llm_name}social_n3_Teee_Srd
+"('easy_going', 'easy_going', 'easy_going')","('reflect', 'reflect')",2,3,False,55b3aeb1-cf43-4825-94e1-23f1eb725eee,{llm_name}social_n3_Teee_Srr
+"('easy_going', 'easy_going', 'easy_going')","('debate', 'debate', 'debate')",3,3,True,cc75d995-ace8-4738-8d35-c802c5c1e0e5,{llm_name}social_n3_Teee_Sddd
+"('easy_going', 'easy_going', 'easy_going')","('debate', 'debate', 'reflect')",3,3,True,c9816527-a62f-4ffa-9af0-8351612617ad,{llm_name}social_n3_Teee_Sddr
+"('easy_going', 'easy_going', 'easy_going')","('debate', 'reflect', 'debate')",3,3,True,9623ba68-5473-4431-b732-2cf6b4ff5a14,{llm_name}social_n3_Teee_Sdrd
+"('easy_going', 'easy_going', 'easy_going')","('debate', 'reflect', 'reflect')",3,3,True,03d47c1c-6b33-4bdf-90c4-e0636ecd7651,{llm_name}social_n3_Teee_Sdrr
+"('easy_going', 'easy_going', 'easy_going')","('reflect', 'debate', 'debate')",3,3,True,dd38f8db-800d-4a15-b105-5245c5043780,{llm_name}social_n3_Teee_Srdd
+"('easy_going', 'easy_going', 'easy_going')","('reflect', 'debate', 'reflect')",3,3,True,329f6bbc-52e1-4c8f-929e-e888cc08ec47,{llm_name}social_n3_Teee_Srdr
+"('easy_going', 'easy_going', 'easy_going')","('reflect', 'reflect', 'debate')",3,3,True,04e7e796-e390-49d5-827e-d7d6a6d82578,{llm_name}social_n3_Teee_Srrd
+"('easy_going', 'easy_going', 'easy_going')","('reflect', 'reflect', 'reflect')",3,3,False,59d8583b-b3fc-494d-afaa-ff35416f0440,{llm_name}social_n3_Teee_Srrr
+"('overconfident',)",(),0,1,False,6e64cbb6-04f5-48f0-97f7-ca84de01b407,{llm_name}social_n1_To_S
+"('easy_going',)",(),0,1,False,438a8879-8f2b-4ffb-b7a8-0a4e08c3bc01,{llm_name}social_n1_Te_S
+"('overconfident', 'overconfident')",(),0,2,False,04a64a2e-b212-4773-9c1d-9006d2aa4790,{llm_name}social_n2_Too_S
+"('overconfident', 'easy_going')",(),0,2,False,e54cb5c7-a426-468f-926b-beea14e75cda,{llm_name}social_n2_Teo_S
+"('easy_going', 'easy_going')",(),0,2,False,4035fa2b-f257-46aa-b9fb-69737724c3d4,{llm_name}social_n2_Tee_S
+"('overconfident', 'overconfident', 'overconfident')",(),0,3,False,69838964-0b36-416e-b5e1-97bcdd0c1974,{llm_name}social_n3_Tooo_S
+"('overconfident', 'overconfident', 'easy_going')",(),0,3,False,455bd298-3b34-4c72-81fb-3a9e8179c55b,{llm_name}social_n3_Teoo_S
+"('overconfident', 'easy_going', 'easy_going')",(),0,3,False,98eb014b-dc03-4132-8b8c-84d442e518a3,{llm_name}social_n3_Teeo_S
+"('easy_going', 'easy_going', 'easy_going')",(),0,3,False,09a66449-943a-4cdf-a9e5-9a0e4e7872e5,{llm_name}social_n3_Teee_S

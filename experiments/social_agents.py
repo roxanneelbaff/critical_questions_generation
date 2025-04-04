@@ -1,3 +1,4 @@
+import ast
 import pandas as pd
 import os
 
@@ -49,7 +50,9 @@ def init_and_run_experiment(
         collaborative_strategy=list(ast.literal_eval(strategies)),
         agent_trait_lst=list(ast.literal_eval(traits)),
     )
-    # display(Image(social_agent.graph.get_graph(xray=1).draw_mermaid_png()))
+    #display(Image(social_agent.graph.get_graph(xray=1).draw_mermaid_png()))
+    print(social_agent.graph.get_graph().draw_ascii())
+    
     social_agent.run_experiment(data_type=data_type, save=True)
     print(f"finished {exp_name}")
     return True

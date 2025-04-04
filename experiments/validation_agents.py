@@ -1,6 +1,6 @@
 
 import json
-from utils import llm_dict
+from .utils import llm_dict
 from social_agents.agent_builder import (
     RankerAgentBuilder,
     TwoStepsCriteriaScorer,
@@ -49,6 +49,7 @@ def revalidate_cqs(val_type, original_arg, arg_cqs, arg_id_, llm_full, exp_name)
             cqs=arg_cqs,
         )
         # display(Image(validator_workflow.graph.get_graph(xray=1).draw_mermaid_png()))
+        print(validator_workflow.graph.get_graph().draw_ascii())
         sorted_questions = validator_workflow._invoke_graph(
             {"input_arg": original_arg}, arg_id_
         ).model_dump()["critical_questions"]
@@ -57,15 +58,15 @@ def revalidate_cqs(val_type, original_arg, arg_cqs, arg_id_, llm_full, exp_name)
         ]
     elif val_type == VALIDATION_2STAGE:
         # init workflow
-        ranker_flow = TwoStepsCriteriaScorer(
+        twostage = TwoStepsCriteriaScorer(
             model_thread_id=thread_id,
             llm_name=llm_full,
             llm_num=1,
             experiment_name=thread_id,
             temperature=0.7,
         )
-
-        sorted_questions = ranker_flow._invoke_graph(
+        print(twostage.graph.get_graph().draw_ascii())
+        sorted_questions = twostage._invoke_graph(
             {"input_arg": original_arg, "cqs": arg_cqs}, arg_id_
         ).model_dump()["critical_questions"]
         new_cqs = [
@@ -73,6 +74,7 @@ def revalidate_cqs(val_type, original_arg, arg_cqs, arg_id_, llm_full, exp_name)
         ]
     elif val_type == VALIDATION_4RANKS_VAL:
         # init workflow
+        
         ranker_flow = RankerAgentBuilder(
             model_thread_id=thread_id,
             llm_name=llm_full,
@@ -81,7 +83,7 @@ def revalidate_cqs(val_type, original_arg, arg_cqs, arg_id_, llm_full, exp_name)
             temperature=0.7,
         )
         # try:
-        # display(Image(ranker_flow.graph.get_graph(xray=1).draw_mermaid_png()))
+        print(ranker_flow.graph.get_graph().draw_ascii())
         arg_cqs_str = "-" + "\n-".join(arg_cqs)
         sorted_questions = ranker_flow._invoke_graph(
             {"input_arg": original_arg, "cqs": arg_cqs_str}, arg_id_
@@ -92,16 +94,18 @@ def revalidate_cqs(val_type, original_arg, arg_cqs, arg_id_, llm_full, exp_name)
     return new_cqs
 
 
-
-def reevaluate_experiments(social_experiments_lst:list, val_type: str, OUTPUT_FILES = "output/elbaff_experiment")
-    for exp in social_experiments_lst:
+def reevaluate_experiments(social_experiments_lst:list, val_type: str, OUTPUT_FILES = "output/elbaff_experiment", is_test=False):
+    for exp in social_experiments_lst: # mistral24b_social_n3_Teeo_Sddr
         llm_key = exp.split("_")[0]
         llm_full = llm_dict[f"{llm_key}_"]
+         
+        test_name_str = "TEST_" if is_test else ""
+        out_f = f"{OUTPUT_FILES}/output_{test_name_str}{exp}.json"
 
-        out_f = f"{OUTPUT_FILES}/output_{exp}.json"
+        new_out_f = f"{OUTPUT_FILES}/output_{val_type}_{test_name_str}{exp}.json"
 
-        new_out_f = f"{OUTPUT_FILES}/output_{val_type}_{exp}.json"
-        arg_path = f"{OUTPUT_FILES}/final_states/{exp}_arg{{}}.json"
+        test_str = "test_set/TEST_" if is_test else ""
+        arg_path = f"{OUTPUT_FILES}/final_states/{test_str}{exp}_arg{{}}.json" # REMOVE TESTSET
 
         with open(out_f, "r")  as file:
             new_out = {}
@@ -113,7 +117,7 @@ def reevaluate_experiments(social_experiments_lst:list, val_type: str, OUTPUT_FI
                 # each arg
                 with open(arg_path.format(arg_id_), "r")  as file:
                     arg = json.load(file)
-                    original_arg, cqs = load_last_state(arg, llm_full)
+                    original_arg, cqs = load_last_state(arg)
                     not_done = True
                     retries = 0
                     while not_done and retries < 10:
